@@ -25,10 +25,10 @@
 
 							<li class="">
 								
-								<a href="" class="float-left rr-ss"><i class="fab fa-facebook-f"></i></a>
+								<a href="https://www.facebook.com/argenpesos" class="float-left rr-ss" target="_blank"><i class="fab fa-facebook-f"></i></a>
 
 
-								<a href="" class="float-left rr-ss"><i class="fab fa-instagram"></i></a>
+								<a href="https://www.instagram.com/argenpesos/" class="float-left rr-ss" target="_blank"><i class="fab fa-instagram"></i></a>
 							</li>
 							
 						</ul>

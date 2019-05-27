@@ -33,18 +33,19 @@
         </div>
         <div class="modal-body">
           <h1 class="text-center white"><b>TRABAJÁ CON </b> NOSOTROS</h1>
-          <form class="" action="">
+          <form class="" action="enviarTrabajaConNosotros" method="POST" enctype="multipart/form-data">
+            @csrf
               <h2 class="margin-top-5">
                         <img src="<?php echo asset("storage/img/next-arrow-orange.png")?>" alt="">
                         DATOS PERSONALES:
                     </h2>
                     <div class="row margin-top-25">
                         <div class="col-sm-6">
-                            <input type="text" class="form-control" placeholder="Nombre" id="nombre">
-                            <div class="error" id="nombre-error">Ingrese un nombre valido</div>
+                            <input name="rodrigo" type="text" class="form-control" placeholder="Nombre" id="nombre">
+                            <div  class="error" id="nombre-error">Ingrese un nombre valido</div>
                         </div>
                         <div class="col-sm-6">
-                            <input type="text" class="form-control" placeholder="Apellido" id="apellido">
+                            <input  name="apellido" type="text" class="form-control" placeholder="Apellido" id="apellido">
                             <div class="error" id="apellido-error">Ingrese un apellido valido</div>
                         </div>
                     </div>
@@ -67,7 +68,7 @@
 
                     <div class="row margin-top-25">
                         <div class="col-sm-12">
-                            <input type="text" mail="mail" id="mail" class="form-control" placeholder="Mail">
+                            <input type="text" name="mail" id="mail" class="form-control" placeholder="Mail">
                             <div class="error" id="mail-error">Ingrese un mail valido</div>
                         </div>
                     </div>
@@ -89,7 +90,7 @@
                             <a onClick="enviarTrabajaConNosotros()" class="border-btn red float-right text-center">ENVIAR</a>
                             
                             <span id="file-btn" class="btn btn-primary btn-file border-btn blue float-right" >
-                                ADJUNTAR CV <input type="file" id="file-btn">
+                                ADJUNTAR CV <input name="file" type="file" id="file-btn">
                             </span>
                         </div>
 
@@ -274,10 +275,9 @@
             
             $("#quienes-somos-btn, ul.sub-menu").hover(function(){
                 $(".sub-menu").show();
+         
 
             });
-
-
             $("ul.sub-menu").mouseleave(function(){
                 setTimeout(function(){
                     $(".sub-menu").hide();  
@@ -285,6 +285,13 @@
                 
 
             });
+
+            @if(isset($msg))
+
+                alert("mail enviado correctamente");
+
+            @endif
+
 
 
              $("#file-result").hide();
@@ -307,7 +314,7 @@
 
        var dni_esta_validado=false;
 
-    var apellido_esta_validado=false;asdasd
+    var apellido_esta_validado=false;
 
     var celular_esta_validado=false;
 
@@ -1007,7 +1014,9 @@ $("#form-home #nombre").keyup(function(){
                 $("#content").append('<div id="preloader-mailing" ><div class="spinner-sm spinner-sm-1" id="status"> </div></div>');
 
 
-                    $.ajax({
+                 $("#trabajaConNosotros form").submit();
+
+                   /* $.ajax({
                         headers:{
                                  'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                                 },
@@ -1033,10 +1042,13 @@ $("#form-home #nombre").keyup(function(){
 
 
 
+
+
+
                           
 
                         }
-                     });
+                     });*/
             
             }   
 
