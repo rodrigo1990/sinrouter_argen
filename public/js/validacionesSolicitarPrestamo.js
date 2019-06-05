@@ -588,7 +588,6 @@
 
 
 
-
          var provincia = $("#provincia").val();
 
 
@@ -631,7 +630,7 @@
                      'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                     },
                 data:{provinciaId},
-                url:'/buscarCiudadSegunProvincia',
+                url:'buscarCiudadSegunProvincia',
                 type:'post',
                 dataType:"json",
                 success:function(data){

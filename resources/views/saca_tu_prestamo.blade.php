@@ -329,6 +329,8 @@
 		@slot('class')
 		bk-blue
 		@endslot
+		@slot('color')
+		@endslot
 	@endcomponent
 	
 	<footer >

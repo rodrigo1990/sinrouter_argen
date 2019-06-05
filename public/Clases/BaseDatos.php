@@ -2,18 +2,18 @@
 
 class BaseDatos{
 
-	public $base='arg_novedades';
-	public $servidor='localhost';
+	public $base='legion_argenpesos_rs';
+	public $servidor='162.255.162.75';
 	public $conexion;
 	public $mysqli;
 
 
 	public function __construct(){
 		
-		$this->conexion=mysqli_connect($this->servidor,'root','',$this->base) or die ("No se ha podido establecer conexion con la base de datos");
+		$this->conexion=mysqli_connect($this->servidor,'legion_rodrigo','Javierjavier1990',$this->base) or die ("No se ha podido establecer conexion con la base de datos");
 	
 
-		$this->mysqli=new mysqli($this->servidor, 'root','', $this->base);
+		$this->mysqli=new mysqli($this->servidor, 'legion_rodrigo','Javierjavier1990', $this->base);
 
 		$this->mysqli->set_charset("utf8");
 	}

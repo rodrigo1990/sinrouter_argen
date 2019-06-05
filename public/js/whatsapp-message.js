@@ -1,4 +1,4 @@
-document.querySelector('#whatsapp-btn').addEventListener('click',function(){
+$('#whatsapp-btn').click(function(e){
 
     var message = "¡Hola! Queria hacer una consulta acerca de los servicios vistos en www.argenpesos.com.ar ";
     var number = 5491132414878 ;

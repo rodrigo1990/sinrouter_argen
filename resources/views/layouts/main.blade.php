@@ -307,7 +307,7 @@
 
        var dni_esta_validado=false;
 
-    var apellido_esta_validado=false;asdasd
+    var apellido_esta_validado=false;
 
     var celular_esta_validado=false;
 
@@ -378,9 +378,9 @@ $('#form-home-btn').not("#cerrarMenu").click(function (e) {
 
 
 
-                    $("#codigo_area").removeClass('border-color-green');
+                    $("#cod_area").removeClass('border-color-green');
 
-                    $("#codigo_area").addClass('border-color-red');
+                    $("#cod_area").addClass('border-color-red');
 
                     $("#cod-area-error").fadeIn();
 
@@ -395,11 +395,15 @@ $('#form-home-btn').not("#cerrarMenu").click(function (e) {
 
 
 
-                    $("#celular").removeClass('border-color-green');
+                    $("#telefono").removeClass('border-color-green');
 
-                    $("#celular").addClass('border-color-red');
+                    $("#telefono").addClass('border-color-red');
 
-                    $("#celular-error").fadeIn();
+                    $("#fix-celular").removeClass('border-color-green');
+
+                    $("#fix-celular").addClass('border-color-red');
+
+                    $("#telefono-error").fadeIn();
 
 
                 }
@@ -759,25 +763,20 @@ $("#form-home #nombre").keyup(function(){
 
       if(email.length<3||email.search(emailValido)){
 
-        $("#mail-check-icon").fadeOut();
 
-        $("#mail-error-icon").fadeIn();
+        $("#form-home #mail").removeClass('border-color-green');
 
-        $("#mail").removeClass('border-color-green');
-
-        $("#mail").addClass('border-color-red');
+        $("#form-home #mail").addClass('border-color-red');
 
 
-        $("#mail-error").fadeIn();
+        $("#form-home #mail-error").fadeIn();
        
 
         email_esta_validado=false;                    
 
         }else{
 
-            $("#mail-error-icon").fadeOut();
 
-            $("#mail-check-icon").css("display","block");
 
             $("#mail").removeClass('border-color-red');
 
@@ -822,30 +821,30 @@ $("#form-home #nombre").keyup(function(){
 
 
 
-            $("#dni").removeClass('border-color-green');
+            $("#form-home #dni").removeClass('border-color-green');
 
-            $("#dni").addClass('border-color-red');
+            $("#form-home #dni").addClass('border-color-red');
 
  
 
             dni_esta_validado=false;
 
-            $("#dni-error").fadeIn();
+            $("#form-home #dni-error").fadeIn();
 
         }else{
 
 
 
 
-            $("#dni").removeClass('border-color-red');
+            $("#form-home #dni").removeClass('border-color-red');
 
 
-            $("#dni").addClass('border-color-green');
+            $("#form-home #dni").addClass('border-color-green');
 
             dni_esta_validado=true;
 
 
-            $("#dni-error").fadeOut();
+            $("#form-home #dni-error").fadeOut();
 
 
 
@@ -1062,8 +1061,8 @@ $("#form-home #nombre").keyup(function(){
             var apellido  = $("#comercializador #apellido").val();
             var dni  = $("#comercializador #dni").val();
             var comentarios  = $("#comercializador #comentarios").val();
-            var provincia  = $("#comercializador #provincia").val();
-            var localidad = $("#comercializador #localidad").val();
+            var provincia  = $("#comercializador #provincia2").val();
+            var localidad = $("#comercializador #localidad2").val();
             var venta = $("input[name='ventaAlpúblico']:checked").val();
 
 

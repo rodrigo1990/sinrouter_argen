@@ -18,15 +18,15 @@ class FrontController extends Controller
 
 
 
-  	public function sacaTuPrestamo(Request $request){
+  	/*public function sacaTuPrestamo(Request $request){
 
   		$provincias = Provincia::all(); 
 
         return view('saca_tu_prestamo',['provincias'=>$provincias]);
 
-  	}
+  	}*/
 
-  	public function sacaTuPrestamo2(Request $request){
+  	public function sacaTuPrestamo(Request $request){
 
   		$provincias = Provincia::all(); 
       $nombre = $request->nombre;

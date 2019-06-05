@@ -111,6 +111,39 @@
                 /*GENERALES*/
 /*----------------------------------------------*/
 
+
+
+@media screen\0 {
+
+
+    section#form form h1.cursive, .modal h1.cursive{
+        font-family: GothamMedium !important;
+        padding-bottom:8px;
+    }
+
+
+    form select { 
+    moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url('../storage/img/select-moz-arrow.svg') !important;
+    background-repeat: no-repeat;
+    background-size: 6px;
+    background-position: right 14px;
+     }
+
+
+     form select::-ms-expand {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
 .padding-top-98{
     padding-top:98px !important;
 }
@@ -565,7 +598,7 @@ header ul.menu>li>a:hover:after{
     width: 90%;
 }
 
-header ul.menu>li>a[href=saca_tu_prestamo2] {
+header ul.menu>li>a[href=saca_tu_prestamo] {
        color: #EE4E23;
     letter-spacing: 1px;
     font-size: 17px;
@@ -577,7 +610,7 @@ header ul.menu>li>a[href=saca_tu_prestamo2] {
 }
 
 
-header ul.menu>li>a[href=saca_tu_prestamo2]:hover {
+header ul.menu>li>a[href=saca_tu_prestamo]:hover {
        color: white;
     background:#EE4E23;
 }
@@ -778,7 +811,7 @@ section#form #cod_area{
 
 
 section#form .form-cont{
-    background:rgba(256,256,256,0.5);
+    background:rgba(230, 230, 230, 0.5);/*rgba(256,256,256,0.5)*/
         padding: 35px;
         border-radius: 7px;
 }
@@ -858,6 +891,22 @@ form input, form select{
     webkit-box-shadow: none !important;
     box-shadow: none !important;
 }
+
+@-moz-document url-prefix() {
+  form select {
+    moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url('../storage/img/select-moz-arrow.svg') !important;
+    background-repeat: no-repeat;
+    background-size: 6px;
+    background-position: right 14px;
+  }
+}
+
+
+
+
 
 
 form label{
@@ -1013,6 +1062,7 @@ ul li h4{
 
 
 
+
 /*---------------------------------------------*/
                 /*FOOTER*/
 /*----------------------------------------------*/
@@ -1120,6 +1170,11 @@ footer b {
     color:#F9E822;
     display:none;
     margin-top:14px;
+}
+
+#form-home .error{
+    color:#EE4E23;
+    margin-top:0;
 }
 
 .remove-arrow {
@@ -1271,9 +1326,16 @@ input::-webkit-inner-spin-button {
     width: 75%;
 }
 /*SUCURSALES*/
+
+.gm-style-iw-d div{
+    font-size: 17px;
+}
+
+
 #sucursales ul li {
     font-family: GothamBook;
     font-size: 16pt;
+    margin-bottom: 13px;
 }
 
 #sucursales ul li a{

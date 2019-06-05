@@ -10,7 +10,7 @@
 
 					<div class="col-lg-10 hidden-md hidden-sm hidden-xs btn-cont">
 						<ul id="nav" class="menu">
-							<li><a href="saca_tu_prestamo2"  class="fix spa-btn">SACA TU PRÉSTAMO</a></li>
+							<li><a href="saca_tu_prestamo"  class="fix spa-btn">SACA TU PRÉSTAMO</a></li>
 							<li><a href="https://www.argenpesos.com.ar/micuenta/quiero-pagar.php" target="_blank" class="after-btn"  >CONSULTÁ TU PRÉSTAMO</a></li>
 							<li><a href="sucursales" class="spa-btn after-btn">NUESTRAS SUCURSALES</a></li>
 
@@ -51,7 +51,7 @@
 					<i class="fas fa-times"></i>
 				</a>
 			</div>
-			<li><a href="saca_tu_prestamo2" class="xs-btn spa-btn">SACA TU PRÉSTAMO</a></li>
+			<li><a href="saca_tu_prestamo" class="xs-btn spa-btn">SACA TU PRÉSTAMO</a></li>
 			<li><a href="https://www.argenpesos.com.ar/micuenta/quiero-pagar.php"  class="xs-btn" >CONSULTÁ TU PRÉSTAMO</a></li>
 			<li><a href="sucursales" class="xs-btn spa-btn">NUESTRAS SUCURSALES</a></li>
 
