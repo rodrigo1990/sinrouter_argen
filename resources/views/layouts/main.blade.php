@@ -84,12 +84,12 @@
                     </div>
 
                     <div class="row margin-top-25">
-                        <div class="hidden-xs col-sm-12">
+                         <div class="hidden-xs col-sm-12">
 
                             <a onClick="enviarTrabajaConNosotros()" class="border-btn red float-right text-center">ENVIAR</a>
                             
                             <span id="file-btn" class="btn btn-primary btn-file border-btn blue float-right" >
-                                ADJUNTAR CV <input type="file" id="file-btn">
+                                ADJUNTAR CV <input name="file" type="file" id="file-btn">
                             </span>
                         </div>
 

@@ -86,8 +86,7 @@ class MailController extends Controller
     }
 
 
-
-    public function enviarTrabajaConNosotros(Request $request){
+ public function enviarTrabajaConNosotros(Request $request){
 
 
 
@@ -95,7 +94,9 @@ class MailController extends Controller
 
           Mail::to($email)->send(new TrabajaConNosotros($request));
 
-          return json_encode("Mail enviado correctamente ! ");
+          $msg="true";
+
+          return view("index",['msg'=>$msg]);
 
 
 

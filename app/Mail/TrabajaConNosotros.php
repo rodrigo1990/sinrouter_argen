@@ -28,10 +28,16 @@ class TrabajaConNosotros extends Mailable
      *
      * @return $this
      */
-    public function build()
+    
+ public function build()
     {
         return $this
-        		->subject('Argenpesos - TRABAJA CON NOSOTROS - HAZ RECIBIDO UNA SOLICITUD DE TRABAJO')
-        		->view('mails.trabajaConNosotros');
+                ->subject('Argenpesos - TRABAJA CON NOSOTROS - HAZ RECIBIDO UNA SOLICITUD DE TRABAJO')
+                ->attach($this->consulta->file, 
+                     [
+                    'as' => $this->consulta->file->getClientOriginalName(),
+                    'mime' => $this->consulta->file->getClientMimeType(),
+                ])
+                ->view('mails.trabajaConNosotros');
     }
 }
