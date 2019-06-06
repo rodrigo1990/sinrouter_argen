@@ -33,7 +33,9 @@
         </div>
         <div class="modal-body">
           <h1 class="text-center white"><b>TRABAJÁ CON </b> NOSOTROS</h1>
-          <form class="" action="">
+          
+         <form class="" action="enviarTrabajaConNosotros" method="POST" enctype="multipart/form-data">
+                    @csrf
               <h2 class="margin-top-5">
                         <img src="<?php echo asset("storage/img/next-arrow-orange.png")?>" alt="">
                         DATOS PERSONALES:
@@ -1004,39 +1006,8 @@ $("#form-home #nombre").keyup(function(){
 
                     
                 $("#content").append('<div id="preloader-mailing" ><div class="spinner-sm spinner-sm-1" id="status"> </div></div>');
-
-
-                    $.ajax({
-                        headers:{
-                                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                                },
-                       
-                       data: {nombre:nombre,apellido:apellido,dni:dni,telefono:telefono,mail:email,comentarios:comentarios},
-                       url:'enviarTrabajaConNosotros',
-                       type:'post',
-                        dataType:"json",
-                       success: function(msg){
-
-
-                        $('#preloader-mailing  #status').fadeOut(); // will first fade out the loading animation 
-                        
-                        $('#preloader-mailing ').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
-                        
-
-
-                            alert(msg);
-
-                            setTimeout(function(){
-                            $("#preloader-mailing").remove(); 
-                          },500);
-
-
-
-                          
-
-                        }
-                     });
-            
+                    
+                    $("#trabajaConNosotros form").submit();
             }   
 
             

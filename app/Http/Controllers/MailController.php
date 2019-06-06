@@ -96,7 +96,9 @@ class MailController extends Controller
 
           $msg="true";
 
-          return view("index",['msg'=>$msg]);
+          $provincias = Provincia::all();
+
+          return view("index",compact('msg','provincias'));
 
 
 
