@@ -527,6 +527,15 @@ background: radial-gradient(transparent 15%, transparent 16%) 0 0, radial-gradie
     margin-top:93px;
 }
 
+.space-grey{
+     background: #F3F4F4;
+    height: 66px;
+}
+
+
+.padding-top-77{
+    padding-top:77px;
+}
 /*---------------------------------------------*/
                 /*HEADER*/
 /*----------------------------------------------*/
@@ -613,6 +622,11 @@ header ul.menu>li>a[href=saca_tu_prestamo] {
 header ul.menu>li>a[href=saca_tu_prestamo]:hover {
        color: white;
     background:#EE4E23;
+}
+
+
+header ul.menu>li>a[href=saca_tu_prestamo]:active {
+       color: white !important;
 }
 
 

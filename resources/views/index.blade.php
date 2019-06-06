@@ -124,6 +124,7 @@
 
 
 </section>
+<div class="space-grey"></div>
 <section id="banner" class="">
 	<div class="owl-one owl-carousel owl-theme slider" id="owl-1">
 		<div>
@@ -140,7 +141,7 @@
 	@slot('class')
     bk-grey 
 	
-    padding-top-98 
+    padding-top-77 
 	@endslot
 
 	@slot('color')

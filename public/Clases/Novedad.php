@@ -204,6 +204,8 @@ class Novedad{
 		$bd  = new BaseDatos();
 		$extension="";
 
+		
+
 		try{
 			//Renombrar archivos/campos
 			if($imagen1 != ""){
