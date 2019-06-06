@@ -42,11 +42,11 @@
                     </h2>
                     <div class="row margin-top-25">
                         <div class="col-sm-6">
-                            <input type="text" class="form-control" placeholder="Nombre" id="nombre">
+                            <input type="text" class="form-control" placeholder="Nombre" id="nombre" name="nombre">
                             <div class="error" id="nombre-error">Ingrese un nombre valido</div>
                         </div>
                         <div class="col-sm-6">
-                            <input type="text" class="form-control" placeholder="Apellido" id="apellido">
+                            <input type="text" class="form-control" placeholder="Apellido" id="apellido" name="apellido">
                             <div class="error" id="apellido-error">Ingrese un apellido valido</div>
                         </div>
                     </div>
@@ -69,7 +69,7 @@
 
                     <div class="row margin-top-25">
                         <div class="col-sm-12">
-                            <input type="text" mail="mail" id="mail" class="form-control" placeholder="Mail">
+                            <input type="text" name="mail" id="mail" class="form-control" placeholder="Mail">
                             <div class="error" id="mail-error">Ingrese un mail valido</div>
                         </div>
                     </div>
@@ -278,6 +278,12 @@
                 $(".sub-menu").show();
 
             });
+
+             @if(isset($msg))
+
+                alert("mail enviado correctamente");
+
+            @endif
 
 
             $("ul.sub-menu").mouseleave(function(){
@@ -1020,9 +1026,30 @@ $("#form-home #nombre").keyup(function(){
 
          $('input[type="file"]').change(function(){
             
-            $("#file-cv").html($(this).val());
+            
 
-            $("#file-result").fadeIn();
+            var file_size = $('input[type="file"]')[0].files[0].size;
+
+            var name = $('input[type="file"]').val();
+
+            name = name.split('.').pop();
+
+            if(name == "pdf" || name == "docx"){
+
+            if(file_size>2097152) {
+
+                alert("El archivo NO puede ser superior a 2MB");
+
+            }else{
+
+                $("#file-cv").html($(this).val());
+
+                $("#file-result").fadeIn();
+            }
+
+        }else{
+            alert("El archivo debe ser .pdf o .docx")
+        }
         });
 
 
