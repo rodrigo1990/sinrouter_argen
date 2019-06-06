@@ -111,7 +111,9 @@
                 /*GENERALES*/
 /*----------------------------------------------*/
 
-
+#owl-2{
+    display:none;
+}
 
 @media screen\0 {
 
@@ -907,7 +909,7 @@ form input, form select{
     outline: 0;
     box-shadow: inset 0 0px 0px rgba(0,0,0,.075);
     font-family: GothamBook;
-        font-size: 14px !important;
+        font-size: 17px !important;
     webkit-box-shadow: none !important;
     box-shadow: none !important;
 }
@@ -1156,6 +1158,11 @@ footer b {
                 /*SACAR PRESTAMO FORM*/
 /*----------------------------------------------*/
 
+.checkbox, .radio {
+    margin-bottom: 0 !important;
+}
+
+
 #prestamo-form form input,#prestamo-form form select{
     font-size: 18px !important;
 } 
@@ -1286,7 +1293,8 @@ input::-webkit-inner-spin-button {
 
 #prestamo-form .radio-btn{
     margin-bottom:0 !important;
-    margin-top:16px;
+  /*  margin-top:16px;*/
+    padding-top:9px;
 
 }
 
@@ -2134,6 +2142,14 @@ padding:19px;
 }
 @media only screen and (min-width: 10px) and (max-width: 1024px)  {
 
+    #owl-1{
+        display:none !important;
+    }
+
+    #owl-2{
+        display:block !important;
+    }
+
 #prestamo-form .last-row input[type='radio']{
     width: unset;
     height: unset;
@@ -2182,7 +2198,7 @@ padding:19px;
     }
 
     #prestamo-form .row>[class*="col-"]{
-        margin-top:10px;
+            margin-top: 27px;
     }
 
     #prestamo-form .range-row{

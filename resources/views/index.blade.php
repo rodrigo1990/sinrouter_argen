@@ -135,6 +135,15 @@
 		</div>
 	</div>
 
+	<div class="owl-one owl-carousel owl-theme slider" id="owl-2">
+		<div>
+			<img src="<?php echo asset("storage/img/banner_xs.jpg")?>" alt="">
+		</div>
+		<div>
+			<img src="<?php echo asset("storage/img/banner_xs_2.jpg")?>" alt="">
+		</div>
+	</div>
+
 </section>
 
 @component('comp.contacto')
