@@ -243,7 +243,7 @@
 
 	bottom:10px;
 
-	right: 15px;
+    right: 6px;
 
 	float:right;
 
@@ -315,7 +315,7 @@
 
 
 
-#interfaceForm .error{
+#interfaceForm .error,#interfaceFormXs .error{
 
     
 	display:none;
@@ -493,10 +493,26 @@
     
     }
 
+
+    .interfaceFormBtn{
+
+    padding: 12px 10px 12px 10px !important;
+
+}
+
  
 }
 
 @media only screen and (max-width: 767px) {
+
+     #interfaceFormBtn{
+        display:none;
+    }
+
+
+    #interfaceFormBtnXs{
+        display:block;
+    }
 
     .interfaceFormBtn h3
     {
@@ -505,7 +521,7 @@
 
     .interfaceFormBtn{
 
-    padding: 15px 10px 15px 10px !important;
+    padding: 12px 10px 12px 10px !important;
 
 }
 
@@ -513,7 +529,8 @@
 
 
 
-    width: 47%;
+    width: 49px;
+    border-radius:50%;
 
 
 

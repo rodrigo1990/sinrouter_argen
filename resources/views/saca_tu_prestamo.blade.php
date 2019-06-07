@@ -7,7 +7,7 @@
 
 	<div class="col-lg-6 col-md-6 col sm-8 left-side" style="text-align:center">
 		<div style="text-align: left;">
-				<a href="/"><img src="<?php echo asset("storage/img/logo.png")?>" id="logo" class=""  alt=""></a>
+				<a href="/" id="logo-cont-a"><img src="<?php echo asset("storage/img/logo.png")?>" id="logo" class=""  alt=""></a>
 		</div>
 	    
 	    <h1 class="margin-top-50">HOY MISMO LLEVATE <br> <b>HASTA <span class="red">$30.000</span></b></h1>

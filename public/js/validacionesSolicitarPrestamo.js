@@ -901,7 +901,7 @@ function myFunction() {
 
                     $("#celular").addClass('border-color-red');
 
-                    $("#celular-error").fadeIn();
+                    $("#telefono-error").fadeIn();
 
 
                 }

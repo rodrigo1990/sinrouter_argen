@@ -21,7 +21,6 @@
 						<li class="margin-top-10">- <a onClick="zoomOnLocation(-34.760503,-58.206957);">Berazategui</a></li>
 						<li class="margin-top-10">- <a onClick="zoomOnLocation(-34.708119,-58.389905);">Lanus</a></li>
 						<li class="margin-top-10">- <a onClick="zoomOnLocation(-34.762114,-58.398490);">Lomas De Zamora</a></li>
-						<li class="margin-top-10">- <a onClick="zoomOnLocation(-34.681403,-58.556553);">San Justo</a></li>
 						<li class="margin-top-10">- <a onClick="zoomOnLocation(-34.804170,-58.274902);">Varela</a></li>
 						<li class="margin-top-10">- <a onClick="zoomOnLocation(-34.762226,-58.360981);">Temperley - Barrio San Jose</a></li>
 						<li class="margin-top-10">- <a onClick="zoomOnLocation(-34.722831,-58.259495);">Quilmes</a></li>

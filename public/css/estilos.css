@@ -833,7 +833,7 @@ section#form #cod_area{
 
 
 section#form .form-cont{
-    background:rgba(230, 230, 230, 0.5);/*rgba(256,256,256,0.5)*/
+    background:rgba(177, 177, 177, 0.5);/*rgba(256,256,256,0.5)*/
         padding: 35px;
         border-radius: 7px;
 }
@@ -1158,6 +1158,17 @@ footer b {
                 /*SACAR PRESTAMO FORM*/
 /*----------------------------------------------*/
 
+
+
+
+   #interfaceFormBtnXs{
+        display:none;
+    }
+
+#prestamo-form .left-side .go-to-form{
+    display:none;
+}
+
 .checkbox, .radio {
     margin-bottom: 0 !important;
 }
@@ -1197,6 +1208,10 @@ footer b {
     color:#F9E822;
     display:none;
     margin-top:14px;
+}
+
+#prestamo-form #telefono-error{
+    /*margin-top:48px;*/
 }
 
 #form-home .error{
@@ -1288,6 +1303,9 @@ input::-webkit-inner-spin-button {
 
 #prestamo-form .form-cont{
     padding:40px;
+   max-height: 1000px;
+    min-height: 808px;
+
 }
 
 
@@ -1363,7 +1381,7 @@ input::-webkit-inner-spin-button {
 #sucursales ul li {
     font-family: GothamBook;
     font-size: 16pt;
-    margin-bottom: 13px;
+    margin-bottom: 16px;
 }
 
 #sucursales ul li a{
@@ -2139,8 +2157,43 @@ padding:19px;
     #prestamo-form .row {
     margin-top: 14px !important;
 }
+
+
+
+
 }
 @media only screen and (min-width: 10px) and (max-width: 1024px)  {
+
+   
+
+#prestamo-form .form-cont{
+    height: unset !important;
+    min-height: unset!important;
+    max-height: unset!important;
+}
+
+
+
+
+.go-to-form{
+    display:block !important;
+    width: 276px !important;
+}
+
+
+#logo-cont-a{
+    display:block;
+    margin:auto;
+    margin-top:21px;
+}
+
+
+#logo-cont-a img{
+    display:block;
+    margin:auto !important;
+    
+}
+
 
     #owl-1{
         display:none !important;
@@ -2155,6 +2208,11 @@ padding:19px;
     height: unset;
     margin-right: unset;
     right: unset;
+}
+
+
+#prestamo-form .left-side .main-img{
+    width: 300px;
 }
 
     h1,#contacto h1{
@@ -2375,6 +2433,10 @@ section#form form .border-btn{
 }
 @media only screen and (min-width: 320px) and (max-width: 768px){
 
+    #prestamo-form .left-side h3{
+        font-size: 17px !important;
+    }
+
     .card-body .row ul{
         padding-left:0;
     }
@@ -2464,13 +2526,13 @@ h1, #contacto h1 {
 
     
     .form-cont {
-    margin-top: 100px;
+    margin-top: 59px;
 }
 
 
 #prestamo-form #logo{
-        width: 290px;
-    margin-top: 9px; 
+        width: 259px;
+    margin-top: 30px; 
 }
 
 #sucursales ul{
@@ -2576,8 +2638,21 @@ h1, #contacto h1 {
     }
 }
 
-@media only screen and (min-width: 1200px) and (max-width: 1920px) {
+@media only screen (width: 1920px) {
+#prestamo-form .form-cont {
+    padding: 40px;
+    height: 874px;
+}
 
+}
+
+
+@media only screen and (min-width: 1200px) and (max-width: 1800px) {
+#prestamo-form .form-cont {
+    padding: 40px;
+    max-height: 1032px;
+    min-height: 764px;
+}
 
 }
 

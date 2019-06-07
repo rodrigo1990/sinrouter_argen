@@ -5,12 +5,12 @@
 
 	<div class="col-lg-6 col-md-6 col sm-8 left-side" style="text-align:center">
 		<div style="text-align: left;">
-				<a href="/"><img src="<?php echo asset("storage/img/logo.png")?>" id="logo" class="margin-top-23 margin-left-28"  alt=""></a>
+				<a href="/" id="logo-cont-a"><img src="<?php echo asset("storage/img/logo.png")?>" id="logo" class="margin-top-23 margin-left-28"  alt=""></a>
 		</div>
 	    
 	    <h1 class="margin-top-35">HOY MISMO LLEVATE <br> <b>HASTA <span class="red">$30.000</span></b></h1>
 
-	    <img class="margin-top-25 img-responsive center-block" src="<?php echo asset("storage/img/form-graphic-06-06.png")?>" class="center-block" alt="">
+	    <img class="margin-top-25 img-responsive center-block main-img" src="<?php echo asset("storage/img/form-graphic-06-06.png")?>" class="center-block" alt="">
 		
 		<div class="bk-red padding-10 inline-block" style="margin-top:-1px">
 			<h3 >¡SUPER SIMPLE! ¡ÚNICO REQUISITO!</h3>
@@ -20,6 +20,8 @@
 			<h3 class="margin-top-10"><img src="<?php echo asset("storage/img/tilde-07.png")?>" alt="">Cobrar por cuenta bancaria</h3>
 			<p class="margin-top-5">Sueldo / Jubilaciones / Pensiones</p>	
 		</div>
+
+		<a  class="center-block go-to-form border-btn red margin-top-35">Completá el formulario</a>
 
 
 	</div><!-- col-lg-7 col-md-7 col sm-8 -->
@@ -360,7 +362,7 @@
 <script type="text/javascript" src="<?php echo asset("js/validacionesSolicitarPrestamo.js")?>"></script>
 <script type="text/javascript" src="<?php echo asset("js/rangeslider.js")?>"></script>
 <script type="text/javascript" src="<?php echo asset("js/rangeSliderImplement.js")?>"></script>
-<script src="https://www.google.com/recaptcha/api.js?render=6Lf7iKQUAAAAAEzdiNtjuPOEY8wu6yJvekMC5YKp"></script>
+<!--  <script src="https://www.google.com/recaptcha/api.js?render=6Lf7iKQUAAAAAEzdiNtjuPOEY8wu6yJvekMC5YKp"></script>-->
 <script>
 
 $(document).ready(function(){
@@ -644,6 +646,19 @@ $("#creditos-online a").on("click", function(){
 
 
  });
+
+
+$(".go-to-form").on("click", function(){ 
+	 $('html,body').animate({ scrollTop:$('#myForm').offset().top  }, 'slow');
+        return false; 
+
+
+ });
+
+
+
+
+
 
 </script>
 

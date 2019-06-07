@@ -34,3 +34,45 @@
 		
 
 	}
+
+
+
+
+
+
+
+		function abrirInterfaceFormXs(){
+
+		$("#interfaceFormBtnXs").removeClass("rollIn");
+		$("#interfaceFormBtnXs").addClass("fadeOutUp");
+
+
+		$("#interfaceFormXs").show();
+		$("#interfaceFormXs").removeClass("fadeOutUp");
+		$("#interfaceFormXs").addClass("fadeInUp");
+
+		
+		//$("#interfaceForm").show();
+
+	}
+
+	function cerrarInterfaceFormXs(){
+
+		$("#interfaceFormBtnXs").show();
+
+		$("#interfaceFormBtnXs").removeClass("fadeOutUp");
+		$("#interfaceFormBtnXs").addClass("rollIn");
+
+		$("#interfaceFormXs").removeClass("fadeInUp");
+		$("#interfaceFormXs").addClass("fadeOutUp");
+
+
+		setTimeout( function() {
+		$("#interfaceFormXs").hide();
+	  	}, 500);
+
+
+		//$("#interfaceForm").hide();
+		
+
+	}
