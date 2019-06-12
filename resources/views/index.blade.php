@@ -10,7 +10,7 @@
 		<div class="first col-lg-5 text-center">
 			<ul class="margin-top-60">
 				<li><h1><b>HOY MISMO,</b> <br> CON O SIN VERAZ</h1></li>
-				<li class="margin-top-25"><a href="" class="big border-btn red margin-top-50">SACÁ TU PRESTAMO</a> <img class="" src="<?php echo asset("storage/img/next-arrow.png")?>" alt="" style="padding-left:5px"></li>
+				<li class="margin-top-25"><a href="saca_tu_prestamo" class="big border-btn red margin-top-50">SACÁ TU PRESTAMO</a> <img class="" src="<?php echo asset("storage/img/next-arrow.png")?>" alt="" style="padding-left:5px"></li>
 				<li class="margin-top-25"><h3>Hasta $30.000 en 12 cuotas</h3></li>
 			
 			</ul>

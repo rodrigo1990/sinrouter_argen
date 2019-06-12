@@ -124,8 +124,10 @@
 					<div class="error" id="cod-area-error">*Ingrese un codigo de area valido</div>
 					</div>
 					<div class="col-lg-6 col-md-6 col-xs-12">
-	                    <input type="text" name="fix-celular" id="fix-celular" value="15" disabled="disabled" class="form-control">
-						<input type="number" name="celular" id="celular" placeholder="Ej:46587925"  class="form-control" value={{$telefono}}>
+						<div class="celular-inputs-container">
+		                    <input type="text" name="fix-celular" id="fix-celular" value="15" disabled="disabled" class="form-control">
+							<input type="number" name="celular" id="celular" placeholder="Ej:46587925"  class="form-control" value={{$telefono}}>
+						</div>
 						<div class="valid-feedback feedback-icon" id="celular-check-icon">
 
 	                        <i class="fa fa-check"></i>
@@ -366,12 +368,25 @@
 <script>
 
 $(document).ready(function(){
+
+
 	var cod_area = {{$codArea ? $codArea : 'null'}};
 
 	$("#content").css("margin-top",0);
 
 
 	$("#creditos-online a").removeAttr("href");
+
+
+	var token = $_GET('_token');
+
+	
+	if($(window).width()<1024){
+		if(token!=null){
+			$('html,body').animate({ scrollTop:$('#myForm').offset().top-50  }, 'slow');
+		}
+	}
+
 	
 	
 
@@ -654,6 +669,22 @@ $(".go-to-form").on("click", function(){
 
 
  });
+
+
+function $_GET(param) {
+	var vars = {};
+	window.location.href.replace( location.hash, '' ).replace( 
+		/[?&]+([^=&]+)=?([^&]*)?/gi, // regexp
+		function( m, key, value ) { // callback
+			vars[key] = value !== undefined ? value : '';
+		}
+	);
+
+	if ( param ) {
+		return vars[param] ? vars[param] : null;	
+	}
+	return vars;
+}
 
 
 

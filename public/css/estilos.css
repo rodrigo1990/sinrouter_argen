@@ -584,7 +584,7 @@ header ul.menu>li:not(:first-child){
 header ul.menu>li>a {
        color: #00A5E7;
     letter-spacing: 1px;
-    font-size: 17px;
+     font-size: 19px;
     border-width: 2px;
     border-style: solid;
     border-color: transparent;
@@ -612,7 +612,7 @@ header ul.menu>li>a:hover:after{
 header ul.menu>li>a[href=saca_tu_prestamo] {
        color: #EE4E23;
     letter-spacing: 1px;
-    font-size: 17px;
+   font-size: 21px;
     border-width: 2px;
     border-style: solid;
     border-color: #EE4E23;
@@ -1108,6 +1108,13 @@ footer p {
  }
 
 
+ footer a{
+    font-size: 16px;
+ }
+
+footer h4{
+        font-size: 19px;
+}
 
 footer a:hover{
     color:#00A5E7;
@@ -1183,6 +1190,10 @@ footer b {
     padding: 6px 19PX;
 }
 
+.celular-inputs-container{
+    height: 32px;
+}
+
 #prestamo-form .last-row input[type='radio']{
     width: 32px;
     height: 41px;
@@ -1208,6 +1219,7 @@ footer b {
     color:#F9E822;
     display:none;
     margin-top:14px;
+    max-height: 20px;
 }
 
 #prestamo-form #telefono-error{
@@ -2164,6 +2176,20 @@ padding:19px;
 }
 @media only screen and (min-width: 10px) and (max-width: 1024px)  {
 
+    footer a{
+    font-size: 14px;
+ }
+
+ footer h4{
+     font-size: 15px;
+ }
+
+
+ #prestamo-form form input, #prestamo-form form select,#prestamo-form form input{
+    font-size: 1.7rem  !important;
+ }
+
+
    
 
 #prestamo-form .form-cont{
@@ -2433,6 +2459,11 @@ section#form form .border-btn{
 }
 @media only screen and (min-width: 320px) and (max-width: 768px){
 
+
+    .radio input[type=radio]{
+            margin-top: 6px !important;
+    }
+
     #prestamo-form .left-side h3{
         font-size: 17px !important;
     }
@@ -2474,7 +2505,7 @@ section#form form .border-btn{
     }
 
 
-    section#form .form-cont input, .modal input, .modal label, .modal select,form select, form input {
+    #prestamo-from form select,#prestamo-from form input {
     font-size: 13px !important;
     }
 
@@ -2555,10 +2586,16 @@ h1, #contacto h1 {
 
 
 
-@media only screen and (min-width: 320px) and (max-width: 76px) and (orientation:portrait) {
+@media only screen and (min-width: 320px) and (max-width: 400px) and (orientation:portrait) {
+
+#prestamo-form form input, #prestamo-form form select,#prestamo-form .radio label {
+    font-size: 1.2rem !important;
+}
 
 
-
+#prestamo-form .radio input[type=radio]{
+        margin: 3px 0 0 -20px;
+}
 
 }
 
@@ -2631,6 +2668,12 @@ h1, #contacto h1 {
 
     header ul.menu>li>a {
         font-size: 14px;
+    }
+
+    header ul.menu>li>a[href=saca_tu_prestamo] {
+   
+   font-size: 17px;
+   
     }
 
     header ul.menu>li>a.rr-ss i {
