@@ -128,19 +128,25 @@
 <section id="banner" class="">
 	<div class="owl-one owl-carousel owl-theme slider" id="owl-1">
 		<div>
-			<img src="<?php echo asset("storage/img/banner_2.png")?>" alt="">
+			<img src="<?php echo asset("storage/img/slider_home/banner_2.png")?>" alt="">
 		</div>
 		<div>
-			<img src="<?php echo asset("storage/img/banner.jpg")?>" alt="">
+			<img src="<?php echo asset("storage/img/slider_home/banner.jpg")?>" alt="">
+		</div>
+		<div>
+			<img src="<?php echo asset("storage/img/slider_home/banner_3.jpg")?>" alt="">
 		</div>
 	</div>
 
 	<div class="owl-one owl-carousel owl-theme slider" id="owl-2">
 		<div>
-			<img src="<?php echo asset("storage/img/banner_xs.jpg")?>" alt="">
+			<img src="<?php echo asset("storage/img/slider_home/banner_xs.jpg")?>" alt="">
 		</div>
 		<div>
-			<img src="<?php echo asset("storage/img/banner_xs_2.jpg")?>" alt="">
+			<img src="<?php echo asset("storage/img/slider_home/banner_xs_2.jpg")?>" alt="">
+		</div>
+		<div>
+			<img src="<?php echo asset("storage/img/slider_home/banner_xs_3.jpg")?>" alt="">
 		</div>
 	</div>
 
