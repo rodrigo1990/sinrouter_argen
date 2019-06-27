@@ -29,7 +29,7 @@
 		</ul>
 		
 
-		<a href="saca_tu_prestamo" target="_blank" class="spa-btn border-btn red center-block margin-top-25">SACÁ TU PRÉSTAMO AHORA</a>
+		<a href="saca_tu_prestamo" target="" class="spa-btn border-btn red center-block margin-top-25">SACÁ TU PRÉSTAMO AHORA</a>
 
 
 	</section>

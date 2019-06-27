@@ -318,15 +318,12 @@
 #interfaceForm .error,#interfaceFormXs .error{
 
     
-	display:none;
-
-	float:left;
-
-	color:#00ff6a;
-
-    padding: 9px;
-
-    margin-top: 0;
+	    display: none;
+    float: left;
+    color: #00ff6a;
+    /* padding: 9px; */
+    margin-bottom: 11px;
+    margin-top: 9px;
     
 
 }

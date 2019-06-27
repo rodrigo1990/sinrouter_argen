@@ -119,7 +119,7 @@
 		</ul>
 		
 
-		<a href="sucursales" class="spa-btn border-btn red center-block margin-top-25" target="_blank">ENCONTRÁ TU SUCURSAL</a>
+		<a href="sucursales" class="spa-btn border-btn red center-block margin-top-25" target="">ENCONTRÁ TU SUCURSAL</a>
 
 
 	</section>
