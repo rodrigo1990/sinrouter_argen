@@ -11,7 +11,7 @@
 					<div class="col-lg-10 hidden-md hidden-sm hidden-xs btn-cont">
 						<ul id="nav" class="menu">
 							<li><a href="saca_tu_prestamo"  class="fix spa-btn">SACÁ TU PRÉSTAMO</a></li>
-							<li><a href="https://www.argenpesos.com.ar/micuenta/quiero-pagar.php" target="_blank" class="after-btn"  >CONSULTÁ TU CUENTA</a></li>
+							<li><a href="consulta_tu_cuenta" target="" class="after-btn"  >CONSULTÁ TU CUENTA</a></li>
 							<li><a href="sucursales" class="spa-btn after-btn">NUESTRAS SUCURSALES</a></li>
 
 							<li>

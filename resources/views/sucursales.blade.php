@@ -11,19 +11,19 @@
 				<div class="col-lg-4 col-md-4 col-sm-12">
 					<ul>
 						<li class="red"><h3>CAPITAL FEDERAL</h3></li>
-						<li class="margin-top-10">- <a onClick="zoomOnLocation(-34.599867,-58.372815);">Casa central</a></li>
+						<li class="margin-top-10 margin-left-20">- <a onClick="zoomOnLocation(-34.599867,-58.372815);">Casa central</a></li>
 						<li class="blue margin-top-10"><h3>ZONA NOROESTE</h3></li>
-						<li class="margin-top-10">- <a onClick="zoomOnLocation(-34.435619,-58.563499);">San Fernando</a></li>
-						<li class="margin-top-10">- <a onClick="zoomOnLocation(-34.545593,-58.707374);">San Miguel</a></li>
-						<li class="margin-top-10">- <a onClick="zoomOnLocation(-34.681403,-58.556553);">San Justo</a></li>
+						<li class="margin-top-10 margin-left-20">- <a onClick="zoomOnLocation(-34.435619,-58.563499);">San Fernando</a></li>
+						<li class="margin-top-10 margin-left-20">- <a onClick="zoomOnLocation(-34.545593,-58.707374);">San Miguel</a></li>
+						<li class="margin-top-10 margin-left-20">- <a onClick="zoomOnLocation(-34.681403,-58.556553);">San Justo</a></li>
 						<li class="margin-top-10 blue"><h3>ZONA SUR</h3></li>
-						<li class="margin-top-10">- <a onClick="zoomOnLocation(-34.660564,-58.367637);">Avellaneda</a></li>
-						<li class="margin-top-10">- <a onClick="zoomOnLocation(-34.760503,-58.206957);">Berazategui</a></li>
-						<li class="margin-top-10">- <a onClick="zoomOnLocation(-34.708119,-58.389905);">Lanus</a></li>
-						<li class="margin-top-10">- <a onClick="zoomOnLocation(-34.762114,-58.398490);">Lomas De Zamora</a></li>
-						<li class="margin-top-10">- <a onClick="zoomOnLocation(-34.804170,-58.274902);">Varela</a></li>
-						<li class="margin-top-10">- <a onClick="zoomOnLocation(-34.762226,-58.360981);">Temperley - Barrio San Jose</a></li>
-						<li class="margin-top-10">- <a onClick="zoomOnLocation(-34.722831,-58.259495);">Quilmes</a></li>
+						<li class="margin-top-10 margin-left-20">- <a onClick="zoomOnLocation(-34.660564,-58.367637);">Avellaneda</a></li>
+						<li class="margin-top-10 margin-left-20">- <a onClick="zoomOnLocation(-34.760503,-58.206957);">Berazategui</a></li>
+						<li class="margin-top-10 margin-left-20">- <a onClick="zoomOnLocation(-34.708119,-58.389905);">Lanús</a></li>
+						<li class="margin-top-10 margin-left-20">- <a onClick="zoomOnLocation(-34.762114,-58.398490);">Lomas De Zamora</a></li>
+						<li class="margin-top-10 margin-left-20">- <a onClick="zoomOnLocation(-34.804170,-58.274902);">Varela</a></li>
+						<li class="margin-top-10 margin-left-20">- <a onClick="zoomOnLocation(-34.762226,-58.360981);">Temperley - Barrio San José</a></li>
+						<li class="margin-top-10 margin-left-20">- <a onClick="zoomOnLocation(-34.722831,-58.259495);">Quilmes</a></li>
 
 
 

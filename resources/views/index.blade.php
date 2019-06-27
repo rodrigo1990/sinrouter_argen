@@ -21,7 +21,7 @@
 		<div class="col-lg-6 form-cont">
 			<form id="form-home" class="text-left" action="saca_tu_prestamo" method="get" >
 				@csrf
-				<h1 class="red cursive">¡Empecemos!</h1>
+				<!--  <h1 class="red cursive">¡Empecemos!</h1>-->
 				<h2 class="margin-top-5">
 					<img src="<?php echo asset("storage/img/next-arrow-orange.png")?>" alt="">
 					DATOS PERSONALES:
@@ -69,7 +69,7 @@
 				</div>
 				<div class="row  margin-top-35">
 					<div class="btn-row">
-						<a id="form-home-btn" class="border-btn red text-center float-right">SACÁ TU  PRÉSTAMO</a>
+						<a id="form-home-btn" class="border-btn red text-center float-right">COMPLETÁ TU FORMULARIO</a>
 					
 					</div>
 				</div>
@@ -92,7 +92,7 @@
 
 
 	<section id="creditos-sucursales" class="step-by-step margin-top-60 bk-grey padding-top-47 padding-bottom-47">
-		<!--  <h2 class="red">CRÉDITOS EN <b>SUCURSALES</b></h2>-->
+		<h2 class="red">CRÉDITOS EN <b>SUCURSALES</b></h2>
 		<h4 class="margin-top-10">En 3 simples pasos</h4>
 		<ul class="flex center-block margin-top-50">
 			<li>
@@ -119,7 +119,7 @@
 		</ul>
 		
 
-		<a href="sucursales" class="spa-btn border-btn red center-block margin-top-25" target="_blank">NUESTRAS SUCURSALES</a>
+		<a href="sucursales" class="spa-btn border-btn red center-block margin-top-25" target="_blank">ENCONTRÁ TU SUCURSAL</a>
 
 
 	</section>
@@ -131,10 +131,7 @@
 <section id="banner" class="">
 	<div class="owl-one owl-carousel owl-theme slider" id="owl-1">
 		<div>
-			<img src="<?php echo asset("storage/img/slider_home/banner_2.png")?>" alt="">
-		</div>
-		<div>
-			<img src="<?php echo asset("storage/img/slider_home/banner.jpg")?>" alt="">
+			<img src="<?php echo asset("storage/img/slider_home/banner_2.jpg")?>" alt="">
 		</div>
 		<div>
 			<img src="<?php echo asset("storage/img/slider_home/banner_3.jpg")?>" alt="">
@@ -145,9 +142,7 @@
 		<div>
 			<img src="<?php echo asset("storage/img/slider_home/banner_xs.jpg")?>" alt="">
 		</div>
-		<div>
-			<img src="<?php echo asset("storage/img/slider_home/banner_xs_2.jpg")?>" alt="">
-		</div>
+		
 		<div>
 			<img src="<?php echo asset("storage/img/slider_home/banner_xs_3.jpg")?>" alt="">
 		</div>

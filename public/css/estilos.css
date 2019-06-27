@@ -259,7 +259,7 @@ iframe{
     overflow-y: hidden;
     overflow: hidden;
     height: 100%;
-            margin-top: 93.7344px;
+
 
 }
 
@@ -381,6 +381,11 @@ a:hover{
 }
 
 
+.margin-left-20{
+    margin-left:20px;
+}
+
+
 .margin-top-40{
     margin-top:40px;
 }
@@ -481,7 +486,7 @@ a:hover{
     border-radius: 30px;
     padding: 14px;
 
-    width: 300px;
+        width: 335px;
   }
 
   .border-btn.red{
@@ -904,7 +909,7 @@ section#form form h2, .modal form h2 {
 
 section#form form .border-btn {
         font-size: 21px;
-    width: 309px;
+    width: 389px;
     padding: 5px;
 }
 
@@ -2130,6 +2135,34 @@ padding:19px;
 
 /*FIN MODAL TRABAJA CON NOSOTROS Y CONVERTITE CON COMERCILIZADOR */
 
+
+/*---------------------------------------------*/
+                /*CONSULTA TU CUENTA*/
+/*----------------------------------------------*/
+
+
+div.bk-title{
+    background: url(../storage/img/background-title.jpg);
+    height: 169px;
+    width: 100%;
+    margin-top: 0;
+    position: relative;
+}
+
+div.bk-title h1{
+    color: white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 63px;
+    width: 505px;
+    font-size:57px;
+}
+
+
 /*PRELOADER*/
 
 #preloader, #preloader-mailing  {
@@ -2203,6 +2236,12 @@ padding:19px;
 /*MEDIA QUERIES*/
 
 @media only screen and (width: 1024px)  {
+
+     div.bk-title h1 {
+            height: 42px;
+    width: 448px !important;
+    font-size:50px !important;
+    }
  header ul li a {
     font-size: 11px;
     }
@@ -2246,6 +2285,16 @@ padding:19px;
 
 
 @media only screen and (min-width: 10px) and (max-width: 1024px)  {
+
+    section#form .border-btn.red {
+    float: unset;
+}
+
+    div.bk-title h1 {
+            height: 42px;
+    width: 276px;
+    font-size:57px;
+    }
 
     #creditos-online ul li,#creditos-sucursales ul li {
         width: 223px;
@@ -2478,8 +2527,8 @@ ul.flex li:not(:first-child) {
     margin-top: 40px !important;
 }
 
-#contacto ul li:not(:first-child) {
-    margin-left: unset;
+#contacto ul li {
+    margin-left: unset !important;
 }
 
 footer {
@@ -2692,18 +2741,31 @@ h1, #contacto h1 {
 @media only screen and (min-width: 320px) and (max-width: 850px) and (orientation:landscape) {
 
 #como-funciona ul li {
-    width: 262px;
+    width: 198px;
 }
 
 
 #como-funciona ul li.esp {
-    width: 289px;
+    width: 198px;
 }
 
 .overlay-xs-menu li {
     margin-top: 3%;
 }
 
+#creditos-online ul .number-cont, #creditos-sucursales ul .number-cont {
+    display:none;
+}
+
+#creditos-sucursales ul li{
+    width: 154px;
+}
+
+
+#creditos-sucursales ul li.esp h4{
+    padding-left:0;
+
+}
 
 
 }

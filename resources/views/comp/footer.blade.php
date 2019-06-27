@@ -13,13 +13,13 @@
 				<h4>NUESTROS SERVICIOS</h4>
 				<hr>
 					<ul>
-						<li class="margin-top-10"><a href="saca_tu_prestamo" class="red"><b>- SACA TU PRESTAMO</b></a></li>
+						<li class="margin-top-10"><a href="saca_tu_prestamo" class="red"><b>- SACÁ TU PRÉSTAMO</b></a></li>
 						<li class="margin-top-10"><a href="https://www.argenpesos.com.ar/micuenta/quiero-pagar.php">Consultá tu préstamo</a></li>
 					</ul>
 				
 			</div>
 			<div class="col-lg-7">
-				<h4>SOBRE ARGENPESOS</h4>
+				<h4>SOBRE NOSOTROS</h4>
 				<hr>
 				<div class="row">
 					<div class="col-lg-4">

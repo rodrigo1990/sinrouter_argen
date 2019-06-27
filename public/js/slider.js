@@ -18,7 +18,7 @@
 
 
  $('#owl-2').owlCarousel({
-    loop:true,
+    loop:false,
     margin:0,
     autoplay:true,
     autoplayTimeout:4000,

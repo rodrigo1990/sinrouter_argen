@@ -1,0 +1,418 @@
+	 	@font-face {
+    font-family: bebas-bold;
+    src: url(../../css/fonts/BebasNeueBold.otf);
+	}
+
+	@font-face {
+	    font-family: ubuntu-regular;
+	    src: url(../../css/fonts/Ubuntu-R.ttf);
+	}
+
+	@font-face {
+	    font-family: ubuntu-bold;
+	    src: url(../../css/fonts/Ubuntu-B.ttf);
+	}
+
+	@font-face {
+	    font-family: GothamBook;
+	    src: url(../../css/fonts/GothamBook.otf);
+	}
+
+
+	@font-face {
+	    font-family: GothamBlack;
+	    src: url(../../css/fonts/GothamBlack.otf);
+	}
+
+
+
+body{
+	background: #F5F5F6;
+}
+h1,h2,h4,h5{
+font-family: GothamBlack !important;
+margin:0;
+}
+
+h2>span{
+	font-family: GothamBook !important;
+	font-size: 2.7rem;
+}
+
+h1{
+  font-size: 7rem;
+  color:#1DA2DC;
+}
+
+h2{
+  font-size: 3rem;
+  color:#1DA2DC;
+
+}
+
+
+h4{
+  font-size: 2.5rem;
+}
+
+h5{
+  font-size: 2rem;
+  color:#1DA2DC;
+
+}
+
+p{
+  font-family: GothamBook !important;
+}
+
+label{
+	display:block;
+	font-family: GothamBold !important;
+	color:grey;
+}
+
+
+p>span{
+  color:#EB5938;
+}
+
+a{
+	 -webkit-transition: all 0.20s ease-in-out;
+    -moz-transition: all 0.20s ease-in-out;
+    -ms-transition: all 0.20s ease-in-out;
+    -o-transition: all 0.20s ease-in-out;
+    transition: all 0.20s ease-in-out;
+}
+
+.wsp-btn{
+	cursor:pointer;
+}
+
+
+.wsp-btn i{
+	font-size: 134px;
+	color:#15b515
+}
+
+#ingresarDatos #enviar{
+	    margin-top: 38px;
+}
+
+
+#pagar h2,#pagar h4,#pagar h5{
+	margin-top:15px;
+}
+
+
+
+.ing-datos-label{
+	margin-top: 19px;
+}
+
+	 	form {
+		 /* margin-top: 4%;*/
+		  padding-bottom: 5%;
+		  text-align:center;
+		}
+
+
+
+		 form input{
+		  border-top:none;
+		  border-left:none;
+		  border-right:none;
+		  border-bottom-color:#1DA2DC;
+		  text-align: center;
+		  width:30%;
+		  font-family: helvetica;
+		  background:transparent;
+		  transition:border-bottom 0.75s;
+		}
+
+		h4{
+			color:#1DA2DC;
+		}
+
+
+		#quiero-pagar-form form h2{
+		margin-top:50px;
+		    line-height: 36px;
+		}
+
+		#quiero-pagar-form form p{
+		margin-top:10px;
+		}
+
+		#quiero-pagar-form form input{
+		    margin-top: 4px;
+
+		}
+
+		#consultar-deuda h4,#consultar-deuda h2,#consultar-deuda p{
+			margin-top:10px;
+		}
+
+
+		/*PRELOADER*/
+		/* Preloader */
+
+		#preloader h3{
+			text-align: center;
+		    margin-top: 3%;
+		    color: #1DA2DC;
+		    font-weight: bold;
+		    font-family: GothamBook;
+		}
+
+		#preloader {
+		        position: fixed;
+		    top: 0;
+		    left: 0;
+		    right: 0;
+		    bottom: 0;
+		    background-color: #f5f5f6;
+		    z-index: 10043;
+		    height: 100vh;
+		}
+
+		#status {
+		     position: relative;
+		    /* left: 50%; */
+		    /* top: 50%; */
+		    display: block;
+		    margin-left: auto;
+		    margin-right: auto;
+		    margin-top: 2%;
+		}
+
+		.spinner-sm {
+            border: 5px solid #ec5125;
+    		border-top: 5px solid #1da2dc;
+		    border-radius: 50%;
+		    width: 60px;
+		    height: 60px;
+		    animation: spin 0.80s linear infinite;
+		}
+	
+		
+		@keyframes spin {
+		    0% { transform: rotate(0deg); }
+		    100% { transform: rotate(360deg); }
+		}
+
+.btn{
+       background-color: transparent;
+    border-radius: 25px;
+    color: #EE4E23;
+    padding: 10px 34px;
+    font-family: GothamBold !important;
+    font-size: 2rem;
+    /* box-shadow: -6px 7px #020302; */
+    border: 2px solid #EE4E23;
+
+}
+
+
+.btn:hover{
+  background-color: #da4f2f;
+  color:white;
+
+}
+
+
+
+
+.btn-second{
+    /* background-color: #3892eb; */
+    /* border-radius: 6px; */
+    color: #3892eb;
+    padding: 10px;
+    font-family: ubuntu-bold !important;
+    font-size: 2rem;
+    border: 2px solid #3892eb;
+    /* box-shadow: -6px 7px #020302; */
+}
+
+
+.btn-second:hover{
+  background-color: #3180ce;
+  color:white;
+  transition:background-color 0.2s,color 0.2s; 
+
+}
+
+
+.validarCBU .btn,.validarCBU .btn-second{
+	width:25%;
+}
+
+
+
+
+.table{
+	 border-radius: 5px;
+    width: 100%;
+    margin: 0px auto;
+    float: none;
+}
+
+.table td {
+    padding: 1px !important;
+    padding-top: 6px !important;
+    padding-bottom: 6px !important;
+}
+
+.table thead{
+	border-bottom-color: #1da2dc;
+    border-bottom-style: solid;
+}
+
+.table thead th{
+	color:#1da2dc;
+}
+
+
+.padding-top{
+	padding-top: 38px;
+}
+
+
+.red-bk{
+	background:rgba(255, 0, 0, 0.1);
+}
+
+.green-bk{
+	background:rgba(0, 255, 67, 0.1);
+}
+
+.yellow-bk{
+	background:rgba(255, 255, 0, 0.1);
+}
+.red{
+	color:red;
+}
+
+.orange{
+	color:#EE4E23;
+}
+.green{
+	color:green;
+}
+
+.grey{
+	color:grey;
+}
+
+.yellow{
+	color:#a7a708;
+}
+
+.volver{
+	cursor:pointer;
+    margin-top: 50px;
+}
+
+.volver:hover{
+	text-decoration: none;
+}
+
+
+.llamar-icon{
+    margin-top: 24px;
+    cursor:pointer;
+
+}
+
+
+#click2call a:hover {
+    opacity: 0.5;
+}
+#click2call_callbtn img {
+    height: 150px;
+}
+#click2call_hupbtn img {
+    height: 150px;
+}
+#click2call_msgdiv {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+
+.error{
+	color:red;
+	font-weight: bolder;
+	margin:0;
+    padding: 8px 15px 0px 15px;
+	display:none;
+	font-family: ubuntu-regular;
+}
+
+.llamar-btn{
+	display:none;
+}
+
+.telefono-llamar{
+	display:block;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+    border-color:#EB5938;
+    transition: border-color 0.5s;
+}
+
+
+
+
+@media only screen and (min-width: 10px) and (max-width: 768px) {
+
+	h2>span {
+    font-family: GothamBook !important;
+    font-size: 24px;
+	}
+
+	h2 {
+    font-size: 26px;
+	}
+
+	h4 {
+    font-size: 22px;
+	}
+
+.llamar-btn{
+	display:block;
+}
+
+.telefono-llamar{
+	display:none;
+}
+
+form input {
+    width: 50%;
+}
+}
+
+
+
+@media only screen and (min-width: 10px) and (max-width: 768px) {
+
+.llamar-btn{
+	display:block;
+}
+
+.telefono-llamar{
+	display:none;
+}
+
+form input {
+    width: 50%;
+}
+}

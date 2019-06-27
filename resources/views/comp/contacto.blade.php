@@ -9,7 +9,7 @@
 		</li>
 		<li>
 			<img src="<?php echo asset("storage/img/con-icon-2.png")?>" alt="">
-			<h4><b>TELÉFONO</b> <br> 0800-345-2733</h4>
+			<h4><b>TELÉFONO</b> <br> 0800/0810-220-2743</h4>
 		</li>
 		<li>
 

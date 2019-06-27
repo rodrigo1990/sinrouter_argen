@@ -278,7 +278,7 @@
 					</div>
 				</div>
 					<div class="row text-center range-row ">
-						<h1 class="form-titles"><b>¿CUÁNTO</b> NECESITAS?</h1>
+						<h1 class="form-titles"><b>¿CUÁNTO</b> NECESITÁS?</h1>
 						<div class="range-out center-block">
 					       
 						    <p style="float:left">$3.000</p>

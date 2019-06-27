@@ -79,6 +79,15 @@ class FrontController extends Controller
     }
 
 
+     public function consulta_tu_cuenta(Request $request){
+
+        $provincias = Provincia::all(); 
+
+        return view('consulta_tu_cuenta',['provincias'=>$provincias]);
+
+    }
+
+
 
 
 

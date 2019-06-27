@@ -25,6 +25,8 @@ Route::get('/index','FrontController@index');
 
 
 
+Route::get('/consulta_tu_cuenta','FrontController@consulta_tu_cuenta');
+
 Route::get('/sucursales','FrontController@sucursales');
 
 Route::get('/institucional','FrontController@institucional');

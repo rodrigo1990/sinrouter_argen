@@ -4,7 +4,7 @@
 @include('layouts.header')	
 <section id="institucional" class="animated fadeIn">
 	<div class="row ">
-		<h1 class="text-center margin-top-50">QUIENES <b>SOMOS</b>  </h1>
+		<h1 class="text-center margin-top-50"><b>¿QUIÉNES</b> SOMOS?  </h1>
 	</div>
 	<div class="container">
 		<p class="text-center margin-top-25">
@@ -34,7 +34,7 @@
 		        		</li>
 		        		<li class="li-text">
 		        			<p>
-		        			Queremos <b>consolidar nuestra posición de liderazgo</b> dentro de está comunidad, fortaleciendo  el vinculo con nuestros clientes, siendo la compañia en la que confíen siempre para cubrir  sus necesidades. <br>
+		        			Queremos <b>consolidar nuestra posición de liderazgo</b> dentro de ésta comunidad, fortaleciendo  el vinculo con nuestros clientes, siendo la compañía en la que confíen siempre para cubrir  sus necesidades. <br>
 		        			Queremos que cada miembro de <b>Argenpesos</b> se sienta orgulloso de contribuir día a día a cumplir con nuestra misión.
 		        			</p>
 		        		</li>
