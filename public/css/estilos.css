@@ -115,6 +115,42 @@
     display:none;
 }
 
+
+#creditos-online ul .number-cont,#creditos-sucursales ul .number-cont{
+    float:left;
+}
+
+
+
+
+#creditos-online ul li:not(.line) img,#creditos-sucursales ul li:not(.line) img{
+    display:block;
+    margin:auto;
+}
+
+#creditos-online  ul>li>h4,#creditos-sucursales  ul>li>h4{
+    float:left;
+        padding-left: 6px;
+    font-weight: bold;
+}
+
+#creditos-online ul .number,#creditos-sucursales  ul .number{
+        padding: 6px 11px 6px 11px;
+    border-radius: 50%;
+    background: #00A5E7;
+    color: white;
+}
+
+
+#creditos-online ul .number.uno,#creditos-sucursales ul .number.uno{
+        padding: 5px 12px 5px 12px;
+}
+
+#creditos-sucursales .number-cont .number{
+    background:#EE4E23;
+}
+
+
 @media screen\0 {
 
 
@@ -502,8 +538,8 @@ a:hover{
 
 
 
-ul.flex li:not(:first-child){
-    margin-left:25px;
+ul.flex li/*:not(:first-child)*/{
+    margin-left:32px;
 }
 
 .float-left{
@@ -811,6 +847,16 @@ header ul.sub-menu li:not(:first-child){
                 /*MODAL FORM*/
 /*----------------------------------------------*/
 
+section#form>.row{
+        height: 410px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
 section#form{
 	    width: 100%;
     height: 78vh;
@@ -819,6 +865,7 @@ section#form{
     background-size: cover;
         padding: 131px;
     color:white;
+    position:relative;
 }
 
 
@@ -995,7 +1042,7 @@ ul.flex{
 
 
 .step-by-step ul{
-    width: 1080px;
+    width: 1195px;
 }
 
 .step-by-step ul .line img{
@@ -2171,10 +2218,53 @@ padding:19px;
 }
 
 
+   #creditos-online ul li,#creditos-sucursales ul li {
+        width: 250px !important;
+    margin: auto;
+}
+
+#creditos-online ul li.esp,#creditos-sucursales ul li.esp{
+    width: 288px !important;
+
 
 
 }
+
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1200px)  {
+    section#form>.row{
+        height:unset;
+    position:unset;
+    left: unset;
+    right: unset;
+    top: unset;
+    bottom: unset;
+    margin: unset;
+}
+}
+
+
 @media only screen and (min-width: 10px) and (max-width: 1024px)  {
+
+    #creditos-online ul li,#creditos-sucursales ul li {
+        width: 223px;
+    margin: auto;
+}
+
+#creditos-online ul li.esp,#creditos-sucursales ul li.esp{
+    width: 246px;
+}
+
+    section#form>.row{
+        height:unset;
+    position:unset;
+    left: unset;
+    right: unset;
+    top: unset;
+    bottom: unset;
+    margin: unset;
+}
 
     footer a{
     font-size: 14px;
@@ -2385,7 +2475,7 @@ section#form .form-cont {
     margin-top:22px;
 }
 ul.flex li:not(:first-child) {
-    margin-top: 40px;
+    margin-top: 40px !important;
 }
 
 #contacto ul li:not(:first-child) {
@@ -2601,6 +2691,14 @@ h1, #contacto h1 {
 
 @media only screen and (min-width: 320px) and (max-width: 850px) and (orientation:landscape) {
 
+#como-funciona ul li {
+    width: 262px;
+}
+
+
+#como-funciona ul li.esp {
+    width: 289px;
+}
 
 .overlay-xs-menu li {
     margin-top: 3%;

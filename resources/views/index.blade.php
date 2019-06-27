@@ -10,7 +10,7 @@
 		<div class="first col-lg-5 text-center">
 			<ul class="margin-top-60">
 				<li><h1><b>HOY MISMO,</b> <br> CON O SIN VERAZ</h1></li>
-				<li class="margin-top-25"><a href="saca_tu_prestamo" class="big border-btn red margin-top-50">SACÁ TU PRESTAMO</a> <img class="" src="<?php echo asset("storage/img/next-arrow.png")?>" alt="" style="padding-left:5px"></li>
+				<li class="margin-top-25"><a href="saca_tu_prestamo" class="big border-btn red margin-top-50">SACÁ TU PRÉSTAMO</a> <img class="" src="<?php echo asset("storage/img/next-arrow.png")?>" alt="" style="padding-left:5px"></li>
 				<li class="margin-top-25"><h3>Hasta $30.000 en 12 cuotas</h3></li>
 			
 			</ul>
@@ -92,26 +92,29 @@
 
 
 	<section id="creditos-sucursales" class="step-by-step margin-top-60 bk-grey padding-top-47 padding-bottom-47">
-		<h2 class="red">CRÉDITOS EN <b>SUCURSALES</b></h2>
+		<!--  <h2 class="red">CRÉDITOS EN <b>SUCURSALES</b></h2>-->
 		<h4 class="margin-top-10">En 3 simples pasos</h4>
 		<ul class="flex center-block margin-top-50">
 			<li>
-				<img src="<?php echo asset("storage/img/cs-step-1.png")?>" alt="">
-				<h4><b>1.</b> Vení  a nuestra sucursal</h4>
+				<img src="<?php echo asset("storage/img/cs-step-1.svg")?>" alt="">
+					<div class="number-cont"><h4><b class="number uno">1</b></h4></div>
+					<h4> Vení  a nuestra sucursal</h4>
+			</li>
+			<li class="line">
+				<img src="<?php echo asset("storage/img/line.png")?>" alt="">
+			</li>
+			<li class="esp">
+				<img src="<?php echo asset("storage/img/cs-step-2.svg")?>" alt="">
+				<div class="number-cont"><h4><b class="number">2</b></h4></div>
+				<h4> Presentá la documentación <br> y te aprobamos la solicitud</h4>
 			</li>
 			<li class="line">
 				<img src="<?php echo asset("storage/img/line.png")?>" alt="">
 			</li>
 			<li>
-				<img src="<?php echo asset("storage/img/cs-step-2.png")?>" alt="">
-				<h4><b>2.</b> Presentá la documentación <br> y te aprobamos la solicitud</h4>
-			</li>
-			<li class="line">
-				<img src="<?php echo asset("storage/img/line.png")?>" alt="">
-			</li>
-			<li>
-				<img src="<?php echo asset("storage/img/cs-step-3.png")?>" alt="">
-				<h4><b>3.</b> RECIBÍ TU DINERO <br> <b> ¡EN EL ACTO! </b></h4>
+				<img src="<?php echo asset("storage/img/cs-step-3.svg")?>" alt="">
+				<div class="number-cont"><h4><b class="number">3</b></h4></div>
+				<h4> RECIBÍ TU DINERO <br> <b> ¡EN EL ACTO! </b></h4>
 			</li>
 		</ul>
 		

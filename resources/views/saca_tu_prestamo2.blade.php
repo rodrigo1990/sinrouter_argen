@@ -362,6 +362,7 @@
 @stop
 @section('scripts')
 <script type="text/javascript" src="<?php echo asset("js/validacionesSolicitarPrestamo.js")?>"></script>
+<script type="text/javascript" src="<?php echo asset("js/validarSolicitarPrestamoAlApretarBoton.js")?>"></script>
 <script type="text/javascript" src="<?php echo asset("js/rangeslider.js")?>"></script>
 <script type="text/javascript" src="<?php echo asset("js/rangeSliderImplement.js")?>"></script>
 <!--  <script src="https://www.google.com/recaptcha/api.js?render=6Lf7iKQUAAAAAEzdiNtjuPOEY8wu6yJvekMC5YKp"></script>-->

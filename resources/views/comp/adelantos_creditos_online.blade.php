@@ -3,22 +3,28 @@
 		<h4 class="margin-top-10">En 3 simples pasos</h4>
 		<ul class="flex center-block margin-top-50">
 			<li>
-				<img src="<?php echo asset("storage/img/step-1.png")?>" alt="">
-				<h4><b>1.</b> Completá el formulario</h4>
+				<img src="<?php echo asset("storage/img/step-1.svg")?>" alt="">
+				<div class="number-cont"><h4><b class="number uno">1</b></h4></div>
+				<h4> Completá el formulario</h4>
 			</li>
 			<li class="line">
 				<img src="<?php echo asset("storage/img/line.png")?>" alt="">
 			</li>
 			<li>
-				<img src="<?php echo asset("storage/img/step-2.png")?>" alt="">
-				<h4><b>2.</b> Te contactamos en el día</h4>
+				<img src="<?php echo asset("storage/img/step-2.svg")?>" alt="">
+				<div class="number-cont"><h4><b class="number">2</b></h4></div>
+				<h4>Te contactamos en el día</h4>
 			</li>
 			<li class="line">
 				<img src="<?php echo asset("storage/img/line.png")?>" alt="">
 			</li>
-			<li>
-				<img src="<?php echo asset("storage/img/step-3.png")?>" alt="">
-				<h4><b>3.</b> Firmá  y te acreditamos el <br>dinero en tu cuenta</h4>
+			<li class="esp">
+				<img src="<?php echo asset("storage/img/step-3.svg")?>" alt="">
+				
+				<div class="number-cont"><h4><b class="number">3</b></h4></div>
+
+
+				<h4> Firmá  y te acreditamos el <br>dinero en tu cuenta</h4>
 			</li>
 		</ul>
 		

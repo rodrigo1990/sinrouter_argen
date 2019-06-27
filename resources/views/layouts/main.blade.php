@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="initial-scale=1">
 	<title>Argenpesos | ¡Saca tu prestamo! </title>
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<!--  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">-->
 	<link rel="stylesheet" href="<?php echo asset("bootstrap-3.3.7-dist/css/bootstrap.min.css")?>"/>
 	<link rel="stylesheet" href="<?php echo asset("css/estilos.css")?>">
 	<link rel="stylesheet" href="<?php echo asset("css/animate.css")?>">
@@ -291,7 +291,7 @@
 
 <!-- /wsp-chat -->
 
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkne1gpPfJ0B3KrE4OQURwPi492LDjg8g"></script>
+<!--  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkne1gpPfJ0B3KrE4OQURwPi492LDjg8g"></script>-->
 <script type="text/javascript" src="<?php echo asset("js/jquery.js")?>"></script>
 <script type="text/javascript" src="<?php echo asset("bootstrap-3.3.7-dist/js/bootstrap.min.js")?>"></script>
 
@@ -919,10 +919,9 @@ $("#form-home #nombre").keyup(function(){
             
 
                 $.ajax({
-                    headers: {
-                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                    },
-                data:{provinciaId},
+                    headers:{
+                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')},
+                data:{provinciaId:provinciaId},
                 url:'/buscarCiudadSegunProvincia',
                 type:'post',
                 dataType:"json",
