@@ -291,7 +291,7 @@
 
 <!-- /wsp-chat -->
 
-<!--  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkne1gpPfJ0B3KrE4OQURwPi492LDjg8g"></script>-->
+ <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkne1gpPfJ0B3KrE4OQURwPi492LDjg8g"></script>
 <script type="text/javascript" src="<?php echo asset("js/jquery.js")?>"></script>
 <script type="text/javascript" src="<?php echo asset("bootstrap-3.3.7-dist/js/bootstrap.min.js")?>"></script>
 
