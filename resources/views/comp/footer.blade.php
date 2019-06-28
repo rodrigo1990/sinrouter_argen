@@ -14,7 +14,7 @@
 				<hr>
 					<ul>
 						<li class="margin-top-10"><a href="saca_tu_prestamo" class="red"><b>- SACÁ TU PRÉSTAMO</b></a></li>
-						<li class="margin-top-10"><a href="https://www.argenpesos.com.ar/micuenta/quiero-pagar.php">Consultá tu préstamo</a></li>
+						<li class="margin-top-10"><a href="consulta_tu_cuenta">Consultá tu cuenta</a></li>
 					</ul>
 				
 			</div>
@@ -44,14 +44,18 @@
 			</div>
 		</div>
 	</div>
-		<div class="row terminos margin-bottom-50">
+		<div class="row terminos">
 			
 				<div class="col-sm-12 terminos">
 					<div class="container-fluid">
-						{{$slot}}
+						{{$terminos}}
+
 					</div>	
 				</div>
 			
+		</div>
+		<div class="cuit" style="   ">
+			<p class="text-center" style=""> Argencred S. A. CUIT 30-70910041-2</p>
 		</div>
 	
 

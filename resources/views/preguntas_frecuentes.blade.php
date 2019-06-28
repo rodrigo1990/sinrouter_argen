@@ -353,6 +353,52 @@
           </div>
 
 
+          <div class="row  panel-cont" id="consulta_tu_deuda">
+          <div class="container">
+            <div id="consulta_tu_cuenta" class="titulos_faqs">ACERCA DE CONSULTÁ TU CUENTA</div>
+            <div class="panel-group" id="accordion">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#faq66">
+                      <span class="change_char">-</span>
+                      ¿POR QUÉ DEJAR DE SER DEUDOR?
+                    </a>
+                  </h4>
+                </div>
+                <div id="faq66" class="panel-collapse collapse collapse in">
+                  <div class="panel-body">
+                    La mora financiera ocasiona pérdida del crédito personal, intimaciones permanentes y problemas jurídicos. Diversas situaciones pueden conducirnos al incumplimiento a pesar de que tengamos el deseo de pagar. 
+                    <br><br>
+                  Por eso creamos <b>ArgenPagos</b>, para facilitarte la consulta de tu cuenta <b>más rápido y fácil que nunca.</b>
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#faq67">
+                      <span class="change_char">+</span>
+                      ¿CÓMO SE COMPONE UNA DEUDA ACTUALIZADA?
+                    </a>
+                  </h4>
+                </div>
+                <div id="faq67" class="panel-collapse collapse collapse in">
+                  <div class="panel-body">
+                    A la deuda inicial se le suma:
+                    <br><br>
+                    El interés compensatorio <b>"compensa"</b> al acreedor por el tiempo en que éste <b>"cede"</b> su dinero al deudor. Este interés sólo se debe si se ha pactado previamente, con excepción de los <b>"compensatorios legales"</b> (Artículos 466, 1950 y 2298 del Código Civil) y sólo es aplicable a la obligación contractual, a diferencia del Moratorio que es aplicable a todas las obligaciones.
+                    <br><br>
+                    Es el interés que se produce ante la falta de pago del capital en la fecha estipulada. En este caso el Acreedor (prestamista) tiene derecho <b>"a penar"</b> al deudor por no haberle abonado en término. Estos intereses aplican una tasa mayor que los intereses compensatorios. Es decir, es el interés causado por incumplimiento de la obligación pactada.
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+
+
           <div class="row bk-grey panel-cont">
           <div class="container">
             <div class="titulos_faqs">¿CÓMO PAGO MI PRÉSTAMO? ONLINE Y SUCURSALES</div>
@@ -458,6 +504,8 @@
 @component('comp.footer')
   @slot('class')
   @endslot
+      @slot('terminos')
+    @endslot
   
 @endcomponent
 @stop
@@ -470,9 +518,16 @@
 
 
     $(document).ready(function(){
-    
+
+      var help = {{$help}};
+
+      if(help==true){
+        $('html,body').animate({ scrollTop:$('#consulta_tu_deuda').offset().top-100  }, 'slow');
+
+      }
 
       $("#content").addClass('bk-grey');
+
     });
 </script>
 

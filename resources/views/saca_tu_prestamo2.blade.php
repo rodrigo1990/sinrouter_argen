@@ -1,5 +1,10 @@
 @extends('layouts.main')
 @section('content')
+<style>
+	footer .cuit{
+		margin-top:0px;
+	}
+</style>
 <section id="prestamo" class="animated fadeIn">
 <div class="row" id="prestamo-form">
 
@@ -353,6 +358,11 @@
 
 	@component('comp.footer')
 		@slot('class')
+		@endslot
+		@slot('terminos')
+		<p class="margin-bottom-24">Préstamos personales con cuotas fijas y en pesos. Otorgamos máximo $60.000 y mínimo $3.000 en un plazo máximo de 24 meses y un mínimo de 6 meses. El efectivo otorgamiento del préstamo y sus
+condiciones se encuentran sujetos a verificación del departamento de análisis de riesgo crediticio. Tasa nominal anual (TNA): mínima 163,59%, máxima 235,41%. Ejemplo de préstamo: Te damos ·10.000 en 12
+cuotas y nos devolvés $1.830 por mes. Tasa efectiva anual (TEA): mínima: 411,53%, máxima: 503,55%. CFTNA: 198,59%.</p>
 		@endslot
 	@endcomponent
 

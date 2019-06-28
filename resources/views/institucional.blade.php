@@ -130,6 +130,8 @@
 @component('comp.footer')
 	@slot('class')
 	@endslot
+			@slot('terminos')
+		@endslot
 	
 @endcomponent
 @stop

@@ -53,6 +53,8 @@
 	@component('comp.footer')
 		@slot('class')
 		@endslot
+			@slot('terminos')
+		@endslot
 		
 	@endcomponent
 @stop
@@ -89,7 +91,7 @@
 
 	  locations.push(['<b>LANUS </b><br><br>9 de Julio 1140, Local 5, Galería de las Américas <br><br> <b>TEL:</b> 4240-4790 / 5448 <br><br> <b>Whatsapp:</b> 15-3252-4303  <br><br> <b>Horario:</b><br> Lunes a Viernes de 9 a 18:45hs. <br> Sábados de 9 a 13hs. ',-34.708119,-58.389905]);
 
-	  locations.push(['<b>LOMAS DE ZAMORA </b><br><br>Av. Meeks 99 <br><br> <b>TEL:</b> 4244-1120 / 4243-1456 <br><br> <b>Whatsapp:</b> 15-3252-4297 <br><br> <b>Horario:</b><br> Lunes a Viernes de 9 a 18:45hs. <br> Sábados de 9 a 13hs. ',-34.762114,-58.398490]);
+	  locations.push(['<b>LOMAS DE ZAMORA </b><br><br>Av. Meeks 101 <br><br> <b>TEL:</b> 4244-1120 / 4243-1456 <br><br> <b>Whatsapp:</b> 15-3252-4297 <br><br> <b>Horario:</b><br> Lunes a Viernes de 9 a 18:45hs. <br> Sábados de 9 a 13hs. ',-34.762114,-58.398490]);
 
 
 	  locations.push(['<b>FLORENCIO VARELA </b><br><br>Monteagudo 345 <br><br> <b>TEL:</b>4287-8544 / 8567 <br><br> <b>Whatsapp:</b> 15-3252-4920 <br><br> <b>Horario:</b><br> Lunes a Viernes de 9 a 18:45hs. <br> Sábados de 9 a 13hs. ',-34.804170,-58.274902]);
@@ -141,6 +143,12 @@
 
 		 function zoomOnLocation(latitud,longitud){
 	      	var center = {lat: latitud, lng: longitud};
+
+
+	      	if($(window).width()<1024){
+				$('html,body').animate({ scrollTop:$('#map').offset().top-50  }, 'slow');
+			}
+
 
 
 

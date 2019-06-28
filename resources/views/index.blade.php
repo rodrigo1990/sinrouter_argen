@@ -171,6 +171,9 @@
 		@endslot
 		@slot('color')
 		@endslot
+			@slot('terminos')
+				
+		@endslot
 	@endcomponent
   
 @stop

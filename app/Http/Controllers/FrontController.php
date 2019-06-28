@@ -72,9 +72,26 @@ class FrontController extends Controller
 
     public function preguntas_frecuentes(Request $request){
 
+      
+      
       $provincias = Provincia::all(); 
 
-        return view('preguntas_frecuentes',['provincias'=>$provincias]);
+      $help  = "false";
+
+        return view('preguntas_frecuentes',compact('provincias','help'));
+
+    }
+
+
+    public function preguntas_frecuentes_help(Request $request){
+
+      
+      
+      $provincias = Provincia::all(); 
+
+      $help = "true";
+
+        return view('preguntas_frecuentes',compact('provincias','help'));
 
     }
 

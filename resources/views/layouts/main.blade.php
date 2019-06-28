@@ -922,7 +922,7 @@ $("#form-home #nombre").keyup(function(){
                     headers:{
                      'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')},
                 data:{provinciaId:provinciaId},
-                url:'/buscarCiudadSegunProvincia',
+                url:'buscarCiudadSegunProvincia',
                 type:'post',
                 dataType:"json",
                 success:function(data){

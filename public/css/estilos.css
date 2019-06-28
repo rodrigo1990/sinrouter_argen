@@ -216,6 +216,10 @@ body{
     margin-top:20px;
 }
 
+.margin-bottom-24{
+    margin-bottom:24px;
+}
+
 .bk-blue .blue{
     color:white;
 }
@@ -547,6 +551,12 @@ ul.flex li/*:not(:first-child)*/{
     margin-left:32px;
 }
 
+@-moz-document url-prefix() {
+  ul.flex li/*:not(:first-child)*/{
+    margin-left:26px;
+}
+}
+
 .float-left{
     float:left;
 }
@@ -735,7 +745,9 @@ header ul.sub-menu li:not(:first-child){
 
 
 
-
+#xsMenu i{
+        font-size: 29px;
+}
 
 .close-menu-xs{
     float:right;
@@ -824,6 +836,12 @@ header ul.sub-menu li:not(:first-child){
 
 .overlay-xs-menu .center-block{
     width: 87px;
+    height: 32px;
+}
+
+.overlay-xs-menu .xs-btn a img{
+    margin-top:16px;
+    width: 77px;
 }
 
 @keyframes openMenu{
@@ -1151,7 +1169,14 @@ footer p {
 
 
  }
+footer .cuit{
+     background: #D6D6D6;padding: 11px;color: #8E8E8D;    margin-top: 35px;
+}
 
+footer .cuit p{
+    color: #8E8E8D;
+    font-size: 12px;
+}
 
  hr{
     height: 1px;
@@ -1207,9 +1232,11 @@ footer b {
     font-family: UbuntuItalic;
  }
 
- .terminos{
+.terminos .terminos p{
     color:grey;
     font-size: 12px;
+        margin-top: 21px;
+        text-align: center;
  }
 
 
@@ -1699,7 +1726,7 @@ input::-webkit-inner-spin-button {
 /*LANDING EMAILS*/
 
 .all-cont .row img{
-                margin-top: 1.5%;
+            margin-top: 23px;;
         }
         .all-cont{
             background-image:url("../storage/img/solicitud/bk-ground.jpg");
@@ -2162,6 +2189,29 @@ div.bk-title h1{
 }
 
 
+a.consulta-tu-cuenta-help  i {
+
+    font-size: 22px;
+    color: #009ee5;
+
+}
+
+
+
+a.consulta-tu-cuenta-help:hover  i {
+
+    font-size: 22px;
+    color: #EE4E23;
+
+}
+
+@-moz-document url-prefix() {
+div.bk-title h1{
+    width: 515px;
+}
+
+}
+
 /*PRELOADER*/
 
 #preloader, #preloader-mailing  {
@@ -2284,10 +2334,50 @@ div.bk-title h1{
     bottom: unset;
     margin: unset;
 }
+#contacto ul li:not(:first-child) {
+    margin-left: 62px;
+}
+#contacto ul {
+    width: 1082px;
 }
 
+footer .first{
+    margin-right: 0 !important;
+}
+
+header ul.menu>li>a[href=saca_tu_prestamo] {
+    font-size: 13px !important;
+}
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1400px)  {
+
+#contacto ul li:not(:first-child) {
+    margin-left: 62px;
+}
+#contacto ul {
+    width: 1082px;
+}
+
+footer .first{
+    margin-right: 0 !important;
+}
+
+header ul.menu>li>a[href=saca_tu_prestamo] {
+    font-size: 13px !important;
+}
+
+}
 
 @media only screen and (min-width: 10px) and (max-width: 1024px)  {
+
+    #creditos-online ul .number-cont, #creditos-sucursales ul .number-cont{
+        display:none;
+    }
+
+    #creditos-online ul>li>h4, #creditos-sucursales ul>li>h4{
+        float:none;
+    }
 
     #sucursales ul li.margin-left-20{
         margin-left:auto;
@@ -2431,8 +2521,10 @@ div.bk-title h1{
     #prestamo-form .form-cont{
         padding:0 ;
         padding-left:15px;
-        padding-top:15px;
-        padding-bottom:25px;
+         padding-top: 52px;
+    padding-bottom: 52px;
+
+
     }
 
 
@@ -2481,9 +2573,9 @@ div.bk-title h1{
    
 
 
-  .form-cont{
-            margin-top: 0;
-    }
+  .form-cont {
+    margin-top: 59PX;
+}
 
     .flex{
         flex-direction: column !important;
@@ -2606,6 +2698,10 @@ footer .second.margin-top-100{
 
 section#form form .border-btn{
     width: 231px;
+}
+
+.overlay-xs-menu li {
+    margin-top: 31px;
 }
 }
 
@@ -2770,7 +2866,7 @@ h1, #contacto h1 {
 }
 
 .overlay-xs-menu li {
-    margin-top: 3%;
+        margin-top: 8px;
 }
 
 #creditos-online ul .number-cont, #creditos-sucursales ul .number-cont {
@@ -2838,9 +2934,6 @@ h1, #contacto h1 {
         padding:57px;
     }
 
-    #prestamo-form .left-side>img{
-        width: 347px;
-    }
 
     #prestamo-form .row {
         margin-top: 11px;
@@ -2876,6 +2969,15 @@ h1, #contacto h1 {
     max-height: 1032px;
     min-height: 764px;
 }
+
+}
+
+
+@media only screen and (min-width: 1200px) and (max-width: 1920px) {
+
+    #prestamo-form .left-side>img{
+        width: 347px;
+    }
 
 }
 

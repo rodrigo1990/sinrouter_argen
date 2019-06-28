@@ -25,7 +25,7 @@ Route::get('/index','FrontController@index');
 
 
 
-Route::get('/consulta_tu_cuenta','FrontController@consulta_tu_cuenta');
+Route::get('/consulta_tu_cuenta/','FrontController@consulta_tu_cuenta');
 
 Route::get('/sucursales','FrontController@sucursales');
 
@@ -33,7 +33,10 @@ Route::get('/institucional','FrontController@institucional');
 
 Route::get('/resp_social','FrontController@resp_social');
 
-Route::get('/preguntas_frecuentes','FrontController@preguntas_frecuentes');
+Route::get('/preguntas_frecuentes/','FrontController@preguntas_frecuentes');
+
+
+Route::get('/preguntas_frecuentes_help/','FrontController@preguntas_frecuentes_help');
 
 
 

@@ -52,10 +52,26 @@
 				</a>
 			</div>
 			<li><a href="saca_tu_prestamo" class="xs-btn spa-btn">SACA TU PRÉSTAMO</a></li>
-			<li><a href="https://www.argenpesos.com.ar/micuenta/quiero-pagar.php"  class="xs-btn" >CONSULTÁ TU CUENTA</a></li>
+			<li><a href="consulta_tu_cuenta"  class="xs-btn" >CONSULTÁ TU CUENTA</a></li>
 			<li><a href="sucursales" class="xs-btn spa-btn">NUESTRAS SUCURSALES</a></li>
 
 			<li><a href="institucional" class="xs-btn spa-btn">INSTITUCIONAL</a></li>
 
 			<li><a href="resp_social" class="xs-btn spa-btn">RESPONSABILIDAD SOCIAL</a></li>
+			<li><a href="#contacto" class="xs-btn" id="cont-xs">CONTACTO</a></li>
+		<li class="center-block">
+			<a href="https://www.instagram.com/argenpesos/" class="xs-btn left" target="_blank">
+				<i class="fab fa-instagram"></i>
+			</a>
+
+			<a href="https://www.facebook.com/argenpesos" class="xs-btn left" target="_blank">
+				<i class="fab fa-facebook-f"></i>
+			</a>
+		</li>
+
+		<li class="xs-btn">
+			<a href="index">
+				<img src="<?php echo asset("storage/img/logo-xs.svg")?>">
+			</a>
+		</li>
 		</ul>

@@ -44,7 +44,8 @@ $nov  = new Novedad();
 @component('comp.footer')
   @slot('class')
   @endslot
-  
+      @slot('terminos')
+    @endslot
 @endcomponent
 
 @stop
