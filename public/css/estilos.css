@@ -1528,7 +1528,6 @@ input::-webkit-inner-spin-button {
 }
 #institucional>.container>p {
     
-    width: 71%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -2237,6 +2236,10 @@ div.bk-title h1{
 
 @media only screen and (width: 1024px)  {
 
+      section#institucional .li-line{
+        width: 43px !important;
+    }
+
      div.bk-title h1 {
             height: 42px;
     width: 448px !important;
@@ -2285,6 +2288,23 @@ div.bk-title h1{
 
 
 @media only screen and (min-width: 10px) and (max-width: 1024px)  {
+
+    #sucursales ul li.margin-left-20{
+        margin-left:auto;
+    }
+
+    section#institucional .container {
+    padding-right: 0;
+    }
+
+
+    section#institucional .li-text,section#institucional p{
+        width: 100%;
+    }
+
+    section#institucional .li-line{
+        width: 0;
+    }
 
     section#form .border-btn.red {
     float: unset;
