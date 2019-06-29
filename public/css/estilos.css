@@ -1315,6 +1315,7 @@ footer b {
     -moz-appearance: none;
     text-indent: 1px;
     text-overflow: '';
+    background-image: none !important;
 }
 
 
