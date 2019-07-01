@@ -38,6 +38,9 @@ Route::get('/preguntas_frecuentes/','FrontController@preguntas_frecuentes');
 
 Route::get('/preguntas_frecuentes_help/','FrontController@preguntas_frecuentes_help');
 
+//Route::get('/landing1/','FrontController@landing1');
+//Route::get('/landing2/','FrontController@landing2');
+
 
 
 Route::get('/cpa', function () {

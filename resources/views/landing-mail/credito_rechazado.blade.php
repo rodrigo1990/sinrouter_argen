@@ -3,52 +3,54 @@
 <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
 @stop
 @section('content')
-<div class="all-cont">
-        <div class="lg">
-            <div class="row">
-                <div class="container">
-                    <a href="index"><img src="<?php echo asset("storage/img/solicitud/logo-02.png")?>" alt=""></a>
-                </div>
-            </div>
-        <div id="banner-prin">
-            <div class="container">
-            <h2 class="" style="font-size: 24px;">Lamentamos informarte que por el momento  no <br> tenemos un préstamo <br> online disponible para vos </h2>
-            </div>
+@include('layouts.header')  
+
+<div class="bk-landing">
+        <div class="row rechazado">
+            <h1>LAMENTAMOS INFORMARTE QUE POR EL MOMENTO <br> <b>NO TENEMOS UN PRÉSTAMO ONLINE <br></b>DISPONIBLE PARA VOS</h1>
         </div>
-        <div id="banner-transform">
-            <h2 class="bebas">PARA SABER SI CALIFICÁS PARA UN PRÉSTAMO EN<br>NUESTRAS SUCURSALES, REALIZÁ TU CONSULTA AL</h2>
-            
-            <h2 class="bebasbook"><img src="<?php echo asset("storage/img/solicitud/icon-bg-01.png")?>" class="" alt="">0800-345-2733 O AL <img src="<?php echo asset("storage/img/solicitud/icon-bg-02.png")?>" class="" alt="">11-3241-4878 </h2>
-    
-            
-    
-    
-        </div>
-        </div>
-        <div class="xs">
-            <div class="row">
-                <div class="container">
-                    <img src="<?php echo asset("storage/img/solicitud/logo-02.png")?>" alt="">
-                </div>
-            </div>
-        <div id="banner-prin">
-            <div class="container">
-            <h2 class="ubuntu">Lamentamos informarte que por el momento  no <br> tenemos un préstamo <br> online disponible para vos  </h2>
-                </div>
-        </div>
-                <div class="container">
-    
-        <div id="banner-transform">
-            <h2 class="bebas">PARA SABER SI CALIFICÁS PARA UN PRÉSTAMO EN<br>NUESTRAS SUCURSALES, REALIZÁ TU CONSULTA AL</h2>
-            
-            <h2 class="bebasBook"><img src="<?php echo asset("storage/img/solicitud/icon-bg-01.png")?>" class="" alt="">0800-345-2733 <br> O AL <br> <img src="<?php echo asset("storage/img/solicitud/icon-bg-02.png")?>" class="" alt="">11-3241-4878 </h2>
-            </div>
-            
-    
-    
-        </div>
-        </div>
+
+
+</div>
+
+<div class="row rechazado-aviso margin-top-80">
+    <div class="container">
+        <h1 class="text-center"><b>PARA SABER</b> SI CALIFICÁS</h1>
+
+        <p class="text-center">Para un préstamo en nuestras sucursales <br> realizá tu consulta al</p>
+
+        <h3 class="text-center"><img src="<?php echo asset("storage/img/solicitud/icon-bg-01.png")?>" class="" alt=""> 0800-222-2743 o al <img src="<?php echo asset("storage/img/solicitud/icon-bg-02.png")?>" class="" alt=""> 11-3241-4878</h3>
     </div>
+</div>
+
+@component('comp.contacto')
+    @slot('class')
+    bk-grey 
+    
+    padding-top-77 
+    @endslot
+
+    @slot('color')
+    color:#333;
+    @endslot
+    
+@endcomponent
+
+    @component('comp.footer')
+        @slot('class')
+        @endslot
+        @slot('color')
+        @endslot
+            @slot('terminos')
+                
+        @endslot
+    @endcomponent
+  
+@stop
+
+@section('scripts')
+
+    
 @stop
 @section('scripts')
 <script>
@@ -57,4 +59,3 @@
     });
 </script>
 @stop
-
