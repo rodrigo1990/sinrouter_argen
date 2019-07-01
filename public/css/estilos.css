@@ -147,7 +147,7 @@
 }
 
 #creditos-sucursales .number-cont .number{
-    background:#EE4E23;
+    background:#00A5E7;
 }
 
 
@@ -180,7 +180,14 @@
 
 
 
+li.line{
+    display:none;
+}
 
+
+.step-by-step ul li{
+    margin-left:113px !important;
+}
 
 .padding-top-98{
     padding-top:98px !important;
@@ -1497,6 +1504,10 @@ input::-webkit-inner-spin-button {
 }
 
 /**************INSTITUCIONAL***********************/
+
+#institucional p{
+        font-size: 16px;
+}
 .card-header{
     background: #E6E7E8;
     padding: 4px;
@@ -2295,6 +2306,11 @@ header ul.menu>li>a[href=saca_tu_prestamo] {
     }
 
 @media only screen and (min-width: 10px) and (max-width: 1024px)  {
+
+        .step-by-step ul li{
+    margin-left:auto !important;
+}
+
     .bk-landing>.row h1 {
         font-size: 39px !important;
         line-height: 43px !important;
@@ -2333,9 +2349,9 @@ header ul.menu>li>a[href=saca_tu_prestamo] {
         margin-left:auto;
     }
 
-    section#institucional .container {
+    /*section#institucional .container {
     padding-right: 0;
-    }
+    }*/
 
 
     section#institucional .li-text,section#institucional p{
@@ -2646,6 +2662,10 @@ footer .second.margin-top-100{
     padding:14px;
 }
 
+.border-btn {
+    width: 311px;
+}
+
 section#form form .border-btn{
     width: 231px;
 }
@@ -2656,6 +2676,8 @@ section#form form .border-btn{
 }
 
 @media only screen and (min-width: 320px) and (max-width: 767px){
+
+
 
 .change_char {
     right: -30px;
@@ -2779,9 +2801,9 @@ h1, #contacto h1 {
     text-align: center;
 }
 
-.container {
+/*.container {
     padding-right: 27px;
-}
+}*/
 
 
 
@@ -2882,6 +2904,8 @@ h1, #contacto h1 {
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
 
+
+
   .bk-landing>.row h1 {
         font-size: 74px !important;
     line-height: 90px !important;
@@ -2966,6 +2990,9 @@ h1, #contacto h1 {
 }
 
 }
+
+
+
 
 
 @media only screen and (min-width: 1200px) and (max-width: 1800px) {
