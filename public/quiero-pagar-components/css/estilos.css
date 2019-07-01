@@ -1,6 +1,35 @@
 
 
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
 
+input[type=number] {
+    -moz-appearance:textfield;
+}
+@font-face {
+    font-family: GothamMedium;
+    src: url('../../fonts/GothamMedium.otf');
+}
+
+@font-face {
+    font-family: GothamBook;
+    src: url('../../fonts/GothamBook.otf');
+}
+
+@font-face {
+    font-family: GothamBold;
+    src: url('../../fonts/GothamBold.otf');
+}
+
+
+
+@font-face {
+    font-family: GothamBlack;
+    src: url('../../fonts/Gotham-Black.otf');
+}
 body{
 	background: #F5F5F6;
 }

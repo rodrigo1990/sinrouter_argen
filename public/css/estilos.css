@@ -2239,6 +2239,38 @@ header ul.menu>li>a[href=saca_tu_prestamo] {
 
 @media only screen and (min-width: 1200px) and (max-width: 1400px)  {
 
+    .bk-landing>.row h1 {
+    font-size: 62px;
+    line-height: 70px;
+}
+
+.bk-landing .subtitle h2 {
+    font-size: 24px;
+}
+
+
+.bk-landing .subtitle {
+    width: 612px;
+}
+
+    .bk-landing>.row {
+    height: 225px;
+}
+
+    .bk-landing>.row.rechazado h1 {
+    font-size: 46px;
+    line-height: 63px;
+}
+
+    .bk-landing>.row.rechazado {
+    height: 189px;
+}
+
+.bk-landing>.row.rechazado h1 {
+    font-size: 46px;
+    line-height: 63px;
+}
+
 #contacto ul li:not(:first-child) {
     margin-left: 62px;
 }
@@ -2255,6 +2287,12 @@ header ul.menu>li>a[href=saca_tu_prestamo] {
 }
 
 }
+
+@media only screen and (min-width: 1200px) and (max-width: 1250px)  {
+.logo {
+    width: 211px !important;
+}
+    }
 
 @media only screen and (min-width: 10px) and (max-width: 1024px)  {
     .bk-landing>.row h1 {

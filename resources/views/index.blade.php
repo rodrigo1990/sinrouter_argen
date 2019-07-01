@@ -48,7 +48,7 @@
 							<input type="text" name="fix-celular" id="fix-celular" value="15" disabled="disabled" class="form-control">
 						</div>
 						<div class="col-sm-6 col-xs-10 padding-0">
-							<input type="number" name="telefono" class="form-control" id="telefono" placeholder="Telefono ">
+							<input type="number" name="telefono" class="form-control" id="telefono" placeholder="Telefono " min="0" >
 							<div class="error" id="telefono-error">Ingrese un telefono valido</div>
 
 						</div>

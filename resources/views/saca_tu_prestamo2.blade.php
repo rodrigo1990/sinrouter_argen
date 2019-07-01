@@ -131,7 +131,7 @@
 					<div class="col-lg-6 col-md-6 col-xs-12">
 						<div class="celular-inputs-container">
 		                    <input type="text" name="fix-celular" id="fix-celular" value="15" disabled="disabled" class="form-control">
-							<input type="number" name="celular" id="celular" placeholder="Ej:46587925"  class="form-control" value={{$telefono}}>
+							<input type="number" min="0" name="celular" id="celular" placeholder="Ej:46587925"  class="form-control" value={{$telefono}}>
 						</div>
 						<div class="valid-feedback feedback-icon" id="celular-check-icon">
 
@@ -265,7 +265,7 @@
 				</div>
 				<div class="row ">
 				    <div class="col-lg-12 col-md-12 col-xs-12">
-						<input placeholder="¿Cuanto ganas? Ej:10000" type="number" name="sueldo" id="sueldo" class="form-control">
+						<input placeholder="¿Cuanto ganas? Ej:10000" min="0" type="number" name="sueldo" id="sueldo" class="form-control">
 						<div class="error" id="sueldo-error">Ingrese un sueldo valido</div>
 	                     <div class="valid-feedback feedback-icon" id="sueldo-check-icon">
 

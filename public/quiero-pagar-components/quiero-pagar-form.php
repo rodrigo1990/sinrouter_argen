@@ -21,7 +21,7 @@
 		
 				<p>Ingrese su número de DNI  para conocer el estado de cuenta.</p>
 				
-				<input type="number"  name="documento" id="documento" autocomplete="off">
+				<input type="number"  name="documento" id="documento" autocomplete="off" min="0">
 				
 					<p class="error" id="documento-error">
 						Ingrese un documento valido
