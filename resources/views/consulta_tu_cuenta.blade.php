@@ -19,7 +19,7 @@
 
 		<div class="row">
 			<div class="container">
-				<iframe src="/quiero-pagar-components/quiero-pagar-form.php" id="iFrame" frameborder="0" style="width:100%;height: 800px;"></iframe>
+				<iframe src="/quiero-pagar-components/quiero-pagar-form.php" id="iFrame" frameborder="0" style="width:100%;height: 657px;"></iframe>
 			</div>
 		</div>
 
