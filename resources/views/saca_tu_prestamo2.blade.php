@@ -13,7 +13,7 @@
 				<a href="/" id="logo-cont-a"><img src="<?php echo asset("storage/img/logo.png")?>" id="logo" class="margin-top-23 margin-left-28"  alt=""></a>
 		</div>
 	    
-	    <h1 class="margin-top-35">HOY MISMO LLEVATE <br> <b>HASTA <span class="red">$30.000</span></b></h1>
+	    <h1 class="">HOY MISMO LLEVATE <br> <b>HASTA <span class="red">$30.000</span></b></h1>
 
 	    <img class="margin-top-25 img-responsive center-block main-img" src="<?php echo asset("storage/img/form-graphic-06-06.png")?>" class="center-block" alt="">
 		
@@ -26,7 +26,7 @@
 			<p class="margin-top-5">Sueldo / Jubilaciones / Pensiones</p>	
 		</div>
 
-		<a  class="center-block go-to-form border-btn red margin-top-35">Completá el formulario</a>
+		<a  class="center-block go-to-form border-btn red">Completá el formulario</a>
 
 
 	</div><!-- col-lg-7 col-md-7 col sm-8 -->

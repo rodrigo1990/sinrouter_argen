@@ -1393,6 +1393,7 @@ input::-webkit-inner-spin-button {
     background-color: #EE4E23;
     color:white;
     width: auto;
+    margin-top: 12px;
 }
 
 #prestamo-form .border-btn.red:hover{
@@ -1432,6 +1433,8 @@ input::-webkit-inner-spin-button {
 
 #prestamo-form .left-side h1{
     color:#00A5E7;
+        margin-top: 15px;
+    margin-bottom: 21px;
 }
 
 #prestamo-form .left-side  h3{
@@ -2453,7 +2456,7 @@ header ul.menu>li>a[href=saca_tu_prestamo] {
 
 
 #prestamo-form .left-side .main-img{
-    width: 300px;
+    width: 239px;
 }
 
     h1,#contacto h1{
@@ -2740,7 +2743,7 @@ section#form form .border-btn{
 
 h1, #contacto h1 {
     font-size: 29px !important;
-    line-height: 37px !important;
+    line-height: 29px !important;
 }
   
     .modal .col-xs-12 .border-btn{
@@ -2784,7 +2787,7 @@ h1, #contacto h1 {
 
     
     .form-cont {
-    margin-top: 59px;
+    margin-top: 29px;
 }
 
 
