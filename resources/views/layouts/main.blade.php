@@ -997,6 +997,7 @@ $("#form-home #nombre").keyup(function(){
             var documentoEstaValidado = false;
             var telefonoEstaValidado = false;
             var emailEstaValidado = false;
+            var cvEstaValidado = false;
 
         
 
@@ -1043,11 +1044,17 @@ $("#form-home #nombre").keyup(function(){
                 emailEstaValidado=true;
             }
 
+            if($("#trabajaConNosotros #file-cv").is(':empty')){
+                alert("ingrese un cv");
+            }else{
+                cvEstaValidado=true;
+            }
 
 
 
 
-            if(nombreEstaValidado==true&&apellidoEstaValidado==true&&documentoEstaValidado==true&&telefonoEstaValidado==true&&emailEstaValidado==true){
+
+            if(nombreEstaValidado==true&&apellidoEstaValidado==true&&documentoEstaValidado==true&&telefonoEstaValidado==true&&emailEstaValidado==true&&cvEstaValidado==true){
 
                     
                 $("#content").append('<div id="preloader-mailing" ><div class="spinner-sm spinner-sm-1" id="status"> </div></div>');
