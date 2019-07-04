@@ -667,7 +667,7 @@ header ul.menu>li>a:hover:after{
     width: 90%;
 }
 
-header ul.menu>li>a[href=saca_tu_prestamo] {
+header ul.menu>li>a[href='/saca_tu_prestamo'] {
        color: #EE4E23;
     letter-spacing: 1px;
    font-size: 21px;
@@ -679,18 +679,18 @@ header ul.menu>li>a[href=saca_tu_prestamo] {
 }
 
 
-header ul.menu>li>a[href=saca_tu_prestamo]:hover {
+header ul.menu>li>a[href='/saca_tu_prestamo']:hover {
        color: white;
     background:#EE4E23;
 }
 
 
-header ul.menu>li>a[href=saca_tu_prestamo]:active {
+header ul.menu>li>a[href='/saca_tu_prestamo']:active {
        color: white !important;
 }
 
 
-header ul.menu>li>a[href=saca_tu_prestamo]:focus {
+header ul.menu>li>a[href='/saca_tu_prestamo']:focus {
        color: #EE4E23 !important;
        background:transparent;
 }
@@ -1480,7 +1480,7 @@ input::-webkit-inner-spin-button {
 #sucursales ul li {
     font-family: GothamBook;
     font-size: 16pt;
-    margin-bottom: 16px;
+    margin-bottom: 13px;
 }
 
 #sucursales ul li a{
@@ -2243,12 +2243,18 @@ footer .first{
     margin-right: 0 !important;
 }
 
-header ul.menu>li>a[href=saca_tu_prestamo] {
+header ul.menu>li>a[href='/saca_tu_prestamo'] {
     font-size: 13px !important;
 }
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1400px)  {
+
+    header ul.menu>li>a[href='/saca_tu_prestamo'] {
+
+   font-size: 18px;
+  
+}
 
     .bk-landing>.row h1 {
     font-size: 62px;
@@ -2293,7 +2299,7 @@ footer .first{
     margin-right: 0 !important;
 }
 
-header ul.menu>li>a[href=saca_tu_prestamo] {
+header ul.menu>li>a[href='/saca_tu_prestamo'] {
     font-size: 13px !important;
 }
 
@@ -2997,7 +3003,7 @@ h1, #contacto h1 {
         font-size: 14px;
     }
 
-    header ul.menu>li>a[href=saca_tu_prestamo] {
+    header ul.menu>li>a[href='/saca_tu_prestamo'] {
    
    font-size: 17px;
    

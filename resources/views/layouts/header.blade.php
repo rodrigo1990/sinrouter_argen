@@ -10,15 +10,15 @@
 
 					<div class="col-lg-10 hidden-md hidden-sm hidden-xs btn-cont">
 						<ul id="nav" class="menu">
-							<li><a href="saca_tu_prestamo"  class="fix spa-btn">SACÁ TU PRÉSTAMO</a></li>
-							<li><a href="consulta_tu_cuenta" target="" class="after-btn"  >CONSULTÁ TU CUENTA</a></li>
-							<li><a href="sucursales" class="spa-btn after-btn">NUESTRAS SUCURSALES</a></li>
+							<li><a href="/saca_tu_prestamo"  class="fix spa-btn">SACÁ TU PRÉSTAMO</a></li>
+							<li><a href="micuenta/quiero-pagar.php" target="" class="after-btn"  >CONSULTÁ TU CUENTA</a></li>
+							<li><a href="/sucursales" class="spa-btn after-btn">NUESTRAS SUCURSALES</a></li>
 
 							<li>
 								<a  id="quienes-somos-btn" class="after-btn">QUIENES SOMOS</a>
 									<ul class="sub-menu">
-										<li><a href="institucional" class="spa-btn" >INSTITUCIONAL</a></li>
-										<li><a href="resp_social" class="spa-btn" >RESPONSABILIDAD SOCIAL</a></li>
+										<li><a href="/institucional" class="spa-btn" >INSTITUCIONAL</a></li>
+										<li><a href="/resp_social" class="spa-btn" >RESPONSABILIDAD SOCIAL</a></li>
 									</ul>
 
 							</li>
@@ -51,13 +51,13 @@
 					<i class="fas fa-times"></i>
 				</a>
 			</div>
-			<li><a href="saca_tu_prestamo" class="xs-btn spa-btn">SACA TU PRÉSTAMO</a></li>
-			<li><a href="consulta_tu_cuenta"  class="xs-btn" >CONSULTÁ TU CUENTA</a></li>
-			<li><a href="sucursales" class="xs-btn spa-btn">NUESTRAS SUCURSALES</a></li>
+			<li><a href="/saca_tu_prestamo" class="xs-btn spa-btn">SACA TU PRÉSTAMO</a></li>
+			<li><a href="micuenta/quiero-pagar.php"  class="xs-btn" >CONSULTÁ TU CUENTA</a></li>
+			<li><a href="/sucursales" class="xs-btn spa-btn">NUESTRAS SUCURSALES</a></li>
 
-			<li><a href="institucional" class="xs-btn spa-btn">INSTITUCIONAL</a></li>
+			<li><a href="/institucional" class="xs-btn spa-btn">INSTITUCIONAL</a></li>
 
-			<li><a href="resp_social" class="xs-btn spa-btn">RESPONSABILIDAD SOCIAL</a></li>
+			<li><a href="/resp_social" class="xs-btn spa-btn">RESPONSABILIDAD SOCIAL</a></li>
 			<li><a href="#contacto" class="xs-btn" id="cont-xs">CONTACTO</a></li>
 		<li class="center-block">
 			<a href="https://www.instagram.com/argenpesos/" class="xs-btn left" target="_blank">

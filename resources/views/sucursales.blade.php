@@ -1,7 +1,12 @@
 
 @extends('layouts.main')
 @section('content')
-@include('layouts.header')	
+@include('layouts.header')
+<style>
+	#map div:has(img){
+		display:none !important;
+	}
+</style>
 	<section id="sucursales" class="animated fadeIn margin-bottom-100">
 		<div class="row">
 			<h1 class="text-center margin-top-50">NUESTRAS <b>SUCURSALES</span></b></h1>
@@ -21,6 +26,7 @@
 						<li class="margin-top-10 margin-left-20">- <a onClick="zoomOnLocation(-34.760503,-58.206957);">Berazategui</a></li>
 						<li class="margin-top-10 margin-left-20">- <a onClick="zoomOnLocation(-34.708119,-58.389905);">Lanús</a></li>
 						<li class="margin-top-10 margin-left-20">- <a onClick="zoomOnLocation(-34.762114,-58.398490);">Lomas De Zamora</a></li>
+						<li class="margin-top-10 margin-left-20">- <a onClick="zoomOnLocation(-34.782014, -58.313454);">Solano</a></li>
 						<li class="margin-top-10 margin-left-20">- <a onClick="zoomOnLocation(-34.804170,-58.274902);">Varela</a></li>
 						<li class="margin-top-10 margin-left-20">- <a onClick="zoomOnLocation(-34.762226,-58.360981);">Temperley - Barrio San José</a></li>
 						<li class="margin-top-10 margin-left-20">- <a onClick="zoomOnLocation(-34.722831,-58.259495);">Quilmes</a></li>
@@ -59,6 +65,8 @@
 	@endcomponent
 @stop
 @section('scripts')
+ <script  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkne1gpPfJ0B3KrE4OQURwPi492LDjg8g"></script>
+
 
     <script>
 
@@ -98,7 +106,13 @@
 
 	  locations.push(['<b>TEMPERLEY - BARRIO SAN JOSE </b><br><br>Salta 87  <br><br> <b>TEL:</b> 2144-0093 / 3982-1412 <br><br> <b>Whatsapp:</b> 15-2165-4919  <br><br> <b>Horario:</b><br> Lunes a Viernes de 9 a 13:00 y de 14:00 a 18:45hs <br> Sábados de 9 a 13hs. ',-34.762226,-58.360981]);
 
+
 	  locations.push(['<b>QUILMES </b><br><br>Rivadavia 96   <br><br> <b>TEL:</b> 4253-1001 <br><br> <b>Whatsapp:</b> 11-6551-0711  <br><br> <b>Horario:</b><br> Lunes a Viernes de 9 a 18:45hs. <br> Sábados de 9 a 13hs. ',-34.722831,-58.259495]);
+
+	  locations.push(['<b>SOLANO </b><br><br>Calle 845 Nº2590    <br><br> <b>TEL:</b> 4212-6770 / 7174<br><br> <b>Whatsapp:</b> 15-3252-5078   <br><br> <b>Horario:</b><br> Lunes a Viernes de 9 a 13:00hs. y 15 a 19:30hs <br> Sábados de 9 a 13hs. ',-34.782014, -58.313454]);
+
+
+
 
 
 	  function initMap() {

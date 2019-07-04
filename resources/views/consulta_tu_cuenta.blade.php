@@ -13,7 +13,7 @@
 		</div>
 		<div class="row margin-top-10">
 			<div class="container">
-				<a href="preguntas_frecuentes_help" class="float-right consulta-tu-cuenta-help"><i class="far fa-question-circle"></i></a>
+				<a href="/preguntas_frecuentes_help" class="float-right consulta-tu-cuenta-help"><i class="far fa-question-circle"></i></a>
 			</div>
 		</div>
 
