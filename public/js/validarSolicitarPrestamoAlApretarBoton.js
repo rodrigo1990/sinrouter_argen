@@ -217,7 +217,7 @@ function myFunction() {
 
                 }
                 
-                /*if(captcha_esta_validado==false){
+                if(captcha_esta_validado==false){
 
                     var $captcha = $( '#recaptcha' ),
                     response = grecaptcha.getResponse();
@@ -231,7 +231,7 @@ function myFunction() {
                         captcha_esta_validado=true;
                     }
 
-                }*/
+                }
 
 
 

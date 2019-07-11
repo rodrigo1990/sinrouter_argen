@@ -667,7 +667,7 @@ header ul.menu>li>a:hover:after{
     width: 90%;
 }
 
-header ul.menu>li>a[href=saca_tu_prestamo] {
+header ul.menu>li>a[href='/saca_tu_prestamo'] {
        color: #EE4E23;
     letter-spacing: 1px;
    font-size: 21px;
@@ -679,18 +679,18 @@ header ul.menu>li>a[href=saca_tu_prestamo] {
 }
 
 
-header ul.menu>li>a[href=saca_tu_prestamo]:hover {
+header ul.menu>li>a[href='/saca_tu_prestamo']:hover {
        color: white;
     background:#EE4E23;
 }
 
 
-header ul.menu>li>a[href=saca_tu_prestamo]:active {
+header ul.menu>li>a[href='/saca_tu_prestamo']:active {
        color: white !important;
 }
 
 
-header ul.menu>li>a[href=saca_tu_prestamo]:focus {
+header ul.menu>li>a[href='/saca_tu_prestamo']:focus {
        color: #EE4E23 !important;
        background:transparent;
 }
@@ -1480,7 +1480,7 @@ input::-webkit-inner-spin-button {
 #sucursales ul li {
     font-family: GothamBook;
     font-size: 16pt;
-    margin-bottom: 16px;
+    margin-bottom: 13px;
 }
 
 #sucursales ul li a{
@@ -2243,13 +2243,16 @@ footer .first{
     margin-right: 0 !important;
 }
 
-header ul.menu>li>a[href=saca_tu_prestamo] {
+header ul.menu>li>a[href='/saca_tu_prestamo'] {
     font-size: 13px !important;
 }
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1400px)  {
 
+header ul.menu>li>a[href='/saca_tu_prestamo'] {
+   font-size: 18px;
+  }
     .bk-landing>.row h1 {
     font-size: 62px;
     line-height: 70px;
@@ -2293,7 +2296,7 @@ footer .first{
     margin-right: 0 !important;
 }
 
-header ul.menu>li>a[href=saca_tu_prestamo] {
+header ul.menu>li>a[href='/saca_tu_prestamo'] {
     font-size: 13px !important;
 }
 
@@ -2306,7 +2309,6 @@ header ul.menu>li>a[href=saca_tu_prestamo] {
     }
 
 @media only screen and (min-width: 10px) and (max-width: 1024px)  {
-
 
         .step-by-step ul li{
     margin-left:auto !important;
@@ -2678,7 +2680,9 @@ section#form form .border-btn{
 
 @media only screen and (min-width: 320px) and (max-width: 767px){
 
-
+.recaptcha-col{
+    padding:0;
+}
 
 .change_char {
     right: -30px;
@@ -2686,30 +2690,6 @@ section#form form .border-btn{
 
 }
 @media only screen and (min-width: 320px) and (max-width: 768px){
-    
-    
-    #prestamo-form .border-btn.red {
-    margin-top: 17px;
-    }
-
-    #prestamo-form .left-side .main-img {
-    width: 251px !important;
-}
-
-    #prestamo-form .border-btn.red{
-
-    }
-
-
-    
-    #prestamo-form .left-side .main-img.margin-top-25{
-        margin-top: 14px;
-    }
-
-    #prestamo-form .left-side h1.margin-top-35{
-            margin-top: 18px;
-    line-height: 34px !important;
-    }
 
 
     .radio input[type=radio]{
@@ -2814,7 +2794,7 @@ h1, #contacto h1 {
 
 
 #prestamo-form #logo{
-        width: 200px;
+        width: 259px;
     margin-top: 30px; 
 }
 
@@ -2997,7 +2977,7 @@ h1, #contacto h1 {
         font-size: 14px;
     }
 
-    header ul.menu>li>a[href=saca_tu_prestamo] {
+    header ul.menu>li>a[href='/saca_tu_prestamo'] {
    
    font-size: 17px;
    
@@ -3023,7 +3003,7 @@ h1, #contacto h1 {
 @media only screen and (min-width: 1200px) and (max-width: 1800px) {
 #prestamo-form .form-cont {
     padding: 40px;
-    max-height: 1032px;
+    max-height: 1141px;
     min-height: 764px;
 }
 

@@ -587,7 +587,21 @@
     $("#provincia").change(function(){
 
 
+        $("#localidad-check-icon").fadeOut();
+                                
+        $("#localidad-error-icon").fadeIn();
+        $("#localidad").removeClass('border-color-green');
+        $("#localidad").addClass("border-color-red");
 
+        $("#localidad-error").fadeIn();
+
+
+        removeSelectArrow("#localidad");
+
+
+        localidad_esta_validado=false;
+            
+        $("#localidad").prop("disabled", false);   
          var provincia = $("#provincia").val();
 
 
@@ -638,8 +652,10 @@
                     $("#localidad").append('<option value="null">Seleccione una ciudad</option>');
                         for(var i in data) {    
                                 
-                                $("#localidad").append("<option value="+data[i].id+"> "+
-                                    data[i].ciudad_nombre+"</option>");             
+                                 $("#localidad").append("<option value="+data[i].id+"> "+
+                                    data[i].ciudad_nombre+"</option>");      
+                                
+                                          
                             }
 
             
