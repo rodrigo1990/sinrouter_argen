@@ -25,7 +25,7 @@ Route::get('/index','FrontController@index');
 
 
 
-Route::get('/consulta_tu_cuenta/','FrontController@consulta_tu_cuenta');
+Route::get('/micuenta/quiero-pagar.php','FrontController@consulta_tu_cuenta');
 
 Route::get('/sucursales','FrontController@sucursales');
 

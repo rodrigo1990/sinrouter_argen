@@ -13,8 +13,8 @@
 				<h4>NUESTROS SERVICIOS</h4>
 				<hr>
 					<ul>
-						<li class="margin-top-10"><a href="saca_tu_prestamo" class="red"><b>- SACÁ TU PRÉSTAMO</b></a></li>
-						<li class="margin-top-10"><a href="consulta_tu_cuenta">Consultá tu cuenta</a></li>
+						<li class="margin-top-10"><a href="/saca_tu_prestamo" class="red"><b>- SACÁ TU PRÉSTAMO</b></a></li>
+						<li class="margin-top-10"><a href="/consulta_tu_cuenta">Consultá tu cuenta</a></li>
 					</ul>
 				
 			</div>
@@ -24,14 +24,14 @@
 				<div class="row">
 					<div class="col-lg-4">
 						<ul>
-							<li class="margin-top-10"><a href="institucional" class="spa-btn">Quienes somos</a></li>
-							<li class="margin-top-10"><a href="resp_social" class="spa-btn">Responsabilidad social </a></li>
+							<li class="margin-top-10"><a href="/institucional" class="spa-btn">Quienes somos</a></li>
+							<li class="margin-top-10"><a href="/resp_social" class="spa-btn">Responsabilidad social </a></li>
 						</ul>
 					</div>
 					<div class="col-lg-4">
 						<ul>
-							<li class="margin-top-10"><a  href="sucursales" class="spa-btn">Nuestras sucursales </a></li>
-							<li class="margin-top-10"><a href="preguntas_frecuentes" class="spa-btn">Preguntas frecuentes </a></li>
+							<li class="margin-top-10"><a  href="/sucursales" class="spa-btn">Nuestras sucursales </a></li>
+							<li class="margin-top-10"><a href="/preguntas_frecuentes" class="spa-btn">Preguntas frecuentes </a></li>
 						</ul>
 					</div>
 					<div class="col-lg-4">
