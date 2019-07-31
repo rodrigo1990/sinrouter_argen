@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Provincia;
+use Illuminate\Support\Facades\DB;
+
 
 class FrontController extends Controller
 {
@@ -15,6 +17,19 @@ class FrontController extends Controller
         return view('index',['provincias'=>$provincias]);
 
   	}
+
+
+    public function cambio(){
+
+      $provincias = Provincia::all(); 
+
+
+
+    //  $divisas = DB::connection('sqlsrv')->getPdo();
+
+        return view('cambio',['provincias'=>$provincias]);
+
+    }
 
 
 

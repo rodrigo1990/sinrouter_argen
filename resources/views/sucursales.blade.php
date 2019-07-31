@@ -97,7 +97,7 @@
 
 	  locations.push(['<b>BERAZATEGUI </b><br><br>Av.14 N°5022 <br><br> <b>TEL:</b> 4356-0717 / 0911 <br><br> <b>Whatsapp:</b> 15-3252-4896  <br><br> <b>Horario:</b><br> Lunes a Viernes de 9 a 18:45hs. <br> Sábados de 9 a 13hs. ',-34.760503,-58.206957]);
 
-	  locations.push(['<b>LANUS </b><br><br>9 de Julio 1140, Local 5, Galería de las Américas <br><br> <b>TEL:</b> 4240-4790 / 5448 <br><br> <b>Whatsapp:</b> 15-3252-4303  <br><br> <b>Horario:</b><br> Lunes a Viernes de 9 a 18:45hs. <br> Sábados de 9 a 13hs. ',-34.708119,-58.389905]);
+	  locations.push(['<b>LANUS </b><br><br>9 de Julio 1140, Local 5, Galería de las Américas <br><br> <b>TEL:</b> 4240-4798/ 5448  <br><br> <b>Whatsapp:</b> 15-3252-4303  <br><br> <b>Horario:</b><br> Lunes a Viernes de 9 a 18:45hs. <br> Sábados de 9 a 13hs. ',-34.708119,-58.389905]);
 
 	  locations.push(['<b>LOMAS DE ZAMORA </b><br><br>Av. Meeks 101 <br><br> <b>TEL:</b> 4244-1120 / 4243-1456 <br><br> <b>Whatsapp:</b> 15-3252-4297 <br><br> <b>Horario:</b><br> Lunes a Viernes de 9 a 18:45hs. <br> Sábados de 9 a 13hs. ',-34.762114,-58.398490]);
 

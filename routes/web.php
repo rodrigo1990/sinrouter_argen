@@ -52,8 +52,13 @@ Route::get('/cr', function () {
 });
 
 
-Route::get('/saca_tu_prestamo','FrontController@sacaTuPrestamo');
-Route::get('/saca_tu_prestamo2','FrontController@sacaTuPrestamo2');
+Route::get('/saca_tu_prestamo','FrontController@sacaTuPrestamo2');
+
+
+Route::get('/cambio','FrontController@cambio');
+
+
+//Route::get('/saca_tu_prestamo2','FrontController@sacaTuPrestamo2');
 
 
 /***************MAILING***************************************/
