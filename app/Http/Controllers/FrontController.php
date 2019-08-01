@@ -23,23 +23,11 @@ class FrontController extends Controller
 
       $provincias = Provincia::all(); 
 
-
-
-    //  $divisas = DB::connection('sqlsrv')->getPdo();
-
-        return view('cambio',['provincias'=>$provincias]);
+      return view('cambio',['provincias'=>$provincias]);
 
     }
 
 
-
-  	/*public function sacaTuPrestamo(Request $request){
-
-  		$provincias = Provincia::all(); 
-
-        return view('saca_tu_prestamo',['provincias'=>$provincias]);
-
-  	}*/
 
   	public function sacaTuPrestamo(Request $request){
 

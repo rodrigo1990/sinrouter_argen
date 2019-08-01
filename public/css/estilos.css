@@ -57,6 +57,12 @@
 
 
 @font-face {
+    font-family: Gotham-Bold-Italic;
+    src: url(../fonts/GothamBoldItalic.otf);
+}
+
+
+@font-face {
     font-family: RobotoBold;
     src: url(../fonts/RobotoSlab-Bold.ttf);
 }
@@ -526,6 +532,12 @@ a:hover{
   }
 
 
+  .border-btn.white{
+    color: white;
+    border-color: white;
+  }
+
+
   .border-btn.blue{
   	color: #00A5E7;
   	border-color: #00A5E7;
@@ -535,11 +547,17 @@ a:hover{
     background-color:#EE4E23;
     color:white;
   }
-
+    
 
   .border-btn.blue:hover{
     background-color:#00A5E7;
     color:white;
+  }
+
+
+  .border-btn.white:hover{
+    background-color: white;
+    color:#00A5E7;
   }
 
 
@@ -2070,13 +2088,24 @@ input::-webkit-inner-spin-button {
 #comercializador .col-sm-6 .col-sm-6.padding-0{
         font-size: 16px;
 }
+/*FIN MODAL TRABAJA CON NOSOTROS Y CONVERTITE CON COMERCILIZADOR */
 
 
-/*CAMBIO*/
+
+/*---------------------------------------------*/
+                /*CAMBIO*/
+/*----------------------------------------------*/
 section#form.cambio{
     background-image: url(../storage/img/bkground-cambio.jpg);
     color:white;
 }
+
+    
+section#form ul#cotizador-cont{
+    width: fit-content;
+    margin:auto;
+}
+
 
 section#form.cambio .first h1 b {
         font-family: Bebas;
@@ -2085,11 +2114,11 @@ section#form.cambio .first h1 b {
 
 
 section#form.cambio .first ul{
-        margin-top: 15px;
-        margin-right: 60px;
+        margin:0;
+        width:fit-content;
 }
 
-section#form.cambio .first ul li{
+section#form.cambio .first ul li:not(:nth-child(1)){
     margin-top:15px;
 }
 
@@ -2119,6 +2148,9 @@ section#form.cambio .form-cont{
         -webkit-box-shadow: -1px 10px 30px -24px rgba(0,0,0,0.75);
     -moz-box-shadow: -1px 10px 30px -24px rgba(0,0,0,0.75);
     box-shadow: -5px 10px 30px -24px rgba(0,0,0,0.75);
+       padding: 46px 35px 35px 35px;
+    margin-top: 15px;
+    height: 302px;
 }
 
 
@@ -2140,7 +2172,7 @@ section#form.cambio .form-cont ul li:nth-child(2) img{
     position:absolute;
     left:0;
     right: 0;
-    top:42px;
+    top:60px;
     bottom:0;
     margin:auto;
 }
@@ -2151,26 +2183,56 @@ section#form.cambio .form-cont hr{
 
 
 section#form.cambio .form-cont .calculadora{
-    margin-top:15px;
+    margin-top:26px;
 }
 
 
 section#form.cambio .form-cont .result-cont input{
-    padding:10px 15px;
+       padding: 10px 15px;
     text-align: left;
     font-family: Helvetica-Light;
-    border:1px solid white;
-    border-radius:15px;
-    margin-top: 12px;
-    background:transparent;
-        font-size: 20px !important;
-            width: 100%;
+    border: 1px solid white;
+    border-radius: 17px;
+    margin-top: 24px;
+    background: transparent;
+    font-size: 32px !important;
+    width: 100%;
+    height: 62px;
+
 }
 
 
 section#form.cambio .cambiar-btn{
     width:30px;
     margin:auto;
+}
+
+
+section#form.cambio li.form-cont .header h2{
+    font-family: Bebas;
+}
+
+section#form.cambio li.form-cont .header h2{
+    font-size: 49px;;
+}
+
+
+section#form.cambio li.form-cont .header a img{
+    width: 30px;
+}
+
+
+section#form.cambio li.form-cont .header h3 {
+        font-size: 21px;
+    /* line-height: 47px; */
+    margin-left: 17px;
+    float: left;
+    margin-top: 18px;
+}
+
+
+section#form.cambio .result-cont h2>b {
+    font-family: Helvetica-Bold;
 }
 
 
@@ -2197,8 +2259,166 @@ header.cambio .logo{
     margin-top:-9px;
 }
 
-/*FIN MODAL TRABAJA CON NOSOTROS Y CONVERTITE CON COMERCILIZADOR */
 
+.form-cont .header{
+    border-bottom:2px solid white;
+}
+
+/*---------------------------------------------*/
+                /*MEJOR COTIZACION*/
+/*----------------------------------------------*/
+
+section#mejor-cot>h2{
+            margin-top: 59px;
+}
+
+
+section#mejor-cot>.row{
+        margin-top: 80px;
+            margin-bottom: 91px;
+}
+
+
+
+h2.cambio-title>b{
+       font-family: 'GothamBold';
+    border-bottom: 3px solid #00A5E7;
+    padding-bottom: 10px;
+    letter-spacing: 2px;
+    color: #404040;
+}
+
+
+section#mejor-cot ul li img{
+    width: 50px;
+}
+
+
+
+
+section#mejor-cot ul{
+    width:fit-content;
+    margin:auto;
+}
+
+
+section#mejor-cot ul li p{
+    font-family: 'Gotham-Bold-Italic';
+    margin-top: 26px;
+    font-size: 15px;
+    color:#8C8C8C;
+}
+
+
+
+section#mejor-cot ul li{
+     margin-left: 62px;
+    margin-right: 61px;  
+}
+
+
+section#mejor-cot ul li:nth-child(1) img{
+    width: 82px;
+}
+
+
+
+section#mejor-cot ul li:nth-child(2) img{
+    width: 86px;
+}
+
+
+section#mejor-cot ul li:nth-child(3) img{
+    width: 81px;
+}
+
+
+section#mejor-cot ul li:nth-child(4) img{
+    width: 67px;
+}
+
+/*---------------------------------------------*/
+                /*QUIENES SOMOS*/
+/*----------------------------------------------*/
+
+section#quienes-somos{
+    background:#F3F4F4;
+    padding: 59px 0 59px 0;
+
+}
+section#quienes-somos p{
+    font-family: GothamBold;
+    font-size: 20px;
+    color: #404040;
+}
+
+
+section#quienes-somos p span{
+    color:#00A5E7;
+}
+
+
+
+/*---------------------------------------------*/
+                /*QUIENES SOMOS*/
+/*----------------------------------------------*/
+
+section#donde-cambio{
+    padding: 59px 0 0 0;
+}
+
+
+section#donde-cambio #map{
+    margin-top:23px;
+        width: 100%;
+    height: 500px;
+}
+
+/*---------------------------------------------*/
+                /*CONTACTO FORM*/
+/*----------------------------------------------*/
+
+
+section#contacto-form{
+    background-image: url(../storage/img/bkground-cambio.jpg);
+    color:white;
+    padding: 59px 0 59px 0;
+}
+
+section#contacto-form h2.cambio-title>b{
+    border-bottom: 3px solid white;
+    color: white;
+}
+
+
+section#contacto-form a.border-btn{
+    width: fit-content;
+}
+
+
+section#contacto-form form div{
+    display:block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+section#contacto-form form div input{
+    width: 90%;
+    margin-left: 8px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.4) !important;
+}
+
+
+section#contacto-form form{
+    margin-top:23px;
+}
+
+
+section#contacto-form form label{
+        width: 91px;
+    font-family: GothamBold;
+    font-size: 17px;
+}
 
 /*---------------------------------------------*/
                 /*CONSULTA TU CUENTA*/
@@ -2391,6 +2611,77 @@ footer .first{
 header ul.menu>li>a[href='/saca_tu_prestamo'] {
     font-size: 13px !important;
 }
+
+ section#form.cambio img{
+        display:block;
+    }
+
+
+    section#form.cambio{
+        height: auto;
+        padding-bottom: 33px;
+    }
+
+    section#form.cambio .form-cont{
+        height: auto;
+        position:relative;
+    }
+    
+    section#form.cambio .first ul li:not(:nth-child(1)){
+        margin-top:15px !important;
+            position: relative;
+    }
+    
+
+    ul#cotizador-cont{
+        margin-top: 27px !important;
+    }
+    ul#cotizador-cont li.first, ul#cotizador-cont li.first ul li{
+
+        margin:auto;
+
+    }
+
+    
+    section#form.cambio .result-cont ul.flex li{
+        width: 100% !important;
+        text-align: center;
+    }
+
+
+    section#form.cambio li.form-cont .header h2 {
+        text-align: center;
+        float:unset !important;
+    }
+    
+
+    section#form.cambio li.form-cont .header h3 {
+        float: unset;
+        margin: auto;
+        text-align: center;
+        margin-top:10px;
+            margin-bottom: 17px;
+    }
+
+
+    section#form.cambio .form-cont ul li:nth-child(2) img{
+        top:12px;
+    }
+
+
+    section#form.cambio li.form-cont .header a img {
+        position: absolute;
+        right: 14px;
+        top: 12px;
+    }
+
+    section#form.cambio {
+        padding-top: 0;
+    }
+
+    section#form.cambio .first ul{
+        margin-bottom:38px;
+    }
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1400px)  {
@@ -2458,6 +2749,69 @@ header ul.menu>li>a[href='/saca_tu_prestamo'] {
     }
 
 @media only screen and (min-width: 10px) and (max-width: 1024px)  {
+
+     section#form.cambio img{
+        display:block;
+    }
+
+
+    section#form.cambio{
+        height: auto;
+        padding-bottom: 33px;
+    }
+
+    section#form.cambio .form-cont{
+        height: auto;
+        position:relative;
+    }
+    
+    section#form.cambio .first ul li:not(:nth-child(1)){
+        margin-top:15px !important;
+            position: relative;
+    }
+    
+
+    ul#cotizador-cont{
+        margin-top: 27px !important;
+    }
+    ul#cotizador-cont li.first, ul#cotizador-cont li.first ul li{
+
+        margin:auto;
+
+    }
+
+    
+    section#form.cambio .result-cont ul.flex li{
+        width: 100% !important;
+        text-align: center;
+    }
+
+
+    section#form.cambio li.form-cont .header h2 {
+        text-align: center;
+        float:unset !important;
+    }
+    
+
+    section#form.cambio li.form-cont .header h3 {
+        float: unset;
+        margin: auto;
+        text-align: center;
+        margin-top:10px;
+            margin-bottom: 17px;
+    }
+
+
+    section#form.cambio .form-cont ul li:nth-child(2) img{
+        top:12px;
+    }
+
+
+    section#form.cambio li.form-cont .header a img {
+        position: absolute;
+        right: 14px;
+        top: 12px;
+    }
 
         .step-by-step ul li{
     margin-left:auto !important;
@@ -2839,7 +3193,46 @@ section#form form .border-btn{
 
 }
 @media only screen and (min-width: 320px) and (max-width: 768px){
+    
+    
+   
 
+
+
+    section#contacto-form form label.text-right{
+        text-align: left;
+    }
+
+    section#contacto-form a.border-btn {
+        width: 73%;
+        text-align: center;
+        margin: auto;
+        float: unset;
+        display: block;
+        margin-top:40px;
+    }
+
+
+    section#contacto-form form {
+        margin-top: 57px;
+    }
+    
+
+
+    section#form.cambio .first ul li div {
+        margin-bottom: 10px;
+        display:block;
+    }
+
+
+    section#form.cambio .first ul li:not(:nth-child(1)){
+        margin-top:26px !important;
+    }
+
+
+    .cambio select{
+            font-size: 22px !important;
+    }
 
     .radio input[type=radio]{
             margin-top: 6px !important;

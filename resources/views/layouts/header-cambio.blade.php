@@ -10,9 +10,10 @@
 
 					<div class="col-lg-10 hidden-md hidden-sm hidden-xs btn-cont">
 						<ul id="nav" class="menu">
-							<li><a href="/"  class="fix spa-btn">QUIÉNES SOMOS</a></li>
-							<li><a href="" target="" class="after-btn"  >¿DÓNDE CAMBIO?</a></li>
-							<li><a href="/" class="spa-btn after-btn">CONTACTO</a></li>
+							<li><a   class="spa-btn" onClick="scrollAnimate('#form')">CALCULADORA</a></li>
+							<li><a   class="spa-btn" onClick="scrollAnimate('#quienes-somos')">QUIÉNES SOMOS</a></li>
+							<li><a  target="" class="after-btn" onClick="scrollAnimate('#donde-cambio')"  >¿DÓNDE CAMBIO?</a></li>
+							<li><a  class="spa-btn after-btn" onClick="scrollAnimate('#contacto-form')">CONTACTO</a></li>
 
 							<li class="">
 								
@@ -42,14 +43,12 @@
 					<i class="fas fa-times"></i>
 				</a>
 			</div>
-			<li><a href="/saca_tu_prestamo" class="xs-btn spa-btn">SACA TU PRÉSTAMO</a></li>
-			<li><a href="micuenta/quiero-pagar.php"  class="xs-btn" >CONSULTÁ TU CUENTA</a></li>
-			<li><a href="/sucursales" class="xs-btn spa-btn">NUESTRAS SUCURSALES</a></li>
+			<li><a  class="xs-btn spa-btn" onClick="scrollAnimate('#form')">CALCULADORA</a></li>
+			<li><a  class="xs-btn spa-btn" onClick="scrollAnimate('#quienes-somos')">QUIÉNES SOMOS</a></li>
+			<li><a  class="xs-btn" onClick="scrollAnimate('#donde-cambio')" >¿DÓNDE CAMBIO?</a></li>
+			<li><a  class="xs-btn spa-btn" onClick="scrollAnimate('#contacto-form')">CONTACTO</a></li>
 
-			<li><a href="/institucional" class="xs-btn spa-btn">INSTITUCIONAL</a></li>
 
-			<li><a href="/resp_social" class="xs-btn spa-btn">RESPONSABILIDAD SOCIAL</a></li>
-			<li><a href="#contacto" class="xs-btn" id="cont-xs">CONTACTO</a></li>
 		<li class="center-block">
 			<a href="https://www.instagram.com/argenpesos/" class="xs-btn left" target="_blank">
 				<i class="fab fa-instagram"></i>
