@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Provincia;
 use Illuminate\Support\Facades\DB;
+use JavaScript;
 
 
 class FrontController extends Controller
@@ -21,9 +22,19 @@ class FrontController extends Controller
 
     public function cambio(){
 
+
+     $divisas = JavaScript::put([
+        'foo' => 'bar',
+        'user' => 'rodrix',
+        'age' => 29
+      ]);
+
+
+
+
       $provincias = Provincia::all(); 
 
-      return view('cambio',['provincias'=>$provincias]);
+      return view('cambio',compact('provincias','divisas'));
 
     }
 

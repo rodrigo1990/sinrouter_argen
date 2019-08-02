@@ -185,8 +185,8 @@
         padding-bottom:8px;
     }
 
-
-    form select { 
+    
+    form select, .cambio select { 
     moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
@@ -196,10 +196,45 @@
     background-position: right 14px;
      }
 
+    
 
-     form select::-ms-expand {
+
+     form select::-ms-expand{
         display: none;
     }
+
+
+    .cambio select::-ms-expand{
+        display: none;
+    }
+
+
+
+
+}
+
+
+@-moz-document url-prefix() {
+   
+    .cambio select::-ms-expand{
+        display: none;
+    }
+}
+
+
+
+@-moz-document url-prefix() {
+   
+    .cambio select { 
+    moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url('../storage/img/select-moz-arrow.svg') !important;
+    background-repeat: no-repeat;
+    background-size: 6px;
+    background-position: right 14px;
+    width: 180px;
+     }
 }
 
 
@@ -221,6 +256,11 @@ li.line{
 
 .bk-grey{
     background:#F3F4F4;
+}
+
+
+input:focus{
+    outline: none;
 }
 
 select > option{
@@ -2095,6 +2135,47 @@ input::-webkit-inner-spin-button {
 /*---------------------------------------------*/
                 /*CAMBIO*/
 /*----------------------------------------------*/
+
+
+#actualizar-btn img{
+    
+}
+
+
+#actualizar-btn:hover img{
+
+    animation: spin 0.5s linear 1;
+     
+
+
+}
+
+#cambiar-btn:hover img{
+    animation: elasticFx 0.5s linear 1;
+}
+
+@keyframes elasticFx{
+    0%{
+            transform: scale(1);
+    
+    }
+
+
+    50%{
+            transform: scale(0.7);
+          
+    }
+
+
+
+
+    100%{
+           transform: scale(1);
+
+    }
+}
+
+
 section#form.cambio{
     background-image: url(../storage/img/bkground-cambio.jpg);
     color:white;
@@ -2102,10 +2183,21 @@ section#form.cambio{
 
     
 section#form ul#cotizador-cont{
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     margin:auto;
 }
 
+
+@media screen\0 {
+    section#form ul#cotizador-cont{
+        width:1281px;    }
+
+    li.first>ul{
+        width: 400px !important;
+    }
+}
 
 section#form.cambio .first h1 b {
         font-family: Bebas;
@@ -2116,6 +2208,8 @@ section#form.cambio .first h1 b {
 section#form.cambio .first ul{
         margin:0;
         width:fit-content;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
 }
 
 section#form.cambio .first ul li:not(:nth-child(1)){
@@ -2125,7 +2219,7 @@ section#form.cambio .first ul li:not(:nth-child(1)){
 
 section#form.cambio .first ul li h2{
     margin-bottom:10px;
-    font-family: Helvetica-Light
+    font-family: Helvetica-Light,GothamBook;
 }
 
 
@@ -2134,7 +2228,7 @@ section#form.cambio .first ul li div{
     margin-right: 15px;
     background-color: rgba(102, 206, 245, 0.3);
     padding: 6px 15px;
-    font-family: Helvetica-Light;
+    font-family: Helvetica-Light,GothamBook;
     border-radius: 24px;
     margin-right: 4px;
     margin-left: 4px;
@@ -2150,7 +2244,7 @@ section#form.cambio .form-cont{
     box-shadow: -5px 10px 30px -24px rgba(0,0,0,0.75);
        padding: 46px 35px 35px 35px;
     margin-top: 15px;
-    height: 302px;
+    height: 308px;
 }
 
 
@@ -2190,7 +2284,7 @@ section#form.cambio .form-cont .calculadora{
 section#form.cambio .form-cont .result-cont input{
        padding: 10px 15px;
     text-align: left;
-    font-family: Helvetica-Light;
+    font-family: Helvetica-Light,GothamBook;
     border: 1px solid white;
     border-radius: 17px;
     margin-top: 24px;
@@ -2221,6 +2315,12 @@ section#form.cambio li.form-cont .header a img{
     width: 30px;
 }
 
+@media screen\0 {
+    section#form.cambio li.form-cont .header a img{
+    width: 30px;
+    height: 30px;
+    }
+}
 
 section#form.cambio li.form-cont .header h3 {
         font-size: 21px;
@@ -2241,7 +2341,7 @@ section#form.cambio .result-cont h2>b {
     padding-left: 0 !important;
     outline: 0;
     box-shadow: inset 0 0px 0px rgba(0,0,0,.075);
-    font-family: Helvetica-Light;
+    font-family: Helvetica-Light,GothamBook;
         font-size: 25px !important;
     webkit-box-shadow: none !important;
     box-shadow: none !important;
@@ -2297,6 +2397,8 @@ section#mejor-cot ul li img{
 
 
 section#mejor-cot ul{
+        width: -webkit-fit-content;
+    width: -moz-fit-content;
     width:fit-content;
     margin:auto;
 }
@@ -2314,6 +2416,34 @@ section#mejor-cot ul li p{
 section#mejor-cot ul li{
      margin-left: 62px;
     margin-right: 61px;  
+}
+
+
+@media screen\0 {
+    section#mejor-cot ul li:nth-child(1) img{
+        width: 182px;
+        height: 170px;
+    }
+
+
+
+    section#mejor-cot ul li:nth-child(2) img{
+            width: 86px;
+            height: 170px;
+    }
+
+
+    section#mejor-cot ul li:nth-child(3) img{
+            width: 81px;
+            height: 170px;
+    }
+
+
+    section#mejor-cot ul li:nth-child(4) img{
+            width: 67px;
+            height: 170px;
+    }
+
 }
 
 
@@ -2392,8 +2522,19 @@ section#contacto-form h2.cambio-title>b{
 
 
 section#contacto-form a.border-btn{
+        width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
 }
+
+
+@media screen\0 {
+    section#contacto-form a.border-btn{
+        width: 108px;
+    }
+
+}
+
 
 
 section#contacto-form form div{

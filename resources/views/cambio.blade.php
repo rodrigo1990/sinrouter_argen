@@ -1,3 +1,17 @@
+<?php
+$myfile = fopen("storage/cambio/Cotizaciones.txt", "r") or die("Unable to open file!");
+// Output one line until end-of-file
+while(!feof($myfile)) {
+  
+
+  $archivo =(string)fgets($myfile);
+
+  $archivo = explode(';',$archivo);
+
+}
+fclose($myfile);
+?>
+
 @extends('layouts.main')
 
 
@@ -35,7 +49,7 @@
 				<div class="center-block">
 					<h2 class="float-left">CALCULADORA</h2>
 					<h3 class="">Simulá tu cambio</h3>
-					<a>
+					<a id="actualizar-btn">
 						<img src="<?php echo asset('storage/img/calculadora/actualizar.svg') ?>" alt="actualizar" class="float-right">
 					</a>
 					<!--  <hr class="center-block">-->
@@ -49,8 +63,6 @@
 
 						<select name="" id="">
 						<option value="USD"selected>Dólares (USD)</option>
-						<option value="EURO">EURO</option>
-						<option value="REAL">REAL</option>
 						</select>
 
 						
@@ -65,7 +77,7 @@
 						
 					</li>
 					<li>
-						<a class="float-right">
+						<a id="cambiar-btn" class="float-right">
 							<img class="cambiar-btn" src="<?php echo asset('storage/img/calculadora/cambiar.svg') ?>" alt="">
 						</a>
 					</li>
@@ -74,8 +86,6 @@
 
 						<select name="" id="">
 						<option value="USD"selected>Dólares (USD)</option>
-						<option value="EURO">EURO</option>
-						<option value="REAL">REAL</option>
 					</select>
 
 						
@@ -248,8 +258,24 @@
 @section('scripts')
 <script  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkne1gpPfJ0B3KrE4OQURwPi492LDjg8g"></script>
 <script>
+		
+
+
+		window.dolarCompra = <?php 	echo $archivo[4] ?>;
+
+		window.dolarVenta = <?php 	echo $archivo[5] ?>;
+
 	 $(document).ready(function(){
     	initMap();
+    	console.log(dolarCompra);
+    	console.log(dolarVenta);
+
+
+    	$("#interfaceFormBtn,#interfaceFormXs,#interfaceForm, #interfaceFormBtnXs").addClass('cambio');
+    	$("#interfaceFormBtn img,#interfaceFormBtnXs img").attr('src','<?php echo asset('storage/img/wsp-cambio-02.svg') ?>');
+
+
+
    });
 
 

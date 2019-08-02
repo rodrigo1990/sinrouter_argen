@@ -10,8 +10,8 @@
 
 					<div class="col-lg-10 hidden-md hidden-sm hidden-xs btn-cont">
 						<ul id="nav" class="menu">
-							<li><a   class="spa-btn" onClick="scrollAnimate('#form')">CALCULADORA</a></li>
-							<li><a   class="spa-btn" onClick="scrollAnimate('#quienes-somos')">QUIÉNES SOMOS</a></li>
+							<li><a   class="spa-btn after-btn" onClick="scrollAnimate('#form')">CALCULADORA</a></li>
+							<li><a   class="spa-btn after-btn" onClick="scrollAnimate('#quienes-somos')">QUIÉNES SOMOS</a></li>
 							<li><a  target="" class="after-btn" onClick="scrollAnimate('#donde-cambio')"  >¿DÓNDE CAMBIO?</a></li>
 							<li><a  class="spa-btn after-btn" onClick="scrollAnimate('#contacto-form')">CONTACTO</a></li>
 
