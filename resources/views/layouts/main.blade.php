@@ -20,6 +20,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 	<link rel="stylesheet" href="<?php echo asset("css/rangeslider.css")?>">
 	<link rel="stylesheet" href="<?php echo asset("css/wsp-chat.css")?>">
+    <link rel="shortcut icon" href="<?php echo asset("storage/logo-xs-01-01.png")?>">
 	@yield('estilos')
 	<meta name="csrf-token" content="{{ csrf_token() }}">
 	

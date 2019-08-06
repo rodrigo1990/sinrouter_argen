@@ -136,6 +136,11 @@
 		<div>
 			<img src="<?php echo asset("storage/img/slider_home/banner_3.jpg")?>" alt="">
 		</div>
+		<div class="">
+			<a href="/cambio" target="_blank">
+				<img src="<?php echo asset("storage/img/slider_home/banner_4.jpg")?>" alt="">
+			</a>
+		</div>
 	</div>
 
 	<div class="owl-one owl-carousel owl-theme slider" id="owl-2">
@@ -145,6 +150,12 @@
 		
 		<div>
 			<img src="<?php echo asset("storage/img/slider_home/banner_xs_3.jpg")?>" alt="">
+		</div>
+
+		<div>
+			<a href="/cambio" target="_blank">
+				<img src="<?php echo asset("storage/img/slider_home/banner_xs_4.jpg")?>" alt="">
+			</a>
 		</div>
 	</div>
 

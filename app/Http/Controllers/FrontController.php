@@ -22,19 +22,75 @@ class FrontController extends Controller
 
     public function cambio(){
 
+      $provincias = Provincia::all();
+      
+      
 
-     $divisas = JavaScript::put([
-        'foo' => 'bar',
-        'user' => 'rodrix',
-        'age' => 29
+      $filename=storage_path("cambio\Cotizaciones.txt");
+
+
+      $myfile = fopen($filename, "r") or die("Unable to open file!");
+ 
+      while(!feof($myfile)) {
+        
+
+        $archivo =(string)fgets($myfile);
+
+        $archivo = explode(';',$archivo);
+
+      }
+
+      $archivo[4] = str_replace(',','.',$archivo[4]);
+      $archivo[5] = str_replace(',','.',$archivo[5]);
+
+
+      $divisas = JavaScript::put([
+        'dolarCompra' => $archivo[4],
+        'dolarVenta' => $archivo[5]
       ]);
 
 
+      fclose($myfile);
 
 
-      $provincias = Provincia::all(); 
 
-      return view('cambio',compact('provincias','divisas'));
+
+      return view('cambio',compact('provincias','archivo'));
+
+    }
+
+
+
+    public function cotizaciones(){
+
+      
+      
+
+      $filename=storage_path("cambio\Cotizaciones.txt");
+
+
+      $myfile = fopen($filename, "r") or die("Unable to open file!");
+ 
+      while(!feof($myfile)) {
+        
+
+        $archivo =(string)fgets($myfile);
+
+        $archivo = explode(';',$archivo);
+
+      }
+
+      $archivo[4] = number_format((float)$archivo[4],2);
+      $archivo[5] = number_format((float)$archivo[5],2);
+
+
+
+      fclose($myfile);
+
+
+
+
+      return view('empleados.cotizacion',['archivo'=>$archivo]);
 
     }
 

@@ -14,6 +14,7 @@
 				<hr>
 					<ul>
 						<li class="margin-top-10"><a href="/saca_tu_prestamo" class="red"><b>- SACÁ TU PRÉSTAMO</b></a></li>
+						<li class="margin-top-10"><a href="/cambio" class="blue" target="_blank"><b>- CAMBIO</b></a></li>
 						<li class="margin-top-10"><a href="/consulta_tu_cuenta">Consultá tu cuenta</a></li>
 					</ul>
 				

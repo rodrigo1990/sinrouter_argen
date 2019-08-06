@@ -58,6 +58,9 @@ Route::get('/saca_tu_prestamo','FrontController@sacaTuPrestamo2');
 Route::get('/cambio','FrontController@cambio');
 
 
+Route::get('/cotizaciones','FrontController@cotizaciones');
+
+
 //Route::get('/saca_tu_prestamo2','FrontController@sacaTuPrestamo2');
 
 
@@ -68,5 +71,6 @@ Route::post('/procesarSolicitud','MailController@procesarSolicitudEnviarMail');
 
 Route::post('/enviarTrabajaConNosotros','MailController@enviarTrabajaConNosotros');
 Route::post('/enviarConvertiteEnComercializador','MailController@enviarConvertiteEnComercializador');
+Route::post('/enviarArgencambio','MailController@formularioArgencambio');
 //Route::get('/enviarTrabajaConNosotros/{nombre}','MailController@enviarTrabajaConNosotros');
 

@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Mail\CreditoNoAprobado;
 use App\Mail\CreditoPreAprobado;
 use App\Mail\TrabajaConNosotros;
+use App\Mail\Argencambio;
 use App\Mail\ConvertiteEnComercializador;
 use App\Mail\MailAdmin;
 use Illuminate\Support\Facades\Mail;
@@ -131,10 +132,20 @@ class MailController extends Controller
           return json_encode("Mail enviado correctamente ! ");
 
 
+    }
+
+
+    public function formularioArgencambio(Request $request){
 
 
 
+          $email = "mcd77.1990@gmail.com";
 
+
+
+          Mail::to($email)->send(new Argencambio($request));
+
+          return json_encode("Mail enviado correctamente ! ");
 
 
     }

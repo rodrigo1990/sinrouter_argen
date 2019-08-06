@@ -10,7 +10,6 @@
 
 					<div class="col-lg-10 hidden-md hidden-sm hidden-xs btn-cont">
 						<ul id="nav" class="menu">
-							<li><a   class="spa-btn after-btn" onClick="scrollAnimate('#form')">CALCULADORA</a></li>
 							<li><a   class="spa-btn after-btn" onClick="scrollAnimate('#quienes-somos')">QUIÉNES SOMOS</a></li>
 							<li><a  target="" class="after-btn" onClick="scrollAnimate('#donde-cambio')"  >¿DÓNDE CAMBIO?</a></li>
 							<li><a  class="spa-btn after-btn" onClick="scrollAnimate('#contacto-form')">CONTACTO</a></li>
@@ -37,13 +36,25 @@
 					</div>
 			</div>
 		</header>
+		<div class="cotizaciones">
+			
+			<img src="<?php echo asset('storage/img/eeuuflag.png') ?>" alt="" width="30px">
+			
+			<div id="owl-3" class="owl-one owl-carousel">
+				<div>
+					<p><b>Dolar:</b><span> <b>${{$archivo[4]}}</b></span> <b>Comprá</b></p>
+				</div>
+				<div>
+					<p><b>Dolar:</b><span> <b>${{$archivo[5]}}</b></span> <b>Vendé</b></p>
+				</div>
+			</div>
+		</div>
 		<ul id="xsMenu" class="overlay-xs-menu menu">
 			<div class="row">
 				<a id="cerrarMenu"  class="close-menu-xs">
 					<i class="fas fa-times"></i>
 				</a>
 			</div>
-			<li><a  class="xs-btn spa-btn" onClick="scrollAnimate('#form')">CALCULADORA</a></li>
 			<li><a  class="xs-btn spa-btn" onClick="scrollAnimate('#quienes-somos')">QUIÉNES SOMOS</a></li>
 			<li><a  class="xs-btn" onClick="scrollAnimate('#donde-cambio')" >¿DÓNDE CAMBIO?</a></li>
 			<li><a  class="xs-btn spa-btn" onClick="scrollAnimate('#contacto-form')">CONTACTO</a></li>

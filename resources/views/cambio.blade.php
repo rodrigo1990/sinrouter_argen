@@ -1,17 +1,3 @@
-<?php
-$myfile = fopen("storage/cambio/Cotizaciones.txt", "r") or die("Unable to open file!");
-// Output one line until end-of-file
-while(!feof($myfile)) {
-  
-
-  $archivo =(string)fgets($myfile);
-
-  $archivo = explode(';',$archivo);
-
-}
-fclose($myfile);
-?>
-
 @extends('layouts.main')
 
 
@@ -21,11 +7,16 @@ fclose($myfile);
 <section id="form" class="cambio">
 	<div class="row">
 		<ul id="cotizador-cont" class="flex">
-			<li class="first">
+			 <li class="first" style="">
 				
 				<ul>
 				<li><h1 class="text-center white"><b>CAMBIO HOY</b></h1></li>
 				<li>
+					<h2 clasS="text-center">1 USD = ${{$archivo[5]}}</h2>
+					<div>Compra: <span id="dolar-compra"></span></div>
+					<div>Venta: <span id="dolar-venta"></span></div>
+				</li>
+				<!--  <li>
 					<h2 clasS="text-center">1 USD = $43,00</h2>
 					<div>Compra: $42,00</div>
 					<div>Venta: $42,00</div>
@@ -34,22 +25,17 @@ fclose($myfile);
 					<h2 clasS="text-center">1 USD = $43,00</h2>
 					<div>Compra: $42,00</div>
 					<div>Venta: $42,00</div>
-				</li>
-				<li>
-					<h2 clasS="text-center">1 USD = $43,00</h2>
-					<div>Compra: $42,00</div>
-					<div>Venta: $42,00</div>
-				</li>
+				</li>-->
 			</ul>
 
 
-			</li>
+			  </li>
 			<li clasS="form-cont">
 				<div class="row header">
 				<div class="center-block">
 					<h2 class="float-left">CALCULADORA</h2>
 					<h3 class="">Simulá tu cambio</h3>
-					<a id="actualizar-btn">
+					<a id="actualizar-btn" onClick="actualizar()">
 						<img src="<?php echo asset('storage/img/calculadora/actualizar.svg') ?>" alt="actualizar" class="float-right">
 					</a>
 					<!--  <hr class="center-block">-->
@@ -58,42 +44,50 @@ fclose($myfile);
 			</div>
 			<div class="row calculadora result-cont">
 				<ul class="flex">
-					<li>
-						<h2 class=""><b>De:</b>
+					<li id="de">
 
-						<select name="" id="">
-						<option value="USD"selected>Dólares (USD)</option>
-						</select>
-
+						<div class="select-cont">
+							<h2 class="de"><b>De:</b>
+							<span>Pesos Argentinos</span>
+								
+							</h2>
+						</div>
 						
 
 
-					</h2>
-
-
-					<input class="result" value="1">
-						
+					
+				
+					<div id="input1-cont">
+						<input type="number" id="input1" class="result" value="1">
+					</div>
 
 						
 					</li>
-					<li>
-						<a id="cambiar-btn" class="float-right">
+					  <li>
+						<a id="cambiar-btn" class="float-right" onClick="cambiar()">
 							<img class="cambiar-btn" src="<?php echo asset('storage/img/calculadora/cambiar.svg') ?>" alt="">
 						</a>
 					</li>
-					<li>
-						<h2 class=""><b>A:</b>
+					<li id="a">
 
-						<select name="" id="">
-						<option value="USD"selected>Dólares (USD)</option>
-					</select>
+						<div class="select-cont">
+							<h2 class="a"><b>A:</b>
+							
+							
 
-						
-					</h2>
+								<select name="" id="divisaInput2">
+									<option value="USD"selected>Dólares (USD)</option>
+								</select>
+							
 
+							
+							</h2>
 
-					<input class="result" value="$43,00">
+						</div>
 
+					<div id="input2-cont">
+						<input type="number" id="input2" class="result" value=1>
+					</div>
 					</li>
 				</ul>
 					
@@ -190,34 +184,38 @@ fclose($myfile);
 		</h2>
 
 		<div class="row">
-			<form action="">
+			<form action="" id="argencambio">
 				<div>
 					<label class="text-right" for="nombre" class="float-left">Nombre</label class="text-right">
-					<input type="text" class="">
+					<input id="nombre" name="nombre" type="text" class="">
+					<div class="error" id="nombre-error">Ingrese un nombre válido</div>
 				</div>
 				
 				<div>
 					<label class="text-right" for="apellido">Apellido</label class="text-right">
-					<input type="text" class="">
+					<input id="apellido" name="apellido" type="text" class="">
+					<div class="error" id="apellido-error">Ingrese un apellido válido</div>
 				</div>
 				
 				<div>
 					<label class="text-right" for="telefono">Teléfono</label class="text-right">
-					<input type="text" class="">
+					<input id="telefono" name="telefono" type="text" class="">
+					<div class="error" id="telefono-error">Ingrese un teléfono valido</div>
 				</div>
 
 				<div>
 					<label class="text-right" for="mail">Mail</label class="text-right">
-					<input type="text" class="">
+					<input id="mail" name="mail" type="text" class="">
+					<div class="error" id="mail-error">Ingrese una dirección válida</div>
 				</div>
 
 				<div>
 					<label class="text-right" for="consulta">Consulta</label class="text-right">
-					<input type="text" class="">
+					<input id="consulta" name="consulta" type="text" class="">
 				</div>
 
 
-				<a href="sucursales" class="spa-btn border-btn white float-right margin-top-25" target="">ENVIAR</a>
+				<a onClick="enviarArgencambio();"  class="spa-btn border-btn white float-right margin-top-25" target="">ENVIAR</a>
 
 			</form>
 		</div>
@@ -259,16 +257,38 @@ fclose($myfile);
 <script  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkne1gpPfJ0B3KrE4OQURwPi492LDjg8g"></script>
 <script>
 		
+	
+	
+	window.dolarCompra = {{$archivo[4]}};
+	window.dolarVenta = {{$archivo[5]}};
 
 
-		window.dolarCompra = <?php 	echo $archivo[4] ?>;
 
-		window.dolarVenta = <?php 	echo $archivo[5] ?>;
+
+
+	//controlo el estado de la interface de la calculadora
+	window.calculadoraEstado = 0;
 
 	 $(document).ready(function(){
+
+
+	 	setTimeout(function() {
+          location.reload();
+        }, 900000);
+
+
     	initMap();
-    	console.log(dolarCompra);
-    	console.log(dolarVenta);
+    	console.log(dolarCompra.toFixed(2));
+    	console.log(dolarVenta.toFixed(2));
+    	dolarCompra=dolarCompra.toFixed(2);
+		dolarVenta=dolarVenta.toFixed(2);
+
+    	calculadoraConstructor(dolarCompra,dolarVenta);
+
+    	modificarTituloPestania();
+
+
+
 
 
     	$("#interfaceFormBtn,#interfaceFormXs,#interfaceForm, #interfaceFormBtnXs").addClass('cambio');
@@ -361,6 +381,250 @@ fclose($myfile);
 
 
 	      }
+
+
+	      function calculadoraConstructor(dolarCompra,dolarVenta){
+
+	      	$("span#dolar-compra").html("$"+dolarCompra);
+	      	$("span#dolar-venta").html("$"+dolarVenta);
+
+
+	      	$("#input2").val(dolarVenta);
+
+
+	      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	      $("#input1").on("keyup",function(){
+
+	      	var valor = $(this).val();
+
+	      	var total = valor/dolarVenta;
+	   		
+	   		console.log(total);
+
+      		$("#input2").val(total.toFixed(2));
+	      	
+
+	      });
+
+
+
+	      $("#input2").on("keyup",function(){
+
+	      	var valor = $(this).val();
+
+	      	var total = valor*dolarVenta;
+	   		
+	   		console.log(total);
+
+      		$("#input1").val(total.toFixed(2));
+	      	
+
+	      });
+
+
+
+	      function actualizar(){
+
+	      	$("#input1").val(1);
+
+	      	$("#input2").val(dolarVenta);
+
+	      	$("#input2").appendTo($("#input2-cont"));
+
+	     	$("li#de h2.a").appendTo($("li#a .select-cont"));
+					      
+
+
+
+	      	$("#input1").appendTo($("#input1-cont"));
+	      	$("li#a h2.de").appendTo($("li#de .select-cont"));
+
+	      	$("li#de h2.de b").text('De:');
+
+	      	$("li#a h2.a b").text('A:');
+
+
+	      }
+
+
+	      function cambiar(){
+	      	if(calculadoraEstado==0){
+
+		      	$("#input1").appendTo($("#input2-cont"));
+		      	$("li#de h2.de").appendTo($("li#a .select-cont"))
+
+
+
+
+		      	$("#input2").appendTo($("#input1-cont"));
+
+		      	$("li#a h2.a").appendTo($("li#de .select-cont"));
+
+		      	$("li#de h2.a b").text('De:');
+
+		      	$("li#a h2.de b").text('A:');
+
+	
+		      	
+				
+		    
+
+
+		      	var valor = $("#input2").val();
+
+		      	var total = valor*dolarVenta;
+		   		
+		   		console.log(total);
+
+	      		$("#input1").val(total.toFixed(2));
+
+
+		     	calculadoraEstado = 1;
+
+		     }else{
+
+
+		     	$("#input2").appendTo($("#input2-cont"));
+
+		     	$("li#de h2.a").appendTo($("li#a .select-cont"));
+						      
+
+
+
+		      	$("#input1").appendTo($("#input1-cont"));
+		      	$("li#a h2.de").appendTo($("li#de .select-cont"));
+
+		      	$("li#de h2.de b").text('De:');
+
+		      	$("li#a h2.a b").text('A:');
+
+
+
+		    
+
+		      	calculadoraEstado = 0;
+		     }
+      		
+
+
+
+
+	      }
+
+
+
+
+	      function enviarArgencambio(){
+
+            var nombre  = $("#argencambio #nombre").val();
+            var apellido  = $("#argencambio #apellido").val();
+            var telefono  = $("#argencambio #telefono").val();
+            var mail  = $("#argencambio #mail").val();
+            var consulta  = $("#argencambio #consulta").val();
+           
+
+
+            var nombreEstaValidado=false;
+            var apellidoEstaValidado=false;
+            var telefonoEstaValidado = false;
+            var mailEstaValidado = false;
+
+            if(nombre.length==0){
+                $("#argencambio #nombre-error").fadeIn();
+                nombreEstaValidado=false;
+            }else{
+                $("#argencambio #nombre-error").fadeOut();
+                nombreEstaValidado=true;
+            }
+
+            if(apellido.length==0){
+                $("#argencambio #apellido-error").fadeIn();
+                apellidoEstaValidado=false;
+            }else{
+                $("#argencambio #apellido-error").fadeOut();
+                apellidoEstaValidado=true;
+            }
+
+            if(telefono.length==0){
+                $("#argencambio #telefono-error").fadeIn();
+                telefonoEstaValidado=false;
+            }else{
+                $("#argencambio #dni-error").fadeOut();
+                telefonoEstaValidado=true;
+            }
+
+            if((mail.length==0||mail.search(emailValido))){
+                $("#argencambio #mail-error").fadeIn();
+                mailEstaValidado=false;
+            }else{
+                $("#argencambio #mail-error").fadeOut();
+                mailEstaValidado=true;
+            }
+
+
+            if(nombreEstaValidado==true&&apellidoEstaValidado==true&&telefonoEstaValidado==true&&mailEstaValidado==true){
+                    $("#content").append('<div id="preloader-mailing" ><div class="spinner-sm spinner-sm-1" id="status"> </div></div>');
+                    $.ajax({
+                        headers:{
+                                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                                },
+                       
+                       data: {nombre:nombre,apellido:apellido,telefono:telefono,mail:mail,consulta:consulta},
+                       url:'/enviarArgencambio',
+                       type:'post',
+                        dataType:"json",
+                       success: function(msg){
+
+                            $('#preloader-mailing  #status').fadeOut(); // will first fade out the loading animation 
+                            $('#preloader-mailing ').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+
+                            $('body').delay(350).css({'overflow-y':'visible'});
+
+                            alert(msg);
+
+
+                           setTimeout(function(){
+                            $("#preloader-mailing").remove(); 
+                          },500);
+                            
+
+
+
+                          
+
+                        }
+                     });
+            }
+
+            
+            
+
+
+
+        }
+
+
+        function modificarTituloPestania(){
+
+        	$("title").text("Argenpesos - Agencia de Cambio");
+        }
+
+    	
 
 
 

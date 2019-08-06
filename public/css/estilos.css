@@ -712,6 +712,11 @@ a.active:after{
   width: 100%;  
 }
 
+
+header ul.menu>li:first-child{
+        margin-right: 21px;
+
+}
 header ul.menu>li:not(:first-child){
 	margin-left:0;
 }
@@ -756,6 +761,34 @@ header ul.menu>li>a[href='/saca_tu_prestamo'] {
     padding: 14px;
 }
 
+
+header ul.menu>li>a[href='/cambio'] {
+       color: #00A5E7;
+    letter-spacing: 1px;
+   font-size: 21px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #00A5E7;
+    border-radius: 30px;
+    padding: 14px;
+}
+
+
+
+header ul.menu>li>a[href='/cambio']:hover {
+       color: white;
+    background:#00A5E7;
+}
+
+header ul.menu>li>a[href='/cambio']:active {
+     color: white !important;
+}
+
+
+header ul.menu>li>a[href='/cambio']:focus {
+     color: #00A5E7 !important;
+      background:transparent;
+}
 
 header ul.menu>li>a[href='/saca_tu_prestamo']:hover {
        color: white;
@@ -1182,6 +1215,8 @@ ul li h4{
 
 
 
+
+
 .owl-carousel .owl-stage-outer{
   z-index: -1 !important;
 }
@@ -1214,6 +1249,12 @@ ul li h4{
   outline:none;
 }
 
+
+
+.mySlide {
+    background:url(../storage/img/bkground-cambio.jpg);
+    
+}
 
 /*---------------------------------------------*/
                 /*CONTACTO*/
@@ -2137,6 +2178,49 @@ input::-webkit-inner-spin-button {
 /*----------------------------------------------*/
 
 
+/*****************HEADER CAMBIO*******************/
+
+.cotizaciones{
+    position: fixed !important;
+    z-index: 10000 !important;
+    right: 0;
+    background: #f9f9f9;
+    width: 237px !important;
+    padding: 0px 19px 8px 19px !important ;
+    -webkit-box-shadow: -1px 10px 30px -24px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 10px 30px -24px rgba(0,0,0,0.75);
+    box-shadow: -5px 10px 30px -24px rgba(0,0,0,0.75);
+    border-bottom-left-radius: 13px;
+}
+
+
+.cotizaciones #owl-3
+{
+    margin-top: 5px;
+}
+
+.cotizaciones img{
+        float: left;
+    margin-right: 8px;
+}
+
+
+.cotizaciones h1{
+    color: black;
+    text-align: center;
+}
+
+
+.cotizaciones div p{
+    color:#404040;
+}
+
+.cotizaciones div p span{
+    color:#00A5E7;
+}
+
+/*****************FIN HEADER CAMBIO*******************/
+
 #actualizar-btn img{
     
 }
@@ -2201,7 +2285,7 @@ section#form ul#cotizador-cont{
 
 section#form.cambio .first h1 b {
         font-family: Bebas;
-            font-size: 53px;
+        font-size: 61px;
 }
 
 
@@ -2210,6 +2294,7 @@ section#form.cambio .first ul{
         width:fit-content;
         width: -webkit-fit-content;
         width: -moz-fit-content;
+        margin-top: 89px;
 }
 
 section#form.cambio .first ul li:not(:nth-child(1)){
@@ -2218,7 +2303,8 @@ section#form.cambio .first ul li:not(:nth-child(1)){
 
 
 section#form.cambio .first ul li h2{
-    margin-bottom:10px;
+    margin-bottom: 14px;
+    font-size: 41px;
     font-family: Helvetica-Light,GothamBook;
 }
 
@@ -2233,12 +2319,13 @@ section#form.cambio .first ul li div{
     margin-right: 4px;
     margin-left: 4px;
     font-size: 17px;
+        text-align: center;
 
 }
 
 
 section#form.cambio .form-cont{
-    background-color: #66CEF5;
+    background-color: #56b3d6;
         -webkit-box-shadow: -1px 10px 30px -24px rgba(0,0,0,0.75);
     -moz-box-shadow: -1px 10px 30px -24px rgba(0,0,0,0.75);
     box-shadow: -5px 10px 30px -24px rgba(0,0,0,0.75);
@@ -2346,6 +2433,13 @@ section#form.cambio .result-cont h2>b {
     webkit-box-shadow: none !important;
     box-shadow: none !important;
 }
+
+
+.cambio h2>span{
+    font-family: Helvetica-Light,GothamBook;
+        font-size: 25px !important;
+}
+
 
 
 
@@ -2510,9 +2604,11 @@ section#donde-cambio #map{
 
 
 section#contacto-form{
-    background-image: url(../storage/img/bkground-cambio.jpg);
-    color:white;
+        background-image: url(../storage/img/bkground-cambio.jpg);
+    background-position: center;
+    color: white;
     padding: 59px 0 59px 0;
+    background-size: cover;
 }
 
 section#contacto-form h2.cambio-title>b{
@@ -2537,11 +2633,19 @@ section#contacto-form a.border-btn{
 
 
 
-section#contacto-form form div{
+section#contacto-form form div:not(.error){
     display:block;
     width: 100%;
     margin-bottom: 20px;
 }
+
+section#contacto-form form div.error{
+        text-align: left;
+    margin-left: 22px;
+}
+
+
+
 
 section#contacto-form form div input{
     width: 90%;
@@ -2828,7 +2932,7 @@ header ul.menu>li>a[href='/saca_tu_prestamo'] {
 @media only screen and (min-width: 1200px) and (max-width: 1400px)  {
 
 
-    header ul.menu>li>a[href='/saca_tu_prestamo'] {
+    header ul.menu>li>a[href='/saca_tu_prestamo'],header ul.menu>li>a[href='/cambio'] {
 
    font-size: 18px;
   
@@ -2877,7 +2981,7 @@ footer .first{
     margin-right: 0 !important;
 }
 
-header ul.menu>li>a[href='/saca_tu_prestamo'] {
+header ul.menu>li>a[href='/saca_tu_prestamo'],header ul.menu>li>a[href='/cambio'] {
     font-size: 13px !important;
 }
 
@@ -3562,6 +3666,8 @@ h1, #contacto h1 {
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
 
+    
+
   .bk-landing>.row h1 {
         font-size: 74px !important;
     line-height: 90px !important;
@@ -3592,7 +3698,9 @@ h1, #contacto h1 {
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
 
-
+section#contacto-form form label.text-right {
+    text-align: left;
+}
 
   .bk-landing>.row h1 {
         font-size: 74px !important;
@@ -3610,6 +3718,33 @@ h1, #contacto h1 {
   
 
 }
+
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+    
+    header ul.menu>li>a {
+    font-size: 80% !important;
+    }
+
+    header ul.menu>li>a[href='/saca_tu_prestamo'], header ul.menu>li>a[href='/cambio'] {
+    font-size: 80% !important;
+    }
+
+    section#form .first ul {
+    width: 450px;
+    margin-right: 0; 
+    float: right;
+    }
+}
+
+
+@media only screen and (min-width: 1200px) and (max-width: 1355px) {
+
+    section#form .form-cont{
+        width: 53% !important;
+    }
+
+}
+
 
 
 @media only screen and (min-width: 1200px) and (max-width: 1500px) {
@@ -3660,9 +3795,9 @@ h1, #contacto h1 {
         font-size: 14px;
     }
 
-    header ul.menu>li>a[href='/saca_tu_prestamo'] {
+    header ul.menu>li>a[href='/saca_tu_prestamo'],header ul.menu>li>a[href='/cambio'] {
    
-   font-size: 17px;
+   font-size: 14px;
    
     }
 
@@ -3670,6 +3805,25 @@ h1, #contacto h1 {
     font-size: 19px;
     }
 }
+
+
+@media only screen and (min-width: 1600px) and (max-width: 1700px) {
+
+    header ul.menu>li>a[href='/saca_tu_prestamo'],header ul.menu>li>a[href='/cambio'] {
+   
+   font-size: 17px;
+   
+    }
+
+
+    header ul.menu>li>a {
+        font-size: 16px;
+    }
+
+}
+
+
+
 
 @media only screen (width: 1920px) {
 #prestamo-form .form-cont {
