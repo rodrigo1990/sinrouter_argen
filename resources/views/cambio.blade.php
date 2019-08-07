@@ -353,9 +353,9 @@
 	      	var center = {lat: latitud, lng: longitud};
 
 
-	      	if($(window).width()<1024){
+	      	/*if($(window).width()<1024){
 				$('html,body').animate({ scrollTop:$('#map').offset().top-50  }, 'slow');
-			}
+			}*/
 
 
 
@@ -389,7 +389,7 @@
 	      	$("span#dolar-venta").html("$"+dolarVenta);
 
 
-	      	$("#input2").val(dolarVenta);
+	      	$("#input1").val(dolarVenta);
 
 
 	      }
@@ -624,10 +624,7 @@
         	$("title").text("Argenpesos - Agencia de Cambio");
         }
 
-    	
-
-
-
+    
 
 
 </script>

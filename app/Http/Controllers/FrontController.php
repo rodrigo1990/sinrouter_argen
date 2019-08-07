@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Provincia;
 use Illuminate\Support\Facades\DB;
-use JavaScript;
 
 
 class FrontController extends Controller
@@ -44,10 +43,6 @@ class FrontController extends Controller
       $archivo[5] = str_replace(',','.',$archivo[5]);
 
 
-      $divisas = JavaScript::put([
-        'dolarCompra' => $archivo[4],
-        'dolarVenta' => $archivo[5]
-      ]);
 
 
       fclose($myfile);

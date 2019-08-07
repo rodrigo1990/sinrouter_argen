@@ -61,7 +61,7 @@ Route::get('/cambio','FrontController@cambio');
 Route::get('/cotizaciones','FrontController@cotizaciones');
 
 
-//Route::get('/saca_tu_prestamo2','FrontController@sacaTuPrestamo2');
+Route::get('/saca_tu_prestamo','FrontController@sacaTuPrestamo');
 
 
 /***************MAILING***************************************/

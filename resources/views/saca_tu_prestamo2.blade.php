@@ -336,6 +336,7 @@
 		</div>
 	</div>
 </div>
+@component('comp.preguntas_frecuentes')@endcomponent
 
 
 	@component('comp.adelantos_creditos_online')
@@ -695,6 +696,12 @@ function $_GET(param) {
 		return vars[param] ? vars[param] : null;	
 	}
 	return vars;
+}
+
+
+function scale(){
+	$("#preguntasFrecuentesCont").addClass('scale');
+	$("body").css("overflow-y",'hidden');
 }
 
 

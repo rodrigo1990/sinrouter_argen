@@ -42,10 +42,10 @@
 			
 			<div id="owl-3" class="owl-one owl-carousel">
 				<div>
-					<p><b>Dolar:</b><span> <b>${{$archivo[4]}}</b></span> <b>Comprá</b></p>
+					<p><b>Dolar:</b><span> <b>${{$archivo[4]}}</b></span> <b>Compra</b></p>
 				</div>
 				<div>
-					<p><b>Dolar:</b><span> <b>${{$archivo[5]}}</b></span> <b>Vendé</b></p>
+					<p><b>Dolar:</b><span> <b>${{$archivo[5]}}</b></span> <b>Venta</b></p>
 				</div>
 			</div>
 		</div>

@@ -1370,7 +1370,80 @@ footer b {
                 /*SACAR PRESTAMO FORM*/
 /*----------------------------------------------*/
 
+#preguntasFrecuentesBtn{
 
+    border-radius: 50%;
+        width: 45px;
+    height: 45px;
+ background: rgba(248,80,50,1);
+background: -moz-linear-gradient(-45deg, rgba(248,80,50,1) 0%, rgba(248,80,50,1) 1%, rgba(241,111,92,1) 14%, rgba(246,41,12,1) 51%, rgba(240,47,23,1) 71%, rgba(231,56,39,1) 100%);
+background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(248,80,50,1)), color-stop(1%, rgba(248,80,50,1)), color-stop(14%, rgba(241,111,92,1)), color-stop(51%, rgba(246,41,12,1)), color-stop(71%, rgba(240,47,23,1)), color-stop(100%, rgba(231,56,39,1)));
+background: -webkit-linear-gradient(-45deg, rgba(248,80,50,1) 0%, rgba(248,80,50,1) 1%, rgba(241,111,92,1) 14%, rgba(246,41,12,1) 51%, rgba(240,47,23,1) 71%, rgba(231,56,39,1) 100%);
+background: -o-linear-gradient(-45deg, rgba(248,80,50,1) 0%, rgba(248,80,50,1) 1%, rgba(241,111,92,1) 14%, rgba(246,41,12,1) 51%, rgba(240,47,23,1) 71%, rgba(231,56,39,1) 100%);
+background: -ms-linear-gradient(-45deg, rgba(248,80,50,1) 0%, rgba(248,80,50,1) 1%, rgba(241,111,92,1) 14%, rgba(246,41,12,1) 51%, rgba(240,47,23,1) 71%, rgba(231,56,39,1) 100%);
+background: linear-gradient(135deg, rgba(248,80,50,1) 0%, rgba(248,80,50,1) 1%, rgba(241,111,92,1) 14%, rgba(246,41,12,1) 51%, rgba(240,47,23,1) 71%, rgba(231,56,39,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#e73827', GradientType=1 );
+    top:10px !important;
+    right:15px !important;
+
+  cursor:pointer;
+}
+
+.full-bk{
+    background: white;
+    width: 100vw;
+    height: 104vh;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+     transform:scale(0);
+     overflow-y: scroll;
+         z-index: 90000;
+}
+
+.scale{
+    animation:scale 0.5s;
+     animation-fill-mode: forwards;  
+}
+
+@keyframes scale{
+    0%{
+        transform:scale(0);
+    }
+
+
+    100%{
+        transform:scale(1);
+    }
+}
+
+#preguntasFrecuentesBtn.interfaceFormBtn{
+           padding: 4px 7px 15px 10px;
+    border: 1px solid #a7a7a7;
+}
+
+
+#preguntasFrecuentesBtn.interfaceFormBtn:hover h1{
+    color: lightGray;
+
+}
+
+
+
+
+
+#preguntasFrecuentesBtn.interfaceFormBtn h1{
+    color: white;
+    font-weight: bolder;
+    font-size: 35px;
+        -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  transition: all 0.30s ease-in-out;
+}
 
 
    #interfaceFormBtnXs{
@@ -1956,6 +2029,8 @@ input::-webkit-inner-spin-button {
   position:relative;
 }
 
+
+
 .panel-cont{
     padding: 28px 5px 10px 28px;
 }
@@ -2379,6 +2454,8 @@ section#form.cambio .form-cont .result-cont input{
     font-size: 32px !important;
     width: 100%;
     height: 62px;
+    box-shadow: none;
+    outline:none;
 
 }
 
@@ -2655,7 +2732,7 @@ section#contacto-form form div input{
 
 
 section#contacto-form form{
-    margin-top:23px;
+    margin-top:45px;
 }
 
 
@@ -2994,6 +3071,37 @@ header ul.menu>li>a[href='/saca_tu_prestamo'],header ul.menu>li>a[href='/cambio'
     }
 
 @media only screen and (min-width: 10px) and (max-width: 1024px)  {
+
+
+section#form.cambio .form-cont .result-cont input{
+    text-align: center !important;
+}
+section#form.cambio .first ul{
+    margin-top:0 !important;
+}
+section#form.cambio .first h1 b {
+    font-size: 46px !important;
+}
+
+section#form.cambio li.form-cont .header h2 {
+    font-size: 41px !important;
+}
+
+section#form.cambio .first ul li h2 {
+    font-size: 31px !important;
+}
+
+section#contacto-form form label.text-right {
+    text-align: left;
+}   
+
+
+#preguntasFrecuentes .col-sm-12{
+    padding-left:0 !important;
+    padding-right:0 !important;
+}
+
+
 
      section#form.cambio img{
         display:block;
@@ -3433,14 +3541,50 @@ section#form form .border-btn{
 }
 
 .change_char {
-    right: -30px;
+    right: -10;
 }
 
 }
 @media only screen and (min-width: 320px) and (max-width: 768px){
     
     
-   
+   .cotizaciones {
+    position: fixed !important;
+    z-index: 10000 !important;
+    right: 0;
+    bottom: 9px;
+    left: 0;
+    background: rgba(0,171,238,1);
+    background: -moz-linear-gradient(45deg, rgba(0,171,238,1) 0%, rgba(0,131,179,1) 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(0,171,238,1)), color-stop(100%, rgba(0,131,179,1)));
+    background: -webkit-linear-gradient(45deg, rgba(0,171,238,1) 0%, rgba(0,131,179,1) 100%);
+    background: -o-linear-gradient(45deg, rgba(0,171,238,1) 0%, rgba(0,131,179,1) 100%);
+    background: -ms-linear-gradient(45deg, rgba(0,171,238,1) 0%, rgba(0,131,179,1) 100%);
+    background: linear-gradient(45deg, rgba(0,171,238,1) 0%, rgba(0,131,179,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00abee', endColorstr='#0083b3', GradientType=1 );
+
+    width: 237px !important;
+    padding: 16px 19px 16px 19px !important;
+    border-top-right-radius: 11px;
+    border-bottom-right-radius: 11px;
+    border-bottom-left-radius: 0;
+    -webkit-box-shadow: -1px 10px 30px -24px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 10px 30px -24px rgba(0,0,0,0.75);
+    box-shadow: -5px 10px 30px -24px rgba(0,0,0,0.75);
+    /* border-bottom-left-radius: 13px; */
+}
+
+.cotizaciones div p{
+    color:white;
+    letter-spacing: 0px !important;
+}
+
+.cotizaciones div p span{
+    color:white;
+}
+
+
+
 
 
 
@@ -3616,6 +3760,12 @@ h1, #contacto h1 {
         margin: 3px 0 0 -20px;
 }
 
+#preguntasFrecuentes .change_char {
+    right: -10px;
+}
+
+
+
 }
 
 @media only screen and (min-width: 320px) and (max-width: 850px) and (orientation:landscape) {
@@ -3698,9 +3848,6 @@ h1, #contacto h1 {
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
 
-section#contacto-form form label.text-right {
-    text-align: left;
-}
 
   .bk-landing>.row h1 {
         font-size: 74px !important;
@@ -3722,11 +3869,11 @@ section#contacto-form form label.text-right {
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {
     
     header ul.menu>li>a {
-    font-size: 80% !important;
+    font-size: 95% !important;
     }
 
     header ul.menu>li>a[href='/saca_tu_prestamo'], header ul.menu>li>a[href='/cambio'] {
-    font-size: 80% !important;
+    font-size: 100% !important;
     }
 
     section#form .first ul {
@@ -3743,11 +3890,19 @@ section#contacto-form form label.text-right {
         width: 53% !important;
     }
 
+     header ul.menu>li>a {
+    font-size: 78% !important;
+    }
+
+    header ul.menu>li>a[href='/saca_tu_prestamo'], header ul.menu>li>a[href='/cambio'] {
+    font-size: 82% !important;
+    }
+
 }
 
 
 
-@media only screen and (min-width: 1200px) and (max-width: 1500px) {
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
 
     
 .modal form {
