@@ -45,6 +45,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <body @yield('bodyclass')>
 	<!-- PRELOADER AL CARGAR -->
 	<div id="preloader"><div class="spinner-sm spinner-sm-1" id="status"> </div></div>
+
+
 	   
 
 <div id="content">
@@ -122,9 +124,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
                         <div class="col-xs-12 hidden-sm hidden-lg hidden-md">
                             
-                                <a href="" class="border-btn blue float-right  text-center margin-left-10 margin-top-25">ADJUNTAR CV</a>
+                                <span id="file-btn" class="btn btn-primary btn-file border-btn blue float-right" >
+                                ADJUNTAR CV <input name="file" type="file" id="file-btn">
+                              </span>
 
-                                <a href="" class="border-btn red float-right text-center margin-top-25">ENVIAR</a>
+                                <a onClick="enviarTrabajaConNosotros()"  class="border-btn red float-right text-center margin-top-25">ENVIAR</a>
                         </div>
                         
                         
@@ -242,6 +246,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         
 @endcomponent
 
+
+<div id="alert-cont"></div>
+
 <script type="text/javascript" src="<?php echo asset("js/jquery.js")?>"></script>
 <script type="text/javascript" src="<?php echo asset("bootstrap-3.3.7-dist/js/bootstrap.min.js")?>"></script>
 
@@ -250,7 +257,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script type="text/javascript" src="<?php echo asset("js/whatsapp-message.js")?>"></script>
 <script type="text/javascript" src="<?php echo asset("js/wspChatInterface.js")?>"></script>
 <script type="text/javascript" src="<?php echo asset("js/enviarWsp.js")?>"></script>
-
+<script type="text/javascript" src="<?php echo asset('js/alertar.js') ?>"></script>
     <script>
     		$(window).on('load', function() { // makes sure the whole site is loaded 
 			
@@ -258,11 +265,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			$('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
 			$('body').delay(350).css({'overflow-y':'visible'});
 
+
+
 		});
     </script>
 
     <script>
             $(document).ready(function(){
+
             
             $("#quienes-somos-btn, ul.sub-menu").hover(function(){
                 $(".sub-menu").show();
@@ -271,7 +281,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
              @if(isset($msg))
 
-                alert("mail enviado correctamente");
+                alertar("Hemos recibido tu solicitud. <br> ¡Muchas Gracias!");
 
             @endif
 
@@ -335,12 +345,12 @@ $('#form-home-btn').not("#cerrarMenu").click(function (e) {
 
 
 
-                    $("#nombre").removeClass('border-color-green');
+                    $("#form-home #nombre").removeClass('border-color-green');
 
-                    $("#nombre").addClass('border-color-red');
+                    $("#form-home #nombre").addClass('border-color-red');
 
 
-                    $("#nombre-error").fadeIn();
+                    $(" #form-home #nombre-error").fadeIn();
 
                 }
 
@@ -350,11 +360,11 @@ $('#form-home-btn').not("#cerrarMenu").click(function (e) {
 
 
 
-                    $("#apellido").removeClass('border-color-green');
+                    $("#form-home #apellido").removeClass('border-color-green');
 
-                    $("#apellido").addClass('border-color-red');
+                    $("#form-home #apellido").addClass('border-color-red');
 
-                    $("#apellido-error").fadeIn();
+                    $("#form-home #apellido-error").fadeIn();
 
                 }
 
@@ -364,11 +374,11 @@ $('#form-home-btn').not("#cerrarMenu").click(function (e) {
 
 
 
-                    $("#dni").removeClass('border-color-green');
+                    $("#form-home #dni").removeClass('border-color-green');
 
-                    $("#dni").addClass('border-color-red');
+                    $("#form-home #dni").addClass('border-color-red');
 
-                    $("#dni-error").fadeIn();
+                    $("#form-home #dni-error").fadeIn();
 
                 }
 
@@ -376,11 +386,11 @@ $('#form-home-btn').not("#cerrarMenu").click(function (e) {
 
 
 
-                    $("#cod_area").removeClass('border-color-green');
+                    $("#form-home #cod_area").removeClass('border-color-green');
 
-                    $("#cod_area").addClass('border-color-red');
+                    $("#form-home #cod_area").addClass('border-color-red');
 
-                    $("#cod-area-error").fadeIn();
+                    $("#form-home #cod-area-error").fadeIn();
 
 
 
@@ -393,15 +403,15 @@ $('#form-home-btn').not("#cerrarMenu").click(function (e) {
 
 
 
-                    $("#telefono").removeClass('border-color-green');
+                    $("#form-home #telefono").removeClass('border-color-green');
 
-                    $("#telefono").addClass('border-color-red');
+                    $("#form-home #telefono").addClass('border-color-red');
 
-                    $("#fix-celular").removeClass('border-color-green');
+                    $("#form-home #fix-celular").removeClass('border-color-green');
 
-                    $("#fix-celular").addClass('border-color-red');
+                    $("#form-home #fix-celular").addClass('border-color-red');
 
-                    $("#telefono-error").fadeIn();
+                    $("#form-home #telefono-error").fadeIn();
 
 
                 }
@@ -412,11 +422,11 @@ $('#form-home-btn').not("#cerrarMenu").click(function (e) {
 
 
 
-                    $("#mail").removeClass('border-color-green');
+                    $("#form-home #mail").removeClass('border-color-green');
 
-                    $("#mail").addClass('border-color-red');
+                    $("#form-home #mail").addClass('border-color-red');
 
-                    $("#mail-error").fadeIn();
+                    $("#form-home #mail-error").fadeIn();
 
                 }
 
@@ -556,7 +566,7 @@ $("#form-home #nombre").keyup(function(){
             cod_area_esta_validado = true;
 
 
-            $("#cod-area-error").fadeOut();   
+            $("#form-home #cod-area-error").fadeOut();   
 
         }
 
@@ -600,9 +610,9 @@ $("#form-home #nombre").keyup(function(){
 
             $("#form-home #telefono").addClass('border-color-red');
 
-             $("#fix-celular").removeClass('border-color-green');
+             $("#form-home #form-home #fix-celular").removeClass('border-color-green');
 
-            $("#fix-celular").addClass('border-color-red');
+            $("#form-home #form-home #fix-celular").addClass('border-color-red');
 
 
             $("#telefono-error").fadeIn();
@@ -712,7 +722,7 @@ $("#form-home #nombre").keyup(function(){
 
 
 
-            $("#telefono-error").fadeIn();
+            $("#form-home #telefono-error").fadeIn();
 
 
 
@@ -751,7 +761,7 @@ $("#form-home #nombre").keyup(function(){
 
     });
 
-     $("#mail").keyup(function(){
+     $("#form-home #mail").keyup(function(){
 
     
 
@@ -776,12 +786,12 @@ $("#form-home #nombre").keyup(function(){
 
 
 
-            $("#mail").removeClass('border-color-red');
+            $("#form-home #mail").removeClass('border-color-red');
 
 
-         $("#mail").addClass('border-color-green');
+         $("#form-home #mail").addClass('border-color-green');
 
-            $("#mail-error").fadeOut();
+            $("#form-home #mail-error").fadeOut();
 
             email_esta_validado=true;
 
@@ -789,11 +799,11 @@ $("#form-home #nombre").keyup(function(){
 
     });
 
-      $("#dni").keyup(function(){
+      $("#form-home #dni").keyup(function(){
 
     
 
-        var dni=$("#dni").val();
+        var dni=$("#form-home #dni").val();
 
 
 
@@ -995,7 +1005,7 @@ $("#form-home #nombre").keyup(function(){
             }
 
             if($("#trabajaConNosotros #file-cv").is(':empty')){
-                alert("ingrese un cv");
+                alertar("Ingrese un cv");
             }else{
                 cvEstaValidado=true;
             }
@@ -1034,7 +1044,7 @@ $("#form-home #nombre").keyup(function(){
 
             if(file_size>2097152) {
 
-                alert("El archivo NO puede ser superior a 2MB");
+                alertar("El archivo NO puede ser superior a 2MB");
 
             }else{
 
@@ -1044,7 +1054,7 @@ $("#form-home #nombre").keyup(function(){
             }
 
         }else{
-            alert("El archivo debe ser .pdf o .docx")
+            alertar("El archivo debe ser .pdf o .docx");
         }
         });
 
@@ -1126,7 +1136,7 @@ $("#form-home #nombre").keyup(function(){
 
                             $('body').delay(350).css({'overflow-y':'visible'});
 
-                            alert(msg);
+                            alertar(msg);
 
 
                            setTimeout(function(){

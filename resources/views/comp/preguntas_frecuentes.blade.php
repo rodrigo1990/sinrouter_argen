@@ -1,8 +1,17 @@
-<a id="preguntasFrecuentesBtn" class="interfaceFormBtn animated fadeInDown" onClick="scale()">
-    <h1>?</h1>
+
+<a id="preguntasFrecuentesBtn" class="interfaceFormBtn animated fadeInDown" >
+    <h1 onClick="scale()">?</h1>
+    <div class="tool-tip">
+      <h3>Si tenés dudas <br> hace click aquí</h3>
+    </div>
 </a>
 <div id="preguntasFrecuentesCont" class="full-bk">
-    <section id="preguntasFrecuentes" class="animated fadeIn">
+    
+    <a  id="" class="close-btn" onClick="noScale();">
+      <i class="fas fa-times-circle float-right"></i>
+    </a>
+
+    <section id="preguntasFrecuentes" class=" ">
     
     <div class="row margin-top-10">
         <div class="col-sm-12">

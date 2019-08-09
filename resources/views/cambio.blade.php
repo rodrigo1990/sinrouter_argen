@@ -564,7 +564,7 @@
                 $("#argencambio #telefono-error").fadeIn();
                 telefonoEstaValidado=false;
             }else{
-                $("#argencambio #dni-error").fadeOut();
+                $("#argencambio #telefono-error").fadeOut();
                 telefonoEstaValidado=true;
             }
 
@@ -595,7 +595,7 @@
 
                             $('body').delay(350).css({'overflow-y':'visible'});
 
-                            alert(msg);
+                            alertar(msg);
 
 
                            setTimeout(function(){

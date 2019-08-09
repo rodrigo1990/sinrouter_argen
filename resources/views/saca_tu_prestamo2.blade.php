@@ -702,8 +702,19 @@ function $_GET(param) {
 function scale(){
 	$("#preguntasFrecuentesCont").addClass('scale');
 	$("body").css("overflow-y",'hidden');
+	$("#preguntasFrecuentesCont").removeClass('noScale');
+
 }
 
+
+
+function noScale(){
+
+	$("#preguntasFrecuentesCont").removeClass('scale');
+	$("#preguntasFrecuentesCont").addClass('noScale');
+	$("body").css("overflow-y",'scroll');
+
+}
 
 
 

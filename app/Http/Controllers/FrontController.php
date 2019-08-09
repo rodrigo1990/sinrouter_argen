@@ -56,7 +56,7 @@ class FrontController extends Controller
 
 
 
-    public function cotizaciones(){
+    public function sucursalesCotizaciones(){
 
       
       
@@ -75,8 +75,8 @@ class FrontController extends Controller
 
       }
 
-      $archivo[4] = number_format((float)$archivo[4],2);
-      $archivo[5] = number_format((float)$archivo[5],2);
+      $archivo[4] = str_replace(',','.',$archivo[4]);
+      $archivo[5] = str_replace(',','.',$archivo[5]);
 
 
 
@@ -85,7 +85,7 @@ class FrontController extends Controller
 
 
 
-      return view('empleados.cotizacion',['archivo'=>$archivo]);
+      return view('sucursales.cotizacion',['archivo'=>$archivo]);
 
     }
 
