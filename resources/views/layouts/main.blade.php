@@ -1032,11 +1032,12 @@ $("#form-home #nombre").keyup(function(){
 
          $('input[type="file"]').change(function(){
             
+             var name = $('input[type="file"]').val();
             
 
             var file_size = $('input[type="file"]')[0].files[0].size;
 
-            var name = $('input[type="file"]').val();
+           
 
             name = name.split('.').pop();
 

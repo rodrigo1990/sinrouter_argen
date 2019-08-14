@@ -15,7 +15,7 @@
 Route::post('/buscarCiudadSegunProvincia','AjaxController@buscarCiudadSegunProvincia');
 Route::post('/buscarCiudadSegunProvincia','AjaxController@buscarCiudadSegunProvincia');
 Route::get('/buscarCiudadSegunProvincia/{provinciaId}','AjaxController@buscarCiudadSegunProvincia');
-Route::post('/validarCaptchaToken','AjaxController@validarCaptchaToken');
+Route::get('/validarCaptchaToken','AjaxController@validarCaptchaToken');
 
 
 /*****************PAGINAS************************/

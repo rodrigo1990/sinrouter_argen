@@ -382,6 +382,26 @@ cuotas y nos devolvés $1.830 por mes. Tasa efectiva anual (TEA): mínima: 411,5
 $(document).ready(function(){
 
 
+	 $.ajax({
+                    headers:{
+                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')},
+                data:{variable:'variable'},
+                url:'/validarCaptchaToken',
+                type:'post',
+                dataType:"json",
+                success:function(data){
+                    alert(data);
+
+            
+
+
+
+
+
+                }
+                });
+
+	
 	var cod_area = {{$codArea ? $codArea : 'null'}};
 
 	$("#content").css("margin-top",0);
