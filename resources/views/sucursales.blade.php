@@ -79,6 +79,7 @@
 	  window.markers=[];
 	 window.locations=[];
 	 window.map;
+ 	window.infoWindows=[];
 
 
 
@@ -127,8 +128,9 @@
 
 
 
+	 
 	  function agregarLocaciones(locations){
-			var infowindow =  new google.maps.InfoWindow({});
+			
 			var marker,count;
 
 			/*map.setZoom(5);
@@ -142,43 +144,75 @@
 			      icon: "<?php echo asset("storage/img/g-marker.png")?>",
 			      title: locations[count][0]
 			    });
-			google.maps.event.addListener(marker, 'click', (function (marker, count) {
-			      return function () {
-			        infowindow.setContent(locations[count][0]);
-			        infowindow.open(map, marker);
-			      }
-			    })(marker, count));
 
-				markers.push(marker);
+			var infowindow =  new google.maps.InfoWindow({});
+			
+			google.maps.event.addListener(marker, 'click', (function (marker, count) {
+
+			      return function () {
+			      	
+			        infowindow.setContent(locations[count][0]);
+			        cerrarInfowInfowindows();
+			        infowindow.open(map, marker);
+
+			        
+			      }
+			
+		    })(marker, count));
+
+			infoWindows.push(infowindow);
+
+			markers.push(marker);
 			  	
 			  }
 
+			  console.log(markers);
+
+
 		}
 
+		 
 		 function zoomOnLocation(latitud,longitud){
 	      	var center = {lat: latitud, lng: longitud};
+			var infowindow = new google.maps.InfoWindow();
+			console.log(map);
+			//infowindow.close();
 
 
 	      	if($(window).width()<1024){
 				$('html,body').animate({ scrollTop:$('#map').offset().top-50  }, 'slow');
 			}
 
-
-
+			cerrarInfowInfowindows();
 
 	      	for (var i=0; i<markers.length; i++) {
 	    		if (markers[i].getPosition().lat()==latitud) {
 
 	    			var marker = markers[i];
-	    			var infowindow = new google.maps.InfoWindow();
 	    			infowindow.setContent(locations[i][0]);
 			        infowindow.open(map, marker);
+
+			        infoWindows.push(infowindow);
 
 		      	map.setCenter(center);
 		      	map.setZoom(15);
 		   		 }
 		   	}
 	
+	      }
+
+	       function cerrarInfowInfowindows(){
+
+	      	for (var i=0; i<infoWindows.length; i++) {
+
+				infoWindows[i].close();
+				
+			}
+
+
+
+
+
 	      }
 	  
     </script>

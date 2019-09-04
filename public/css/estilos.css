@@ -2597,6 +2597,12 @@ section#form.cambio .first ul li h2{
     font-family: Helvetica-Light,GothamBook;
 }
 
+section#form.cambio .first ul li h3{
+    font-size: 19px;
+    font-family: Bebas;
+}
+
+
 
 section#form.cambio .first ul li div{
         display: inline;
