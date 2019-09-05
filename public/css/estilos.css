@@ -1515,6 +1515,12 @@ footer b {
 }
 
 
+
+.tool-tip:hover{
+    background: rgba(255, 107, 82, 1);
+}
+
+
 .tool-tip:after, .tool-tip:before {
     bottom: 100%;
     left: 50%;
@@ -3803,7 +3809,7 @@ section#form form .border-btn{
 }
 
 .change_char {
-    right: -10;
+    right: -10px;
 }
 
 .alert-window{
