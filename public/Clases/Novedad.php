@@ -40,62 +40,62 @@ class Novedad{
 				        <div class="col-lg-6 col-sm-6 img-section">
 				          <div class="overlay">
 
-				            <a class="content" data-fancybox="gallery'.$i.'" href="http://test.legioncreativa.com/argenpesos_nueva/public/storage/img/club_argenpesos/'.$fila["img1"].'" data-caption="'.utf8_encode($fila["descripcion"]).'" >
+				            <a class="content" data-fancybox="gallery'.$i.'" href="https://www.argenpesos.com.ar/public/storage/img/club_argenpesos/'.$fila["img1"].'" data-caption="'.utf8_encode($fila["descripcion"]).'" >
 				              <div class="link-cont text-center">
 				                <a class="lightbox a-button"><i class="fa fa-search"></i></a>
 				              </div>
 				            </a>
 
 				          </div>
-				          <div class="img-portada" style="background-image:url(http://test.legioncreativa.com/argenpesos_nueva/public/storage/img/club_argenpesos/'.$fila["img1"].');"></div>
+				          <div class="img-portada" style="background-image:url(https://www.argenpesos.com.ar/public/storage/img/club_argenpesos/'.$fila["img1"].');"></div>
 				          
 				        </div>
 				    </div>';
 
 		if($fila["img2"]!=""){
 
-			echo "<a  style='display:none'data-fancybox='gallery".$i."' href='http://test.legioncreativa.com/argenpesos_nueva/public/storage/img/club_argenpesos/".$fila['img2']."' data-caption='".utf8_encode($fila['descripcion'])."'>
+			echo "<a  style='display:none'data-fancybox='gallery".$i."' href='https://www.argenpesos.com.ar/public/storage/img/club_argenpesos/".$fila['img2']."' data-caption='".utf8_encode($fila['descripcion'])."'>
 								</a>";
 
 		}
 
 		if($fila["img3"]!=""){
-			echo "<a  style='display:none'data-fancybox='gallery".$i."' href='http://test.legioncreativa.com/argenpesos_nueva/public/storage/img/club_argenpesos/".$fila['img3']."' data-caption='".utf8_encode($fila['descripcion'])."' >
+			echo "<a  style='display:none'data-fancybox='gallery".$i."' href='https://www.argenpesos.com.ar/public/storage/img/club_argenpesos/".$fila['img3']."' data-caption='".utf8_encode($fila['descripcion'])."' >
 								</a>";
 		}
 
 		if($fila["img4"]!=""){
-			echo "<a  style='display:none'data-fancybox='gallery".$i."' href='http://test.legioncreativa.com/argenpesos_nueva/public/storage/img/club_argenpesos/".$fila['img4']."' data-caption='".utf8_encode($fila['descripcion'])."'>
+			echo "<a  style='display:none'data-fancybox='gallery".$i."' href='https://www.argenpesos.com.ar/public/storage/img/club_argenpesos/".$fila['img4']."' data-caption='".utf8_encode($fila['descripcion'])."'>
 								</a>";
 		}
 
 		if($fila["img5"]!=""){
-			echo "<a  style='display:none'data-fancybox='gallery".$i."' href='http://test.legioncreativa.com/argenpesos_nueva/public/storage/img/club_argenpesos/".$fila['img5']."' data-caption='".utf8_encode($fila['descripcion'])."'>
+			echo "<a  style='display:none'data-fancybox='gallery".$i."' href='https://www.argenpesos.com.ar/public/storage/img/club_argenpesos/".$fila['img5']."' data-caption='".utf8_encode($fila['descripcion'])."'>
 								</a>";
 		}
 
 		if($fila["img6"]!=""){
-			echo "<a  style='display:none'data-fancybox='gallery".$i."' href='http://test.legioncreativa.com/argenpesos_nueva/public/storage/img/club_argenpesos/".$fila['img6']."' data-caption='".utf8_encode($fila['descripcion'])."'>
+			echo "<a  style='display:none'data-fancybox='gallery".$i."' href='https://www.argenpesos.com.ar/public/storage/img/club_argenpesos/".$fila['img6']."' data-caption='".utf8_encode($fila['descripcion'])."'>
 								</a>";
 		}
 
 		if($fila["img7"]!=""){
-			echo "<a  style='display:none'data-fancybox='gallery".$i."' href='http://test.legioncreativa.com/argenpesos_nueva/public/storage/img/club_argenpesos/".$fila['img7']."' data-caption='".utf8_encode($fila['descripcion'])."'>
+			echo "<a  style='display:none'data-fancybox='gallery".$i."' href='https://www.argenpesos.com.ar/public/storage/img/club_argenpesos/".$fila['img7']."' data-caption='".utf8_encode($fila['descripcion'])."'>
 								</a>";
 		}
 
 		if($fila["img8"]!=""){
-			echo "<a  style='display:none'data-fancybox='gallery".$i."' href='http://test.legioncreativa.com/argenpesos_nueva/public/storage/img/club_argenpesos/".$fila['img8']."' data-caption='".utf8_encode($fila['descripcion'])."'>
+			echo "<a  style='display:none'data-fancybox='gallery".$i."' href='https://www.argenpesos.com.ar/public/storage/img/club_argenpesos/".$fila['img8']."' data-caption='".utf8_encode($fila['descripcion'])."'>
 								</a>";
 		}
 
 		if($fila["img9"]!=""){
-			echo "<a  style='display:none'data-fancybox='gallery".$i."' href='http://test.legioncreativa.com/argenpesos_nueva/public/storage/img/club_argenpesos/".$fila['img9']."' data-caption='".utf8_encode($fila['descripcion'])."'>
+			echo "<a  style='display:none'data-fancybox='gallery".$i."' href='https://www.argenpesos.com.ar/public/storage/img/club_argenpesos/".$fila['img9']."' data-caption='".utf8_encode($fila['descripcion'])."'>
 								</a>";
 		}
 
 		if($fila["img10"]!=""){
-			echo "<a  style='display:none'data-fancybox='gallery".$i."' href='http://test.legioncreativa.com/argenpesos_nueva/public/storage/img/club_argenpesos/".$fila['img10']."' data-caption='".utf8_encode($fila['descripcion'])."'>
+			echo "<a  style='display:none'data-fancybox='gallery".$i."' href='https://www.argenpesos.com.ar/public/storage/img/club_argenpesos/".$fila['img10']."' data-caption='".utf8_encode($fila['descripcion'])."'>
 								</a>";
 		}
 
@@ -114,62 +114,62 @@ class Novedad{
 				        <div class="col-lg-6 col-lg-pull-6 col-sm-6 img-section">
 				          <div class="overlay">
 
-				            <a class="content" data-fancybox="gallery'.$i.'" href="http://test.legioncreativa.com/argenpesos_nueva/public/storage/img/club_argenpesos/'.$fila["img1"].'" data-caption="'.utf8_encode($fila["descripcion"]).'" >
+				            <a class="content" data-fancybox="gallery'.$i.'" href="https://www.argenpesos.com.ar/public/storage/img/club_argenpesos/'.$fila["img1"].'" data-caption="'.utf8_encode($fila["descripcion"]).'" >
 				              <div class="link-cont text-center">
 				                <a class="lightbox a-button"><i class="fa fa-search"></i></a>
 				              </div>
 				            </a>
 
 				          </div>
-				          <div class="img-portada" style="background-image:url(http://test.legioncreativa.com/argenpesos_nueva/public/storage/img/club_argenpesos/'.$fila["img1"].');"></div>
+				          <div class="img-portada" style="background-image:url(https://www.argenpesos.com.ar/public/storage/img/club_argenpesos/'.$fila["img1"].');"></div>
 				          
 				        </div>
 				    </div>';
 
 		if($fila["img2"]!=""){
 
-			echo "<a  style='display:none'data-fancybox='gallery".$i."' href='http://test.legioncreativa.com/argenpesos_nueva/public/storage/img/club_argenpesos/".$fila['img2']."' data-caption='".utf8_encode($fila['descripcion'])."'>
+			echo "<a  style='display:none'data-fancybox='gallery".$i."' href='https://www.argenpesos.com.ar/public/storage/img/club_argenpesos/".$fila['img2']."' data-caption='".utf8_encode($fila['descripcion'])."'>
 								</a>";
 
 		}
 
 		if($fila["img3"]!=""){
-			echo "<a  style='display:none'data-fancybox='gallery".$i."' href='http://test.legioncreativa.com/argenpesos_nueva/public/storage/img/club_argenpesos/".$fila['img3']."' data-caption='".utf8_encode($fila['descripcion'])."' >
+			echo "<a  style='display:none'data-fancybox='gallery".$i."' href='https://www.argenpesos.com.ar/public/storage/img/club_argenpesos/".$fila['img3']."' data-caption='".utf8_encode($fila['descripcion'])."' >
 								</a>";
 		}
 
 		if($fila["img4"]!=""){
-			echo "<a  style='display:none'data-fancybox='gallery".$i."' href='http://test.legioncreativa.com/argenpesos_nueva/public/storage//img/club_argenpesos/".$fila['img4']."' data-caption='".utf8_encode($fila['descripcion'])."'>
+			echo "<a  style='display:none'data-fancybox='gallery".$i."' href='https://www.argenpesos.com.ar/public/storage//img/club_argenpesos/".$fila['img4']."' data-caption='".utf8_encode($fila['descripcion'])."'>
 								</a>";
 		}
 
 		if($fila["img5"]!=""){
-			echo "<a  style='display:none'data-fancybox='gallery".$i."' href='http://test.legioncreativa.com/argenpesos_nueva/public/storage//img/club_argenpesos/".$fila['img5']."' data-caption='".utf8_encode($fila['descripcion'])."'>
+			echo "<a  style='display:none'data-fancybox='gallery".$i."' href='https://www.argenpesos.com.ar/public/storage//img/club_argenpesos/".$fila['img5']."' data-caption='".utf8_encode($fila['descripcion'])."'>
 								</a>";
 		}
 
 		if($fila["img6"]!=""){
-			echo "<a  style='display:none'data-fancybox='gallery".$i."' href='http://test.legioncreativa.com/argenpesos_nueva/public/storage//img/club_argenpesos/".$fila['img6']."' data-caption='".utf8_encode($fila['descripcion'])."'>
+			echo "<a  style='display:none'data-fancybox='gallery".$i."' href='https://www.argenpesos.com.ar/public/storage//img/club_argenpesos/".$fila['img6']."' data-caption='".utf8_encode($fila['descripcion'])."'>
 								</a>";
 		}
 
 		if($fila["img7"]!=""){
-			echo "<a  style='display:none'data-fancybox='gallery".$i."' href='http://test.legioncreativa.com/argenpesos_nueva/public/storage//img/club_argenpesos/".$fila['img7']."' data-caption='".utf8_encode($fila['descripcion'])."'>
+			echo "<a  style='display:none'data-fancybox='gallery".$i."' href='https://www.argenpesos.com.ar/public/storage//img/club_argenpesos/".$fila['img7']."' data-caption='".utf8_encode($fila['descripcion'])."'>
 								</a>";
 		}
 
 		if($fila["img8"]!=""){
-			echo "<a  style='display:none'data-fancybox='gallery".$i."' href='http://test.legioncreativa.com/argenpesos_nueva/public/storage//img/club_argenpesos/".$fila['img8']."' data-caption='".utf8_encode($fila['descripcion'])."'>
+			echo "<a  style='display:none'data-fancybox='gallery".$i."' href='https://www.argenpesos.com.ar/public/storage//img/club_argenpesos/".$fila['img8']."' data-caption='".utf8_encode($fila['descripcion'])."'>
 								</a>";
 		}
 
 		if($fila["img9"]!=""){
-			echo "<a  style='display:none'data-fancybox='gallery".$i."' href='http://test.legioncreativa.com/argenpesos_nueva/public/storage//img/club_argenpesos/".$fila['img9']."' data-caption='".utf8_encode($fila['descripcion'])."'>
+			echo "<a  style='display:none'data-fancybox='gallery".$i."' href='https://www.argenpesos.com.ar/public/storage//img/club_argenpesos/".$fila['img9']."' data-caption='".utf8_encode($fila['descripcion'])."'>
 								</a>";
 		}
 
 		if($fila["img10"]!=""){
-			echo "<a  style='display:none'data-fancybox='gallery".$i."' href='http://test.legioncreativa.com/argenpesos_nueva/public/storage//img/club_argenpesos/".$fila['img10']."' data-caption='".utf8_encode($fila['descripcion'])."'>
+			echo "<a  style='display:none'data-fancybox='gallery".$i."' href='https://www.argenpesos.com.ar/public/storage//img/club_argenpesos/".$fila['img10']."' data-caption='".utf8_encode($fila['descripcion'])."'>
 								</a>";
 		}
 
