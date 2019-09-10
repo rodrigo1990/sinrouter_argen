@@ -2,7 +2,7 @@
     loop:true,
     margin:0,
     autoplay:true,
-    autoplayTimeout:4000,
+    autoplayTimeout:15000,
     nav:false,
     dots:true,
     items:1,

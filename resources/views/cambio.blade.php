@@ -130,6 +130,10 @@
 <div class="row">
 		<div class="container">
 			<ul class="flex">
+			    <li class="text-center">
+					<img src="<?php echo asset('storage/img/icon-cambio-4.svg') ?>" alt="">
+					<p>Cambiás tu moneda <br> con los precios más <br> actualizados al <br> momento de <br> decidirlo.</p>
+				</li>
 				<li class="text-center">
 					<img src="<?php echo asset('storage/img/icon-cambio-1.svg') ?>" alt=>
 					<p>Acercate a nuestra <br> sucursal y en <br> segundos concretas <br> tu operación.</p>
@@ -148,10 +152,7 @@
 
 
 				</li>
-				<li class="text-center">
-					<img src="<?php echo asset('storage/img/icon-cambio-4.svg') ?>" alt="">
-					<p>Cambiás tu moneda <br> con los precios más <br> actualizados al <br> momento de <br> decidirlo.</p>
-				</li>
+				
 			</ul>
 		</div>
 	</div>	
@@ -186,9 +187,9 @@
 					<!--  	<li class="margin-top-10 margin-left-20">- <a onClick="zoomOnLocation(-34.681403,-58.556553);">San Justo</a></li>-->
 						<li class="margin-top-10 blue"><h3>ZONA SUR</h3></li>
 						<li class="margin-top-10 margin-left-20">- <a onClick="zoomOnLocation(-34.722831,-58.259495);">Quilmes</a></li>
-						<!-- <li class="margin-top-10 margin-left-20">- <a onClick="zoomOnLocation(-34.660564,-58.367637);">Avellaneda</a></li>
+						<!-- <li class="margin-top-10 margin-left-20">- <a onClick="zoomOnLocation(-34.660564,-58.367637);">Avellaneda</a></li>-->
 						<li class="margin-top-10 margin-left-20">- <a onClick="zoomOnLocation(-34.760503,-58.206957);">Berazategui</a></li>
-						<li class="margin-top-10 margin-left-20">- <a onClick="zoomOnLocation(-34.708119,-58.389905);">Lanús</a></li>
+					<!--<li class="margin-top-10 margin-left-20">- <a onClick="zoomOnLocation(-34.708119,-58.389905);">Lanús</a></li>
 						<li class="margin-top-10 margin-left-20">- <a onClick="zoomOnLocation(-34.762114,-58.398490);">Lomas De Zamora</a></li>
 					
 						<li class="margin-top-10 margin-left-20">- <a onClick="zoomOnLocation(-34.804170,-58.274902);">Varela</a></li> -->
@@ -353,16 +354,16 @@
 
 
 
-	  locations.push(['<b>SAN FERNANDO </b><br><br>Constitución 198 <br><br> <b>TEL:</b> 4506-3730 <br> <br> <b>Whatsapp:</b>  15-3252-4072   <br><br> <b>Horario:</b><br> Lunes a Viernes de 9 a 13hs y 14 a 18:45hs <br> Sábados de 9 a 13hs. ',-34.435619,-58.563499]);
+ locations.push(['<b>SAN FERNANDO </b><br><br>Constitución 198 <br><br> <b>TEL:</b> 4506-3730 <br> <br> <b>Whatsapp:</b>  15-3252-4072   <br><br> <b>Horario:</b><br> Lunes a Viernes de 9 a 18:45hs <br> Sábados de 9 a 13hs. ',-34.435619,-58.563499]);
 
 
 	 /* locations.push(['<b>SAN JUSTO </b><br><br>Dr. Ignacio Arieta 3496 <br><br> <b>TEL:</b> 4651-0046 / 4482-4968 <br><br> <b>Whatsapp:</b> 15-3252-2397  <br><br> <b>Horario:</b><br> Lunes a Viernes de 9 a 18:45hs. <br> Sábados de 9 a 13hs. ',-34.681403,-58.556553]);
 
-	  locations.push(['<b>AVELLANEDA </b><br><br>Av. Mitre 531 <br><br> <b>TEL:</b> 4201-5784 / 6561 <br><br> <b>Whatsapp:</b> 15-3252-5817  <br><br> <b>Horario:</b><br> Lunes a Viernes de 9 a 18:45hs. <br> Sábados de 9 a 13hs. ',-34.660564,-58.367637]);
+	  locations.push(['<b>AVELLANEDA </b><br><br>Av. Mitre 531 <br><br> <b>TEL:</b> 4201-5784 / 6561 <br><br> <b>Whatsapp:</b> 15-3252-5817  <br><br> <b>Horario:</b><br> Lunes a Viernes de 9 a 18:45hs. <br> Sábados de 9 a 13hs. ',-34.660564,-58.367637]);*/
 
 	  locations.push(['<b>BERAZATEGUI </b><br><br>Av.14 N°5022 <br><br> <b>TEL:</b> 4356-0717 / 0911 <br><br> <b>Whatsapp:</b> 15-3252-4896  <br><br> <b>Horario:</b><br> Lunes a Viernes de 9 a 18:45hs. <br> Sábados de 9 a 13hs. ',-34.760503,-58.206957]);
 
-	  locations.push(['<b>LANUS </b><br><br>9 de Julio 1140, Local 5, Galería de las Américas <br><br> <b>TEL:</b> 4240-4798/ 5448  <br><br> <b>Whatsapp:</b> 15-3252-4303  <br><br> <b>Horario:</b><br> Lunes a Viernes de 9 a 18:45hs. <br> Sábados de 9 a 13hs. ',-34.708119,-58.389905]);
+	  /*locations.push(['<b>LANUS </b><br><br>9 de Julio 1140, Local 5, Galería de las Américas <br><br> <b>TEL:</b> 4240-4798/ 5448  <br><br> <b>Whatsapp:</b> 15-3252-4303  <br><br> <b>Horario:</b><br> Lunes a Viernes de 9 a 18:45hs. <br> Sábados de 9 a 13hs. ',-34.708119,-58.389905]);
 
 	  locations.push(['<b>LOMAS DE ZAMORA </b><br><br>Av. Meeks 101 <br><br> <b>TEL:</b> 4244-1120 / 4243-1456 <br><br> <b>Whatsapp:</b> 15-3252-4297 <br><br> <b>Horario:</b><br> Lunes a Viernes de 9 a 18:45hs. <br> Sábados de 9 a 13hs. ',-34.762114,-58.398490]);
 

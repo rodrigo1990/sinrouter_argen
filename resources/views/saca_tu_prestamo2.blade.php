@@ -318,14 +318,14 @@
 				<div class="row no-margin">
 			
 				<div class="col-lg-12 col-md-12 col-xs-12">
-				<div
+				<!-- <div
 				id='recaptcha'
 				class="g-recaptcha"
 				data-sitekey="6Lcg21YUAAAAAFjfbU3ZWINWWcy_4pmu5WdyOrx9"
 				data-callback="myFunction"
 				>
 				    
-				</div>
+				</div> -->
 
                 <div class="msg-error" style="color:red;"></div>
 
@@ -376,30 +376,13 @@ cuotas y nos devolvés $1.830 por mes. Tasa efectiva anual (TEA): mínima: 411,5
 <script type="text/javascript" src="<?php echo asset("js/validarSolicitarPrestamoAlApretarBoton.js")?>"></script>
 <script type="text/javascript" src="<?php echo asset("js/rangeslider.js")?>"></script>
 <script type="text/javascript" src="<?php echo asset("js/rangeSliderImplement.js")?>"></script>
-<script src='https://www.google.com/recaptcha/api.js?hl=es' async defer></script>
+  <script src="https://www.google.com/recaptcha/api.js?render=6LdEebcUAAAAAP-l6P6ooyB-g5fF_wQjqMBBrPxf"></script>
 <script>
 
 $(document).ready(function(){
 
 
-	 $.ajax({
-                    headers:{
-                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')},
-                data:{variable:'variable'},
-                url:'/validarCaptchaToken',
-                type:'post',
-                dataType:"json",
-                success:function(data){
-                    alert(data);
-
-            
-
-
-
-
-
-                }
-                });
+	 
 
 	
 	var cod_area = {{$codArea ? $codArea : 'null'}};

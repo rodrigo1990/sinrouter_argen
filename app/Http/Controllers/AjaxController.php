@@ -35,15 +35,15 @@ class AjaxController extends Controller
       $response = $client->request('POST', 'siteverify', [
 
         'form_params' => [
-        'secret' => '6LdBErMUAAAAAAQf2RTrLOZq-VAouYFp36gSs-kH',
+        'secret' => '6LdEebcUAAAAAN2EiJxUpkdxf1OiSztPVgp2u3r5',
         'response' => $request->token
         ]
         
     ]);
 
-      dd($response->getBody()->getContents());
+      //dd($response->getBody()->getContents());
 
-    	return json_encode($response);
+    	return $response->getBody()->getContents();
     }
 
 

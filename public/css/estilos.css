@@ -1514,12 +1514,9 @@ footer b {
   opacity:0;
 }
 
-
-
 .tool-tip:hover{
     background: rgba(255, 107, 82, 1);
 }
-
 
 .tool-tip:after, .tool-tip:before {
     bottom: 100%;
@@ -2845,7 +2842,7 @@ section#mejor-cot ul li{
 
 
 section#mejor-cot ul li:nth-child(1) img{
-    width: 82px;
+    width: 71px;
 }
 
 
@@ -2856,12 +2853,12 @@ section#mejor-cot ul li:nth-child(2) img{
 
 
 section#mejor-cot ul li:nth-child(3) img{
-    width: 81px;
+    width: 91px;
 }
 
 
 section#mejor-cot ul li:nth-child(4) img{
-    width: 67px;
+    width: 84px;
 }
 
 /*---------------------------------------------*/

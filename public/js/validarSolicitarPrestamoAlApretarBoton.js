@@ -217,7 +217,7 @@ function myFunction() {
 
                 }
                 
-                if(captcha_esta_validado==false){
+               /* if(captcha_esta_validado==false){
 
                     var $captcha = $( '#recaptcha' ),
                     response = grecaptcha.getResponse();
@@ -231,7 +231,7 @@ function myFunction() {
                         captcha_esta_validado=true;
                     }
 
-                }
+                }*/
 
 
 
@@ -264,30 +264,28 @@ function myFunction() {
                         $("#status").show(); 
 
 
-                      /*  grecaptcha.execute('6Lf7iKQUAAAAAEzdiNtjuPOEY8wu6yJvekMC5YKp', {action: 'create_comment'}).then(function(token) {
-                        
-                            // add token to form
-                            alert(token);
-                            
-                            $.ajax({
-                                headers: {
-                                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                                },
-                                data:{token},
-                                url:'validarCaptchaToken',
+
+                        grecaptcha.execute('6LdEebcUAAAAAP-l6P6ooyB-g5fF_wQjqMBBrPxf', {action: 'homepage'}).then(function(token) {
+                         $.ajax({
+                                    headers:{
+                                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')},
+                                data:{token:token},
+                                url:'/validarCaptchaToken',
                                 type:'post',
                                 dataType:"json",
-                                success:function(response){
-                                    alert(response);
+                                success:function(data){
+                                    
+                                    console.log(data);
+                                    
+                                    if(data.success==true && data.score>=0.9){
+                                        document.getElementById("myForm").submit();
+                                    }
+
                                 }
-                            });
-                            
-                        });*/
+                                });
+                         });
 
-
-
-
-                    	document.getElementById("myForm").submit();
+                    	
 
 
 

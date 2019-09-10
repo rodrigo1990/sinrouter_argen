@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 
+use Illuminate\Http\Request;
+use  App\Services\ValidationService;
 class ValidationController extends Controller
 {
 
