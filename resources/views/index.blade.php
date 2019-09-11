@@ -251,7 +251,7 @@
 										
 										<h4>Hasta <b>18 CUOTAS SIN INTERÉS</b> de</h4>
 										
-										<h4 class="precio blue"><b>$611</b></h4>
+										<h4 class="precio blue"><b>$213</b></h4>
 									</div>
 									<hr>
 
@@ -350,12 +350,18 @@
 @section('scripts')
 
 	<script>
+	
+	$(document).ready(function(){
+	    
+	    if(window.location.pathname.indexOf('shop') >= 0){
+	        $('html,body').animate({ scrollTop:$('#shop').offset().top -150  }, 'slow');
+            return false; 
+	    }
+	    
+	    
+	        
+	});
 		
-		$(".go-to-shop").on("click", function(){ 
-	 		$('html,body').animate({ scrollTop:$('#shop').offset().top -150  }, 'slow');
-        return false; 
-
-
- 		});
+	
 	</script>
 @stop

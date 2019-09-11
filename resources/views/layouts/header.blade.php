@@ -2,7 +2,7 @@
 			<div  class="row">
 				<div class="container-fluid">
 					<div class="col-lg-2 hidden-md hidden-sm hidden-xs ">
-						<a href="index" id="logo-btn" style="cursor:pointer">
+						<a href="/index" id="logo-btn" style="cursor:pointer">
 							<img class="logo" src="<?php echo asset("storage/img/logo.png")?>"></img> 
 
 						</a>
@@ -13,10 +13,10 @@
 
 							<li><a href="/saca_tu_prestamo"  class="fix spa-btn">SACÁ TU PRÉSTAMO</a></li>
 							<li><a href="/cambio"  class="fix spa-btn" target="_blank">CAMBIO</a></li>
-							<li><a   class="fix spa-btn shop go-to-shop" target="_blank">SHOP</a></li>
+							<li><a href="/shop"  class="fix spa-btn shop go-to-shop" >SHOP</a></li>
 
 							
-							<li><a href="micuenta/quiero-pagar.php" target="" class="after-btn"  >CONSULTÁ TU CUENTA</a></li>
+							<li><a href="/micuenta/quiero-pagar.php" target="" class="after-btn"  >CONSULTÁ TU CUENTA</a></li>
 							<li><a href="/sucursales" class="spa-btn after-btn">NUESTRAS SUCURSALES</a></li>
 
 							<li>
@@ -41,7 +41,7 @@
 
 				</div>
 				<div class="hidden-lg col-md-12 col-sm-12 col-xs-12 text-center xs-row " style="">
-					<a href="index.php">
+					<a href="/index">
 						<img src="<?php echo asset("storage/img/logo.png")?>" width="150px"></img> 
 					</a>
 						<a id="abrirMenu">
@@ -59,7 +59,7 @@
 			</div>
 			<li><a href="/saca_tu_prestamo" class="xs-btn spa-btn">SACA TU PRÉSTAMO</a></li>
 			<li><a href="/cambio" class="xs-btn spa-btn">CAMBIO</a></li>
-			<li><a href="/cambio" class="xs-btn spa-btn go-to-shop">SHOP</a></li>
+			<li><a href="/shop" class="xs-btn spa-btn go-to-shop">SHOP</a></li>
 
 			<li><a href="micuenta/quiero-pagar.php"  class="xs-btn" >CONSULTÁ TU CUENTA</a></li>
 			<li><a href="/sucursales" class="xs-btn spa-btn">NUESTRAS SUCURSALES</a></li>

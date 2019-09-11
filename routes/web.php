@@ -16,13 +16,15 @@ Route::post('/buscarCiudadSegunProvincia','AjaxController@buscarCiudadSegunProvi
 Route::post('/buscarCiudadSegunProvincia','AjaxController@buscarCiudadSegunProvincia');
 Route::get('/buscarCiudadSegunProvincia/{provinciaId}','AjaxController@buscarCiudadSegunProvincia');
 Route::post('/validarCaptchaToken','AjaxController@validarCaptchaToken');
-Route::get('/validarCaptchaToken/{token}','AjaxController@validarCaptchaToken');
 
 
 /*****************PAGINAS************************/
 
 Route::get('/','FrontController@index');
 Route::get('/index','FrontController@index');
+
+
+Route::get('/shop','FrontController@index');
 
 
 
@@ -53,16 +55,17 @@ Route::get('/cr', function () {
 });
 
 
-Route::get('/saca_tu_prestamo','FrontController@sacaTuPrestamo2');
+
+
+
+Route::get('/saca_tu_prestamo','FrontController@sacaTuPrestamo');
+Route::get('/saca_tu_prestamo2','FrontController@sacaTuPrestamo2');
 
 
 Route::get('/cambio','FrontController@cambio');
 
-
 Route::get('/sucursales_cotizaciones','FrontController@sucursalesCotizaciones');
 
-
-Route::get('/saca_tu_prestamo','FrontController@sacaTuPrestamo');
 
 
 /***************MAILING***************************************/
@@ -73,5 +76,6 @@ Route::post('/procesarSolicitud','MailController@procesarSolicitudEnviarMail');
 Route::post('/enviarTrabajaConNosotros','MailController@enviarTrabajaConNosotros');
 Route::post('/enviarConvertiteEnComercializador','MailController@enviarConvertiteEnComercializador');
 Route::post('/enviarArgencambio','MailController@formularioArgencambio');
+
 //Route::get('/enviarTrabajaConNosotros/{nombre}','MailController@enviarTrabajaConNosotros');
 
