@@ -3,6 +3,8 @@
 /storage/*.key
 /vendor
 .env
+*.rar
+*.zip
 .phpunit.result.cache
 Homestead.json
 Homestead.yaml

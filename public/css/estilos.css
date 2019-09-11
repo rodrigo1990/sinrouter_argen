@@ -549,6 +549,11 @@ a:hover{
 	color:#EE4E23;
 }
 
+.violet{
+    color:#523183;
+}
+
+
 .bk-red{
     background-color:#EE4E23; 
 }
@@ -710,6 +715,24 @@ a:hover{
   	border-color: #00A5E7;
   }
 
+   .border-btn.blue:hover{
+    background-color:#00A5E7;
+    color:white;
+  }
+
+
+
+  .border-btn.violet{
+    color: #523183;
+    border-color: #523183;
+  }
+
+   .border-btn.violet:hover{
+    background-color:#523183;
+    color:white;
+  }
+
+
   .border-btn.red:hover{
     background-color:#EE4E23;
     color:white;
@@ -831,6 +854,7 @@ header ul.menu{
 header ul.menu>li {
 	float:left;
     position:relative;
+    margin-right:21px;
 }
 
 
@@ -841,7 +865,7 @@ a.active:after{
 
 
 header ul.menu>li:first-child{
-        margin-right: 21px;
+        /*margin-right: 21px;*/
 
 }
 header ul.menu>li:not(:first-child){
@@ -857,7 +881,7 @@ header ul.menu>li>a {
     border-style: solid;
     border-color: transparent;
     border-radius: 30px;
-    padding: 14px;
+    /*padding: 14px;*/
 }
 
 header ul.menu>li>a.after-btn:after {
@@ -901,6 +925,18 @@ header ul.menu>li>a[href='/cambio'] {
 }
 
 
+header ul.menu>li>a.shop {
+       color: #523183;
+    letter-spacing: 1px;
+   font-size: 21px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #523183;
+    border-radius: 30px;
+    padding: 14px;
+}
+
+
 
 header ul.menu>li>a[href='/cambio']:hover {
        color: white;
@@ -933,6 +969,22 @@ header ul.menu>li>a[href='/saca_tu_prestamo']:focus {
        background:transparent;
 }
 
+
+header ul.menu>li>a.shop:hover {
+       color: white;
+    background:#523183;
+}
+
+
+header ul.menu>li>a.shop:active {
+       color: white !important;
+}
+
+
+header ul.menu>li>a.shop:focus {
+       color: #523183 !important;
+       background:transparent;
+}
 
 
 
@@ -3085,10 +3137,225 @@ div.bk-title h1{
     100% { transform: rotate(360deg); }
 }
 
-/*MEDIA QUERIES*/
+
+
+/*---------------------------------------------*/
+                /*SHOP*/
+/*----------------------------------------------*/
+
+
+
+
+#shop >.container > h1 {
+    margin-bottom:30px;
+}
+
+#shop >.container > h1 > b{
+    font-family: GothamBold !important;
+}
+
+
+
+
+#shop #shop-slider>div .producto>img{
+    width: 226px;
+}
+
+
+#shop #shop-slider>div .producto{
+    border:1px solid lightgray;
+    border-radius:5px;
+    padding: 15px 23px 15px 23px;
+    -webkit-box-shadow: -1px 10px 30px -24px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 10px 30px -24px rgba(0,0,0,0.75);
+    box-shadow: -5px 10px 30px -24px rgba(0,0,0,0.75);
+    position:relative;
+       /* width: 300px;*/
+}
+
+
+#shop #shop-slider>div .producto>.text-center>h3{
+    font-size:17px;
+    margin-top:10px;
+}
+
+#shop #shop-slider>div .producto>.text-center>h4{
+    font-size:14px;
+    margin-top:10px;
+}
+
+
+#shop #shop-slider>div .producto>.text-center>.precio{
+    margin-top: 19px;
+    line-height: 0;
+    font-size: 21px;
+}
+
+#shop #shop-slider>div .producto>.text-center>.precio h4 b{
+    font-family:GothamBold;
+}
+
+
+#shop #shop-slider>div .producto>hr{
+    background:#BCBEC0;
+    margin-top: 25px;
+}
+
+#shop #shop-slider>div .producto>.precio-lista{
+    font-size: 12px;
+    margin-top:2px;
+}
+
+
+
+#shop #shop-slider>div .producto>p{
+    color:#BCBEC0;
+}
+
+
+#shop #shop-slider>div .producto>a{
+    width: 104px;
+    font-size: 12px;
+    padding: 8px;
+    margin-top: 15px;
+}
+
+
+
+#shop #shop-slider>div .producto>.ficha{
+    position:absolute;
+}
+
+#shop #shop-slider>div .producto>.ficha>img{
+    width: 931px;
+}
+
+
+#shop #shop-slider>div .producto>.ahora-18>h4>img{
+    width: 35px;
+    float: left;
+    margin-right: 10px;
+}
+
+#shop #shop-slider>div .producto>.ahora-18{
+    margin-top: 19px;
+}
+
+
+#shop #shop-slider>div .producto>.ahora-18>h4{
+    width: 182px;
+    font-family: GothamBlack;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 13px;
+    line-height: 17px;
+}
+
+
+#shop .owl-theme .owl-nav{
+    margin-top: -263px;
+    position: absolute;
+    z-index: 100000000000000;
+    width: 95%;
+}
+
+#shop-slider{
+    position:relative;
+}
+
+#shop .owl-theme .owl-nav {
+       margin-top: -285px;
+    position: absolute;
+    z-index: -23;
+    width: 100%;
+    left: 0;
+    right: 0;
+    /* top: 0; */
+    margin-left: auto;
+    margin-right: auto;
+    /* display: block; */
+    /* bottom: 0;*/
+}
+
+#shop .owl-theme .owl-nav .owl-prev {
+    float:left;
+    margin-left: -5%;
+}
+
+#shop .owl-theme .owl-nav .owl-next {
+    float:right;
+    margin-right: -5%;
+}
+
+
+
+#shop .owl-theme .owl-nav button span {
+    font-size: 71px;
+    color: grey;
+    
+}
+
+#shop .owl-theme .owl-nav [class*=owl-]{
+    opacity: 0.2;
+}
+
+#shop .owl-theme .owl-nav [class*=owl-]:hover{
+    background:transparent !important;
+    outline: none;
+    opacity: 1;
+         -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  transition: all 0.30s ease-in-out;
+}
+
+#shop .owl-theme .owl-nav [class*=owl-]:active, #shop .owl-theme .owl-nav [class*=owl-]:focus{
+    outline: none;
+}
+
+
+
+.modal.fichas .modal-body, .modal.fichas .modal-content{
+    padding: unset;
+    width: fit-content;
+    background: unset;
+    border: unset;
+    border-radius: unset;
+    position:relative;
+    height: unset;
+}
+
+.modal.fichas .modal-dialog.modal-sm {
+    width:fit-content !important;
+}
+
+
+
+.modal.fichas .modal-body img{
+    width: 757px;
+}
+
+.modal.fichas .modal-header{
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+}
+
+
+.modal.fichas .modal-header .close{
+    color:grey;
+}
+
+
+
+/*---------------------------------------------*/
+                /*MEDIA QUERIES*/
+/*----------------------------------------------*/
+
 
 @media only screen and (width: 1024px)  {
-
+   
     .bk-landing {
     height: 33vh;
 
@@ -3232,7 +3499,7 @@ header ul.menu>li>a[href='/saca_tu_prestamo'] {
 @media only screen and (min-width: 1200px) and (max-width: 1400px)  {
 
 
-    header ul.menu>li>a[href='/saca_tu_prestamo'],header ul.menu>li>a[href='/cambio'] {
+    header ul.menu>li>a[href='/saca_tu_prestamo'],header ul.menu>li>a[href='/cambio'],header ul.menu>li>a.shop {
 
    font-size: 18px;
   
@@ -3281,7 +3548,7 @@ footer .first{
     margin-right: 0 !important;
 }
 
-header ul.menu>li>a[href='/saca_tu_prestamo'],header ul.menu>li>a[href='/cambio'] {
+header ul.menu>li>a[href='/saca_tu_prestamo'],header ul.menu>li>a[href='/cambio'],header ul.menu>li>a[href='/cambio'] {
     font-size: 13px !important;
 }
 
@@ -3292,6 +3559,18 @@ header ul.menu>li>a[href='/saca_tu_prestamo'],header ul.menu>li>a[href='/cambio'
     width: 211px !important;
 }
     }
+
+@media only screen and (min-width: 1200px) and (max-width: 1350px)  {
+    header ul.menu>li {
+        float: left;
+        position: relative;
+        margin-right: 6px;
+    }
+
+    header ul.menu>li>a {
+    font-size: 73% !important;
+}
+}
 
 @media only screen and (min-width: 10px) and (max-width: 1024px)  {
     
@@ -3816,6 +4095,21 @@ section#form form .border-btn{
 
 }
 @media only screen and (min-width: 320px) and (max-width: 768px){
+    #shop .owl-theme .owl-nav button span{
+        font-size: 40px;
+    }
+    .modal.fichas .modal-body img{
+        width: 357px;
+    }
+
+    #shop ul.flex li{
+        margin-left: auto !important;
+        margin-bottom: -16px;
+        display: block;
+        margin-right: auto !important;
+    }
+
+
 
     .form-cont {
     margin-top: 59PX;
@@ -4099,7 +4393,9 @@ h1, #contacto h1 {
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
 
-    
+    .modal.fichas .modal-body img {
+    width: 757px;
+}
 
   .bk-landing>.row h1 {
         font-size: 74px !important;
@@ -4132,6 +4428,22 @@ h1, #contacto h1 {
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
 
 
+#shop .owl-theme .owl-nav .owl-prev {
+    float:left;
+    margin-left: -3%;
+}
+
+#shop .owl-theme .owl-nav .owl-next {
+    float:right;
+    margin-right: -3%;
+}
+
+
+
+ #shop ul.flex li>.producto{
+        width: 500px;
+        margin: auto;
+    }
   .bk-landing>.row h1 {
         font-size: 74px !important;
     line-height: 90px !important;
@@ -4152,11 +4464,11 @@ h1, #contacto h1 {
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {
     
     header ul.menu>li>a {
-    font-size: 95% !important;
+    font-size: 79% !important;
     }
 
-    header ul.menu>li>a[href='/saca_tu_prestamo'], header ul.menu>li>a[href='/cambio'] {
-    font-size: 100% !important;
+    header ul.menu>li>a[href='/saca_tu_prestamo'], header ul.menu>li>a[href='/cambio'],header ul.menu>li>a.shop {
+    font-size: 85% !important;
     }
 
     section#form .first ul {
@@ -4177,7 +4489,7 @@ h1, #contacto h1 {
     font-size: 78% !important;
     }
 
-    header ul.menu>li>a[href='/saca_tu_prestamo'], header ul.menu>li>a[href='/cambio'] {
+    header ul.menu>li>a[href='/saca_tu_prestamo'], header ul.menu>li>a[href='/cambio'], header ul.menu>li>a.shop {
     font-size: 82% !important;
     }
 
@@ -4233,7 +4545,7 @@ h1, #contacto h1 {
         font-size: 14px;
     }
 
-    header ul.menu>li>a[href='/saca_tu_prestamo'],header ul.menu>li>a[href='/cambio'] {
+    header ul.menu>li>a[href='/saca_tu_prestamo'],header ul.menu>li>a[href='/cambio'],header ul.menu>li>a.shop {
    
    font-size: 14px;
    
@@ -4247,7 +4559,7 @@ h1, #contacto h1 {
 
 @media only screen and (min-width: 1600px) and (max-width: 1700px) {
 
-    header ul.menu>li>a[href='/saca_tu_prestamo'],header ul.menu>li>a[href='/cambio'] {
+    header ul.menu>li>a[href='/saca_tu_prestamo'],header ul.menu>li>a[href='/cambio'],header ul.menu>li>a.shop {
    
    font-size: 17px;
    

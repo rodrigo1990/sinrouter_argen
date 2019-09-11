@@ -242,6 +242,91 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   </div>
 </div>
 
+
+
+  <!-- MODAL 1 -->
+  <div class="modal fade fichas" id="1" role="dialog">
+     <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <a href="sucursales" target="_blank">
+            <img src="<?php echo asset('storage/img/shop/fichas/1.jpg') ?>" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div><!-- MODAL 1  -->
+
+
+   <!-- MODAL 2 -->
+  <div class="modal fade fichas" id="2" role="dialog">
+     <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <a href="sucursales" target="_blank">
+      <img src="<?php echo asset('storage/img/shop/fichas/2.jpg') ?>" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div><!-- MODAL 2  -->
+
+
+     <!-- MODAL 3 -->
+  <div class="modal fade fichas" id="3" role="dialog">
+     <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <a href="sucursales" target="_blank">
+            <img src="<?php echo asset('storage/img/shop/fichas/3.jpg') ?>" alt="">
+        </a>
+        </div>
+      </div>
+    </div>
+  </div><!-- MODAL 3  -->
+
+
+       <!-- MODAL 4 -->
+  <div class="modal fade fichas" id="4" role="dialog">
+     <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <a href="sucursales" target="_blank">
+      <img src="<?php echo asset('storage/img/shop/fichas/4.jpg') ?>" alt="">
+      </a>
+        </div>
+      </div>
+    </div>
+  </div><!-- MODAL 4  -->
+
+
+         <!-- MODAL 5 -->
+  <div class="modal fade fichas" id="5" role="dialog">
+     <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+           <a href="sucursales" target="_blank">
+      <img src="<?php echo asset('storage/img/shop/fichas/5.jpg') ?>" alt="">
+    </a>
+        </div>
+      </div>
+    </div>
+  </div><!-- MODAL 5  -->
 @component('comp.wsp-chat')
         
 @endcomponent

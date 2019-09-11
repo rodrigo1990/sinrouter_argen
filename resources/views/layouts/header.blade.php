@@ -13,6 +13,8 @@
 
 							<li><a href="/saca_tu_prestamo"  class="fix spa-btn">SACÁ TU PRÉSTAMO</a></li>
 							<li><a href="/cambio"  class="fix spa-btn" target="_blank">CAMBIO</a></li>
+							<li><a   class="fix spa-btn shop go-to-shop" target="_blank">SHOP</a></li>
+
 							
 							<li><a href="micuenta/quiero-pagar.php" target="" class="after-btn"  >CONSULTÁ TU CUENTA</a></li>
 							<li><a href="/sucursales" class="spa-btn after-btn">NUESTRAS SUCURSALES</a></li>
@@ -57,6 +59,7 @@
 			</div>
 			<li><a href="/saca_tu_prestamo" class="xs-btn spa-btn">SACA TU PRÉSTAMO</a></li>
 			<li><a href="/cambio" class="xs-btn spa-btn">CAMBIO</a></li>
+			<li><a href="/cambio" class="xs-btn spa-btn go-to-shop">SHOP</a></li>
 
 			<li><a href="micuenta/quiero-pagar.php"  class="xs-btn" >CONSULTÁ TU CUENTA</a></li>
 			<li><a href="/sucursales" class="xs-btn spa-btn">NUESTRAS SUCURSALES</a></li>

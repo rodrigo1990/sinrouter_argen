@@ -54,3 +54,31 @@
         }
     }
 });
+
+
+
+ $('#shop-slider').owlCarousel({
+    loop: true,
+    pagination: false,
+    margin:30,
+    navigation: true,
+     items:4,
+     nav:true,
+      dots:false,
+     responsive:{
+        0:{
+            items:1
+        },
+        768:{
+            items:2
+        },
+        1024:{
+            items:3
+        },
+        1025:{
+            items:4
+        }
+
+    }
+   
+});
