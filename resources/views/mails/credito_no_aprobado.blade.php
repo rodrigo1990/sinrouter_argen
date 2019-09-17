@@ -19,7 +19,7 @@
           <h1 style='color: #1da3dd; font-size: 17px; font-weight: bold; font-family: Arial, Helvetica, sans-serif;'>
           <h1 style='color: #1da3dd; font-size: 17px; font-weight: bold; font-family: Arial, Helvetica, sans-serif;'>
           <img style='vertical-align:middle' src='http://www.legionvps.com/trabajos/argenpesos/img-form-solicitud/icon-bg-02.png'>
-          11-2678-5266
+          11-5735-2918
           </h1>
            </a>
 <a style='text-decoration:none;' href='https://api.whatsapp.com/send?phone=1126785266&text=Hola%20Argenpesos:%20me%20comunico%20por%20lo%20visto%20en%20el%20formulario%20de%20solicitar%20prestamo' target='_blank'>
