@@ -171,6 +171,79 @@
 								@endcomponent
 							</div>
 
+
+							<div>
+								@component('comp.producto')
+									@slot('marca')
+								    	XIAOMI 
+									@endslot
+									@slot('modelo')
+								    	MI In-Ear Basic
+									@endslot
+									@slot('precio')
+								    	$33
+									@endslot
+									@slot('precioLista')
+								    	$599
+									@endslot
+									@slot('img')
+								    	storage/img/shop/productos/p-08.jpg
+									@endslot
+									@slot('dataTarget')
+								    	#8
+									@endslot		
+								@endcomponent
+							</div>
+
+
+							<div>
+								@component('comp.producto')
+									@slot('marca')
+								    	XIAOMI 
+									@endslot
+									@slot('modelo')
+								    	Power Bank MI 2 1000mAh
+									@endslot
+									@slot('precio')
+								    	$113
+									@endslot
+									@slot('precioLista')
+								    	$2.039
+									@endslot
+									@slot('img')
+								    	storage/img/shop/productos/p-09.jpg
+									@endslot
+									@slot('dataTarget')
+								    	#9
+									@endslot		
+								@endcomponent
+							</div>
+
+
+							<div>
+								@component('comp.producto')
+									@slot('marca')
+								    	HUAWEI 
+									@endslot
+									@slot('modelo')
+								    	Tablet 7" Kids 
+									@endslot
+									@slot('precio')
+								    	$400
+									@endslot
+									@slot('precioLista')
+								    	$7.199
+									@endslot
+									@slot('img')
+								    	storage/img/shop/productos/p-10.jpg
+									@endslot
+									@slot('dataTarget')
+								    	#10
+									@endslot		
+								@endcomponent
+							</div>
+
+
 						
 					
 

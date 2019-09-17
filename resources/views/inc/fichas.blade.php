@@ -349,3 +349,141 @@
               @endcomponent
 
 
+   <!-- MODAL 7 -->
+   @component('comp.ficha')
+                @slot('id')
+                    8 
+                @endslot
+                @slot('memoria')
+                    
+                @endslot
+                @slot('camara')
+                      
+                @endslot
+                @slot('bateria')
+                      
+                @endslot
+                @slot('imagenFicha')
+                    storage/img/shop/fichas/f-08.jpg
+                @endslot
+                @slot('marca')
+                    XIAOMI
+                @endslot
+                @slot('modelo')
+                    MI In-Ear Basic
+                @endslot
+                @slot('precio')
+                    $33
+                @endslot
+                @slot('precioLista')
+                    $599
+                @endslot
+
+                @slot('features',[
+                
+            
+
+
+                ])
+
+                 @slot('so')
+                    false
+                @endslot
+                   
+                
+              @endcomponent
+
+
+
+               <!-- MODAL 8 -->
+   @component('comp.ficha')
+                @slot('id')
+                    9 
+                @endslot
+                @slot('memoria')
+                    
+                @endslot
+                @slot('camara')
+                      
+                @endslot
+                @slot('bateria')
+                      
+                @endslot
+                @slot('imagenFicha')
+                    storage/img/shop/fichas/f-09.jpg
+                @endslot
+                @slot('marca')
+                    XIAOMI
+                @endslot
+                @slot('modelo')
+                    Power Bank MI 2 10000mAh
+                @endslot
+                @slot('precio')
+                    $113
+                @endslot
+                @slot('precioLista')
+                    $2.039
+                @endslot
+
+                @slot('features',[
+                
+            
+
+
+                ])
+
+                 @slot('so')
+                    false
+                @endslot
+                   
+                
+              @endcomponent
+
+
+
+                           <!-- MODAL 8 -->
+   @component('comp.ficha')
+                @slot('id')
+                    10 
+                @endslot
+                @slot('memoria')
+                    
+                @endslot
+                @slot('camara')
+                      
+                @endslot
+                @slot('bateria')
+                      
+                @endslot
+                @slot('imagenFicha')
+                    storage/img/shop/fichas/f-10.jpg
+                @endslot
+                @slot('marca')
+                    HUAWEI
+                @endslot
+                @slot('modelo')
+                    Tablet 7" Kids 
+                @endslot
+                @slot('precio')
+                    $400
+                @endslot
+                @slot('precioLista')
+                    $7.199
+                @endslot
+
+                @slot('features',[
+                
+            
+
+
+                ])
+
+                 @slot('so')
+                    false
+                @endslot
+                   
+                
+              @endcomponent
+
+
+
