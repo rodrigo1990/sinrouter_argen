@@ -19,8 +19,8 @@
 							<li><a href="/micuenta/quiero-pagar.php" target="" class="after-btn"  >CONSULTÁ TU CUENTA</a></li>
 							<li><a href="/sucursales" class="spa-btn after-btn">NUESTRAS SUCURSALES</a></li>
 
-							<li>
-								<a  id="quienes-somos-btn" class="after-btn">QUIENES SOMOS</a>
+							<li id="quienes-somos-btn">
+								<a   class="after-btn">QUIENES SOMOS</a>
 									<ul class="sub-menu">
 										<li><a href="/institucional" class="spa-btn" >INSTITUCIONAL</a></li>
 										<li><a href="/resp_social" class="spa-btn" >RESPONSABILIDAD SOCIAL</a></li>

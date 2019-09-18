@@ -91,6 +91,17 @@ class MailController extends Controller
 
 
 
+         /* $email = "mcd77.1990@gmail.com";
+
+          Mail::to($email)->send(new TrabajaConNosotros($request));
+
+          $msg="true";
+
+          $provincias = Provincia::all();
+
+           return view("index",compact('msg','provincias'));*/
+
+
           $email = "mcd77.1990@gmail.com";
 
           Mail::to($email)->send(new TrabajaConNosotros($request));
@@ -99,7 +110,7 @@ class MailController extends Controller
 
           $provincias = Provincia::all();
 
-          return view("index",compact('msg','provincias'));
+           return view("index",compact('msg','provincias'));
 
 
 
