@@ -13,7 +13,7 @@
 
 	<p class="precio-lista">*Precio de lista {{$precioLista}}</p>
 	
-	<a data-toggle="modal" data-target="{{$dataTarget}}" class="spa-btn border-btn violet center-block margin-top-25 text-center" target="">VER MÁS</a>
+	<a  onClick="scale('{{$dataTarget}}')" class="spa-btn border-btn violet center-block margin-top-25 text-center">VER MÁS</a>
 
 	<div class="ahora-18">				
 		<h4 class="blue">												
