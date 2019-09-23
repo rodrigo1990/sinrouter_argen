@@ -336,7 +336,7 @@
                 6 => '<b>Cámara primaria doble:</b> 13 MP 3L5/f2.0 Doble secundaria: 5 MP 5E9/f2.4. / Cámara frontal 8 MP 4H7/FF/f2.2. / Flash Flash LED.',
                 7 => '<b>Tipo de cable:</b> micro-USB',
                 8 => '<b>Sensores:</b> Sensor de luz ambiental, sensor de proximidad, acelerómetro (Sensor G), E-compass, giroscopio, sensor de huella digital, NFC3.',
-                9 => '<b>Tipo de batería:</b> Batería integrada de 3500 mAh2 / Carga cargador Nokia micro-USB'
+                9 => '<b>Tipo de batería:</b> Batería integrada de 3500 mAh2 / Carga cargador Nokia micro-USB',
 
 
                 ])

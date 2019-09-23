@@ -3349,6 +3349,17 @@ div.bk-title h1{
     background: #F8F8F9;
 }
 
+
+
+.fichas .modal-body .more{
+    display:none;
+    margin-top:0;
+}
+
+.fichas .modal-body .clear{
+    height: 5px;
+}
+
 .fichas .modal-header .close:hover{
     color:red !important;
 }
