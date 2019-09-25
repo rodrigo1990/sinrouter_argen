@@ -13,7 +13,7 @@
 
 							<li><a href="/saca_tu_prestamo"  class="fix spa-btn">SACÁ TU PRÉSTAMO</a></li>
 							<li><a href="/cambio"  class="fix spa-btn" target="_blank">CAMBIO</a></li>
-							<li><a   class="fix spa-btn shop go-to-shop" >SHOP</a></li>
+							<li><a href="/shop"  class="fix spa-btn shop go-to-shop" >SHOP</a></li>
 
 							
 							<li><a href="/micuenta/quiero-pagar.php" target="" class="after-btn"  >CONSULTÁ TU CUENTA</a></li>

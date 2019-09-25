@@ -71,30 +71,33 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <script type="text/javascript" src="<?php echo asset("js/jquery.js")?>"></script>
 <script type="text/javascript" src="<?php echo asset("bootstrap-3.3.7-dist/js/bootstrap.min.js")?>"></script>
+
 <script type="text/javascript" src="<?php echo asset("js/manejoDeMenus.js")?>"></script>
 <script type="text/javascript" src="<?php echo asset("js/routerAjax.js")?>"></script>
 <script type="text/javascript" src="<?php echo asset("js/whatsapp-message.js")?>"></script>
 <script type="text/javascript" src="<?php echo asset("js/wspChatInterface.js")?>"></script>
 <script type="text/javascript" src="<?php echo asset("js/enviarWsp.js")?>"></script>
 <script type="text/javascript" src="<?php echo asset('js/alertar.js') ?>"></script>
-<script type="text/javascript" src="<?php echo asset("OwlCarousel2-2.3.4/dist/owl.carousel.min.js")?>"></script>
-<script type="text/javascript" src="<?php echo asset("js/slider.js")?>"></script>
-<script type="text/javascript" src="<?php echo asset("js/routerAjax.js")?>"></script>
-
-<script>
-            $(window).on('load', function() { // makes sure the whole site is loaded 
-            
-            $('#status').fadeOut(); // will first fade out the loading animation 
-            $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
-            $('body').delay(350).css({'overflow-y':'visible'});
+    <script>
+    		$(window).on('load', function() { // makes sure the whole site is loaded 
+			
+			$('#status').fadeOut(); // will first fade out the loading animation 
+			$('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+			$('body').delay(350).css({'overflow-y':'visible'});
 
 
 
-        });
+		});
     </script>
 
     <script>
             $(document).ready(function(){
+
+            
+            /*$("#quienes-somos-btn, ul.sub-menu").hover(function(){
+                $(".sub-menu").show();
+
+            });*/
 
              @if(isset($msg))
 
@@ -102,29 +105,27 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
             @endif
 
+
+            /*$("ul.sub-menu").mouseleave(function(){
+                setTimeout(function(){
+                    $(".sub-menu").hide();  
+                },100);
+                
+
+            });*/
+
+
              $("#file-result").hide();
 
-            });
+
+        });
     </script>
-    <script>
-        $(".go-to-shop").click(function(){
-                if(window.location.pathname == '/' || window.location.pathname=='/index' || window.location.pathname=='/shop'){
-                    
-                    $('html,body').animate({ scrollTop:$('#shop').offset().top -150  }, 'slow');
-                    
-                    return false;
-
-                }else{
-                    var url  = ""+window.location.origin+"/shop";
-                                        
-                    window.location.href = url;                    
-         
-                }
+    
+<script type="text/javascript" src="<?php echo asset("OwlCarousel2-2.3.4/dist/owl.carousel.min.js")?>"></script>
+<script type="text/javascript" src="<?php echo asset("js/slider.js")?>"></script>
+<script type="text/javascript" src="<?php echo asset("js/routerAjax.js")?>"></script>
 
 
-
-         });
-    </script>
 <script>
 
 

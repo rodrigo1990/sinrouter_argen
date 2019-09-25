@@ -205,6 +205,7 @@
 	<script>
 	
 	$(document).ready(function(){
+	    
 	    if(window.location.pathname.indexOf('shop') >= 0){
 	        $('html,body').animate({ scrollTop:$('#shop').offset().top -150  }, 'slow');
             return false; 
