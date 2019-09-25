@@ -4756,14 +4756,6 @@ h1, #contacto h1 {
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {
-
-    header{
-        padding: 15px 43px;
-    }
-
-    header ul.menu {
-        margin-top: 22px;
-    }
     
     header ul.menu>li>a {
     font-size: 79% !important;

@@ -94,10 +94,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             $(document).ready(function(){
 
             
-            /*$("#quienes-somos-btn, ul.sub-menu").hover(function(){
+            $("#quienes-somos-btn, ul.sub-menu").hover(function(){
                 $(".sub-menu").show();
 
-            });*/
+            });
 
              @if(isset($msg))
 
@@ -106,13 +106,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             @endif
 
 
-            /*$("ul.sub-menu").mouseleave(function(){
+            $("ul.sub-menu").mouseleave(function(){
                 setTimeout(function(){
                     $(".sub-menu").hide();  
                 },100);
                 
 
-            });*/
+            });
 
 
              $("#file-result").hide();
@@ -739,13 +739,13 @@ $("#form-home #nombre").keyup(function(){
                 }
              });
 
-            $("#quienes-somos-btn").hover(function(){
+            $("#quienes-somos-btn, ul.sub-menu").hover(function(){
                 $(".sub-menu").show();
 
             });
 
 
-            $("#quienes-somos-btn").mouseleave(function(){
+            $("ul.sub-menu").mouseleave(function(){
                 setTimeout(function(){
                     $(".sub-menu").hide();  
                 },100);
@@ -850,12 +850,12 @@ $("#form-home #nombre").keyup(function(){
         }
 
 
-         $('input[type="file"], input[type="file2"]').change(function(){
+         $('input[type="file"]').change(function(){
             
-             var name = $(this).val();
+             var name = $('input[type="file"]').val();
             
 
-            var file_size = $(this)[0].files[0].size;
+            var file_size = $('input[type="file"]')[0].files[0].size;
 
            
 

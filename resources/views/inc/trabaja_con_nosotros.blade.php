@@ -71,7 +71,7 @@
                         <div class="col-xs-12 hidden-sm hidden-lg hidden-md">
                             
                                 <span id="file-btn" class="btn btn-primary btn-file border-btn blue float-right" >
-                                ADJUNTAR CV <input name="file2" type="file" id="file-btn">
+                                ADJUNTAR CV <input name="file" type="file" id="file-btn">
                               </span>
 
                                 <a onClick="enviarTrabajaConNosotros()"  class="border-btn red float-right text-center margin-top-25">ENVIAR</a>
