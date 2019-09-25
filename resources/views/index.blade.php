@@ -226,7 +226,6 @@
 			
 			$(id).removeClass('noScale');
 
-
 		}
 
 
@@ -238,27 +237,6 @@
 			
 
 		}
-
-	</script>
-
-	<script>
-			function showMoreFichas(id){
-				
-				$("#more-"+id+"").show();
-
-				$("#more-btn-"+id+"").text('Ver menos');
-
-				$("#more-btn-"+id+"").attr('onClick','hideMoreFichas("'+id+'")');
-			}
-
-			function hideMoreFichas(id){
-
-				$("#more-"+id+"").hide();
-
-				$("#more-btn-"+id+"").text('Ver más');
-
-				$("#more-btn-"+id+"").attr('onClick','showMoreFichas("'+id+'")');
-			}
 
 	</script>
 @stop

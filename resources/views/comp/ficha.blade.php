@@ -43,48 +43,18 @@
                   <p class="precio-lista">*Precio de lista {{$precioLista}}</p>
                 </div>
                 <div class="row">
-            @if($features)
 				    <ul>
-              
-              <?php $i = 0; ?>
-              
-              <?php end($features) ?>
-
-              <?php  $last = key($features) ?>
-
                 @foreach($features as $feature)
                   
-                  
+                  <?php $i++; ?>
+                  <li><?php echo($feature)  ?></li>
 
-                  @if($i>=7)
-                    
-                
-                        <ul class="more" id="more-{{$id}}">
-                
-                          @for($k=$i;$k<=$last;$k++)
+                 
 
-                              <li><?php echo ($features[$k]) ?> </li>
 
-                          @endfor
-                
-                        </ul>
-                        <div class="clear"></div>
-                        <a onClick="showMoreFichas('{{$id}}')" id="more-btn-{{$id}}">Ver más</a>
-                    @break;
-
-                  @else
-              
-                    <li><?php echo($feature)  ?></li>
-              
-                  @endif                 
-
-                <?php $i++; ?>
                   
                 @endforeach
                 </ul>
-            @endif
-
-
                 @if($so=='true')
                   <hr>
                   <h3>SISTEMA OPERATIVO</h3>
