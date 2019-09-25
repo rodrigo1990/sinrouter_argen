@@ -327,14 +327,16 @@
 
                 @slot('features',[
                 
-                0 => 'RESOLUCIÓN 18:9',
-                1 => 'PANTALLA 6"',
-                2 => 'MATERIAL CRISTAL REFORZADO',
-                3 => '32GB DE RAM',
-                4 => 'CÁMARA DELANTERA 8MP ',
-                5 => 'CÁMARA TRASERA 13MP',
-                6 => 'BLUETOOTH 4.1',
-                7 => 'DISPONIBLE EN COLOR AZUL, BLANCO Y BÁLTICO',
+                0 => '<b>Colores:</b> azul, blanco, báltico / Tamaño: (sin la cámara) 156.88 x 76.44 x 8.19mm / Peso: 180g.',
+                1 => '<b>Velocidad de red: </b> LTE Cat. 4, L+L, VoLTE, VoWiFi  / WiFi 802.11 b/g/ Bluetooth® 4.1 /  GPS/AGPS+GLONASS+BDS+Galileo',
+                2=> '<b>Sistema operativo: </b> Android Oreo / RAM 3 GB LPPDDR3 / CPU MediaTek Helio P22.',
+                3=> '<b>Memoria interna:</b> 32 GB5 e-MMC 5.1 / Ranura para tarjeta MicroSD soporta hasta 400 GB.',
+                4=> '<b>Conector:</b> 3,5 mm para auriculares / Altavoces Altavoz único.',
+                5 => '<b>Tamaño y tipo pantalla:</b>  HD+ de 6" / Resolución 18:9 / Material Cristal reforzado',
+                6 => '<b>Cámara primaria doble:</b> 13 MP 3L5/f2.0 Doble secundaria: 5 MP 5E9/f2.4. / Cámara frontal 8 MP 4H7/FF/f2.2. / Flash Flash LED.',
+                7 => '<b>Tipo de cable:</b> micro-USB',
+                8 => '<b>Sensores:</b> Sensor de luz ambiental, sensor de proximidad, acelerómetro (Sensor G), E-compass, giroscopio, sensor de huella digital, NFC3.',
+                9 => '<b>Tipo de batería:</b> Batería integrada de 3500 mAh2 / Carga cargador Nokia micro-USB',
 
 
                 ])
