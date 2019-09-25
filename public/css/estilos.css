@@ -542,7 +542,7 @@ a:hover{
 }
 
 .blue{
-	color:#00A5E7 !important;
+	color:#00A5E7;
 }
 
 .red{
@@ -550,7 +550,7 @@ a:hover{
 }
 
 .violet{
-    color:#523183 !important;
+    color:#523183;
 }
 
 
@@ -729,7 +729,7 @@ a:hover{
 
    .border-btn.violet:hover{
     background-color:#523183;
-    color:white !important;
+    color:white;
   }
 
 
@@ -3191,12 +3191,12 @@ div.bk-title h1{
     font-size: 21px;
 }
 
-#shop #shop-slider>div .producto>.text-center>.precio h4 b, .fichas h2{
+#shop #shop-slider>div .producto>.text-center>.precio h4 b{
     font-family:GothamBold;
 }
 
 
-#shop #shop-slider>div .producto>hr, .fichas hr{
+#shop #shop-slider>div .producto>hr{
     background:#BCBEC0;
     margin-top: 25px;
 }
@@ -3208,7 +3208,7 @@ div.bk-title h1{
 
 
 
-#shop #shop-slider>div .producto>p, .fichas p.precio-lista{
+#shop #shop-slider>div .producto>p{
     color:#BCBEC0;
 }
 
@@ -3237,14 +3237,12 @@ div.bk-title h1{
     margin-right: 10px;
 }
 
-
-
 #shop #shop-slider>div .producto>.ahora-18{
     margin-top: 19px;
 }
 
 
-#shop #shop-slider>div .producto>.ahora-18>h4,.fichas .ahora-18>h4{
+#shop #shop-slider>div .producto>.ahora-18>h4{
     width: 182px;
     font-family: GothamBlack;
     margin-left: auto;
@@ -3298,7 +3296,7 @@ div.bk-title h1{
 }
 
 #shop .owl-theme .owl-nav [class*=owl-]{
-    opacity: 0.5;
+    opacity: 0.2;
 }
 
 #shop .owl-theme .owl-nav [class*=owl-]:hover{
@@ -3318,29 +3316,10 @@ div.bk-title h1{
 
 
 
-
-#shop .owl-dots{
-    position: absolute;
-    top: -27px;
-    left: 0;
-    right: 0;
-    margin: auto;
-    display:none;
-}
-
-
-#shop .owl-dots button span{
-    background: grey !important;
-    width: 33px;
-    height: 4px;
-}
-
- #shop .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
-    background: #16ace9 !important;
-}
 .modal.fichas .modal-body, .modal.fichas .modal-content{
     padding: unset;
-    background: #F8F8F9;
+    width: fit-content;
+    background: unset;
     border: unset;
     border-radius: unset;
     position:relative;
@@ -3348,9 +3327,14 @@ div.bk-title h1{
 }
 
 .modal.fichas .modal-dialog.modal-sm {
-    width:75vw !important;
+    width:fit-content !important;
 }
 
+
+
+.modal.fichas .modal-body img{
+    width: 757px;
+}
 
 .modal.fichas .modal-header{
     position: absolute;
@@ -3365,191 +3349,12 @@ div.bk-title h1{
 
 
 
-.fichas .row{
-    margin-left:unset;
-    margin-right:unset;
-}
-
-.fichas h4, .fichas ul li, .fichas h3{
-    color:#414042;
-}
-
-.fichas ul li b{
-    font-family: GothamBold;
-}
-
-.fichas h3{
-    margin-top:15px;
-}
-
-.fichas .row>.row>.col-sm-1 img{
-    width: 30px;
-}
-
-
-
-.fichas h2{
-    font-family: GothamBold;
-    font-size: 28px!important;
-    margin-top:30px;
-}
-
-.fichas .img-cont img{
-    width:293px;    
-}
-
-.fichas h4.cuotas{
-    margin-top:13px;
-}
-
-.fichas h4.cuotas img{
-    width: 30px;
-    vertical-align:sub;
-}
-
-
-.fichas .modal-footer{
-    background:white;
-    margin-top: 50px;
-}
-
-
-.fichas .ahora-18{
-    float:right;
-}
-
-.fichas .ahora-18>h4{
-    width: 258px;
-    font-size: 21px;
-    line-height: 22px;
-    text-align: left;
-}
-
-.fichas .ahora-18>h4>img {
-    width: 46px;
-    float: left;
-    margin-right: 10px;
-}
-
-.fichas hr{
-    width: 100%;
-    margin-top: 13px;
-}
-
-
-
-.fichas p.precio-lista{
-    font-size: 12px;
-    margin-top:5px;
-}
-
-.fichas ul{
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-
-.fichas ul li{
-    background: url(/storage/img/shop/list-style-06.jpg) no-repeat left;
-    padding: 4px 0px 4px 7px;
-
-    
-}
-
-.fichas ul li {
-    font-family: GothamBook;
-    font-weight: bold;
-}
-
-.fichas .precio.blue{
-    margin-top:9px;
-}
-
-.fichas .precio.blue > b{
-    font-size:  32px;
-}
-
-.fichas .border-btn{
-    width: 400px;
-    float: left;
-}
-
-
-.fichas .img-cont{
-        margin-top: 35px;
-    background: white;
-    padding: 55px 0 66px 0;
-    border-radius: 17px;
-    -webkit-box-shadow: -1px 10px 30px -24px rgba(0,0,0,0.75);
-    -moz-box-shadow: -1px 10px 30px -24px rgba(0,0,0,0.75);
-    box-shadow: -5px 10px 30px -24px rgba(0,0,0,0.75);
-}
-.fichas .android-logo{
-    width: 50px;
-    margin-top:10px;
-    margin-bottom:10px;
-}
-
-
-.fichas .circle{
-    width: 98px;
-    height: 100px;
-    border-radius: 50%;
-    padding: 20px 0 13px 0;
-    position: absolute;
-    
-    color: white !important;
-    line-height: 28px;
-    text-align: center;
-    letter-spacing: 2px;
-
-}
-
-.fichas .circle span{
-    font-size: 13px;
-    font-family: GothamBook;
-    font-weight: bold;
-    line-height: 10px;
-}
-
-.fichas .circle span b{
-    font-family: GothamBlack;
-    font-size: 28px;
-}
-
-.circle.blue{
-    top: -9px;
-    left: -31px;
-    color:unset ;
-    background-color:#00A5E7 !important;
-
-}
-
-
-.circle.red{
-    top: -9px;
-    left: -31px;
-    color:unset ;
-    background-color:#EE4E23 !important;
-
-}
-
-.circle.violet{
-    top: -9px;
-    left: 63px;
-    color:unset ;
-    background-color:#523183  !important;
-
-}
 /*---------------------------------------------*/
                 /*MEDIA QUERIES*/
 /*----------------------------------------------*/
 
 
 @media only screen and (width: 1024px)  {
-
-    .fichas .img-cont img{
-    width: 272px;
-}
    
     .bk-landing {
     height: 33vh;
@@ -3595,10 +3400,6 @@ div.bk-title h1{
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1200px)  {
-
-    .fichas .img-cont img{
-    width: 272px;
-}
     section#form>.row{
         height:unset;
     position:unset;
@@ -3772,18 +3573,7 @@ header ul.menu>li>a[href='/saca_tu_prestamo'],header ul.menu>li>a[href='/cambio'
 }
 
 @media only screen and (min-width: 10px) and (max-width: 1024px)  {
-
-    #shop .owl-theme .owl-nav .owl-prev {
-    margin-left: -15px;
-    }
-
-#shop .owl-theme .owl-nav .owl-next {
-    margin-right: -15px;
-    }
-        .fichas .border-btn {
-        width: 100%;
-
-    }
+    
 
     .tool-tip {
         right: -5px;
@@ -4290,26 +4080,6 @@ section#form form .border-btn{
 
 @media only screen and (min-width: 320px) and (max-width: 767px){
 
-    #shop >.container > h1 {
-    margin-bottom: 46px;
-}
-
-    #shop .owl-dots{
-    display:block;
-    }
-
-    .fichas .img-cont{
-        margin-top:48px;
-    }
-
-  .fichas .modal-footer .col-sm-6.text-right{
-    margin-top:30px;
-  }
-
-  .fichas .modal-footer .col-sm-6.text-left{
-    margin-bottom:30px;
-  }
-   
 .recaptcha-col{
     padding:0;
 }
@@ -4323,60 +4093,13 @@ section#form form .border-btn{
 
 }
 
-.fichas .row{
-        text-align: center;
-    }
-
 }
 @media only screen and (min-width: 320px) and (max-width: 768px){
-
-    #preguntasFrecuentesBtn .tool-tip{
-        display:none;
-    }
-         
-    .fichas .circle{
-    display:none;
-}
-    .fichas ul li {
-    background:unset;
-    
-    }
-
-    .fichas .border-btn {
-    width: 100%;
-    float: unset;
-    margin: auto;
-    display: block;
-    margin-top: 13px;
-}
-
-.modal.fichas .modal-dialog.modal-sm{
-    width: 95vw !important;
-    margin: auto;
-    margin-top: 10px;
-}
-
-.fichas .ahora-18 {
-    float: unset;
-}
-
-.fichas .ahora-18>h4 {
-    width: 212px;
-    font-size: 17px;
-    line-height: 21px;
-    text-align: left;
-}
-.fichas .ahora-18>h4>img {
-    width: 39px;
-    float: left;
-    margin-right: 10px;
-}
-.fichas .img-cont img{
-    width: 272px;
-}
-
     #shop .owl-theme .owl-nav button span{
         font-size: 40px;
+    }
+    .modal.fichas .modal-body img{
+        width: 357px;
     }
 
     #shop ul.flex li{
@@ -4670,6 +4393,9 @@ h1, #contacto h1 {
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
 
+    .modal.fichas .modal-body img {
+    width: 757px;
+}
 
   .bk-landing>.row h1 {
         font-size: 74px !important;
@@ -4701,11 +4427,16 @@ h1, #contacto h1 {
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
 
-  .fichas .border-btn {
 
-        margin-top: unset;
-    }
+#shop .owl-theme .owl-nav .owl-prev {
+    float:left;
+    margin-left: -3%;
+}
 
+#shop .owl-theme .owl-nav .owl-next {
+    float:right;
+    margin-right: -3%;
+}
 
 
 

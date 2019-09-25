@@ -64,7 +64,7 @@
     navigation: true,
      items:4,
      nav:true,
-      dots:true,
+      dots:false,
      responsive:{
         0:{
             items:1
