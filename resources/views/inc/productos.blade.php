@@ -19,8 +19,6 @@
 								@endslot
 								@slot('img')
 							    	storage/img/shop/productos/p-01.png
-
-
 								@endslot
 								@slot('dataTarget')
 							    	#1
@@ -46,8 +44,6 @@
 								@endslot
 								@slot('img')
 							    	storage/img/shop/productos/p-02.png
-
-
 								@endslot
 								@slot('dataTarget')
 							    	#2
@@ -171,7 +167,6 @@
 								@endcomponent
 							</div>
 
-						
 					
 
 				</div><!-- SLIDER -->

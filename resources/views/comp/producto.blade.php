@@ -1,7 +1,6 @@
 <div class="producto">
 	<img class="center-block" src="<?php echo asset($img) ?>" alt="">
 	<div class="text-center">
-
 		<h3 class="violet"><b>{{$marca}}</b> <br> {{$modelo}}</h3>
 		
 		<h4>Hasta <b>18 CUOTAS SIN INTERÉS</b> de</h4>

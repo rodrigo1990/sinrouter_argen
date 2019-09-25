@@ -39,7 +39,7 @@
                   <p class="precio-lista">*Precio de lista {{$precioLista}}</p>
                 </div>
                 <div class="row">
-				    <ul>
+				<ul>
                 @foreach($features as $feature)
                     <li><?php echo($feature)  ?></li>
                   
