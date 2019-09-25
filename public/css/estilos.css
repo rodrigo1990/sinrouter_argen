@@ -1595,15 +1595,15 @@ footer b {
 }
 
 
-.full-bk .close-btn{
+#preguntasFrecuentesCont .close-btn{
     display:block;
 }
 
-.full-bk .close-btn:hover i{
+#preguntasFrecuentesCont .close-btn:hover i{
     color:grey;
 }
 
-.full-bk .close-btn i{
+#preguntasFrecuentesCont .close-btn i{
         font-size: 34px;
     margin-right: 20px;
     margin-top: 20px;
@@ -3200,7 +3200,6 @@ div.bk-title h1{
 }
 
 
-
 #shop #shop-slider>div .producto>hr, .fichas hr{
     background:#BCBEC0;
     margin-top: 25px;
@@ -3343,37 +3342,28 @@ div.bk-title h1{
  #shop .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
     background: #16ace9 !important;
 }
-
-
-.grey-bk{
-    background: #F8F8F9;
-}
-
-.fichas .modal-header .close:hover{
-    color:red !important;
-}
-
-.fichas .modal-body, .fichas .modal-content{
+.modal.fichas .modal-body, .modal.fichas .modal-content{
     padding: unset;
+    background: #F8F8F9;
     border: unset;
     border-radius: unset;
     position:relative;
     height: unset;
 }
 
-.fichas .modal-dialog.modal-sm {
-    width:90vw !important;
+.modal.fichas .modal-dialog.modal-sm {
+    width:75vw !important;
 }
 
 
-.fichas .modal-header{
+.modal.fichas .modal-header{
     position: absolute;
     z-index: 10;
     width: 100%;
 }
 
 
-.fichas .modal-header .close{
+.modal.fichas .modal-header .close{
     color:grey;
 }
 
@@ -3423,8 +3413,8 @@ div.bk-title h1{
 
 
 .fichas .modal-footer{
+    background:white;
     margin-top: 50px;
-    margin-bottom:50px;
 }
 
 
@@ -3828,13 +3818,13 @@ header ul.menu>li>a[href='/saca_tu_prestamo'],header ul.menu>li>a[href='/cambio'
         line-height: 11px !important;
     }
 
-.full-bk .close-btn {
+#preguntasFrecuentesCont .close-btn {
     display: block;
     width: 100%;
     height: 34px;
 }
 
-.full-bk .close-btn i {
+#preguntasFrecuentesCont .close-btn i {
     font-size: 23px;
     margin-right: 3px;
     margin-top: 8px;
@@ -4287,11 +4277,6 @@ footer .second.margin-top-100{
 
 
 @media only screen and (width: 320px){
-
-    .fichas  .modal-body  .row>.col-sm-6:nth-child(1){
-    padding-left:0;
-    padding-right:0;
-    }
   
 .big.border-btn{
     padding:14px;
@@ -4320,8 +4305,6 @@ section#form form .border-btn{
     .fichas .row{
     text-align: center;
     }
-
-
 
 
     #shop >.container > h1 {
@@ -4387,7 +4370,7 @@ section#form form .border-btn{
     margin-top: 13px;
 }
 
-.fichas .modal-dialog.modal-sm{
+.modal.fichas .modal-dialog.modal-sm{
     width: 95vw !important;
     margin: auto;
     margin-top: 10px;

@@ -216,27 +216,4 @@
 		
 	
 	</script>
-
-	<script>
-		function scale(id){
-
-			$("body").css("overflow-y",'hidden');
-			
-			$(id).addClass('scale');
-			
-			$(id).removeClass('noScale');
-
-		}
-
-
-		function noScale(id){
-
-			$("body").css("overflow-y",'scroll');
-			$(id).removeClass('scale');
-			$(id).addClass('noScale');
-			
-
-		}
-
-	</script>
 @stop

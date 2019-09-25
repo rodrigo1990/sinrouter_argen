@@ -1,13 +1,9 @@
-<div class="fichas full-bk grey-bk" id="{{$id}}">
-  <div class="modal-header">
-      
-          <a  id="" class="close-btn" onClick="noScale('#{{$id}}')">
-            <i class="fas fa-times-circle float-right"></i>
-          </a>
-        </div>
+<div class="modal fade fichas" id="{{$id}}" role="dialog">
      <div class="modal-dialog modal-sm">
-      <div class="">
-        
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
         <div class="modal-body">
             <div class="row">
               <div class="col-sm-6">
@@ -45,13 +41,7 @@
                 <div class="row">
 				    <ul>
                 @foreach($features as $feature)
-                  
-                  <?php $i++; ?>
-                  <li><?php echo($feature)  ?></li>
-
-                 
-
-
+                    <li><?php echo($feature)  ?></li>
                   
                 @endforeach
                 </ul>
@@ -65,14 +55,7 @@
               </div>
             </div>
         </div>
-       
-  
-
-
-
-      </div>
-    </div>
-     <div class="modal-footer">
+        <div class="modal-footer">
             <div class="col-sm-6 text-right">
              <div class="ahora-18">       
                 <h4 class="blue">                       
@@ -87,4 +70,10 @@
               <a href="/sucursales" class="spa-btn border-btn violet text-center center-block" target="_blank">ENCONTRÁ TU SUCURSAL</a>
             </div>
         </div>
+  
+
+
+
+      </div>
+    </div>
   </div>
