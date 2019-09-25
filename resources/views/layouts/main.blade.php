@@ -82,16 +82,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script type="text/javascript" src="<?php echo asset("js/routerAjax.js")?>"></script>
 
 <script>
-    function submenuShow(){
-        $(".overlay-xs-menu  li ul").show();
-    }
-
-    function submenuHide(){
-        $(".overlay-xs-menu  li ul").hide();
-    }
-</script>
-
-<script>
             $(window).on('load', function() { // makes sure the whole site is loaded 
             
             $('#status').fadeOut(); // will first fade out the loading animation 

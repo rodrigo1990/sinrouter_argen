@@ -1,4 +1,4 @@
-$("#abrirMenu-lg,#abrirMenu-xs").click(function(){
+$("#abrirMenu").click(function(){
 
 		$("#xsMenu").removeClass('animated bounceOutRight');
 		$("#xsMenu").addClass('animated bounceInRight');

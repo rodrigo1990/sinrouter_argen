@@ -15,13 +15,11 @@
 							<li><a href="/cambio"  class="fix spa-btn" target="_blank">CAMBIO</a></li>
 							<li><a   class="fix spa-btn shop go-to-shop" >SHOP</a></li>
 
-							<li><a id="abrirMenu" class="boton-menu-desplegable"><i class="fa fa-bars"  id="abrirMenu-lg"></i></a></li>
-
 							
-						 <li><a href="/micuenta/quiero-pagar.php" target="" class="after-btn ocultable"  >CONSULTÁ TU CUENTA</a></li>
-							<li><a href="/sucursales" class="spa-btn after-btn ocultable">NUESTRAS SUCURSALES</a></li>
+							<li><a href="/micuenta/quiero-pagar.php" target="" class="after-btn"  >CONSULTÁ TU CUENTA</a></li>
+							<li><a href="/sucursales" class="spa-btn after-btn">NUESTRAS SUCURSALES</a></li>
 
-							<li id="quienes-somos-btn" class="ocultable">
+							<li id="quienes-somos-btn">
 								<a   class="after-btn">QUIENES SOMOS</a>
 									<ul class="sub-menu">
 										<li><a href="/institucional" class="spa-btn" >INSTITUCIONAL</a></li>
@@ -30,13 +28,13 @@
 
 							</li>
 
-							<li class="ocultable">
+							<li class="">
 								
 								<a href="https://www.facebook.com/argenpesos" target="_blank" class="float-left rr-ss"><i class="fab fa-facebook-f"></i></a>
 
 
 								<a href="https://www.instagram.com/argenpesos/" target="_blank" class="float-left rr-ss"><i class="fab fa-instagram"></i></a>
-							</li> 
+							</li>
 							
 						</ul>
 					</div>
@@ -47,7 +45,7 @@
 						<img src="<?php echo asset("storage/img/logo.png")?>" width="150px"></img> 
 					</a>
 						<a id="abrirMenu">
-							<i class="fa fa-bars"  id="abrirMenu-xs"></i>
+							<i class="fa fa-bars"  id="abrirMenu"></i>
 						</a>
 					</div>
 			</div>
@@ -59,92 +57,17 @@
 					<i class="fas fa-times"></i>
 				</a>
 			</div>
-			<li>
-				<img src="<?php echo asset('storage/img/list-img-menu.svg') ?>" alt="">
-				<a href="/saca_tu_prestamo" class="xs-btn spa-btn">
-					SACA TU PRÉSTAMO
-				</a>
-			</li>
+			<li><a href="/saca_tu_prestamo" class="xs-btn spa-btn">SACA TU PRÉSTAMO</a></li>
+			<li><a href="/cambio" class="xs-btn spa-btn">CAMBIO</a></li>
+			<li><a href="/shop" class="xs-btn spa-btn go-to-shop">SHOP</a></li>
 
-			<li>
-				<img src="<?php echo asset('storage/img/list-img-menu.svg') ?>" alt="">
-				<a href="/cambio" class="xs-btn spa-btn">
-					CAMBIO
-				</a>
-			</li>
-			
-			<li>
-				<img src="<?php echo asset('storage/img/list-img-menu.svg') ?>" alt="">
-				<a href="/shop" class="xs-btn spa-btn go-to-shop">
-					SHOP
-				</a>
-			</li>
+			<li><a href="micuenta/quiero-pagar.php"  class="xs-btn" >CONSULTÁ TU CUENTA</a></li>
+			<li><a href="/sucursales" class="xs-btn spa-btn">NUESTRAS SUCURSALES</a></li>
 
-			<li>
-				<img src="<?php echo asset('storage/img/list-img-menu.svg') ?>" alt="">
-				<a href="micuenta/quiero-pagar.php"  class="xs-btn" >
-					CONSULTÁ TU CUENTA
-				</a>
-			</li>
-			<li>
-				<img src="<?php echo asset('storage/img/list-img-menu.svg') ?>" alt="">
-				<a href="/sucursales" class="xs-btn spa-btn">
-				NUESTRAS SUCURSALES
-				</a>
-			</li>
+			<li><a href="/institucional" class="xs-btn spa-btn">INSTITUCIONAL</a></li>
 
-			<li>
-				<img src="<?php echo asset('storage/img/list-img-menu.svg') ?>" alt="">
-				<a href="/institucional" class="xs-btn spa-btn">
-					INSTITUCIONAL
-				</a>
-			</li>
-
-			<li class="submenu-btn" onmouseover="submenuShow()" onmouseleave="submenuHide()">
-				<img src="<?php echo asset('storage/img/list-img-menu.svg') ?>" alt="">
-				<a  class="xs-btn spa-btn">
-					QUIENES SOMOS <img src="<?php echo asset('storage/img/arrow-down-menu.svg') ?>">
-				</a>
-
-				<ul>
-					<li>
-						<img src="<?php echo asset('storage/img/list-img-menu.svg') ?>" alt="">
-						<a href="/resp_social" class="xs-btn spa-btn">
-							RESPONSABILIDAD SOCIAL
-						</a>
-						
-					</li>
-					<li>
-						<img src="<?php echo asset('storage/img/list-img-menu.svg') ?>" alt="">
-						<a href="/preguntas_frecuentes" class="xs-btn spa-btn">
-							PREGUNTAS FRECUENTES
-						</a>
-					</li>
-				</ul>
-			</li>
-
-
-			<li class="xs-item">
-				<img src="<?php echo asset('storage/img/list-img-menu.svg') ?>" alt="">
-				<a href="/resp_social" class="xs-btn spa-btn">
-					RESPONSABILIDAD SOCIAL
-				</a>
-				
-			</li>
-			<li class="xs-item">
-				<img src="<?php echo asset('storage/img/list-img-menu.svg') ?>" alt="">
-				<a href="/preguntas_frecuentes" class="xs-btn spa-btn">
-					PREGUNTAS FRECUENTES
-				</a>
-			</li>			
-
-			
-			<li>
-				<img src="<?php echo asset('storage/img/list-img-menu.svg') ?>" alt="">
-				<a href="#contacto" class="xs-btn" id="cont-xs">
-					CONTACTO
-				</a>
-			</li>
+			<li><a href="/resp_social" class="xs-btn spa-btn">RESPONSABILIDAD SOCIAL</a></li>
+			<li><a href="#contacto" class="xs-btn" id="cont-xs">CONTACTO</a></li>
 		<li class="center-block">
 			<a href="https://www.instagram.com/argenpesos/" class="xs-btn left" target="_blank">
 				<i class="fab fa-instagram"></i>
