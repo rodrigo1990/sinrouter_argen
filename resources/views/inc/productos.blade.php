@@ -171,34 +171,6 @@
 								@endcomponent
 							</div>
 
-
-							<div>
-								@component('comp.producto')
-									@slot('marca')
-								    	XIAOMI 
-									@endslot
-									@slot('modelo')
-								    	MI In-Ear Basic
-									@endslot
-									@slot('precio')
-								    	$33
-									@endslot
-									@slot('precioLista')
-								    	$599
-									@endslot
-									@slot('img')
-								    	storage/img/shop/productos/p-08.jpg
-									@endslot
-									@slot('dataTarget')
-								    	#8
-									@endslot		
-								@endcomponent
-							</div>
-
-
-						
-
-
 						
 					
 

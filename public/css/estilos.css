@@ -3165,7 +3165,7 @@ div.bk-title h1{
 #shop #shop-slider>div .producto{
     border:1px solid lightgray;
     border-radius:5px;
-    padding: 15px 5px 15px 5px;
+    padding: 15px 23px 15px 23px;
     -webkit-box-shadow: -1px 10px 30px -24px rgba(0,0,0,0.75);
     -moz-box-shadow: -1px 10px 30px -24px rgba(0,0,0,0.75);
     box-shadow: -5px 10px 30px -24px rgba(0,0,0,0.75);
@@ -3177,15 +3177,11 @@ div.bk-title h1{
 #shop #shop-slider>div .producto>.text-center>h3{
     font-size:17px;
     margin-top:10px;
-    overflow: hidden;
-    white-space: nowrap;
 }
 
 #shop #shop-slider>div .producto>.text-center>h4{
     font-size:14px;
     margin-top:10px;
-    padding-left: 35px;
-    padding-right: 35px;
 }
 
 
@@ -3335,7 +3331,7 @@ div.bk-title h1{
 
 #shop .owl-dots button span{
     background: grey !important;
-    width: 14px;
+    width: 33px;
     height: 4px;
 }
 
@@ -3780,11 +3776,11 @@ header ul.menu>li>a[href='/saca_tu_prestamo'],header ul.menu>li>a[href='/cambio'
 
 
     #shop .owl-theme .owl-nav .owl-prev {
-    margin-left: -11px;
+    margin-left: -15px;
     }
 
 #shop .owl-theme .owl-nav .owl-next {
-    margin-right: -11px;
+    margin-right: -15px;
     }
 
         .fichas .border-btn {
@@ -4296,21 +4292,11 @@ section#form form .border-btn{
 }
 
 @media only screen and (min-width: 320px) and (max-width: 767px){
-    #shop #shop-slider>div .producto{
-    width: 278px;
-    margin-left: auto;
-    margin-right: auto;
-    }
-
-    .fichas .row{
-    text-align: center;
-    }
-
 
     #shop >.container > h1 {
     margin-bottom: 46px;
 
-    }
+
     #shop .owl-dots{
     display:block;
     }

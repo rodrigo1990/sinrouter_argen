@@ -135,10 +135,8 @@
 
 <section id="banner" class="margin-top-60">
 	<div class="owl-one owl-carousel owl-theme slider" id="owl-1">
-		<div class="">
-			<a href="/shop" target=>
-				<img src="<?php echo asset("storage/img/slider_home/banner_5.jpg")?>" alt="">
-			</a>
+		<div>
+			<img src="<?php echo asset("storage/img/slider_home/banner_2.jpg")?>" alt="">
 		</div>
 		<div>
 			<img src="<?php echo asset("storage/img/slider_home/banner_3.jpg")?>" alt="">
@@ -148,14 +146,11 @@
 				<img src="<?php echo asset("storage/img/slider_home/banner_4.jpg")?>" alt="">
 			</a>
 		</div>
-		
 	</div>
 
 	<div class="owl-one owl-carousel owl-theme slider" id="owl-2">
-		<div class="">
-			<a href="/shop" target=>
-				<img src="<?php echo asset("storage/img/slider_home/banner_xs_5.jpg")?>" alt="">
-			</a>
+		<div>
+			<img src="<?php echo asset("storage/img/slider_home/banner_xs.jpg")?>" alt="">
 		</div>
 		
 		<div>
@@ -167,7 +162,6 @@
 				<img src="<?php echo asset("storage/img/slider_home/banner_xs_4.jpg")?>" alt="">
 			</a>
 		</div>
-		
 	</div>
 
 </section>

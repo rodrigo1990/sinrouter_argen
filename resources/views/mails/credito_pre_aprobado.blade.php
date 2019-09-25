@@ -24,7 +24,7 @@
           <h1 style='color: #1da3dd; font-size: 17px; font-weight: bold; font-family: Arial, Helvetica, sans-serif;'>
           <h1 style='color: #1da3dd; font-size: 17px; font-weight: bold; font-family: Arial, Helvetica, sans-serif;'>
           <img style='vertical-align:middle' src='http://www.legionvps.com/trabajos/argenpesos/img-form-solicitud/icon-bg-02.png'>
-          11-5735-2918
+          11-2678-5266
           </h1>
            </a>
            
