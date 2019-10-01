@@ -3563,6 +3563,49 @@ div.bk-title h1{
     font-size: 28px;
 }
 
+
+.fichas .col-sm-4.thumb-cont .flex {
+    flex-direction: column;
+    float:right;
+}
+
+.fichas .col-sm-4.thumb-cont .flex li{
+    background:unset !important;
+    cursor:pointer;
+}
+
+
+.fichas .col-sm-4.thumb-cont .flex li .overlayer{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    background:gray;
+}
+
+.fichas .col-sm-4.thumb-cont .flex li img {
+    width:50px;
+}
+
+.fichas .col-sm-8.bg-cont img {
+    width: 295px;
+    float: left;
+
+}
+
+.fichas .col-sm-8.bg-cont .imgContainer {
+    width: 295px;
+    height: 372px;
+    background-position: center !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    float: left;
+
+}
+
+
+
+
+
 .circle.blue{
     top: -9px;
     left: -31px;

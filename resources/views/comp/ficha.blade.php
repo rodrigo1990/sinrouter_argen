@@ -10,15 +10,14 @@
         
         <div class="modal-body">
             <div class="row">
-              <div class="col-sm-6">
-                <div class="img-cont">
+              <div class="col-sm-6 img-cont">
                 @if($memoria!='')
                   <div class="circle blue">
                     <span>MEMORIA <br> <b>{{$memoria}}</b></span>
                   </div>
                  @endif
 				
-				@if($camara!='')
+				        @if($camara!='')
                   <div class="circle violet">
                     <span>CÁMARA <br> <b>{{$camara}}</b></span>
                   </div>
@@ -28,8 +27,23 @@
                     <span>BATERÍA <br> <b>{{$bateria}}</b></span>
                   </div>
                  @endif
-                  <img class="center-block" src="<?php echo asset($imagenFicha) ?>" alt="">
-                </div>
+  
+                   <div class="col-sm-4 thumb-cont">
+
+                    @if(count($imagenes)>1)
+                      <ul class="flex ">
+                        @foreach($imagenes as $imagen)
+                        <li onclick="galleryHandler('{{$imagen}}','bg-cont-{{$id}}')">
+                          <img class="center-block" src="<?php echo asset($imagen) ?>" alt="">
+                        </li>
+                        @endforeach
+                      </ul> 
+                    @endif
+                   </div>
+
+                   <div class="col-sm-8 bg-cont" id="bg-cont-{{$id}}">
+                        <div class="imgContainer" style="background:url('<?php echo asset($imagenes[0]) ?>')"></div>
+                   </div>
               </div>
               <div class="col-sm-6">
                 <div class="row">

@@ -11,9 +11,16 @@
                 @slot('bateria')
                      
                 @endslot
-                @slot('imagenFicha')
-                    storage/img/shop/fichas/f-01.jpg
-                @endslot
+
+                 @slot('imagenes',[
+                  0 => 'storage/img/shop/fichas/xiaomi_redmi/1.jpg',
+                  1 => 'storage/img/shop/fichas/xiaomi_redmi/2.jpg',
+                  2 => 'storage/img/shop/fichas/xiaomi_redmi/3.jpg',
+                  3 => 'storage/img/shop/fichas/xiaomi_redmi/4.jpg',
+                  4 => 'storage/img/shop/fichas/xiaomi_redmi/5.jpg'
+
+                ])
+
                 @slot('marca')
                     XIAOMI
                 @endslot
@@ -61,9 +68,27 @@
                  @slot('bateria')
                       
                 @endslot
-                @slot('imagenFicha')
-                    storage/img/shop/fichas/f-02.jpg
-                @endslot
+
+            
+    
+                
+                @slot('imagenes',[
+                   0 => 'storage/img/shop/fichas/nokia_51_plus/1.jpg',
+                  1 => 'storage/img/shop/fichas/nokia_51_plus/2.jpg',
+                  2 => 'storage/img/shop/fichas/nokia_51_plus/3.jpg',
+                  3 => 'storage/img/shop/fichas/nokia_51_plus/4.jpg',
+                  4 => 'storage/img/shop/fichas/nokia_51_plus/5.jpg'
+
+                ])
+
+
+
+
+
+
+
+
+
                 @slot('marca')
                     NOKIA
                 @endslot
@@ -112,9 +137,18 @@
                  @slot('bateria')
                       
                 @endslot
-                @slot('imagenFicha')
-                    storage/img/shop/fichas/f-03.jpg
-                @endslot
+                
+                
+               @slot('imagenes',[
+                    0 => 'storage/img/shop/fichas/nokia_1_plus/1.jpg',
+                  1 => 'storage/img/shop/fichas/nokia_1_plus/2.jpg',
+                  2 => 'storage/img/shop/fichas/nokia_1_plus/3.jpg',
+                  3 => 'storage/img/shop/fichas/nokia_1_plus/4.jpg',
+
+                ])
+                
+
+
                 @slot('marca')
                     NOKIA
                 @endslot
@@ -164,9 +198,15 @@
                 @slot('bateria')
                     15HS  
                 @endslot
-                @slot('imagenFicha')
-                    storage/img/shop/fichas/f-04.jpg
-                @endslot
+
+                 @slot('imagenes',[
+                   0 => 'storage/img/shop/fichas/nokia_106/1.jpg',
+                  1 => 'storage/img/shop/fichas/nokia_106/2.jpg',
+                  2 => 'storage/img/shop/fichas/nokia_106/3.jpg',
+                  3 => 'storage/img/shop/fichas/nokia_106/4.jpg',
+
+                ])
+
                 @slot('marca')
                     NOKIA
                 @endslot
@@ -214,9 +254,15 @@
                 @slot('bateria')
                       
                 @endslot
-                @slot('imagenFicha')
-                    storage/img/shop/fichas/f-05.jpg
-                @endslot
+
+                 @slot('imagenes',[
+                   0 => 'storage/img/shop/fichas/vlak_alpha/1.jpg',
+                  1 => 'storage/img/shop/fichas/vlak_alpha/2.jpg',
+                  2 => 'storage/img/shop/fichas/vlak_alpha/3.jpg',
+                  3 => 'storage/img/shop/fichas/vlak_alpha/4.jpg',
+
+                ])
+
                 @slot('marca')
                     VLAK
                 @endslot
@@ -269,9 +315,16 @@
                 @slot('bateria')
                       
                 @endslot
-                @slot('imagenFicha')
-                    storage/img/shop/fichas/f-06.jpg
-                @endslot
+
+                @slot('imagenes',[
+                   0 => 'storage/img/shop/fichas/xiaomi_mi_sports/1.jpg',
+                  1 => 'storage/img/shop/fichas/xiaomi_mi_sports/2.jpg',
+                  2 => 'storage/img/shop/fichas/xiaomi_mi_sports/3.jpg',
+                  3 => 'storage/img/shop/fichas/xiaomi_mi_sports/4.jpg',
+                  4 => 'storage/img/shop/fichas/xiaomi_mi_sports/5.jpg',
+                  5 => 'storage/img/shop/fichas/xiaomi_mi_sports/6.jpg'
+                ])
+
                 @slot('marca')
                     XIAOMI
                 @endslot
@@ -309,9 +362,16 @@
                 @slot('bateria')
                       
                 @endslot
-                @slot('imagenFicha')
-                    storage/img/shop/fichas/f-07.jpg
-                @endslot
+
+                 @slot('imagenes',[
+                   0 => 'storage/img/shop/fichas/nokia_31_plus/1.jpg',
+                  1 => 'storage/img/shop/fichas/nokia_31_plus/2.jpg',
+                  2 => 'storage/img/shop/fichas/nokia_31_plus/3.jpg',
+                  3 => 'storage/img/shop/fichas/nokia_31_plus/4.jpg',
+
+                ])
+
+
                 @slot('marca')
                     NOKIA
                 @endslot
@@ -361,9 +421,14 @@
                 @slot('bateria')
                       
                 @endslot
-                @slot('imagenFicha')
-                    storage/img/shop/fichas/f-08.jpg
-                @endslot
+
+
+                 @slot('imagenes',[
+                   0 => 'storage/img/shop/fichas/xiaomi_inear/1.jpg',
+
+                ])
+
+
                 @slot('marca')
                     XIAOMI
                 @endslot

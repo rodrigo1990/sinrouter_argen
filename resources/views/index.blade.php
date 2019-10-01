@@ -201,7 +201,7 @@
 @stop
 
 @section('scripts')
-
+	<script src="<?php echo asset('/js/jquery.zoom.min.js') ?>"></script>
 	<script>
 	
 	$(document).ready(function(){
@@ -215,6 +215,32 @@
 	});
 		
 	
+	</script>
+
+	<script>
+		function galleryHandler(route,target){
+			$('.fichas .bg-cont#'+target+' div').fadeOut(function(){
+				$('.fichas .bg-cont#'+target+' div').css('background-image','url('+route+')');	
+				$('.fichas .bg-cont#'+target+' div').fadeIn();
+			});
+			
+			
+		}
+	</script>
+	<script>
+		$(document).ready( function() {
+			$('.fichas .bg-cont').hover(
+			    function() {
+			        var id = $(this).attr('id');
+
+			        $('.fichas .bg-cont#'+id+' .imgCon').append('<div class="zoom"></div>');
+
+					$('.fichas .bg-cont#'+id+' .imgContainer').clone().appendTo('.zoom');			        
+
+			    });
+			});
+
+
 	</script>
 
 	<script>
