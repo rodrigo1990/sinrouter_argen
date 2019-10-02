@@ -42,7 +42,9 @@
                    </div>
 
                    <div class="col-sm-8 bg-cont" id="bg-cont-{{$id}}">
-                        <div class="imgContainer" style="background:url('<?php echo asset($imagenes[0]) ?>')"></div>
+                        <span class="zoom">
+                          <img src="<?php echo asset($imagenes[0]) ?>" alt="">
+                        </span>
                    </div>
               </div>
               <div class="col-sm-6">

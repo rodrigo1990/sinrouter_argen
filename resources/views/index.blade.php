@@ -209,6 +209,8 @@
 	        $('html,body').animate({ scrollTop:$('#shop').offset().top -150  }, 'slow');
             return false; 
 	    }
+
+	    $('.zoom').zoom({magnify:1.2});
 	    
 	    
 	        
@@ -219,29 +221,13 @@
 
 	<script>
 		function galleryHandler(route,target){
-			$('.fichas .bg-cont#'+target+' div').fadeOut(function(){
-				$('.fichas .bg-cont#'+target+' div').css('background-image','url('+route+')');	
-				$('.fichas .bg-cont#'+target+' div').fadeIn();
-			});
-			
-			
+			$('.fichas .bg-cont#'+target+' span img').fadeOut(function(){
+				$('.fichas .bg-cont#'+target+' span img').attr('src',route);	
+				$('.fichas .bg-cont#'+target+' span img').fadeIn();
+			});		
 		}
 	</script>
-	<script>
-		$(document).ready( function() {
-			$('.fichas .bg-cont').hover(
-			    function() {
-			        var id = $(this).attr('id');
 
-			        $('.fichas .bg-cont#'+id+' .imgCon').append('<div class="zoom"></div>');
-
-					$('.fichas .bg-cont#'+id+' .imgContainer').clone().appendTo('.zoom');			        
-
-			    });
-			});
-
-
-	</script>
 
 	<script>
 		function scale(id){

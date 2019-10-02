@@ -421,7 +421,7 @@ body{
 }
 
 .bk-blue .blue{
-    color:white;
+    color:white !important;
 }
 .padding-80{
     padding:80px;
@@ -3377,6 +3377,12 @@ div.bk-title h1{
     margin-top:0;
 }
 
+
+.fichas .modal-body .col-sm-6:not(.img-cont) a {
+    font-family: GothamBlack;
+    color:#523183;
+}
+
 .fichas .modal-body .clear{
     height: 5px;
 }
@@ -3440,9 +3446,6 @@ div.bk-title h1{
     margin-top:30px;
 }
 
-.fichas .img-cont img{
-    width:293px;    
-}
 
 .fichas h4.cuotas{
     margin-top:13px;
@@ -3586,9 +3589,14 @@ div.bk-title h1{
     width:50px;
 }
 
-.fichas .col-sm-8.bg-cont img {
+.fichas .col-sm-8.bg-cont img:first-child {
     width: 295px;
     float: left;
+
+}
+
+.fichas .col-sm-8.bg-cont .zoom {
+    display:inline-block;
 
 }
 
@@ -3863,6 +3871,18 @@ header ul.menu>li>a[href='/saca_tu_prestamo'],header ul.menu>li>a[href='/cambio'
 
 @media only screen and (min-width: 10px) and (max-width: 1024px)  {
 
+        #contacto ul.flex{
+        width: fit-content !important;
+    }
+
+    #contacto ul.flex li h4{
+        font-size:  18px;
+    }
+
+    #contacto.padding-60{
+        padding:unset !important;
+        padding-top:77px !important;
+    }
 
     #shop .owl-theme .owl-nav .owl-prev {
     margin-left: -11px;
