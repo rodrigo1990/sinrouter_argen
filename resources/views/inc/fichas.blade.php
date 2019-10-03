@@ -13,11 +13,11 @@
                 @endslot
 
                  @slot('imagenes',[
-                  0 => 'storage/img/shop/fichas/xiaomi_redmi/1.jpg',
-                  1 => 'storage/img/shop/fichas/xiaomi_redmi/2.jpg',
-                  2 => 'storage/img/shop/fichas/xiaomi_redmi/3.jpg',
-                  3 => 'storage/img/shop/fichas/xiaomi_redmi/4.jpg',
-                  4 => 'storage/img/shop/fichas/xiaomi_redmi/5.jpg'
+                  0 => 'storage/img/shop/fichas/thumbs/xiaomi_redmi/1.jpg',
+                  1 => 'storage/img/shop/fichas/thumbs/xiaomi_redmi/2.jpg',
+                  2 => 'storage/img/shop/fichas/thumbs/xiaomi_redmi/3.jpg',
+                  3 => 'storage/img/shop/fichas/thumbs/xiaomi_redmi/4.jpg',
+                  4 => 'storage/img/shop/fichas/thumbs/xiaomi_redmi/5.jpg'
 
                 ])
 
@@ -73,11 +73,11 @@
     
                 
                 @slot('imagenes',[
-                   0 => 'storage/img/shop/fichas/nokia_51_plus/1.jpg',
-                  1 => 'storage/img/shop/fichas/nokia_51_plus/2.jpg',
-                  2 => 'storage/img/shop/fichas/nokia_51_plus/3.jpg',
-                  3 => 'storage/img/shop/fichas/nokia_51_plus/4.jpg',
-                  4 => 'storage/img/shop/fichas/nokia_51_plus/5.jpg'
+                   0 => 'storage/img/shop/fichas/thumbs/nokia_51_plus/1.jpg',
+                  1 => 'storage/img/shop/fichas/thumbs/nokia_51_plus/2.jpg',
+                  2 => 'storage/img/shop/fichas/thumbs/nokia_51_plus/3.jpg',
+                  3 => 'storage/img/shop/fichas/thumbs/nokia_51_plus/4.jpg',
+                  4 => 'storage/img/shop/fichas/thumbs/nokia_51_plus/5.jpg'
 
                 ])
 
@@ -140,10 +140,10 @@
                 
                 
                @slot('imagenes',[
-                    0 => 'storage/img/shop/fichas/nokia_1_plus/1.jpg',
-                  1 => 'storage/img/shop/fichas/nokia_1_plus/2.jpg',
-                  2 => 'storage/img/shop/fichas/nokia_1_plus/3.jpg',
-                  3 => 'storage/img/shop/fichas/nokia_1_plus/4.jpg',
+                    0 => 'storage/img/shop/fichas/thumbs/nokia_1_plus/1.jpg',
+                  1 => 'storage/img/shop/fichas/thumbs/nokia_1_plus/2.jpg',
+                  2 => 'storage/img/shop/fichas/thumbs/nokia_1_plus/3.jpg',
+                  3 => 'storage/img/shop/fichas/thumbs/nokia_1_plus/4.jpg',
 
                 ])
                 
@@ -200,10 +200,10 @@
                 @endslot
 
                  @slot('imagenes',[
-                   0 => 'storage/img/shop/fichas/nokia_106/1.jpg',
-                  1 => 'storage/img/shop/fichas/nokia_106/2.jpg',
-                  2 => 'storage/img/shop/fichas/nokia_106/3.jpg',
-                  3 => 'storage/img/shop/fichas/nokia_106/4.jpg',
+                   0 => 'storage/img/shop/fichas/thumbs/nokia_106/1.jpg',
+                  1 => 'storage/img/shop/fichas/thumbs/nokia_106/2.jpg',
+                  2 => 'storage/img/shop/fichas/thumbs/nokia_106/3.jpg',
+                  3 => 'storage/img/shop/fichas/thumbs/nokia_106/4.jpg',
 
                 ])
 
@@ -256,10 +256,10 @@
                 @endslot
 
                  @slot('imagenes',[
-                   0 => 'storage/img/shop/fichas/vlak_alpha/1.jpg',
-                  1 => 'storage/img/shop/fichas/vlak_alpha/2.jpg',
-                  2 => 'storage/img/shop/fichas/vlak_alpha/3.jpg',
-                  3 => 'storage/img/shop/fichas/vlak_alpha/4.jpg',
+                   0 => 'storage/img/shop/fichas/thumbs/vlak_alpha/1.jpg',
+                  1 => 'storage/img/shop/fichas/thumbs/vlak_alpha/2.jpg',
+                  2 => 'storage/img/shop/fichas/thumbs/vlak_alpha/3.jpg',
+                  3 => 'storage/img/shop/fichas/thumbs/vlak_alpha/4.jpg',
 
                 ])
 
@@ -317,12 +317,12 @@
                 @endslot
 
                 @slot('imagenes',[
-                   0 => 'storage/img/shop/fichas/xiaomi_mi_sports/1.jpg',
-                  1 => 'storage/img/shop/fichas/xiaomi_mi_sports/2.jpg',
-                  2 => 'storage/img/shop/fichas/xiaomi_mi_sports/3.jpg',
-                  3 => 'storage/img/shop/fichas/xiaomi_mi_sports/4.jpg',
-                  4 => 'storage/img/shop/fichas/xiaomi_mi_sports/5.jpg',
-                  5 => 'storage/img/shop/fichas/xiaomi_mi_sports/6.jpg'
+                   0 => 'storage/img/shop/fichas/thumbs/xiaomi_mi_sports/1.jpg',
+                  1 => 'storage/img/shop/fichas/thumbs/xiaomi_mi_sports/2.jpg',
+                  2 => 'storage/img/shop/fichas/thumbs/xiaomi_mi_sports/3.jpg',
+                  3 => 'storage/img/shop/fichas/thumbs/xiaomi_mi_sports/4.jpg',
+                  4 => 'storage/img/shop/fichas/thumbs/xiaomi_mi_sports/5.jpg',
+                  5 => 'storage/img/shop/fichas/thumbs/xiaomi_mi_sports/6.jpg'
                 ])
 
                 @slot('marca')
@@ -364,10 +364,10 @@
                 @endslot
 
                  @slot('imagenes',[
-                   0 => 'storage/img/shop/fichas/nokia_31_plus/1.jpg',
-                  1 => 'storage/img/shop/fichas/nokia_31_plus/2.jpg',
-                  2 => 'storage/img/shop/fichas/nokia_31_plus/3.jpg',
-                  3 => 'storage/img/shop/fichas/nokia_31_plus/4.jpg',
+                   0 => 'storage/img/shop/fichas/thumbs/nokia_31_plus/1.jpg',
+                  1 => 'storage/img/shop/fichas/thumbs/nokia_31_plus/2.jpg',
+                  2 => 'storage/img/shop/fichas/thumbs/nokia_31_plus/3.jpg',
+                  3 => 'storage/img/shop/fichas/thumbs/nokia_31_plus/4.jpg',
 
                 ])
 
@@ -424,7 +424,7 @@
 
 
                  @slot('imagenes',[
-                   0 => 'storage/img/shop/fichas/xiaomi_inear/1.jpg',
+                   0 => 'storage/img/shop/fichas/thumbs/xiaomi_inear/1.jpg',
 
                 ])
 

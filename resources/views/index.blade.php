@@ -209,8 +209,26 @@
 	        $('html,body').animate({ scrollTop:$('#shop').offset().top -150  }, 'slow');
             return false; 
 	    }
+	    
+	    $('.zoom').zoom({
+	    	magnify:1.2,
+	    	callback: function(){
 
-	    $('.zoom').zoom({magnify:1.2});
+	    		var a = $(this).attr('src');
+
+	    		$(this).attr('src','');
+
+	    		a = a.replace('thumbs','big');
+
+	    		console.log(a);
+	    		
+	    		$(this).attr('src',a);
+
+
+
+
+	    	}
+	    });
 	    
 	    
 	        
@@ -221,9 +239,12 @@
 
 	<script>
 		function galleryHandler(route,target){
-			$('.fichas .bg-cont#'+target+' span img').fadeOut(function(){
-				$('.fichas .bg-cont#'+target+' span img').attr('src',route);	
-				$('.fichas .bg-cont#'+target+' span img').fadeIn();
+
+
+			$('.fichas .bg-cont#bg-cont-'+target+' span img').fadeOut(function(){
+				$('.fichas .bg-cont#bg-cont-'+target+' span img').attr('src',route);	
+				$('.fichas .bg-cont#bg-cont-'+target+' span img').fadeIn();
+
 			});		
 		}
 	</script>

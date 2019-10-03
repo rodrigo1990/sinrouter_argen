@@ -33,7 +33,7 @@
                     @if(count($imagenes)>1)
                       <ul class="flex ">
                         @foreach($imagenes as $imagen)
-                        <li onclick="galleryHandler('{{$imagen}}','bg-cont-{{$id}}')">
+                        <li onclick="galleryHandler('{{$imagen}}','{{$id}}')">
                           <img class="center-block" src="<?php echo asset($imagen) ?>" alt="">
                         </li>
                         @endforeach
@@ -42,8 +42,9 @@
                    </div>
 
                    <div class="col-sm-8 bg-cont" id="bg-cont-{{$id}}">
-                        <span class="zoom">
+                        <span class="zoom" id="zoom-cont-{{$id}}">
                           <img src="<?php echo asset($imagenes[0]) ?>" alt="">
+                          <!-- <div style="height: 370px;background:url('<?php /*echo asset($imagenes[0])*/ ?>')" alt=""></div> -->
                         </span>
                    </div>
               </div>
@@ -134,3 +135,4 @@
             </div>
         </div>
   </div>
+

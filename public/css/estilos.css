@@ -3589,9 +3589,12 @@ div.bk-title h1{
     width:50px;
 }
 
-.fichas .col-sm-8.bg-cont img:first-child {
+.fichas .col-sm-8.bg-cont img:first-child, .fichas .col-sm-8.bg-cont div {
     width: 295px;
     float: left;
+    background-position: center !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important; 
 
 }
 
