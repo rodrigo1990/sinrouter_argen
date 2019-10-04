@@ -4409,6 +4409,30 @@ section#form form .border-btn{
 }
 
 @media only screen and (min-width: 320px) and (max-width: 767px){
+    .fichas .col-sm-4.thumb-cont .flex{
+    float: unset;
+    margin: auto;
+    width: fit-content !important;
+    }
+    .fichas .thumb-cont{
+        height:100px;
+    }
+    .overlay-xs-menu li img{
+        display:none;
+    }
+    
+    .fichas .flex{
+        flex-direction:row !important;
+    }
+    
+    .fichas .flex li{
+        margin-left:6px;
+        margin-top:0 !important;
+    }
+    
+    .fichas ul.flex li:not(:first-child){
+        margin-top:0 !important;
+    }
     #shop #shop-slider>div .producto{
     width: 278px;
     margin-left: auto;

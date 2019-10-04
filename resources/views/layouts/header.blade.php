@@ -15,7 +15,7 @@
 							<li><a href="/cambio"  class="fix spa-btn" target="_blank">CAMBIO</a></li>
 							<li><a   class="fix spa-btn shop go-to-shop" >SHOP</a></li>
 
-							<li><a id="abrirMenu" class="boton-menu-desplegable"><i class="fa fa-bars"  id="abrirMenu-lg"></i></a></li>
+							<li><a id="" class=" abrirMenu boton-menu-desplegable"><i class="fa fa-bars" ></i></a></li>
 
 							
 						 <li><a href="/micuenta/quiero-pagar.php" target="" class="after-btn ocultable"  >CONSULTÁ TU CUENTA</a></li>
@@ -46,7 +46,7 @@
 					<a href="/index">
 						<img src="<?php echo asset("storage/img/logo.png")?>" width="150px"></img> 
 					</a>
-						<a id="abrirMenu">
+						<a class="abrirMenu">
 							<i class="fa fa-bars"  id="abrirMenu-xs"></i>
 						</a>
 					</div>
