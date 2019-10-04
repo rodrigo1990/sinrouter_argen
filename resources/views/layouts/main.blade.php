@@ -76,6 +76,29 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 @endcomponent
 
 
+<!-- Modal -->
+<div class="modal fade" id="helpShop" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+        <a type="button" class="close" data-dismiss="modal" aria-label="Close">
+         <i class="fas fa-times-circle float-right"></i>
+        </a>
+      </div>
+      <div class="modal-body center-block">
+        <h1 class="blue text-center">TE AYUDAMOS A COMPRAR</h1>
+        <label class="text-center" for="numero">Por favor, ingresá tu número con código de área sin el 0 y sin el 15 (Ej. 114999000)</label>
+        <input type="text" class="form-control" name="numero" placeholder="Ingresá tu teléfono">
+      </div>
+      <div class="modal-footer">
+
+        <a  class="spa-btn border-btn blue text-center center-block" data-dismiss="modal">TE AYUDAMOS A COMPRAR</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 <div id="alert-cont"></div>
 
 <script type="text/javascript" src="<?php echo asset("js/jquery.js")?>"></script>
