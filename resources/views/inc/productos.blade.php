@@ -12,10 +12,10 @@
 							    	Redmi 5 
 								@endslot
 								@slot('precio')
-							    	$599 
+							    	$666,61 
 								@endslot
 								@slot('precioLista')
-							    	$10.799
+							    	$11.999
 								@endslot
 								@slot('img')
 							    	storage/img/shop/productos/p-01.png
@@ -181,10 +181,10 @@
 								    	MI In-Ear Basic
 									@endslot
 									@slot('precio')
-								    	$33
+								    	$44,39
 									@endslot
 									@slot('precioLista')
-								    	$599
+								    	$799
 									@endslot
 									@slot('img')
 								    	storage/img/shop/productos/p-08.jpg
