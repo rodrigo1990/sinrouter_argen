@@ -318,11 +318,9 @@
 
                 @slot('imagenes',[
                    0 => 'storage/img/shop/fichas/thumbs/xiaomi_mi_sports/1.jpg',
-                  1 => 'storage/img/shop/fichas/thumbs/xiaomi_mi_sports/2.jpg',
-                  2 => 'storage/img/shop/fichas/thumbs/xiaomi_mi_sports/3.jpg',
-                  3 => 'storage/img/shop/fichas/thumbs/xiaomi_mi_sports/4.jpg',
-                  4 => 'storage/img/shop/fichas/thumbs/xiaomi_mi_sports/5.jpg',
-                  5 => 'storage/img/shop/fichas/thumbs/xiaomi_mi_sports/6.jpg'
+                  1 => 'storage/img/shop/fichas/thumbs/xiaomi_mi_sports/4.jpg',
+                  2 => 'storage/img/shop/fichas/thumbs/xiaomi_mi_sports/5.jpg',
+                  3 => 'storage/img/shop/fichas/thumbs/xiaomi_mi_sports/6.jpg'
                 ])
 
                 @slot('marca')
@@ -425,6 +423,8 @@
 
                  @slot('imagenes',[
                    0 => 'storage/img/shop/fichas/thumbs/xiaomi_inear/1.jpg',
+                   1 => 'storage/img/shop/fichas/thumbs/xiaomi_inear/2.jpg',
+                   2 => 'storage/img/shop/fichas/thumbs/xiaomi_inear/3.jpg'
 
                 ])
 

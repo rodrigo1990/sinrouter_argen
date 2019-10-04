@@ -741,7 +741,7 @@ a:hover{
 
   .border-btn.blue:hover{
     background-color:#00A5E7;
-    color:white;
+    color:white !important;
   }
 
 
@@ -1620,11 +1620,11 @@ footer b {
     display:block;
 }
 
-.full-bk .close-btn:hover i{
+.full-bk .close-btn:hover i, #helpShop .modal-header a i:hover{
     color:grey;
 }
 
-.full-bk .close-btn i{
+.full-bk .close-btn i, #helpShop .modal-header a i{
         font-size: 34px;
     margin-right: 20px;
     margin-top: 20px;
@@ -2488,7 +2488,7 @@ input::-webkit-inner-spin-button {
     color:white;
 }
 
-.modal .border-btn.blue{
+.modal .border-btn.blue:not(#shopHelp a){
         color: white;
     border-color: white;
     background: #006EA1;
@@ -3363,6 +3363,68 @@ div.bk-title h1{
 
  #shop .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
     background: #16ace9 !important;
+}
+
+#shop>div.container>div.center-block{
+    width: fit-content
+}
+
+#shop>div.container>div.center-block a:nth-child(2){
+    margin-left:5px;
+}
+
+
+#helpShop a.border-btn:hover{
+    background: #00A5E7 !important;
+}
+
+#helpShop .modal-content{
+    background:white;
+    padding-bottom:0;
+    padding:55px;
+    position:relative;
+}
+
+#helpShop .modal-header{
+        border-top: none;
+    border-bottom: none;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+
+#helpShop .modal-body{
+    width: 80%;
+    padding:0;
+}
+
+#helpShop label{
+    color:black;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+
+#helpShop .modal-body h1{
+    font-family: GothamBlack;
+    font-size: 4rem;
+}
+
+
+#helpShop input{
+    height: 62px;
+    text-align: center;
+}
+
+#helpShop input::placeholder { color: black !important; font-weight: bolder;text-align: center; }
+
+#helpShop .modal-content .modal-footer a{
+    width: fit-content;
+    margin-top:18px;
 }
 
 

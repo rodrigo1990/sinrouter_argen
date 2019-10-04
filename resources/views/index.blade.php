@@ -211,27 +211,10 @@
 	    }
 	    
 	    $('.zoom').zoom({
-	    	magnify:1.2,
-	    	callback: function(){
-
-	    		var a = $(this).attr('src');
-
-	    		$(this).attr('src','');
-
-	    		a = a.replace('thumbs','big');
-
-	    		console.log(a);
-	    		
-	    		$(this).attr('src',a);
-
-
-
-
-	    	}
+	    	magnify:1.2
 	    });
 	    
-	    
-	        
+	       
 	});
 		
 	
