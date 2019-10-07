@@ -77,5 +77,11 @@ Route::post('/enviarTrabajaConNosotros','MailController@enviarTrabajaConNosotros
 Route::post('/enviarConvertiteEnComercializador','MailController@enviarConvertiteEnComercializador');
 Route::post('/enviarArgencambio','MailController@formularioArgencambio');
 
+
+Route::post('/solicitarSoporteShop','MailController@solicitarSoporteShop');
+
+
+
+
 //Route::get('/enviarTrabajaConNosotros/{nombre}','MailController@enviarTrabajaConNosotros');
 

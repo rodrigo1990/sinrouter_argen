@@ -245,7 +245,12 @@
 
 
 .alert-window .body{
-        position: relative;
+    position: relative;
+    background: white;
+    padding: 20px 0 20px 0;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+
 }
 
 .alert-window .body a{
@@ -257,7 +262,7 @@
 
 
 .alert-window .body h2{
-        margin-top: 7%;
+        margin-top: 4%;
     margin-bottom: 26px;
     font-family: GothamBlack;
     color: #00A5E7;
@@ -2510,9 +2515,18 @@ input::-webkit-inner-spin-button {
 
 
 .btn-file {
-    position: relative;
+        position: relative;
     overflow: hidden;
-    font-family:GothamBold;
+    font-family: GothamBold;
+    color: white !important;
+    border: 2px solid white;
+    border-color: white !important;
+
+}
+
+.btn-file:hover {
+    background: #3b6e9a !important;
+    
 }
 .btn-file input[type=file] {
     position: absolute;
@@ -3374,6 +3388,10 @@ div.bk-title h1{
 }
 
 
+#helpShop .error{
+    color:red;
+}
+
 #helpShop a.border-btn:hover{
     background: #00A5E7 !important;
 }
@@ -3381,7 +3399,7 @@ div.bk-title h1{
 #helpShop .modal-content{
     background:white;
     padding-bottom:0;
-    padding:55px;
+    padding: 55px 0 55px 0;
     position:relative;
 }
 
@@ -3400,6 +3418,7 @@ div.bk-title h1{
 #helpShop .modal-body{
     width: 80%;
     padding:0;
+        margin-top: 20px;
 }
 
 #helpShop label{
@@ -3994,7 +4013,7 @@ header ul.menu>li>a[href='/saca_tu_prestamo'],header ul.menu>li>a[href='/cambio'
     height: 34px;
 }
 
-.full-bk .close-btn i {
+.full-bk .close-btn i,#helpShop .modal-header a i{
     font-size: 23px;
     margin-right: 3px;
     margin-top: 8px;
@@ -4268,9 +4287,7 @@ section#contacto-form form label.text-right {
     }
 
    
-    .modal .row.margin-top-25{
-        margin-top:auto;
-    }
+
 
     .modal .row input, .modal .row label{
         margin-top: 25px;
@@ -4448,6 +4465,11 @@ footer .second.margin-top-100{
 
 @media only screen and (width: 320px){
 
+    .alert-window {
+    max-height: 247px;
+    min-height: 189px;
+}
+
     .fichas  .modal-body  .row>.col-sm-6:nth-child(1){
     padding-left:0;
     padding-right:0;
@@ -4458,7 +4480,7 @@ footer .second.margin-top-100{
 }
 
 .border-btn {
-    width: 311px;
+    width: auto;
 }
 
 section#form form .border-btn{
@@ -4471,6 +4493,11 @@ section#form form .border-btn{
 }
 
 @media only screen and (min-width: 320px) and (max-width: 767px){
+    .alert-window {
+    height: auto;
+    max-height: 225px;
+    min-height: 189px;
+    }
     .fichas .col-sm-4.thumb-cont .flex{
     float: unset;
     margin: auto;
@@ -4549,6 +4576,10 @@ section#form form .border-btn{
 
 }
 @media only screen and (min-width: 320px) and (max-width: 768px){
+
+    #shop>.container>.center-block a.float-left{
+        float: unset !important;
+    }
 
 
 .overlay-xs-menu .xs-item{
@@ -4763,7 +4794,7 @@ h1, #contacto h1 {
     }
 
      .modal-content {
-    height: 950px;
+    height: auto;
     }
 
 
@@ -4899,6 +4930,12 @@ h1, #contacto h1 {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .alert-window {
+    height: auto;
+    max-height: 238px;
+    min-height: 189px;
+    }
 
 
   .bk-landing>.row h1 {
@@ -5245,7 +5282,7 @@ h1, #contacto h1 {
 @media (min-width: 768px){
 
     .modal-dialog {
-        width: 53% !important;
+        width: 63% !important;
     }
 
 }

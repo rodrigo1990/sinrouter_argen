@@ -87,12 +87,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       </div>
       <div class="modal-body center-block">
         <h1 class="blue text-center">TE AYUDAMOS A COMPRAR</h1>
-        <label class="text-center" for="numero">Por favor, ingresá tu número con código de área sin el 0 y sin el 15 (Ej. 114999000)</label>
-        <input type="text" class="form-control" name="numero" placeholder="Ingresá tu teléfono">
+        <label class="text-center" for="telefono">Por favor, ingresá tu número con código de área sin el 0 y sin el 15 (Ej. 114999000)</label>
+        <input type="number" class="form-control" name="telefono" id="telefono" maxlength="10" placeholder="Ingresá tu teléfono">
+        <p id="telefono-error" class="error">Ingrese un numero valido</p>
       </div>
       <div class="modal-footer">
 
-        <a  class="spa-btn border-btn blue text-center center-block" data-dismiss="modal">TE AYUDAMOS A COMPRAR</a>
+        <a  onClick="validarHelpShop()" class="spa-btn border-btn blue text-center center-block">ENVIAR</a>
       </div>
     </div>
   </div>

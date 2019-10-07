@@ -9,6 +9,7 @@ use App\Mail\TrabajaConNosotros;
 use App\Mail\Argencambio;
 use App\Mail\ConvertiteEnComercializador;
 use App\Mail\MailAdmin;
+use App\Mail\SolicitarSoporteShop;
 use Illuminate\Support\Facades\Mail;
 use App\Provincia;
 use App\Ciudad;
@@ -157,6 +158,19 @@ class MailController extends Controller
           Mail::to($email)->send(new Argencambio($request));
 
           return json_encode("Mail enviado correctamente ! ");
+
+
+    }
+
+
+
+    public function solicitarSoporteShop(Request $request){
+
+          $email = "mcd77.1990@gmail.com";
+
+          Mail::to($email)->send(new SolicitarSoporteShop($request));
+
+          return json_encode("true");
 
 
     }
