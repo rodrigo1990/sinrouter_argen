@@ -77,8 +77,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 <!-- Modal -->
-<div class="modal fade" id="helpShop" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
+<div class="modal fade" id="helpShop" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+  <div class="modal-dialog" role="document" style=" z-index: 20;">
     <div class="modal-content">
         <div class="modal-header">
         <a type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -88,7 +88,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <div class="modal-body center-block">
         <h1 class="blue text-center">TE AYUDAMOS A COMPRAR</h1>
         <label class="text-center" for="telefono">Por favor, ingresá tu número con código de área sin el 0 y sin el 15 (Ej. 114999000)</label>
-        <input type="number" class="form-control" name="telefono" id="telefono" maxlength="10" placeholder="Ingresá tu teléfono">
+        <input type="number" class="form-control" name="telefono" id="telefono" maxlength="10" placeholder="Ingresa tu telefono">
         <p id="telefono-error" class="error">Ingrese un numero valido</p>
       </div>
       <div class="modal-footer">

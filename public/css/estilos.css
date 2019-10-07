@@ -1664,7 +1664,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', end
     right: 0;
      transform:scale(0);
      overflow-y: scroll;
-         z-index: 90000;
+         z-index: 10;
 }
 
 .scale{
@@ -3378,7 +3378,12 @@ div.bk-title h1{
 }
 
 #shop>div.container>div.center-block{
-    width: fit-content
+    /* width: fit-content; */
+    display: flex;
+    /* flex-wrap: unset; */
+    justify-content: center;
+    white-space: nowrap;
+        align-items: center;
 }
 
 #shop>div.container>div.center-block a:nth-child(2){
@@ -3439,8 +3444,20 @@ div.bk-title h1{
 
 #helpShop input::placeholder { color: black !important; font-weight: bolder;text-align: center; }
 
+
+
+@media screen\0 {
+    
+#helpShop .modal-content .modal-footer a{
+    width: 100px;
+}
+}
+
+
+
 #helpShop .modal-content .modal-footer a{
     width: fit-content;
+    width: -moz-fit-content;
     margin-top:18px;
 }
 
@@ -3597,11 +3614,6 @@ div.bk-title h1{
     font-size:  32px;
 }
 
-.fichas .border-btn{
-    width: 400px;
-    float: left;
-}
-
 
 .fichas .img-cont{
         margin-top: 35px;
@@ -3665,7 +3677,7 @@ div.bk-title h1{
 }
 
 .fichas .col-sm-4.thumb-cont .flex li img {
-    width:50px;
+    width: 40px;
 }
 
 .fichas .col-sm-8.bg-cont img:first-child, .fichas .col-sm-8.bg-cont div {
@@ -4491,6 +4503,10 @@ section#form form .border-btn{
 }
 
 @media only screen and (min-width: 320px) and (max-width: 767px){
+
+    #shop>div.container>div.center-block{
+        flex-direction:column;
+    }
     .alert-window {
     height: auto;
     max-height: 225px;

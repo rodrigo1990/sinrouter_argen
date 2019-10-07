@@ -120,7 +120,8 @@
       </div>
     </div>
      <div class="modal-footer">
-            <div class="col-sm-6 text-right">
+      <div class="container">
+            <div class="col-sm-4 text-right">
              <div class="ahora-18">       
                 <h4 class="blue">                       
                   <img src="<?php echo asset('storage/img/shop/ahora_18.svg') ?>" alt="">
@@ -129,10 +130,18 @@
                 </h4>
               </div>
             </div>
-            <div class="col-sm-6 text-left">
+            <div class="col-sm-4 text-left">
               
               <a href="/sucursales" class="spa-btn border-btn violet text-center center-block" target="_blank">ENCONTRÁ TU SUCURSAL</a>
+
             </div>
+
+            <div class="col-sm-4 text-left">
+        
+
+              <a  data-toggle="modal" data-target="#helpShop"class="spa-btn border-btn blue text-center float-left " target="">TE AYUDAMOS A COMPRAR</a>
+            </div>
+      </div>
         </div>
   </div>
 
