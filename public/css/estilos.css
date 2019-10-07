@@ -215,7 +215,6 @@
 .alert-window{
     width: 69rem;
     height: 25rem;
-    background: white;
     position: absolute;
     top: 0;
     bottom: 50%;
@@ -262,7 +261,6 @@
 
 
 .alert-window .body h2{
-        margin-top: 4%;
     margin-bottom: 26px;
     font-family: GothamBlack;
     color: #00A5E7;
