@@ -273,7 +273,7 @@
 
 
 #creditos-online ul .number-cont,#creditos-sucursales ul .number-cont{
-    float:left;
+    display: inline-block;
 }
 
 
@@ -285,8 +285,8 @@
 }
 
 #creditos-online  ul>li>h4,#creditos-sucursales  ul>li>h4{
-    float:left;
-        padding-left: 6px;
+   /* float:left;
+        padding-left: 6px;*/
     font-weight: bold;
 }
 
@@ -301,6 +301,11 @@
 #creditos-online ul .number.uno,#creditos-sucursales ul .number.uno{
         padding: 5px 12px 5px 12px;
 }
+
+#creditos-sucursales .number-cont  h4,#creditos-online .number-cont  h4{
+    margin-top:0 !important;
+}
+
 
 #creditos-sucursales .number-cont .number{
     background:#00A5E7;
@@ -377,7 +382,7 @@ li.line{
 
 
 .step-by-step ul li{
-    margin-left:113px !important;
+   /* margin-left:113px !important;*/
 }
 
 .padding-top-98{
@@ -784,14 +789,13 @@ a:hover{
 }
 
 
-
-ul.flex li/*:not(:first-child)*/{
-    margin-left:32px;
+#creditos-sucursales ul.flex li,#creditos-online ul.flex li{
+    flex-basis:300px;
 }
 
 @-moz-document url-prefix() {
   ul.flex li/*:not(:first-child)*/{
-    margin-left:26px;
+    /*margin-left:26px;*/
 }
 }
 
@@ -1374,8 +1378,20 @@ ul.flex{
 	display:flex;
 	flex-direction: row;
 	flex-wrap: wrap;
- }
+    justify-content:space-evenly;
 
+
+ }
+@media screen\0 {
+ ul.flex{ 
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+   
+
+ }
+ }
  #como-funciona h1:first-child{
     
     margin-bottom: 28px;
@@ -1386,7 +1402,7 @@ ul.flex{
 
 
 .step-by-step ul{
-    width: 1195px;
+    /*width: 1195px;*/
 }
 
 .step-by-step ul .line img{
@@ -1467,12 +1483,12 @@ ul li h4{
 
 
 #contacto ul li:not(:first-child){
-    margin-left:86px;/*antes 100*/
+    /*margin-left:86px;/*antes 100*/
 }
 
 
 #contacto ul { 
-    width: 1200px;
+    /*width: 1200px;*/
      }
 #contacto h1 {
     font-family: GothamBold !important;
@@ -1480,7 +1496,18 @@ ul li h4{
 }
 
 
+#contacto .padding-60{
+    padding: 60px 0 60px 0 !important;
+}
 
+
+
+@media screen\0 {
+    
+#contacto .flex li {
+    flex-basis:200px;
+}
+}
 
 
 
@@ -3559,6 +3586,16 @@ div.bk-title h1{
 }
 
 
+.fichas .modal-footer ul.flex{
+    flex-direction: row;
+    justify-content: center;
+}
+
+.fichas .modal-footer ul.flex li{
+    margin-left:0 !important;
+}
+
+
 .fichas .ahora-18{
     float:right;
 }
@@ -3800,12 +3837,7 @@ div.bk-title h1{
     bottom: unset;
     margin: unset;
 }
-#contacto ul li:not(:first-child) {
-    margin-left: 62px;
-}
-#contacto ul {
-    width: 1082px;
-}
+
 
 footer .first{
     margin-right: 0 !important;
@@ -3928,12 +3960,7 @@ header ul.menu>li>a[href='/saca_tu_prestamo'] {
     line-height: 63px;
 }
 
-#contacto ul li:not(:first-child) {
-    margin-left: 62px;
-}
-#contacto ul {
-    width: 1082px;
-}
+
 
 footer .first{
     margin-right: 0 !important;
@@ -3965,8 +3992,19 @@ header ul.menu>li>a[href='/saca_tu_prestamo'],header ul.menu>li>a[href='/cambio'
 
 @media only screen and (min-width: 10px) and (max-width: 1024px)  {
 
+
+
+    ul.flex li{
+        flex-basis: auto !important;
+    }
+
         #contacto ul.flex{
-        width: fit-content !important;
+        /*width: fit-content !important;*/
+    }
+
+
+    #contacto .flex li {
+    flex-basis:auto;
     }
 
     #contacto ul.flex li h4{
@@ -3974,8 +4012,7 @@ header ul.menu>li>a[href='/saca_tu_prestamo'],header ul.menu>li>a[href='/cambio'
     }
 
     #contacto.padding-60{
-        padding:unset !important;
-        padding-top:77px !important;
+       padding: 77px 0 77px 0;
     }
 
     #shop .owl-theme .owl-nav .owl-prev {
@@ -4429,11 +4466,6 @@ ul.flex li:not(:first-child) {
 footer {
     text-align:center;
 }
-footer hr {
-    width: 58%;
-    margin: auto;
-    margin-top: 10px;
-}
 
 footer .first{
         width: 100%;
@@ -4590,6 +4622,13 @@ section#form form .border-btn{
 
 }
 @media only screen and (min-width: 320px) and (max-width: 768px){
+
+    footer hr {
+    width: 58%;
+    margin: auto;
+    margin-top: 10px;
+}
+
 
     #shop>.container>.center-block a.float-left{
         float: unset !important;

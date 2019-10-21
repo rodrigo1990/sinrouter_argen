@@ -768,18 +768,7 @@ $("#form-home #nombre").keyup(function(){
         }
 
         $(document).ready(function(){
-            $.ajax({
-               type: "GET",
-               url: 'home',
-               dataType: "html",
-               scriptCharset: "ISO-8859-1",
-               success: function(msg){
-
-                    $('#content').html(msg);
-
-                   
-                }
-             });
+  
 
             $("#quienes-somos-btn").hover(function(){
                 $(".sub-menu").show();

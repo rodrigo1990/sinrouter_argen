@@ -92,35 +92,40 @@
 
 
 	<section id="creditos-sucursales" class="step-by-step margin-top-60 bk-grey padding-top-47 padding-bottom-47">
+		<div class="container">
 		<h2 class="red">CRÉDITOS EN <b>SUCURSALES</b></h2>
 		<h4 class="margin-top-10">En 3 simples pasos</h4>
 		<ul class="flex center-block margin-top-50">
 			<li>
 				<img src="<?php echo asset("storage/img/cs-step-1.svg")?>" alt="">
+					
+					<h4> 
 					<div class="number-cont"><h4><b class="number uno">1</b></h4></div>
-					<h4> Vení  a nuestra sucursal</h4>
+
+					Vení  a nuestra sucursal</h4>
 			</li>
-			<li class="line">
-				<img src="<?php echo asset("storage/img/line.png")?>" alt="">
-			</li>
+
 			<li class="esp">
 				<img src="<?php echo asset("storage/img/cs-step-2.svg")?>" alt="">
-				<div class="number-cont"><h4><b class="number">2</b></h4></div>
-				<h4> Presentá la documentación <br> y te aprobamos la solicitud</h4>
-			</li>
-			<li class="line">
-				<img src="<?php echo asset("storage/img/line.png")?>" alt="">
+				
+				<h4> 
+
+					<div class="number-cont"><h4><b class="number">2</b></h4></div>
+					Presentá la documentación <br> y te aprobamos la solicitud</h4>
 			</li>
 			<li>
 				<img src="<?php echo asset("storage/img/cs-step-3.svg")?>" alt="">
+				
+				<h4>
+
 				<div class="number-cont"><h4><b class="number">3</b></h4></div>
-				<h4> RECIBÍ TU DINERO <br> <b> ¡EN EL ACTO! </b></h4>
+				 RECIBÍ TU DINERO <br> <b> ¡EN EL ACTO! </b></h4>
 			</li>
 		</ul>
 		
 
 		<a href="sucursales" class="spa-btn border-btn red center-block margin-top-25" target="">ENCONTRÁ TU SUCURSAL</a>
-
+		</div>
 
 	</section>
 
