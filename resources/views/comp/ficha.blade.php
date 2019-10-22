@@ -54,7 +54,7 @@
                 </div>
                 <div class="row">
                   <h4 class="cuotas"><img src="<?php echo asset('storage/img/fichas-card-07.png') ?>" alt=""> Hasta <b>18 CUOTAS SIN INTERÉS</b> de</h4>
-                  <h4 class="precio blue"><b>{{$precio}}</b></h4>
+                  <h4 class="precio blue"><b class="blue">{{$precio}}</b></h4>
 
                   <hr>
                   <p class="precio-lista">*Precio de lista {{$precioLista}}</p>

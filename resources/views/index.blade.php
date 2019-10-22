@@ -7,19 +7,17 @@
 	<div class="animated fadeIn">
 <section id="form">
 	<div class="row">
-		<div class="first col-lg-5 text-center">
-			<ul class="margin-top-60">
+		<ul class="flex">
+			<li class="first text-center">
+				<ul class="margin-top-60">
 				<li><h1><b>HOY MISMO,</b> <br> CON O SIN VERAZ</h1></li>
 				<li class="margin-top-25"><a href="saca_tu_prestamo" class="big border-btn red margin-top-50">SACÁ TU PRÉSTAMO</a> <img class="" src="<?php echo asset("storage/img/next-arrow.png")?>" alt="" style="padding-left:5px"></li>
 				<li class="margin-top-25"><h3>Hasta $30.000 en 12 cuotas</h3></li>
 			
 			</ul>
-			
-			
-
-		</div>
-		<div class="col-lg-6 form-cont">
-			<form id="form-home" class="text-left" action="saca_tu_prestamo" method="get" >
+			</li>
+			<li class="form-cont">
+				<form id="form-home" class="text-left" action="saca_tu_prestamo" method="get" >
 				@csrf
 				<!--  <h1 class="red cursive">¡Empecemos!</h1>-->
 				<h2 class="margin-top-5">
@@ -74,7 +72,9 @@
 					</div>
 				</div>
 			</form>
-		</div>
+			</li>
+		</ul>
+
 	</div>
 </section>
 

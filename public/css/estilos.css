@@ -138,6 +138,7 @@
 /*----------------------------------------------*/
 
 
+
 .alert-bkground{
     background: rgba(0,0,0,0.7);
     width: 100vw;
@@ -550,7 +551,7 @@ a:hover{
 }
 
 .blue{
-	color:#00A5E7 !important;
+	color:#00A5E7 ;
 }
 
 .red{
@@ -1226,13 +1227,23 @@ section#form #cod_area{
     height:33px;
 }
 
+section#form ul.flex{
+    justify-content: center !important;
+}
+
 
 section#form .form-cont{
     background:rgba(177, 177, 177, 0.5);/*rgba(256,256,256,0.5)*/
-        padding: 35px;
-        border-radius: 7px;
+    padding: 35px;
+    border-radius: 7px;
+    max-width: 806px;
+    min-width: 300px;
 }
 
+section#form .first{
+    max-width: 871px;
+    min-width: 271px;
+}
 
 section#form .form-cont input, .modal input, .modal label, .modal select{
     font-size: 17px !important;
@@ -1496,7 +1507,7 @@ ul li h4{
 }
 
 
-#contacto .padding-60{
+#contacto.padding-60{
     padding: 60px 0 60px 0 !important;
 }
 
@@ -1734,6 +1745,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', end
 #preguntasFrecuentesBtn.interfaceFormBtn {
     padding: 5px 7px 15px 10px;
     border: 1px solid #a7a7a7;
+    z-index:1;
 }
 
 
@@ -1803,7 +1815,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', end
     font-size:18px;
 }
 
-
+.grecaptcha-badge{
+    display:none;
+}
 #prestamo-form   .radio input[type=radio] {
     margin-top: 7px;
 }
@@ -2596,7 +2610,9 @@ input::-webkit-inner-spin-button {
     box-shadow: -5px 10px 30px -24px rgba(0,0,0,0.75);
     border-bottom-left-radius: 13px;
 }
-
+section#form #cotizador-cont.flex>li{
+    margin-left: 32px;
+}
 
 .cotizaciones #owl-3
 {
@@ -2818,6 +2834,12 @@ section#form.cambio li.form-cont .header a img{
     section#form.cambio li.form-cont .header a img{
     width: 30px;
     height: 30px;
+    }
+}
+
+@media screen\0 {
+     section#form .border-btn.big{
+        padding:20px;
     }
 }
 
@@ -3218,7 +3240,7 @@ div.bk-title h1{
 
 
 #shop #shop-slider>div .producto>img{
-    width: 226px;
+    width: 90%;
 }
 
 
@@ -3545,7 +3567,7 @@ div.bk-title h1{
     margin-right:unset;
 }
 
-.fichas h4, .fichas ul li, .fichas h3{
+.fichas .moda-body h4, .fichas ul li, .fichas h3{
     color:#414042;
 }
 
@@ -3828,6 +3850,19 @@ div.bk-title h1{
     .fichas .img-cont img{
     width: 272px;
 }
+
+    section#form{
+        height: auto;
+        padding:unset;
+    }
+
+
+    section#form .flex .form-cont{
+        margin-top:25px;
+
+    }
+
+    
     section#form>.row{
         height:unset;
     position:unset;
@@ -3846,6 +3881,8 @@ footer .first{
 header ul.menu>li>a[href='/saca_tu_prestamo'] {
     font-size: 13px !important;
 }
+
+
 
  section#form.cambio img{
         display:block;
@@ -4395,7 +4432,11 @@ section#contacto-form form label.text-right {
    
 
 
-
+@media screen\0 {
+    section#form ul.flex{
+        flex-direction:row !important;
+    }
+}
 
     .flex{
         flex-direction: column !important;
@@ -4413,10 +4454,28 @@ section#contacto-form form label.text-right {
         height: auto;
     }
 
+@media screen\0 {
+    section#form{
+        padding:10px;
+        height: 125vh;
+    }
+}
+
+
+
+
 
     section#form form .btn-row {
      height: auto;
     width: 100%;
+}
+
+
+
+
+
+section#form .flex > .first{
+    justify-content: center;
 }
 
 section#form form .border-btn {
@@ -5256,7 +5315,7 @@ h1, #contacto h1 {
         padding:57px;
     }
 
-
+    
     #prestamo-form .row {
         margin-top: 11px;
     }
