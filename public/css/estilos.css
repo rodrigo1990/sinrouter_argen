@@ -274,7 +274,9 @@
 
 
 #creditos-online ul .number-cont,#creditos-sucursales ul .number-cont{
-    display: inline-block;
+    /* display: inline-block; */
+    float: left;
+    margin-top: 10px;
 }
 
 
@@ -285,9 +287,13 @@
     margin:auto;
 }
 
-#creditos-online  ul>li>h4,#creditos-sucursales  ul>li>h4{
-   /* float:left;
-        padding-left: 6px;*/
+#creditos-online  ul>li>.text-cont,#creditos-sucursales  ul>li>.text-cont{
+    display:inline-block;
+}
+
+#creditos-online  ul>li>.text-cont>h4,#creditos-sucursales  ul>li>.text-cont>h4{
+    float:left;
+    /*padding-left: 6px;*/
     font-weight: bold;
 }
 
@@ -1390,6 +1396,7 @@ ul.flex{
 	flex-direction: row;
 	flex-wrap: wrap;
     justify-content:space-evenly;
+    
 
 
  }
@@ -1516,7 +1523,7 @@ ul li h4{
 @media screen\0 {
     
 #contacto .flex li {
-    flex-basis:200px;
+    flex-basis:220px;
 }
 }
 
@@ -3845,8 +3852,41 @@ div.bk-title h1{
 
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1200px)  {
+@media only screen and (min-width: 1200px) and (max-width: 1272px)  {
 
+@-moz-document url-prefix() {
+   
+    section#form{
+        height: 133vh;
+    }
+}
+@-moz-document url-prefix() {
+section#form.cambio {
+    height: 78vh;
+}
+}
+
+@-moz-document url-prefix() {
+   
+    section#form>.row{
+        height: auto !important;
+    }
+}
+section#form>.row{
+        height: 87vh;}
+section#form.cambio>.row{
+    height: 410px;
+}
+
+section#form .flex .form-cont {
+    margin-top: 25px;
+}
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1200px)  {
+    section#form #cotizador-cont.flex>li.first {
+    margin-left: auto;
+}
     .fichas .img-cont img{
     width: 272px;
 }
@@ -3918,6 +3958,7 @@ header ul.menu>li>a[href='/saca_tu_prestamo'] {
     section#form.cambio .result-cont ul.flex li{
         width: 100% !important;
         text-align: center;
+        margin-top: 40px !important;
     }
 
 
@@ -4027,8 +4068,22 @@ header ul.menu>li>a[href='/saca_tu_prestamo'],header ul.menu>li>a[href='/cambio'
 }
 }
 
-@media only screen and (min-width: 10px) and (max-width: 1024px)  {
+@media only screen and (min-width: 1024px) and (max-width: 1077px)  {
+     section#form #cotizador-cont.flex>li {
+    margin-left: unset;
+    }
 
+
+    section#form #cotizador-cont.flex>li.fist {
+    margin-left: auto;
+    }
+
+}
+
+@media only screen and (min-width: 10px) and (max-width: 1024px)  {
+      section#form #cotizador-cont.flex>li {
+    margin-left: auto;
+    }
 
 
     ul.flex li{
@@ -4114,6 +4169,7 @@ section#form.cambio .form-cont .result-cont input{
 }
 section#form.cambio .first ul{
     margin-top:0 !important;
+    margin:auto;
 }
 section#form.cambio .first h1 b {
     font-size: 46px !important;
@@ -4518,6 +4574,11 @@ ul.flex li:not(:first-child) {
     margin-top: 40px !important;
 }
 
+#form ul.flex li:not(:first-child) {
+    margin-top: 25px !important;
+}
+
+
 #contacto ul li {
     margin-left: unset !important;
 }
@@ -4589,7 +4650,7 @@ section#form form .border-btn{
 }
 
 .overlay-xs-menu li {
-    margin-top: 31px;
+    margin-top: 20px;
 }
 }
 
@@ -5260,7 +5321,7 @@ h1, #contacto h1 {
 
 @media only screen and (min-width: 1200px) and (max-width: 1355px) {
 
-    section#form .form-cont{
+    section#form .form-cont:not(section#form #cotizador-cont .form-cont ){
         width: 53% !important;
     }
 

@@ -16,8 +16,7 @@
                   0 => 'storage/img/shop/fichas/thumbs/xiaomi_redmi/1.jpg',
                   1 => 'storage/img/shop/fichas/thumbs/xiaomi_redmi/2.jpg',
                   2 => 'storage/img/shop/fichas/thumbs/xiaomi_redmi/3.jpg',
-                  3 => 'storage/img/shop/fichas/thumbs/xiaomi_redmi/4.jpg',
-                  4 => 'storage/img/shop/fichas/thumbs/xiaomi_redmi/5.jpg'
+                  3 => 'storage/img/shop/fichas/thumbs/xiaomi_redmi/5.jpg'
 
                 ])
 

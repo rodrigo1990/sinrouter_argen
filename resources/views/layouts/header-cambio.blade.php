@@ -30,7 +30,7 @@
 					<a href="index.php">
 						<img src="<?php echo asset("storage/img/logo-cambio.png")?>" width="150px"></img> 
 					</a>
-						<a id="abrirMenu">
+						<a class="abrirMenu">
 							<i class="fa fa-bars"  id="abrirMenu"></i>
 						</a>
 					</div>

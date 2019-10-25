@@ -32,7 +32,7 @@ class MailController extends Controller
         $request->provincia = $provincia->provincia_nombre;
 
 
-        $emailAdmin = "mcd77.1990@gmail.com";//mlo1mftx@robot.zapier.com
+        $emailAdmin = ["mcd77.1990@gmail.com","rodrigo@legioncreativa.com"];//mlo1mftx@robot.zapier.com
 
         Mail::to($emailAdmin)->send(new MailAdmin($request));
 

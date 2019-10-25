@@ -98,28 +98,25 @@
 		<ul class="flex center-block margin-top-50">
 			<li>
 				<img src="<?php echo asset("storage/img/cs-step-1.svg")?>" alt="">
-					
-					<h4> 
-					<div class="number-cont"><h4><b class="number uno">1</b></h4></div>
-
-					Vení  a nuestra sucursal</h4>
+					<div class="text-cont">
+						<div class="number-cont"><h4><b class="number uno">1</b></h4></div>
+						<h4>Vení  a nuestra sucursal</h4>
+					</div>
 			</li>
 
 			<li class="esp">
 				<img src="<?php echo asset("storage/img/cs-step-2.svg")?>" alt="">
-				
-				<h4> 
-
+				<div class="text-cont">
 					<div class="number-cont"><h4><b class="number">2</b></h4></div>
-					Presentá la documentación <br> y te aprobamos la solicitud</h4>
+					<h4> Presentá la documentación <br> y te aprobamos la solicitud</h4>
+				</div>
 			</li>
 			<li>
 				<img src="<?php echo asset("storage/img/cs-step-3.svg")?>" alt="">
-				
-				<h4>
-
-				<div class="number-cont"><h4><b class="number">3</b></h4></div>
-				 RECIBÍ TU DINERO <br> <b> ¡EN EL ACTO! </b></h4>
+				<div class="text-cont">
+					<div class="number-cont"><h4><b class="number">3</b></h4></div>
+					<h4>RECIBÍ TU DINERO <br> <b> ¡EN EL ACTO! </b></h4>
+				</div>
 			</li>
 		</ul>
 		
