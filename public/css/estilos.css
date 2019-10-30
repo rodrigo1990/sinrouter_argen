@@ -1395,7 +1395,7 @@ ul.flex{
 	display:flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-    justify-content:space-evenly;
+    justify-content:center;
     
 
 
@@ -1502,6 +1502,12 @@ ul li h4{
 
 #contacto ul li:not(:first-child){
     /*margin-left:86px;/*antes 100*/
+}
+
+
+
+#contacto ul li{
+    flex-basis:228px;
 }
 
 
