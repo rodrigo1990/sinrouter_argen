@@ -245,9 +245,7 @@ function myFunction() {
 
 
 
-             if(nombre_esta_validado==true && apellido_esta_validado==true &&
-
-                    dni_esta_validado==true && celular_esta_validado==true && email_esta_validado==true && provincia_esta_validado==true && localidad_esta_validado==true && terminos_esta_validado==true && sueldo_esta_validado==true /*&& captcha_esta_validado==true*/){
+             if(nombre_esta_validado==true && empleador_esta_validado==true && apellido_esta_validado==true && banco_esta_validado && dni_esta_validado==true && celular_esta_validado==true && email_esta_validado==true && provincia_esta_validado==true && localidad_esta_validado==true && terminos_esta_validado==true && sueldo_esta_validado==true /*&& captcha_esta_validado==true*/){
 
                         
 
