@@ -210,7 +210,7 @@
 				<div class="row ">
 					<div class="col-lg-6 col-md-6 col-xs-12">
 						<select  name="banco"  class="form-control" id="banco">
-						 @include('inc.options_bancos')
+						 @include('inc.options_bancos_new')
 						</select>
 						<div class="error" id="banco-error">*Ingrese una banco valida</div>
 						<div class="valid-feedback feedback-icon" id="banco-check-icon">
