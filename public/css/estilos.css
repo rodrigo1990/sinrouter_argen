@@ -5297,7 +5297,7 @@ h1, #contacto h1 {
     
     .overlay-xs-menu {
     width: 40vw !important;
-    left:  unset;
+    left:  auto;
     text-align: left;
     background: rgba(0, 165, 231, 0.95);
     overflow-y: auto;
