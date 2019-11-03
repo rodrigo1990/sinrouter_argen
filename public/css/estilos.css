@@ -1395,7 +1395,7 @@ ul.flex{
 	display:flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-    justify-content:space-evenly;
+    justify-content:center;
     
 
 
@@ -1502,6 +1502,12 @@ ul li h4{
 
 #contacto ul li:not(:first-child){
     /*margin-left:86px;/*antes 100*/
+}
+
+
+
+#contacto ul li{
+    flex-basis:228px;
 }
 
 
@@ -2488,7 +2494,7 @@ input::-webkit-inner-spin-button {
     border-radius: 4px;
 }
 
-.modal-content .modal-body h1{
+#comercializador .modal-content .modal-body h1,#trabajaConNosotros .modal-content .modal-body h1{
     color:white;
 }
 
@@ -3798,6 +3804,72 @@ div.bk-title h1{
     background-color:#523183  !important;
 
 }
+
+/*---------------------------------------------*/
+                /*CLOCK*/
+/*----------------------------------------------*/
+
+.clock{
+    font-size: 3rem;
+}
+
+#clockModal .modal-dialog{
+    display: table;
+    margin: auto;
+    width: 39vw !important;
+    top: 2vh;
+}
+
+#clockModal .time-cont{
+    padding: 20px 45px 20px 45px;
+}
+
+#clockModal .time-cont h2{
+        font-family: GothamBlack;
+    font-size: 26px;
+    color: #ffc318;
+    margin-bottom: 21px;
+    
+    
+
+}
+
+#clockModal .modal-header{
+    position: absolute;
+    width: 100%;
+}
+
+#clockModal .modal-header i{
+    color:gray;
+}
+
+#clockModal .modal-dialog img{
+    width: 39vw !important;
+}
+
+#clockModal h1{
+    color: white;
+    font-family: GothamBold;
+    line-height: 21px !important;
+    font-size: 32px;
+    text-align: center;
+    flex-basis: 25%;
+}
+
+#clockModal h1 span{
+        font-size: 17px;
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+}
+
+
+
+
+#clockModal .modal-dialog .clock{
+    width: 100%;
+}
+
 /*---------------------------------------------*/
                 /*MEDIA QUERIES*/
 /*----------------------------------------------*/
@@ -4081,6 +4153,16 @@ header ul.menu>li>a[href='/saca_tu_prestamo'],header ul.menu>li>a[href='/cambio'
 }
 
 @media only screen and (min-width: 10px) and (max-width: 1024px)  {
+   /* .time-cont{
+        display:none;
+    }*/
+
+   
+
+#clockModal .modal-dialog img{
+    width: 100% !important;
+}
+
       section#form #cotizador-cont.flex>li {
     margin-left: auto;
     }
@@ -4656,6 +4738,10 @@ section#form form .border-btn{
 
 @media only screen and (min-width: 320px) and (max-width: 767px){
 
+    #clockModal #time-cont{
+        padding: 20px 5px 20px 5px;
+    }
+
     #shop>div.container>div.center-block{
         flex-direction:column;
     }
@@ -4742,6 +4828,12 @@ section#form form .border-btn{
 
 }
 @media only screen and (min-width: 320px) and (max-width: 768px){
+
+     #clockModal .modal-dialog,#clockModal .modal-dialog table{
+    width: 99vw !important;
+    }
+
+
 
     footer hr {
     width: 58%;

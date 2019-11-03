@@ -100,6 +100,47 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </div>
 
 
+
+<!-- Modal -->
+<div class="modal fade" id="clockModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+
+  <div class="modal-dialog" role="document" style=" z-index: 20;">
+    <div class="modal-header">
+        <a type="button" class="close" data-dismiss="modal" aria-label="Close">
+         <i class="fas fa-times-circle float-right"></i>
+        </a>
+      </div>
+      <table>
+        <tr>
+          <td><img class="center-block" src="<?php echo asset('storage/img/cybermonday/1-2-01.jpg') ?>" alt=""></td>
+        </tr>
+        <tr>
+          <td id="time-cont" class="time-cont" style="background:#EF4623;">
+            <h2 class="text-center">QUEDAN</h2>
+            <div id="clock" class="center-block clock" style="display:flex;justify-content: center;">
+              
+                <h1 id="days" class="text-center"> </h1>
+                <h1>:</h1>  
+                <h1 id="hours" class="text-center"></h1>
+                <h1>:</h1>
+                <h1 id="minutes" class="text-center"></h1>
+                <h1>:</h1>
+                <h1 id="seconds" class="text-center"></h1> 
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background:white;    padding: 5px 0 5px 0;">
+            <h2 class="blue text-center" style="padding:5px 0 5px 0"><b>Promoción válida del 4 al 6 de noviembre</b></h2>
+          </td>
+        </tr>
+      </table>
+      
+     </div>
+</div>
+
+
+
 <div id="alert-cont"></div>
 
 <script type="text/javascript" src="<?php echo asset("js/jquery.js")?>"></script>
