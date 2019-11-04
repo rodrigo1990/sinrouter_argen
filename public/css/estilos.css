@@ -3816,7 +3816,7 @@ div.bk-title h1{
 #clockModal .modal-dialog{
     display: table;
     margin: auto;
-    width: 39vw !important;
+    width: 35vw !important;
     top: 2vh;
 }
 
@@ -3844,7 +3844,7 @@ div.bk-title h1{
 }
 
 #clockModal .modal-dialog img{
-    width: 39vw !important;
+    width: 35vw !important;
 }
 
 #clockModal h1{
