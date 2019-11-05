@@ -19,4 +19,8 @@ class ValidationController extends Controller
     	return $this->validationService->validarCaptchaToken();
     }
 
+    public function validarPrestamo(Request $request){
+    	return $this->validationService->validarPrestamo();
+    }
+
 }

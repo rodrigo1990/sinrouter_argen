@@ -66,7 +66,7 @@ Route::get('/cambio','FrontController@cambio');
 
 Route::get('/sucursales_cotizaciones','FrontController@sucursalesCotizaciones');
 
-
+Route::get('/siisa','ValidationController@validarPrestamo');
 
 /***************MAILING***************************************/
 
