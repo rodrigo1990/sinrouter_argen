@@ -14,11 +14,22 @@ use Illuminate\Support\Facades\Mail;
 use App\Provincia;
 use App\Ciudad;
 use App\Http\Controllers\FrontController;
+use  App\Services\ValidationService;
+
 
 class MailController extends Controller
 {
+
+    protected $validationService;
+
+
+    function __construct(ValidationService $validationService){
+      $this->validationService=$validationService;
+    }
     
     public function procesarSolicitudEnviarMail(Request $request){
+
+
 
         $email = "mcd77.1990@gmail.com";
 
@@ -38,6 +49,8 @@ class MailController extends Controller
 
         $provincias  =Provincia::all();
 
+
+         $this->validationService->validarPrestamo($request);
 
 
 
@@ -76,7 +89,7 @@ class MailController extends Controller
 
     			break;
     		
-    		case  'no_poseo':
+    		case  '000'://no_poseo
     				
     				Mail::to($email)->send(new CreditoNoAprobado($request));
 
@@ -84,6 +97,8 @@ class MailController extends Controller
 
     			break;
     	}
+
+
     	
     }
 

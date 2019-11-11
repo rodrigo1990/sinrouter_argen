@@ -18,24 +18,30 @@ class ValidationService
           'timeout'  => 15.0,
       ]);
 
-      $response = $client->get('ExecutePolicy', [
-      	'query'=> [
-	      	'clientId' => 117,
-	      	'pin'=> 1236,
-	      	'password' => 'Argenpes0$',
-	      	'policyId' => 35,
-	        'params' => [
-	        '1' => 'val1',
-	        '2' => 'val2',
-	        '3' => 'val3',
-	        ]
-    	]
-        
-    ]);
+	 $vars = array(
+ 	 	(string)$request->nombre => 'nombre',
+ 	  	(string)$request->apellido => 'apellido',
+ 	  	(string)$request->banco => 'banco',
+ 	  	(string)$request->provincia => 'provincia',
+ 	  	(string)$request->empleador => 'empleador',
+ 	  	(float)$request->sueldo => 'sueldo',
+ 	  	(int)$request->dni => 'dni',
+ 	  	(int)$request->celular => 'celular',
+ 	  	(string)$request->localidad => 'localidad',
+ 	  	(string)$request->sexo => 'sexo',
+ 	  	(float)$request->valor_monto => 'monto'
+	 	   );
+
+	 $query = http_build_query($vars, null, '/');
+
+	 $query = str_replace("=","/", $query);
+
+	 $query = str_replace("+","%20", $query);
+
+     $response = $client->get('ExecutePolicy/clientId/117/pin/1236/password/Legion2019/policyId/35/'.$query.'/');
 
       //dd($response->getBody()->getContents());
 
-    	return $response;
 	}
    
 }

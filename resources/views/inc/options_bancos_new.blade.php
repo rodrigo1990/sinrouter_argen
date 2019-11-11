@@ -1,5 +1,5 @@
 <option value="null">Banco donde depositan tu sueldo</option>
-<option value="no_poseo">No poseo cuenta bancaria</option>
+<option value="000">No poseo cuenta bancaria</option>
 <option value="005">A.B.N. AMRO BANK N.V.</option>	 
 <option value="007">BANCO DE GALICIA Y BUENOS AIRES S.A.</option>
 <option value="011">BANCO DE LA NACIÓN ARGENTINA</option>
