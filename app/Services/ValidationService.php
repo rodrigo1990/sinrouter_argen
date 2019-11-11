@@ -21,7 +21,7 @@ class ValidationService
 	 $vars = array(
  	 	$request->nombre => 'nombre',
  	  	$request->apellido => 'apellido',
- 	  	$request->banco => 'banco',
+ 	  	(string)$request->banco => 'banco',
  	  	$request->provincia => 'provincia',
  	  	$request->empleador => 'empleador',
  	  	$request->sueldo => 'sueldo',
@@ -40,7 +40,7 @@ class ValidationService
 
      $response = $client->get('ExecutePolicy/clientId/117/pin/1236/password/Legion2019/policyId/35/'.$query.'/');
 
-      dd($response->getBody()->getContents());
+    //  dd($response->getBody()->getContents());
 
 	}
    
