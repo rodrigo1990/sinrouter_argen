@@ -332,6 +332,8 @@
 			<div class="error" id="captcha-error">*Valide el captcha</div>
 				</div>
 			</div>
+			
+			<input type="hidden" name="fillSiisaData" id="fillSiisaData">
 		</form>
 		</div>
 	</div>
@@ -385,7 +387,7 @@ grecaptcha.ready(function() {
 $(document).ready(function(){
 
 
-
+	fillSiisaData('fillSiisaData');
 	
 	var cod_area = {{$codArea ? $codArea : 'null'}};
 

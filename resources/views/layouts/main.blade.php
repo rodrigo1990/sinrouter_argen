@@ -50,6 +50,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   src="https://www.facebook.com/tr?id=1592878087484069&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Facebook Pixel Code -->
+<?php $currentPage =  basename($_SERVER['PHP_SELF']); ?>
+
+@if($currentPage == 'saca_tu_prestamo')
+  @include('inc.siisaData')
+@endif
 </head>
 <body @yield('bodyclass')>
 	<!-- PRELOADER AL CARGAR -->

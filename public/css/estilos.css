@@ -565,7 +565,7 @@ a:hover{
 }
 
 .violet{
-    color:#523183 !important;
+    color:#EF4623 !important;
 }
 
 
@@ -738,12 +738,12 @@ a:hover{
 
 
   .border-btn.violet{
-    color: #523183;
-    border-color: #523183;
+    color: #EF4623;
+    border-color: #EF4623;
   }
 
    .border-btn.violet:hover{
-    background-color:#523183;
+    background-color:#EF4623;
     color:white !important;
   }
 
@@ -908,7 +908,7 @@ header ul.menu>li>a {
 header .col-lg-10 ul.menu>li>a {
        color: #00A5E7;
     letter-spacing: 1px;
-     font-size: 15px;
+     font-size: 19px;
     border-width: 2px;
     border-style: solid;
     border-color: transparent;
@@ -939,7 +939,7 @@ header ul.menu>li>a:hover:after{
 header ul.menu>li>a[href='/saca_tu_prestamo'] {
        color: #EE4E23;
     letter-spacing: 1px;
-   font-size: 17px;
+   font-size: 21px;
     border-width: 2px;
     border-style: solid;
     border-color: #EE4E23;
@@ -951,7 +951,7 @@ header ul.menu>li>a[href='/saca_tu_prestamo'] {
 header ul.menu>li>a[href='/cambio'] {
        color: #00A5E7;
     letter-spacing: 1px;
-   font-size: 17px;
+   font-size: 21px;
     border-width: 2px;
     border-style: solid;
     border-color: #00A5E7;
@@ -961,12 +961,12 @@ header ul.menu>li>a[href='/cambio'] {
 
 
 header ul.menu>li>a.shop {
-       color: #523183;
+       color: #EF4623;
     letter-spacing: 1px;
-   font-size: 17px;
+   font-size: 21px;
     border-width: 2px;
     border-style: solid;
-    border-color: #523183;
+    border-color: #EF4623;
     border-radius: 30px;
     padding: 14px;
 }
@@ -1007,7 +1007,7 @@ header ul.menu>li>a[href='/saca_tu_prestamo']:focus {
 
 header ul.menu>li>a.shop:hover {
        color: white;
-    background:#523183;
+    background:#EF4623;
 }
 
 
@@ -1017,7 +1017,7 @@ header ul.menu>li>a.shop:active {
 
 
 header ul.menu>li>a.shop:focus {
-       color: #523183 !important;
+       color: #EF4623 !important;
        background:transparent;
 }
 
@@ -3538,7 +3538,7 @@ div.bk-title h1{
 
 .fichas .modal-body .col-sm-6:not(.img-cont) a {
     font-family: GothamBlack;
-    color:#523183;
+    color:#EF4623;
 }
 
 .fichas .modal-body .clear{
@@ -3801,7 +3801,7 @@ div.bk-title h1{
     top: -9px;
     left: 63px;
     color:unset ;
-    background-color:#523183  !important;
+    background-color:#EF4623  !important;
 
 }
 
@@ -5278,7 +5278,7 @@ h1, #contacto h1 {
     }
     
     header ul.menu>li>a {
-    font-size: 93% !important;
+    font-size: 79% !important;
     }
 
     header ul.menu>li>a[href='/saca_tu_prestamo'], header ul.menu>li>a[href='/cambio'],header ul.menu>li>a.shop {
