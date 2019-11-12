@@ -908,7 +908,7 @@ header ul.menu>li>a {
 header .col-lg-10 ul.menu>li>a {
        color: #00A5E7;
     letter-spacing: 1px;
-     font-size: 19px;
+     font-size: 15px;
     border-width: 2px;
     border-style: solid;
     border-color: transparent;
@@ -939,7 +939,7 @@ header ul.menu>li>a:hover:after{
 header ul.menu>li>a[href='/saca_tu_prestamo'] {
        color: #EE4E23;
     letter-spacing: 1px;
-   font-size: 21px;
+   font-size: 17px;
     border-width: 2px;
     border-style: solid;
     border-color: #EE4E23;
@@ -951,7 +951,7 @@ header ul.menu>li>a[href='/saca_tu_prestamo'] {
 header ul.menu>li>a[href='/cambio'] {
        color: #00A5E7;
     letter-spacing: 1px;
-   font-size: 21px;
+   font-size: 17px;
     border-width: 2px;
     border-style: solid;
     border-color: #00A5E7;
@@ -963,7 +963,7 @@ header ul.menu>li>a[href='/cambio'] {
 header ul.menu>li>a.shop {
        color: #523183;
     letter-spacing: 1px;
-   font-size: 21px;
+   font-size: 17px;
     border-width: 2px;
     border-style: solid;
     border-color: #523183;
@@ -5278,7 +5278,7 @@ h1, #contacto h1 {
     }
     
     header ul.menu>li>a {
-    font-size: 79% !important;
+    font-size: 93% !important;
     }
 
     header ul.menu>li>a[href='/saca_tu_prestamo'], header ul.menu>li>a[href='/cambio'],header ul.menu>li>a.shop {
