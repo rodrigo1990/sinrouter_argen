@@ -16,7 +16,7 @@
 	<a  onClick="scale('{{$dataTarget}}')" class="spa-btn border-btn violet center-block margin-top-25 text-center">VER MÁS</a>
 
 	<div class="ahora-18">				
-		<h4 class="blue">												
+		<h4 class="violet">												
 			<img src="<?php echo asset('storage/img/shop/ahora_18.svg') ?>" alt="">
 			<img src="<?php echo asset('storage/img/shop/ahora_18.svg') ?>" alt="">
 			HASTA 12 <br> Y 18 CUOTAS
