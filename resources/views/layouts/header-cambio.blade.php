@@ -3,7 +3,7 @@
 				<div class="container-fluid">
 					<div class="col-lg-2 hidden-md hidden-sm hidden-xs ">
 						<a href="index" id="logo-btn" style="cursor:pointer">
-							<img class="logo" src="<?php echo asset("storage/img/cambio/logo-cambio.png")?>"></img> 
+							<img class="logo" src="<?php echo asset("storage/img/cambio/logo-cambio.svg")?>"></img> 
 
 						</a>
 					</div>
@@ -28,7 +28,7 @@
 				</div>
 				<div class="hidden-lg col-md-12 col-sm-12 col-xs-12 text-center xs-row " style="">
 					<a href="index.php">
-						<img src="<?php echo asset("storage/img/cambio/logo-cambio.png")?>" width="150px"></img> 
+						<img src="<?php echo asset("storage/img/cambio/logo-cambio.svg")?>" width="150px"></img> 
 					</a>
 						<a class="abrirMenu">
 							<i class="fa fa-bars"  id="abrirMenu"></i>
@@ -49,7 +49,7 @@
 				</div>
 			</div>
 		</div>
-		<ul id="xsMenu" class="overlay-xs-menu menu">
+		<ul id="xsMenu" class="cambio overlay-xs-menu menu">
 			<div class="row">
 				<a id="cerrarMenu"  class="close-menu-xs">
 					<i class="fas fa-times"></i>
