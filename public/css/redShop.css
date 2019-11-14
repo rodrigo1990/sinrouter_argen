@@ -1354,7 +1354,6 @@ form input, form select, .cambio select{
     border-right: none !important;
     border-bottom: 1px solid white !important;
     border-radius: 0px !important;
-    color: #00A551 !important;
     padding-left: 0 !important;
     outline: 0;
     box-shadow: inset 0 0px 0px rgba(0,0,0,.075);
@@ -1362,6 +1361,14 @@ form input, form select, .cambio select{
         font-size: 17px !important;
     webkit-box-shadow: none !important;
     box-shadow: none !important;
+}
+.cambio select{
+    color:#00A551 !important;
+}
+
+
+form input, form select{
+    color:white !important;
 }
 
 @-moz-document url-prefix() {
@@ -2767,8 +2774,8 @@ section#form ul#cotizador-cont{
 }
 
 section#form.cambio .first h1 b {
-        font-family: Bebas;
-        font-size: 61px;
+    font-family: GothamBold;
+    font-size: 42px;
 }
 
 
@@ -2792,8 +2799,8 @@ section#form.cambio .first ul li h2{
 }
 
 section#form.cambio .first ul li h3{
-    font-size: 19px;
-    font-family: Bebas;
+    font-size: 12px;
+    font-family: GothamBold;
 }
 
 
@@ -2881,11 +2888,11 @@ section#form.cambio .cambiar-btn{
 
 
 section#form.cambio li.form-cont .header h2{
-    font-family: Bebas;
+    font-family: GothamBold;
 }
 
 section#form.cambio li.form-cont .header h2{
-    font-size: 49px;;
+    font-size: 34px;
 }
 
 
@@ -2911,7 +2918,7 @@ section#form.cambio li.form-cont .header h3 {
     /* line-height: 47px; */
     margin-left: 17px;
     float: left;
-    margin-top: 18px;
+    margin-top: 13px;
 }
 
 
@@ -2949,8 +2956,9 @@ section#form.cambio h1{
 
 
 
-.form-cont .header{
-    border-bottom:2px solid #00A551;
+.form-cont .header {
+    border-bottom: 2px solid #00A551;
+    padding-bottom: 6px;
 }
 
 /*---------------------------------------------*/
@@ -4266,11 +4274,11 @@ section#form.cambio .first ul{
     margin:auto;
 }
 section#form.cambio .first h1 b {
-    font-size: 46px !important;
+    font-size: 37px !important;
 }
 
 section#form.cambio li.form-cont .header h2 {
-    font-size: 41px !important;
+    font-size: 29px !important;
 }
 
 section#form.cambio .first ul li h2 {

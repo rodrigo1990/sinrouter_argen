@@ -50,7 +50,7 @@ class MailController extends Controller
         $provincias  =Provincia::all();
 
 
-        return $this->validationService->validarPrestamo($request);
+       $this->validationService->validarPrestamo($request);
 
 
 
