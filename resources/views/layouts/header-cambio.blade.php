@@ -3,7 +3,7 @@
 				<div class="container-fluid">
 					<div class="col-lg-2 hidden-md hidden-sm hidden-xs ">
 						<a href="index" id="logo-btn" style="cursor:pointer">
-							<img class="logo" src="<?php echo asset("storage/img/logo-cambio.png")?>"></img> 
+							<img class="logo" src="<?php echo asset("storage/img/cambio/logo-cambio.png")?>"></img> 
 
 						</a>
 					</div>
@@ -28,7 +28,7 @@
 				</div>
 				<div class="hidden-lg col-md-12 col-sm-12 col-xs-12 text-center xs-row " style="">
 					<a href="index.php">
-						<img src="<?php echo asset("storage/img/logo-cambio.png")?>" width="150px"></img> 
+						<img src="<?php echo asset("storage/img/cambio/logo-cambio.png")?>" width="150px"></img> 
 					</a>
 						<a class="abrirMenu">
 							<i class="fa fa-bars"  id="abrirMenu"></i>
@@ -38,7 +38,7 @@
 		</header>
 		<div class="cotizaciones">
 			
-			<img src="<?php echo asset('storage/img/eeuuflag.png') ?>" alt="" width="30px">
+			<img src="<?php echo asset('storage/img/cambio/eeuuflag.png') ?>" alt="" width="30px">
 			
 			<div id="owl-3" class="owl-one owl-carousel">
 				<div>
@@ -72,7 +72,7 @@
 
 		<li class="xs-btn">
 			<a href="index">
-				<img src="<?php echo asset("storage/img/logo-xs.svg")?>">
+				<img src="<?php echo asset("storage/img/cambio/logo-xs.svg")?>">
 			</a>
 		</li>
 		</ul>
