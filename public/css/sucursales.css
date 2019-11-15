@@ -25,14 +25,7 @@
 
 
 body{
-	background: rgba(0,175,238,1);
-background: -moz-linear-gradient(-45deg, rgba(0,175,238,1) 0%, rgba(0,131,179,1) 100%);
-background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(0,175,238,1)), color-stop(100%, rgba(0,131,179,1)));
-background: -webkit-linear-gradient(-45deg, rgba(0,175,238,1) 0%, rgba(0,131,179,1) 100%);
-background: -o-linear-gradient(-45deg, rgba(0,175,238,1) 0%, rgba(0,131,179,1) 100%);
-background: -ms-linear-gradient(-45deg, rgba(0,175,238,1) 0%, rgba(0,131,179,1) 100%);
-background: linear-gradient(135deg, rgba(0,175,238,1) 0%, rgba(0,131,179,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00afee', endColorstr='#0083b3', GradientType=1 );
+	background: #00A551;
 height: 100vh;
 overflow:hidden;
 }
@@ -53,9 +46,9 @@ div.row>.container-fluid img{
 }
 
 h1{
-	font-size:9rem;
+	font-size:7rem;
 	color:white;
-	font-family:bebas;
+	font-family: GothamBold;
 	letter-spacing: 3px;
 }
 
@@ -65,7 +58,8 @@ h1{
 
 
 h1>img{
-	    width: 75px;
+    width: 63px;
+    margin-top: -8px;
 }
 
 
@@ -96,9 +90,9 @@ ul.flex{
 
 .content-row ul.flex li .nro{ 
     padding: 13px 62px;
-        color: white;
-           font-size: 204pt;
-        font-family: Helvetica-Bold;
+    color: white;
+    font-size: 175pt;
+    font-family: GothamBold;
 
     
  }
@@ -108,9 +102,10 @@ ul.flex{
     background: white;
     padding: 13px 62px;
      padding: 13px 62px;
-      color:#0094CC;
+      color:#00A551;
     /*  max-width: 450px;*/
     font-size: 36px;
+    font-family: GothamBold;
 
     
  }
@@ -136,9 +131,10 @@ ul.flex{
 
  footer h2, footer i{
 
- 	 background: -webkit-linear-gradient(#00ADEE, #0082B3);
+ background: -webkit-linear-gradient(#00b157, #00A551);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-family: GothamBook;
 
  }
 
@@ -159,7 +155,7 @@ footer ul{
 }
 
  footer ul li:nth-child(1) h2{
- 	font-family: Helvetica-Bold;
+ 	font-family: GothamBold;
  	float: right;
  }
 

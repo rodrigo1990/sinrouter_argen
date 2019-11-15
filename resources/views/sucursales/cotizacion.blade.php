@@ -11,7 +11,7 @@
 		<div class="row title-row">
 			<div class="container-fluid">
 				
-				<img class="logo center-block" src="<?php echo asset('storage/img/logo_cambio_white.svg') ?>" alt="" class="logo">
+				<img class="logo center-block" src="<?php echo asset('storage/img/cotizaciones_sucursales/argencambio-white.svg') ?>" alt="" class="logo">
 				
 			</div>
 		</div>

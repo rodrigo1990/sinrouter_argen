@@ -354,6 +354,9 @@
 		@slot('class')
 		bk-blue
 		@endslot
+		@slot('titleColor')
+    	blue
+	@endslot
 		@slot('color')
 			color:white;
 		@endslot

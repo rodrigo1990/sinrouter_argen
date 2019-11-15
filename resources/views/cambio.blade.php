@@ -16,19 +16,12 @@
 				</li>
 				<li>
 					<h2 clasS="text-center">1 USD = ${{$archivo[5]}}</h2>
-					<div>Compra: <span id="dolar-compra"></span></div>
-					<div>Venta: <span id="dolar-venta"></span></div>
+					<div class="flex">
+						<div>Compra: <span id="dolar-compra"></span></div>
+						<div>Venta: <span id="dolar-venta"></span></div>
+					</div>
 				</li>
-				<!--  <li>
-					<h2 clasS="text-center">1 USD = $43,00</h2>
-					<div>Compra: $42,00</div>
-					<div>Venta: $42,00</div>
-				</li>
-				<li>
-					<h2 clasS="text-center">1 USD = $43,00</h2>
-					<div>Compra: $42,00</div>
-					<div>Venta: $42,00</div>
-				</li>-->
+			
 			</ul>
 
 
@@ -264,6 +257,10 @@
     bk-grey 
 	
     padding-top-77 
+	@endslot
+
+	@slot('titleColor')
+    	green
 	@endslot
 
 	@slot('color')

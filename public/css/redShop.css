@@ -2775,7 +2775,7 @@ section#form ul#cotizador-cont{
 
 section#form.cambio .first h1 b {
     font-family: GothamBold;
-    font-size: 42px;
+    font-size: 54px;
 }
 
 
@@ -2799,23 +2799,26 @@ section#form.cambio .first ul li h2{
 }
 
 section#form.cambio .first ul li h3{
-    font-size: 12px;
-    font-family: GothamBold;
+    font-size: 15px;
+    font-family: GothamBook;
 }
 
 
+section#form.cambio .first ul li div.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 
-section#form.cambio .first ul li div{
-        display: inline;
-    margin-right: 15px;
+}
+
+
+section#form.cambio .first ul li div.flex>div{
     background-color: rgba(102, 206, 245, 0.3);
     padding: 6px 15px;
     font-family: Helvetica-Light,GothamBook;
     border-radius: 24px;
-    margin-right: 4px;
-    margin-left: 4px;
     font-size: 17px;
-        text-align: center;
+    text-align: center;
 
 }
 
@@ -2987,7 +2990,7 @@ h2.cambio-title>b{
 
 
 section#mejor-cot ul li img{
-    width: 80px;
+    width: 106px;
 }
 
 
@@ -4177,7 +4180,10 @@ header ul.menu>li>a[href='/saca_tu_prestamo'],header ul.menu>li>a[href='/cambio'
         display:none;
     }*/
 
-   
+   section#form.cambio .first ul li div {
+        margin-bottom: 10px;
+        display:block;
+    }
 
 #clockModal .modal-dialog img{
     width: 100% !important;
@@ -4996,10 +5002,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00a551",endCo
     
 
 
-    section#form.cambio .first ul li div {
-        margin-bottom: 10px;
-        display:block;
-    }
+    
 
 
     section#form.cambio .first ul li:not(:nth-child(1)){
