@@ -564,13 +564,8 @@ a:hover{
 	color:#EE4E23;
 }
 
-
-.green{
-    color:#00A551;
-}
-
 .violet{
-    color:#EF4623 ;
+    color:#EF4623 !important;
 }
 
 
@@ -942,24 +937,24 @@ header ul.menu>li>a:hover:after{
 }
 
 header ul.menu>li>a[href='/saca_tu_prestamo'] {
-       color: #00A5E7;
+       color: #EE4E23;
     letter-spacing: 1px;
    font-size: 21px;
     border-width: 2px;
     border-style: solid;
-    border-color: #00A5E7;
+    border-color: #EE4E23;
     border-radius: 30px;
     padding: 14px;
 }
 
 
 header ul.menu>li>a[href='/cambio'] {
-       color: #00A551;
+       color: #00A5E7;
     letter-spacing: 1px;
    font-size: 21px;
     border-width: 2px;
     border-style: solid;
-    border-color: #00A551;
+    border-color: #00A5E7;
     border-radius: 30px;
     padding: 14px;
 }
@@ -980,7 +975,7 @@ header ul.menu>li>a.shop {
 
 header ul.menu>li>a[href='/cambio']:hover {
        color: white;
-    background:#00A551;
+    background:#00A5E7;
 }
 
 header ul.menu>li>a[href='/cambio']:active {
@@ -989,23 +984,23 @@ header ul.menu>li>a[href='/cambio']:active {
 
 
 header ul.menu>li>a[href='/cambio']:focus {
-     color: #00A551 !important;
+     color: #00A5E7 !important;
       background:transparent;
 }
 
 header ul.menu>li>a[href='/saca_tu_prestamo']:hover {
        color: white;
-    background:#00A5E7;
+    background:#EE4E23;
 }
 
 
 header ul.menu>li>a[href='/saca_tu_prestamo']:active {
-       color: #00A5E7 !important;
+       color: white !important;
 }
 
 
 header ul.menu>li>a[href='/saca_tu_prestamo']:focus {
-       color: #00A5E7 !important;
+       color: #EE4E23 !important;
        background:transparent;
 }
 
@@ -1017,8 +1012,7 @@ header ul.menu>li>a.shop:hover {
 
 
 header ul.menu>li>a.shop:active {
-       color: #EF4623 !important;
-       background:transparent;
+       color: white !important;
 }
 
 
@@ -1588,21 +1582,12 @@ footer a.blue, footer a.red{
 }
 
 footer a.blue:hover{
-    color:grey;
-}
-
-
-footer a.green:hover{
-    color:grey;
-}
-
-footer a.violet:hover{
-    color:grey;
+    color:#EE4E23;
 }
 
 
 footer a.red:hover{
-    color:grey;
+    color:#00A5E7;
 }
 
  footer h4,footer,footer a {
