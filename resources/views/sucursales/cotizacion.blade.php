@@ -20,9 +20,29 @@
 				
 				<h1 class="text-center">DÓLAR <img src="<?php echo asset('storage/img/cotizaciones_sucursales/eeuu-flag.png') ?>" alt=""></h1>
 
+				
 				<ul class="flex center-block">
-					<li><b>Compra:</b> ${{$archivo[4]}}</li>
-					<li><b>Venta:</b> ${{$archivo[5]}}</li>
+					
+					<li>
+						<div class="nro">
+							${{$archivo[4]}}
+						</div>
+						
+						<div class="operacion text-center center-block">
+							<b>Compra</b> 
+						</div>
+
+
+					</li>
+					<li>
+
+						<div class="nro">
+							${{$archivo[5]}}
+						</div>
+						<div class="operacion text-center center-block">
+							<b>Venta</b> 
+						</div>
+					</li>
 				</ul>
 				
 
@@ -48,25 +68,8 @@
 <script>
 	setTimeout(function() {
           location.reload();
-        }, 900000);
+        }, 300000);
 </script>
 	
 </body>
 </html>
-
-<<!--  table class="table">
-				  <thead>
-				    <tr>
-				      <th scope="col">#</th>
-				      <th scope="col">DOLAR COMPRA</th>
-				      <th scope="col">DOLAR VENTA</th>
-				    </tr>
-				  </thead>
-				  <tbody>
-				    <tr>
-				      <th scope="row">DOLAR</th>
-				      <td>${{$archivo[4]}}</td>
-				      <td>${{$archivo[5]}}</td>
-				    </tr>
-				  </tbody>
-				</table>-->
