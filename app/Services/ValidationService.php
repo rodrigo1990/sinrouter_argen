@@ -83,9 +83,10 @@ echo $result;*/
      	 
      ]);
 
+     return $response->getBody()->getContents();
 
 
-      //dd($response->getBody()->getContents());
+
 
 
 	}

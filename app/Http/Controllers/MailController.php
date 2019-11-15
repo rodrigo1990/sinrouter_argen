@@ -50,8 +50,16 @@ class MailController extends Controller
         $provincias  =Provincia::all();
 
 
-       $this->validationService->validarPrestamo($request);
+         try
+          {
+              $response = $this->validationService->validarPrestamo($request);
+          }
+          catch (Exception  $e)
+          {
+              $response = $e;  
+          }
 
+        
 
 
     	switch ($request->banco) {
@@ -64,7 +72,7 @@ class MailController extends Controller
 
     				Mail::to($email)->send(new CreditoNoAprobado($request));
 
-                    return view('landing-mail.credito_rechazado',['provincias'=> $provincias]);
+                    return view('landing-mail.credito_rechazado',compact('provincias','response'));
 
 
 
@@ -74,13 +82,13 @@ class MailController extends Controller
 
                         Mail::to($email)->send(new CreditoPreAprobado($request));
     				
-    					return view('landing-mail.credito_pre_aprobado',['provincias'=> $provincias]);
+    					return view('landing-mail.credito_pre_aprobado',compact('provincias','response'));
     				
     				}else{
 
                         Mail::to($email)->send(new CreditoNoAprobado($request));
 
-                        return view('landing-mail.credito_rechazado',['provincias'=> $provincias]);
+                        return view('landing-mail.credito_rechazado',compact('provincias','response'));
     				
     				}//else
 
@@ -93,7 +101,7 @@ class MailController extends Controller
     				
     				Mail::to($email)->send(new CreditoNoAprobado($request));
 
-                    return view('landing-mail.credito_rechazado',['provincias'=> $provincias]);
+                    return view('landing-mail.credito_rechazado',compact('provincias','response'));
 
     			break;
     	}

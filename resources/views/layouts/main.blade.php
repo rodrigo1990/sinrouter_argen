@@ -50,9 +50,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   src="https://www.facebook.com/tr?id=1592878087484069&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Facebook Pixel Code -->
-<?php $currentPage =  basename($_SERVER['PHP_SELF']); ?>
+<?php $currentPage =  $_SERVER['REQUEST_URI']; ?>
 
-@if($currentPage == 'saca_tu_prestamo')
+@if($currentPage == '/saca_tu_prestamo')
+
   @include('inc.siisaData')
 @endif
 </head>

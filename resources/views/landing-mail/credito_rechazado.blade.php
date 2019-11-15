@@ -10,6 +10,8 @@
             <h1>LAMENTAMOS INFORMARTE QUE POR EL MOMENTO <br> <b>NO TENEMOS UN PRÉSTAMO ONLINE <br></b>DISPONIBLE PARA VOS</h1>
         </div>
 
+       
+
 
 </div>
 
@@ -48,14 +50,25 @@
   
 @stop
 
-@section('scripts')
 
-    
-@stop
 @section('scripts')
 <script>
     $(document).ready(function(){
         $("#content").css('margin-top',0);
+
+        
     });
 </script>
+
+<?php 
+
+    echo "<script>
+
+    var response  =  ".$response.";
+
+        console.log(response);
+
+    </script>"
+
+ ?>
 @stop
