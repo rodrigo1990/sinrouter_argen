@@ -771,12 +771,6 @@ a:hover{
   }
 
 
-  .border-btn.white.cambio:hover{
-    background-color: white;
-    color:#00A551;
-  }
-
-
 .big.border-btn{
         font-size: 28px;
     padding: 14px 47px;
@@ -929,12 +923,6 @@ header .col-lg-10 ul.menu>li>a {
 
 
 
-header.cambio .col-lg-10 ul.menu>li>a {
-       color: #00A551;
-}
-
-
-
 
 header ul.menu>li>a.after-btn:after {
     content: "";
@@ -1051,10 +1039,6 @@ header ul.menu>li>a i {
     color:#00A5E7;
 }
 
-header.cambio ul.menu>li>a i {
-    color:#00A551;
-}
-
 header ul.menu>li>a.rr-ss i{
        font-size: 24px;
     margin-top: -4px;
@@ -1119,9 +1103,6 @@ header ul.sub-menu li:not(:first-child){
 .xs-row img{
     float:left;
 }
-#xsMenu.cambio .close-menu-xs i{
-    color: #00A551;
-}
 
 
  .logo{
@@ -1143,10 +1124,6 @@ header ul.sub-menu li:not(:first-child){
     margin-top: 6px;
 }
 
-
-header.cambio .xs-row i{
-    color: #00A551;
-}
 
 .btn-cont{
     height: 48.875px;
@@ -1187,15 +1164,6 @@ header.cambio .xs-row i{
     font-size: 1.8rem;
     color: #00A5E7;
     font-family: GothamBold;
-}
-
-
-.cambio.overlay-xs-menu li a.xs-btn {
-    color: #00A551;
-}
-
-.cambio.overlay-xs-menu li a.xs-btn:hover {
-    color: #EE4E23;
 }
 
 
@@ -1354,7 +1322,7 @@ form input, form select, .cambio select{
     border-right: none !important;
     border-bottom: 1px solid white !important;
     border-radius: 0px !important;
-    color: #00A551 !important;
+    color: white !important;
     padding-left: 0 !important;
     outline: 0;
     box-shadow: inset 0 0px 0px rgba(0,0,0,.075);
@@ -2696,7 +2664,7 @@ section#form #cotizador-cont.flex>li{
 }
 
 .cotizaciones div p span{
-    color:#00A551;
+    color:#00A5E7;
 }
 
 /*****************FIN HEADER CAMBIO*******************/
@@ -2741,13 +2709,10 @@ section#form #cotizador-cont.flex>li{
 
 
 section#form.cambio{
-    color: #00A551;
-    background: #00A551;
-}
-
-ul#cotizador-cont .first{
+    background-image: url(../storage/img/bkground-cambio.jpg);
     color:white;
 }
+
     
 section#form ul#cotizador-cont{
     width: -webkit-fit-content;
@@ -2814,7 +2779,7 @@ section#form.cambio .first ul li div{
 
 
 section#form.cambio .form-cont{
-    background-color: white;
+    background-color: #56b3d6;
         -webkit-box-shadow: -1px 10px 30px -24px rgba(0,0,0,0.75);
     -moz-box-shadow: -1px 10px 30px -24px rgba(0,0,0,0.75);
     box-shadow: -5px 10px 30px -24px rgba(0,0,0,0.75);
@@ -2861,7 +2826,7 @@ section#form.cambio .form-cont .result-cont input{
        padding: 10px 15px;
     text-align: left;
     font-family: Helvetica-Light,GothamBook;
-    border: 1px solid #00A551;
+    border: 1px solid white;
     border-radius: 17px;
     margin-top: 24px;
     background: transparent;
@@ -2946,11 +2911,13 @@ section#form.cambio h1{
     color:white;
 }
 
-
+header.cambio .logo{
+    margin-top:-9px;
+}
 
 
 .form-cont .header{
-    border-bottom:2px solid #00A551;
+    border-bottom:2px solid white;
 }
 
 /*---------------------------------------------*/
@@ -2971,7 +2938,7 @@ section#mejor-cot>.row{
 
 h2.cambio-title>b{
        font-family: 'GothamBold';
-    border-bottom: 3px solid #00A551;
+    border-bottom: 3px solid #00A5E7;
     padding-bottom: 10px;
     letter-spacing: 2px;
     color: #404040;
@@ -2979,7 +2946,7 @@ h2.cambio-title>b{
 
 
 section#mejor-cot ul li img{
-    width: 80px;
+    width: 50px;
 }
 
 
@@ -3008,15 +2975,53 @@ section#mejor-cot ul li{
 }
 
 
+@media screen\0 {
+    section#mejor-cot ul li:nth-child(1) img{
+        width: 182px;
+        height: 170px;
+    }
 
 
 
+    section#mejor-cot ul li:nth-child(2) img{
+            width: 86px;
+            height: 170px;
+    }
+
+
+    section#mejor-cot ul li:nth-child(3) img{
+            width: 81px;
+            height: 170px;
+    }
+
+
+    section#mejor-cot ul li:nth-child(4) img{
+            width: 67px;
+            height: 170px;
+    }
+
+}
+
+
+section#mejor-cot ul li:nth-child(1) img{
+    width: 71px;
+}
 
 
 
+section#mejor-cot ul li:nth-child(2) img{
+    width: 86px;
+}
 
 
+section#mejor-cot ul li:nth-child(3) img{
+    width: 91px;
+}
 
+
+section#mejor-cot ul li:nth-child(4) img{
+    width: 84px;
+}
 
 /*---------------------------------------------*/
                 /*QUIENES SOMOS*/
@@ -3035,7 +3040,7 @@ section#quienes-somos p{
 
 
 section#quienes-somos p span{
-    color:#00A551;
+    color:#00A5E7;
 }
 
 
@@ -3061,14 +3066,12 @@ section#donde-cambio #map{
 
 
 section#contacto-form{
-    background:#00A551;
+        background-image: url(../storage/img/bkground-cambio.jpg);
     background-position: center;
     color: white;
     padding: 59px 0 59px 0;
     background-size: cover;
 }
-
-
 
 section#contacto-form h2.cambio-title>b{
     border-bottom: 3px solid white;
@@ -4937,11 +4940,14 @@ section#form form .border-btn{
     right: 0;
     bottom: 9px;
     left: 0;
-   background: rgb(0,165,81);
-background: -moz-linear-gradient(194deg, rgba(0,165,81,1) 21%, rgba(66,166,114,1) 70%);
-background: -webkit-linear-gradient(194deg, rgba(0,165,81,1) 21%, rgba(66,166,114,1) 70%);
-background: linear-gradient(194deg, rgba(0,165,81,1) 21%, rgba(66,166,114,1) 70%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00a551",endColorstr="#42a672",GradientType=1);
+    background: rgba(0,171,238,1);
+    background: -moz-linear-gradient(45deg, rgba(0,171,238,1) 0%, rgba(0,131,179,1) 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(0,171,238,1)), color-stop(100%, rgba(0,131,179,1)));
+    background: -webkit-linear-gradient(45deg, rgba(0,171,238,1) 0%, rgba(0,131,179,1) 100%);
+    background: -o-linear-gradient(45deg, rgba(0,171,238,1) 0%, rgba(0,131,179,1) 100%);
+    background: -ms-linear-gradient(45deg, rgba(0,171,238,1) 0%, rgba(0,131,179,1) 100%);
+    background: linear-gradient(45deg, rgba(0,171,238,1) 0%, rgba(0,131,179,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00abee', endColorstr='#0083b3', GradientType=1 );
 
     width: 247px !important;
     padding: 16px 19px 16px 19px !important;
