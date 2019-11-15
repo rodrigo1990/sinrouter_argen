@@ -39,7 +39,7 @@
 					<h2 class="float-left">CALCULADORA</h2>
 					<h3 class="">Simulá tu cambio</h3>
 					<a id="actualizar-btn" onClick="actualizar()">
-						<img src="<?php echo asset('storage/img/cambio/calculadora/actualizar.svg') ?>" alt="actualizar" class="float-right">
+						<img src="<?php echo asset('storage/img/calculadora/actualizar.svg') ?>" alt="actualizar" class="float-right">
 					</a>
 					<!--  <hr class="center-block">-->
 				</div>
@@ -68,7 +68,7 @@
 					</li>
 					  <li>
 						<a id="cambiar-btn" class="float-right" onClick="cambiar()">
-							<img class="cambiar-btn" src="<?php echo asset('storage/img/cambio/calculadora/cambiar.svg') ?>" alt="">
+							<img class="cambiar-btn" src="<?php echo asset('storage/img/calculadora/cambiar.svg') ?>" alt="">
 						</a>
 					</li>
 					<li id="a">
@@ -131,22 +131,22 @@
 		<div class="container">
 			<ul class="flex">
 			    <li class="text-center">
-					<img src="<?php echo asset('storage/img/cambio/icon-cambio-4.svg') ?>" alt="">
+					<img src="<?php echo asset('storage/img/icon-cambio-4.svg') ?>" alt="">
 					<p>Cambiás tu moneda <br> con los precios más <br> actualizados al <br> momento de <br> decidirlo.</p>
 				</li>
 				<li class="text-center">
-					<img src="<?php echo asset('storage/img/cambio/icon-cambio-1.svg') ?>" alt=>
+					<img src="<?php echo asset('storage/img/icon-cambio-1.svg') ?>" alt=>
 					<p>Acercate a nuestra <br> sucursal y en <br> segundos concretas <br> tu operación.</p>
 				</li>
 				<li class="text-center">
-					<img src="<?php echo asset('storage/img/cambio/icon-cambio-2.svg') ?>" alt="">
+					<img src="<?php echo asset('storage/img/icon-cambio-2.svg') ?>" alt="">
 					<p>
 						Sólo debés <br> acercarte a nuestra <br> sucursal  con tu <br> DNI o Pasaporte.
 					</p>
 				</li>
 				<li class="text-center">
 
-					<img src="<?php echo asset('storage/img/cambio/icon-cambio-3.svg') ?>" alt="">
+					<img src="<?php echo asset('storage/img/icon-cambio-3.svg') ?>" alt="">
 					
 					<p> Somos una Agencia de <br> Cambios autorizada por <br> el BCRA, sujeta a <br> fiscalizaciones y los <br> controles pertinentes. </p>
 
