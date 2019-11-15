@@ -60,7 +60,7 @@ h1{
 }
 
 .content-row{
-	margin-top: 125px;
+	margin-top: 79px;
 }
 
 
@@ -84,15 +84,34 @@ ul.flex{
 
 
  .content-row ul.flex li{ 
-	    list-style: none;
+	  list-style: none;
     font-size: 4rem;
     margin-left: 37px;
-    margin-right: 62px;
+    margin-right: 62px; 
+    font-family: Helvetica-Light;
+   
+    
+ }
+
+
+.content-row ul.flex li .nro{ 
+    padding: 13px 62px;
+        color: white;
+           font-size: 204pt;
+        font-family: Helvetica-Bold;
+
+    
+ }
+
+.content-row ul.flex li .operacion{
+	border-radius: 36px; 
     background: white;
     padding: 13px 62px;
-    border-radius: 36px;
-    font-family: Helvetica-Light;
-    color:#0094CC;
+     padding: 13px 62px;
+      color:#0094CC;
+    /*  max-width: 450px;*/
+    font-size: 36px;
+
     
  }
 
@@ -129,7 +148,7 @@ ul.flex{
 
 
  footer ul li h2{
- 	font-size:4rem;
+    font-size: 3.4rem;
  	margin:0;
  	padding:10px 0 10px 0;
  }
@@ -144,9 +163,6 @@ footer ul{
  	float: right;
  }
 
-footer ul li:nth-child(1){
-	    width: 538px;
- }
 
 
  footer ul li:nth-child(2){
