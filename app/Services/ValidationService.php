@@ -21,18 +21,16 @@ class ValidationService
 	 $vars = array(
  	 	$request->nombre => 'nombre',
  	  	$request->apellido => 'apellido',
- 	  	(string)$request->banco => 'nroBanco',
+ 	  	(string)$request->banco => 'banco',
  	  	$request->provincia => 'provincia',
  	  	$request->empleador => 'empleador',
  	  	$request->sueldo => 'sueldo',
- 	  	$request->dni => 'nroDoc',
+ 	  	$request->dni => 'dni',
  	  	$request->celular => 'celular',
  	  	$request->localidad => 'localidad',
  	  	$request->sexo => 'sexo',
- 	  	2035365531 => 'cuil',
- 	  	$request->valor_monto => 'monto',
- 	  	(string)$request->fillSiisaData => 'fillSiisaData'
- 	  );
+ 	  	$request->valor_monto => 'monto'
+	 	   );
 
 	 $query = http_build_query($vars, null, '/');
 
@@ -40,11 +38,9 @@ class ValidationService
 
 	 $query = str_replace("+","%20", $query);
 
-	 //$query = str_replace("%3D%3D","==", $query);
-
      $response = $client->get('ExecutePolicy/clientId/117/pin/1236/password/Legion2019/policyId/35/'.$query.'/');
 
-      dd($response->getBody()->getContents());
+    //  dd($response->getBody()->getContents());
 
 	}
    
