@@ -570,7 +570,11 @@ a:hover{
 }
 
 .violet{
-    color:#523183 ;
+    color:#EF4623 ;
+}
+
+.gray{
+    color:#585757;
 }
 
 
@@ -740,15 +744,16 @@ a:hover{
     color:white;
   }
 
-
-
-  .border-btn.violet{
-    color: #523183;
-    border-color: #523183;
+  .border-btn.gray{
+    color: #585757;
+    border-color: #585757;
   }
 
-   .border-btn.violet:hover{
-    background-color:#523183;
+
+
+   .border-btn.gray:hover{
+    background-color:#EF4623;
+    border-color: #EF4623;
     color:white !important;
   }
 
@@ -769,6 +774,9 @@ a:hover{
     background-color: white;
     color:#00A5E7;
   }
+
+
+
 
 
   .border-btn.white.cambio:hover{
@@ -978,12 +986,12 @@ header ul.menu>li>a[href='/cambio'] {
 
 
 header ul.menu>li>a.shop {
-       color: #523183;
+       color: #EF4623;
     letter-spacing: 1px;
    font-size: 18px;
     border-width: 2px;
     border-style: solid;
-    border-color: #523183;
+    border-color: #EF4623;
     border-radius: 30px;
     padding: 14px;
 }
@@ -1024,18 +1032,18 @@ header ul.menu>li>a[href='/saca_tu_prestamo']:focus {
 
 header ul.menu>li>a.shop:hover {
        color: white;
-    background:#523183;
+    background:#EF4623;
 }
 
 
 header ul.menu>li>a.shop:active {
-       color: #523183 !important;
+       color: #EF4623 !important;
        background:transparent;
 }
 
 
 header ul.menu>li>a.shop:focus {
-       color: #523183 !important;
+       color: #EF4623 !important;
        background:transparent;
 }
 
@@ -3459,7 +3467,7 @@ div.bk-title h1{
 }
 
  #shop .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
-    background: #16ace9 !important;
+    background: #EF4623 !important;
 }
 
 #shop>div.container>div.center-block{
@@ -3480,9 +3488,7 @@ div.bk-title h1{
     color:red;
 }
 
-#helpShop a.border-btn:hover{
-    background: #00A5E7 !important;
-}
+
 
 #helpShop .modal-content{
     background:white;
@@ -3513,6 +3519,7 @@ div.bk-title h1{
     color:black;
     margin-top: 25px;
     margin-bottom: 25px;
+    display: block;
 }
 
 
@@ -3561,7 +3568,7 @@ div.bk-title h1{
 
 .fichas .modal-body .col-sm-6:not(.img-cont) a {
     font-family: GothamBlack;
-    color:#523183;
+    color:#EF4623;
 }
 
 .fichas .modal-body .clear{
@@ -3701,11 +3708,11 @@ div.bk-title h1{
     font-weight: bold;
 }
 
-.fichas .precio.blue{
+.fichas .precio.violet{
     margin-top:9px;
 }
 
-.fichas .precio.blue > b{
+.fichas .precio.violet > b{
     font-size:  32px;
 }
 
@@ -3824,7 +3831,7 @@ div.bk-title h1{
     top: -9px;
     left: 63px;
     color:unset ;
-    background-color:#523183  !important;
+    background-color:#EF4623  !important;
 
 }
 

@@ -13,7 +13,7 @@
 				<h4>NUESTROS SERVICIOS</h4>
 				<hr>
 					<ul>
-						<li class="margin-top-10"><a href="/saca_tu_prestamo" class="blue"><b>- SACÁ TU PRÉSTAMO</b></a></li>
+						<li class="margin-top-10"><a href="/saca_tu_prestamo" class="blue"><b>- PRÉSTAMOS</b></a></li>
 						<li class="margin-top-10"><a href="/cambio" class="green" target="_blank"><b>- CAMBIO</b></a></li>
 						<li class="margin-top-10"><a class="violet go-to-shop" target="_blank"><b>- SHOP</b></a></li>
 						<li class="margin-top-10"><a href="/micuenta/quiero-pagar.php">Consultá tu cuenta</a></li>
