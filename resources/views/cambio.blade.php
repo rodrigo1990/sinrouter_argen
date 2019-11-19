@@ -1,6 +1,9 @@
+
+
 @extends('layouts.main')
+@section('estilos')
 
-
+@stop
 @section('content')
 @include('layouts.header-cambio')	
 

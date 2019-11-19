@@ -1,6 +1,6 @@
 <section id="creditos-online" class="step-by-step text-center {{$class}}">
 	<div class="container">
-		<h2 class="blue"><b>CRÉDITOS</b> ONLINE</h2>
+		<h2 class="red"><b>CRÉDITOS</b> ONLINE</h2>
 		<h4 class="margin-top-10">En 3 simples pasos</h4>
 		<ul class="flex center-block margin-top-50">
 			<li>
@@ -29,7 +29,7 @@
 		</ul>
 		
 
-		<a href="saca_tu_prestamo" target="" class="spa-btn border-btn blue center-block margin-top-25">SACÁ TU PRÉSTAMO AHORA</a>
+		<a href="saca_tu_prestamo" target="" class="spa-btn border-btn red center-block margin-top-25">SACÁ TU PRÉSTAMO AHORA</a>
 
 	</div>
 </section>

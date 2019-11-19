@@ -93,7 +93,7 @@
 
 	<section id="creditos-sucursales" class="step-by-step margin-top-60 bk-grey padding-top-47 padding-bottom-47">
 		<div class="container">
-		<h2 class="blue">CRÉDITOS EN <b>SUCURSALES</b></h2>
+		<h2 class="red">CRÉDITOS EN <b>SUCURSALES</b></h2>
 		<h4 class="margin-top-10">En 3 simples pasos</h4>
 		<ul class="flex center-block margin-top-50">
 			<li>
@@ -121,7 +121,7 @@
 		</ul>
 		
 
-		<a href="sucursales" class="spa-btn border-btn blue center-block margin-top-25" target="">ENCONTRÁ TU SUCURSAL</a>
+		<a href="sucursales" class="spa-btn border-btn red center-block margin-top-25" target="">ENCONTRÁ TU SUCURSAL</a>
 		</div>
 
 	</section>

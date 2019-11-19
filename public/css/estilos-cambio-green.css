@@ -570,7 +570,7 @@ a:hover{
 }
 
 .violet{
-    color:#EF4623 ;
+    color:#523183 ;
 }
 
 
@@ -743,12 +743,12 @@ a:hover{
 
 
   .border-btn.violet{
-    color: #EF4623;
-    border-color: #EF4623;
+    color: #523183;
+    border-color: #523183;
   }
 
    .border-btn.violet:hover{
-    background-color:#EF4623;
+    background-color:#523183;
     color:white !important;
   }
 
@@ -978,12 +978,12 @@ header ul.menu>li>a[href='/cambio'] {
 
 
 header ul.menu>li>a.shop {
-       color: #EF4623;
+       color: #523183;
     letter-spacing: 1px;
    font-size: 18px;
     border-width: 2px;
     border-style: solid;
-    border-color: #EF4623;
+    border-color: #523183;
     border-radius: 30px;
     padding: 14px;
 }
@@ -1024,18 +1024,18 @@ header ul.menu>li>a[href='/saca_tu_prestamo']:focus {
 
 header ul.menu>li>a.shop:hover {
        color: white;
-    background:#EF4623;
+    background:#523183;
 }
 
 
 header ul.menu>li>a.shop:active {
-       color: #EF4623 !important;
+       color: #523183 !important;
        background:transparent;
 }
 
 
 header ul.menu>li>a.shop:focus {
-       color: #EF4623 !important;
+       color: #523183 !important;
        background:transparent;
 }
 
@@ -3561,7 +3561,7 @@ div.bk-title h1{
 
 .fichas .modal-body .col-sm-6:not(.img-cont) a {
     font-family: GothamBlack;
-    color:#EF4623;
+    color:#523183;
 }
 
 .fichas .modal-body .clear{
@@ -3824,7 +3824,7 @@ div.bk-title h1{
     top: -9px;
     left: 63px;
     color:unset ;
-    background-color:#EF4623  !important;
+    background-color:#523183  !important;
 
 }
 
