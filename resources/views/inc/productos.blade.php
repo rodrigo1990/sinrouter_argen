@@ -194,6 +194,29 @@
 									@endslot		
 								@endcomponent
 							</div>
+							
+								<div>
+								@component('comp.producto')
+									@slot('marca')
+								    	NOKIA  
+									@endslot
+									@slot('modelo')
+								    	7.1
+									@endslot
+									@slot('precio')
+								    	$1444
+									@endslot
+									@slot('precioLista')
+								    	$25.999
+									@endslot
+									@slot('img')
+								    	storage/img/shop/productos/p-011.png
+									@endslot
+									@slot('dataTarget')
+								    	#9
+									@endslot		
+								@endcomponent
+							</div>
 
 
 
