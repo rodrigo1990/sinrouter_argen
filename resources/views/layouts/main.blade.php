@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144575306-2"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -17,6 +17,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-T5RQHK7');</script>
 <!-- End Google Tag Manager -->
+
 	<meta charset="UTF-8">
 	<meta name="viewport" content="initial-scale=1">
 	<title>Argenpesos | ¡Saca tu prestamo! </title>
@@ -33,7 +34,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	@yield('estilos')
 	<meta name="csrf-token" content="{{ csrf_token() }}">
 	
-	    <!-- Facebook Pixel Code -->
+    <!-- Facebook Pixel Code -->
 <script>
   !function(f,b,e,v,n,t,s)
   {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -56,7 +57,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   @include('inc.siisaData')
 @endif
-
 
 </head>
 <body @yield('bodyclass')>
@@ -83,7 +83,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         
 @endcomponent
 
-
 <!-- Modal -->
 <div class="modal fade" id="helpShop" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" >
   <div class="modal-dialog" role="document" style=" z-index: 20;">
@@ -108,8 +107,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </div>
 
 
-
-<!-- Modal -->
+<!-- CLOCK Modal -->
 <div class="modal fade" id="clockModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" >
 
   <div class="modal-dialog" role="document" style=" z-index: 20;">
@@ -149,10 +147,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 <div id="alert-cont"></div>
 
 <script type="text/javascript" src="<?php echo asset("js/jquery.js")?>"></script>
 <script type="text/javascript" src="<?php echo asset("bootstrap-3.3.7-dist/js/bootstrap.min.js")?>"></script>
+
 <script type="text/javascript" src="<?php echo asset("js/manejoDeMenus.js")?>"></script>
 <script type="text/javascript" src="<?php echo asset("js/routerAjax.js")?>"></script>
 <script type="text/javascript" src="<?php echo asset("js/whatsapp-message.js")?>"></script>
@@ -162,6 +173,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script type="text/javascript" src="<?php echo asset("OwlCarousel2-2.3.4/dist/owl.carousel.min.js")?>"></script>
 <script type="text/javascript" src="<?php echo asset("js/slider.js")?>"></script>
 <script type="text/javascript" src="<?php echo asset("js/routerAjax.js")?>"></script>
+
+ <script>
+	$(window).on('load', function() { // makes sure the whole site is loaded 
+	
+    	$('#status').fadeOut(); // will first fade out the loading animation 
+    	$('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+    	$('body').delay(350).css({'overflow-y':'visible'});
+
+
+
+    });
+</script>
 
 <script>
     function submenuShow(){
@@ -174,19 +197,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </script>
 
 <script>
-            $(window).on('load', function() { // makes sure the whole site is loaded 
-            
-            $('#status').fadeOut(); // will first fade out the loading animation 
-            $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
-            $('body').delay(350).css({'overflow-y':'visible'});
-
-
-
-        });
-    </script>
-
-    <script>
-            $(document).ready(function(){
+         $(document).ready(function(){
 
              @if(isset($msg))
 
@@ -197,26 +208,28 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
              $("#file-result").hide();
 
             });
-    </script>
-    <script>
-        $(".go-to-shop").click(function(){
-                if(window.location.pathname == '/' || window.location.pathname=='/index' || window.location.pathname=='/shop'){
-                    
-                    $('html,body').animate({ scrollTop:$('#shop').offset().top -150  }, 'slow');
-                    
-                    return false;
+</script>
+<script>
+    $(".go-to-shop").click(function(){
+            if(window.location.pathname == '/' || window.location.pathname=='/index' || window.location.pathname=='/shop'){
+                
+                $('html,body').animate({ scrollTop:$('#shop').offset().top -150  }, 'slow');
+                
+                return false;
 
-                }else{
-                    var url  = ""+window.location.origin+"/shop";
-                                        
-                    window.location.href = url;                    
-         
-                }
+            }else{
+                var url  = ""+window.location.origin+"/shop";
+                                    
+                window.location.href = url;                    
+     
+            }
 
 
 
-         });
-    </script>
+     });
+</script> 
+
+
 <script>
 
 
@@ -817,7 +830,7 @@ $("#form-home #nombre").keyup(function(){
         }
 
         $(document).ready(function(){
-  
+            
 
             $("#quienes-somos-btn").hover(function(){
                 $(".sub-menu").show();

@@ -6,6 +6,8 @@
 <b>DNI:</b> {{$consulta->dni}}<br>
 <b>Provincia:</b> {{$consulta->provincia}}<br>
 <b>Localidad:</b> {{$consulta->localidad}}<br>
+<b>Email:</b> {{$consulta->email}}<br>
+<b>Telefono:</b> {{$consulta->telefono}}<br>
 <b>
 Cuenta con local de venta al publico:</b> {{$consulta->venta}}<br>
 <b>Comentarios:</b> {{$consulta->comentarios}}<br>

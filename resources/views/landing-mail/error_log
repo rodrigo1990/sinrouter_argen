@@ -1,0 +1,8 @@
+[30-Jun-2019 17:09:52 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function asset() in /home/legion/public_html/test/argenpesos_nueva/resources/views/landing-mail/credito_rechazado.blade.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/legion/public_html/test/argenpesos_nueva/resources/views/landing-mail/credito_rechazado.blade.php on line 10
+[01-Jul-2019 05:14:30 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function asset() in /home/legion/public_html/test/argenpesos_nueva/resources/views/landing-mail/credito_pre_aprobado.blade.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/legion/public_html/test/argenpesos_nueva/resources/views/landing-mail/credito_pre_aprobado.blade.php on line 10

@@ -10,7 +10,7 @@
 
 	<div class="col-lg-6 col-md-6 col sm-8 left-side" style="text-align:center">
 		<div style="text-align: left;">
-				<a href="/" id="logo-cont-a"><img src="<?php echo asset("storage/img/logo.png")?>" id="logo" class="margin-top-23 margin-left-28"  alt=""></a>
+				<a href="/index" id="logo-cont-a"><img src="<?php echo asset("storage/img/logo.png")?>" id="logo" class="margin-top-23 margin-left-28"  alt=""></a>
 		</div>
 	    
 	    <h1 class="margin-top-35">HOY MISMO LLEVATE <br> <b>HASTA <span class="red">$30.000</span></b></h1>
@@ -90,7 +90,7 @@
 	                        <i class="fa fa-times"></i>
 
 	                    </div>
-	                    <div class="error" id="dni-error">*Ingrese un dni valido sin puntos Ej: 20234678</div>
+	                    <div class="error" id="dni-error">*Ingrese un dni valido sin puntos Ej: 20234678 o 07325654</div>
 				</div>
 				<div class="col-lg-6 col-md-6 col-xs-12 radio-btn">
 					
@@ -131,7 +131,7 @@
 					<div class="col-lg-6 col-md-6 col-xs-12">
 						<div class="celular-inputs-container">
 		                    <input type="text" name="fix-celular" id="fix-celular" value="15" disabled="disabled" class="form-control">
-							<input type="number" min="0" name="celular" id="celular" placeholder="Ej:46587925"  class="form-control" value={{$telefono}}>
+							<input type="number" name="celular" min="0" id="celular" placeholder="Ej:46587925"  class="form-control" value={{$telefono}}>
 						</div>
 						<div class="valid-feedback feedback-icon" id="celular-check-icon">
 
@@ -315,25 +315,23 @@
 						
 					</div>
 				</div>	
-				<div class="row no-margin">
-			
-				<div class="col-lg-12 col-md-12 col-xs-12">
-				<!-- <div
-				id='recaptcha'
-				class="g-recaptcha"
-				data-sitekey="6Lcg21YUAAAAAFjfbU3ZWINWWcy_4pmu5WdyOrx9"
-				data-callback="myFunction"
-				>
-				    
-				</div> -->
+			<!--   <div class="row recaptcha-row ">
+				
+					<div class="recaptcha-col col-lg-12 col-md-12 col-xs-12">
+					<div
+					id='recaptcha'
+					class="g-recaptcha"
+					data-sitekey="6Lcg21YUAAAAAFjfbU3ZWINWWcy_4pmu5WdyOrx9"
+					data-callback="myFunction"
+					>
+					    
+					</div>
 
-                <div class="msg-error" style="color:red;"></div>
 
-			<div class="error" id="captcha-error">*Valide el captcha</div>
-				</div>
-			</div>
-			
-			<input type="hidden" name="fillSiisaData" id="fillSiisaData">
+				<div class="error" id="captcha-error">*Valide el captcha</div>
+					</div>
+				</div>-->
+				<input type="hidden" name="fillSiisaData" id="fillSiisaData">
 		</form>
 		</div>
 	</div>
@@ -355,8 +353,8 @@
 		bk-blue
 		@endslot
 		@slot('titleColor')
-    	blue
-	@endslot
+        	blue
+    	@endslot
 		@slot('color')
 			color:white;
 		@endslot
@@ -381,17 +379,20 @@ cuotas y nos devolvés $1.830 por mes. Tasa efectiva anual (TEA): mínima: 411,5
 <script type="text/javascript" src="<?php echo asset("js/validarSolicitarPrestamoAlApretarBoton.js")?>"></script>
 <script type="text/javascript" src="<?php echo asset("js/rangeslider.js")?>"></script>
 <script type="text/javascript" src="<?php echo asset("js/rangeSliderImplement.js")?>"></script>
-  <script src="https://www.google.com/recaptcha/api.js?render=6LdEebcUAAAAAP-l6P6ooyB-g5fF_wQjqMBBrPxf"></script>
-<script>
 
+ <script src="https://www.google.com/recaptcha/api.js?render=6LdEebcUAAAAAP-l6P6ooyB-g5fF_wQjqMBBrPxf"></script>
+<!--   <script src='https://www.google.com/recaptcha/api.js?hl=es' async defer></script>--> 
+ 
+ 
+<script>
 grecaptcha.ready(function() {
       grecaptcha.execute('6LdEebcUAAAAAP-l6P6ooyB-g5fF_wQjqMBBrPxf', {action: 'homepage'});
   });
+  
 $(document).ready(function(){
+    
+    fillSiisaData('fillSiisaData');
 
-
-	fillSiisaData('fillSiisaData');
-	
 	var cod_area = {{$codArea ? $codArea : 'null'}};
 
 	$("#content").css("margin-top",0);

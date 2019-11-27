@@ -209,11 +209,6 @@
 @section('scripts')
 	<script src="<?php echo asset('/js/jquery.zoom.min.js') ?>"></script>
 	<script src="<?php echo asset('/js/clock.js') ?>"></script>
-	<script type="text/javascript">
-    $(window).on('load',function(){
-        $('#clockModal').modal('show');
-    });
-	</script>
 	<script>
 	
 	$(document).ready(function(){

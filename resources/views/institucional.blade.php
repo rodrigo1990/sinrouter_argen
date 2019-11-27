@@ -8,7 +8,7 @@
 	</div>
 	<div class="container">
 		<p class="text-center margin-top-25">
-			Somos <b>una empresa que opera desde el 2005 en el Mercado de Créditos para trabajadores, jubilados y <br> pensionados.</b> Contamos con 12 sucursales y operamos con más de 400 comercializadores de nuestros productos en todo el país para satisfacer las necesidades de nuestros clientes. Estamos convencidos que con nuestras acciones le damos continuidad a la idea que nos dio origen: <b>dar soluciones citicias rápidas y fáciles</b> a las necesidades actuales de nuestra comunidad.
+			Somos <b>una empresa que opera desde el 2005 en el Mercado de Créditos para trabajadores, jubilados y <br> pensionados.</b> Contamos con 12 sucursales y operamos con más de 400 comercializadores de nuestros productos en todo el país para satisfacer las necesidades de nuestros clientes. Estamos convencidos que con nuestras acciones le damos continuidad a la idea que nos dio origen: <b>dar soluciones crediticias  rápidas y fáciles</b> a las necesidades actuales de nuestra comunidad.
 		</p>
 	</div>	
 		<div id="accordion" class=" margin-top-50"">

@@ -45,6 +45,7 @@
 		</div>
 	</section>
 
+
 	@component('comp.contacto')
 		@slot('class')
 			bk-blue
@@ -114,7 +115,6 @@
 	  locations.push(['<b>QUILMES </b><br><br>Rivadavia 96   <br><br> <b>TEL:</b> 4253-1001 <br><br> <b>Whatsapp:</b> 11-6551-0711  <br><br> <b>Horario:</b><br> Lunes a Viernes de 9 a 19hs. <br> Sábados de 9 a 13hs. ',-34.722831,-58.259495]);
 
 	  locations.push(['<b>SOLANO </b><br><br>Calle 845 Nº2590    <br><br> <b>TEL:</b> 4212-6770 / 7174<br><br> <b>Whatsapp:</b> 15-3252-5078   <br><br> <b>Horario:</b><br> Lunes a Viernes de 9 a 19hs <br> Sábados de 9 a 13hs. ',-34.782014, -58.313454]);
-
 
 
 

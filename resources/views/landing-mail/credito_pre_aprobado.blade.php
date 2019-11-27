@@ -22,6 +22,10 @@
     
     padding-top-77 
     @endslot
+    
+	@slot('titleColor')
+    	blue
+	@endslot
 
     @slot('color')
     color:#333;
@@ -42,13 +46,23 @@
 @stop
 
 @section('scripts')
-
-    
-@stop
-@section('scripts')
 <script>
     $(document).ready(function(){
         $("#content").css('margin-top',0);
+
+        
     });
 </script>
+
+<?php 
+
+    echo "<script>
+
+    var response  =  ".$response.";
+
+        console.log(response);
+
+    </script>"
+
+ ?>
 @stop
