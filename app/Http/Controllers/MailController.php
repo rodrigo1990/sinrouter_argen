@@ -54,9 +54,9 @@ class MailController extends Controller
           {
               $response = $this->validationService->validarPrestamo($request);
           }
-          catch (Exception  $e)
+          catch (\Exception  $e)
           {
-              $response = $e;  
+              $response = "Error en el webservice, se no ha podido enviar la informacion";  
           }
 
         

@@ -584,9 +584,9 @@
 
                 
 
-    $("#provincia").change(function(){
+   $("#provincia").change(function(){
 
-
+        $(".localidad-col").html('<div class="spinner-sm spinner-sm-1" id="status"> </div>');
         $("#localidad-check-icon").fadeOut();
                                 
         $("#localidad-error-icon").fadeIn();
@@ -648,6 +648,7 @@
                 type:'post',
                 dataType:"json",
                 success:function(data){
+                    $(".localidad-col").html('<select  name="localidad" id="localidad"  class="form-control"> <option value="null">Localidad</option> </select> <div class="error" id="localidad-error">*Ingrese una localidad valida</div> <div class="valid-feedback feedback-icon" id="localidad-check-icon"> <i class="fa fa-check"></i> </div> <div class="invalid-feedback feedback-icon" id="localidad-error-icon"> <i class="fa fa-times"></i> </div>');
                     $("#localidad").empty();
                     $("#localidad").append('<option value="null">Seleccione una ciudad</option>');
                         for(var i in data) {    
@@ -658,7 +659,7 @@
                                           
                             }
 
-            
+
 
 
 
@@ -677,13 +678,12 @@
 
 
 
-
                 
 
 
 
-    $("#localidad").change(function(){       
-
+ $(document).on('change',"#localidad", function(){
+           
         var localidad=$("#localidad").val();
 
 

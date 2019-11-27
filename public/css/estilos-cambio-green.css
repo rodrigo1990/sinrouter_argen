@@ -2053,6 +2053,28 @@ input::-webkit-inner-spin-button {
     padding-bottom: 0px;
 }
 
+#prestamo-form .localidad-col{
+    position:relative;
+}
+
+
+#prestamo-form .localidad-col #status {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    right: 0;
+    border: 3px solid #ffffff;
+    border-top: 3px solid gray;
+    width: 24px;
+    height: 24px;
+}
+
+
 .range-cont{
    
     margin-top: 27px;

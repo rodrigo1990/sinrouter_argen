@@ -59,7 +59,7 @@
 
     echo "<script>
 
-    var response  =  ".$response.";
+    var response  =  '".(string)$response."';
 
         console.log(response);
 
