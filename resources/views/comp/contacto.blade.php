@@ -1,6 +1,6 @@
 <section id="contacto" class=" text-center padding-60 {{$class}}">
 	<div class="container">
-		<h1 class="blue">CONTACTO</h1>
+		<h1 class="{{$titleColor}}">CONTACTO</h1>
 		<ul class="flex center-block margin-top-25">
 			<li>
 				<a href="mailTo:info@argenpesos.com.ar?subject=MAIL%20DESDE%20WEB" target="_blank" style="{{$color}}">

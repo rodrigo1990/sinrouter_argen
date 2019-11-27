@@ -1,0 +1,32 @@
+[30-Jun-2019 21:45:02 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function asset() in /home/legion/public_html/test/argenpesos_nueva/resources/views/sucursales.blade.php:128
+Stack trace:
+#0 {main}
+  thrown in /home/legion/public_html/test/argenpesos_nueva/resources/views/sucursales.blade.php on line 128
+[01-Jul-2019 01:01:53 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function asset() in /home/legion/public_html/test/argenpesos_nueva/resources/views/saca_tu_prestamo2.blade.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/legion/public_html/test/argenpesos_nueva/resources/views/saca_tu_prestamo2.blade.php on line 13
+[01-Jul-2019 10:01:36 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function asset() in /home/legion/public_html/test/argenpesos_nueva/resources/views/institucional.blade.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/legion/public_html/test/argenpesos_nueva/resources/views/institucional.blade.php on line 30
+[01-Jul-2019 10:21:11 UTC] PHP Warning:  require_once(Clases/Novedad.php): failed to open stream: No such file or directory in /home/legion/public_html/test/argenpesos_nueva/resources/views/resp_social.blade.php on line 3
+[01-Jul-2019 10:21:11 UTC] PHP Fatal error:  require_once(): Failed opening required 'Clases/Novedad.php' (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/legion/public_html/test/argenpesos_nueva/resources/views/resp_social.blade.php on line 3
+[01-Jul-2019 13:21:11 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function asset() in /home/legion/public_html/test/argenpesos_nueva/resources/views/saca_tu_prestamo2.blade.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/legion/public_html/test/argenpesos_nueva/resources/views/saca_tu_prestamo2.blade.php on line 13
+[01-Jul-2019 14:37:04 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function asset() in /home/legion/public_html/test/argenpesos_nueva/resources/views/index.blade.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/legion/public_html/test/argenpesos_nueva/resources/views/index.blade.php on line 13
+[01-Jul-2019 15:48:51 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function asset() in /home/legion/public_html/test/argenpesos_nueva/resources/views/institucional.blade.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/legion/public_html/test/argenpesos_nueva/resources/views/institucional.blade.php on line 30
+[01-Jul-2019 15:49:38 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function asset() in /home/legion/public_html/test/argenpesos_nueva/resources/views/index.blade.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/legion/public_html/test/argenpesos_nueva/resources/views/index.blade.php on line 13
+[01-Jul-2019 18:42:28 UTC] PHP Warning:  require_once(Clases/Novedad.php): failed to open stream: No such file or directory in /home/legion/public_html/test/argenpesos_nueva/resources/views/resp_social.blade.php on line 3
+[01-Jul-2019 18:42:28 UTC] PHP Fatal error:  require_once(): Failed opening required 'Clases/Novedad.php' (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/legion/public_html/test/argenpesos_nueva/resources/views/resp_social.blade.php on line 3

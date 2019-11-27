@@ -31,6 +31,10 @@
     
     padding-top-77 
     @endslot
+    
+    	@slot('titleColor')
+        	blue
+    	@endslot
 
     @slot('color')
     color:#333;

@@ -50,11 +50,11 @@
               </div>
               <div class="col-sm-6">
                 <div class="row">
-                  <h2 class="violet"><b>{{$marca}}</b> {{$modelo}}</h2>
+                  <h2 class="gray"><b>{{$marca}}</b> {{$modelo}}</h2>
                 </div>
                 <div class="row">
                   <h4 class="cuotas"><img src="<?php echo asset('storage/img/fichas-card-07.png') ?>" alt=""> Hasta <b>18 CUOTAS SIN INTERÉS</b> de</h4>
-                  <h4 class="precio blue"><b class="blue">{{$precio}}</b></h4>
+                  <h4 class="precio violet"><b class="violet">{{$precio}}</b></h4>
 
                   <hr>
                   <p class="precio-lista">*Precio de lista {{$precioLista}}</p>
@@ -140,7 +140,7 @@
             <li class="text-left">
         
 
-              <a  data-toggle="modal" data-target="#helpShop"class="spa-btn border-btn blue text-center float-left " target="">TE AYUDAMOS A COMPRAR</a>
+              <a  data-toggle="modal" data-target="#helpShop"class="spa-btn border-btn gray text-center float-left " target="">TE AYUDAMOS A COMPRAR</a>
             </li>
         </ul>
       </div>

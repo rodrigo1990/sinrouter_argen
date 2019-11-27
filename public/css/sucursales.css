@@ -25,14 +25,7 @@
 
 
 body{
-	background: rgba(0,175,238,1);
-background: -moz-linear-gradient(-45deg, rgba(0,175,238,1) 0%, rgba(0,131,179,1) 100%);
-background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(0,175,238,1)), color-stop(100%, rgba(0,131,179,1)));
-background: -webkit-linear-gradient(-45deg, rgba(0,175,238,1) 0%, rgba(0,131,179,1) 100%);
-background: -o-linear-gradient(-45deg, rgba(0,175,238,1) 0%, rgba(0,131,179,1) 100%);
-background: -ms-linear-gradient(-45deg, rgba(0,175,238,1) 0%, rgba(0,131,179,1) 100%);
-background: linear-gradient(135deg, rgba(0,175,238,1) 0%, rgba(0,131,179,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00afee', endColorstr='#0083b3', GradientType=1 );
+	background: #00A551;
 height: 100vh;
 overflow:hidden;
 }
@@ -53,19 +46,20 @@ div.row>.container-fluid img{
 }
 
 h1{
-	font-size:9rem;
+	font-size:7rem;
 	color:white;
-	font-family:bebas;
+	font-family: GothamBold;
 	letter-spacing: 3px;
 }
 
 .content-row{
-	margin-top: 125px;
+	margin-top: 79px;
 }
 
 
 h1>img{
-	    width: 75px;
+    width: 63px;
+    margin-top: -8px;
 }
 
 
@@ -84,15 +78,35 @@ ul.flex{
 
 
  .content-row ul.flex li{ 
-	    list-style: none;
+	  list-style: none;
     font-size: 4rem;
     margin-left: 37px;
-    margin-right: 62px;
+    margin-right: 62px; 
+    font-family: Helvetica-Light;
+   
+    
+ }
+
+
+.content-row ul.flex li .nro{ 
+    padding: 13px 62px;
+    color: white;
+    font-size: 175pt;
+    font-family: GothamBold;
+
+    
+ }
+
+.content-row ul.flex li .operacion{
+	border-radius: 36px; 
     background: white;
     padding: 13px 62px;
-    border-radius: 36px;
-    font-family: Helvetica-Light;
-    color:#0094CC;
+     padding: 13px 62px;
+      color:#00A551;
+    /*  max-width: 450px;*/
+    font-size: 36px;
+    font-family: GothamBold;
+
     
  }
 
@@ -117,9 +131,10 @@ ul.flex{
 
  footer h2, footer i{
 
- 	 background: -webkit-linear-gradient(#00ADEE, #0082B3);
+ background: -webkit-linear-gradient(#00b157, #00A551);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-family: GothamBook;
 
  }
 
@@ -129,7 +144,7 @@ ul.flex{
 
 
  footer ul li h2{
- 	font-size:4rem;
+    font-size: 3.4rem;
  	margin:0;
  	padding:10px 0 10px 0;
  }
@@ -140,13 +155,10 @@ footer ul{
 }
 
  footer ul li:nth-child(1) h2{
- 	font-family: Helvetica-Bold;
+ 	font-family: GothamBold;
  	float: right;
  }
 
-footer ul li:nth-child(1){
-	    width: 538px;
- }
 
 
  footer ul li:nth-child(2){

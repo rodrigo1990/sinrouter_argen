@@ -207,7 +207,7 @@
 
 				<a href="sucursales" class="spa-btn border-btn violet text-center  margin-top-40 float-left" target="">ENCONTRÁ TU SUCURSAL</a>
 
-				<a  data-toggle="modal" data-target="#helpShop"class="spa-btn border-btn blue text-center  margin-top-40 float-left" target="">TE AYUDAMOS A COMPRAR</a>
+				<a  data-toggle="modal" data-target="#helpShop"class="spa-btn border-btn gray text-center  margin-top-40 float-left" target="">TE AYUDAMOS A COMPRAR</a>
 
 
 			</div>

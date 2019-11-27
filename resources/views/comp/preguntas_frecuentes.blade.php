@@ -1,4 +1,3 @@
-
 <a id="preguntasFrecuentesBtn" class="interfaceFormBtn animated fadeInDown" >
     <h1 onClick="scale()">?</h1>
     <div class="tool-tip" onClick="scale()">
