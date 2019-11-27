@@ -457,3 +457,65 @@
 
 
 
+  <!-- MODAL 7 -->
+   @component('comp.ficha')
+                @slot('id')
+                    9 
+                @endslot
+                @slot('memoria')
+                    64GB
+                @endslot
+                @slot('camara')
+                      12MP
+                @endslot
+                @slot('bateria')
+                      
+                @endslot
+
+
+                 @slot('imagenes',[
+                   0 => 'storage/img/shop/fichas/thumbs/nokia_71_plus/1.jpg',
+                   1 => 'storage/img/shop/fichas/thumbs/nokia_71_plus/2.jpg',
+                   2 => 'storage/img/shop/fichas/thumbs/nokia_71_plus/3.jpg',
+                   4 => 'storage/img/shop/fichas/thumbs/nokia_71_plus/4.jpg',
+
+                ])
+
+
+                @slot('marca')
+                    NOKIA
+                @endslot
+                @slot('modelo')
+                    7.1
+                @endslot
+                @slot('precio')
+                    $1444
+                @endslot
+                @slot('precioLista')
+                    $25.999
+                @endslot
+
+                @slot('features',[
+                
+                 0 => 'PANTALLA 5.84',
+                  1 => '4GB DE RAM',
+                  2 => '64GB DE MEMORIA INTERNA',
+                  3 => 'CÁMARA FRONTAL 8MP',
+                  4 => 'CÁMARA TRASERA 12+5MP 8MP',
+                  5 => 'BLUETOOTH',
+                  6 => 'LECTOR DE HUELLA',
+                  7 => 'ZOOM DIGITAL 4X',
+                  7 => 'FLASH DUAL LED',
+
+
+                ])
+
+                 @slot('so')
+                    true
+                @endslot
+                   
+                
+              @endcomponent
+
+
+
