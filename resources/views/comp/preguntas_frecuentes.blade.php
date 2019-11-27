@@ -1,8 +1,8 @@
 <a id="preguntasFrecuentesBtn" class="interfaceFormBtn animated fadeInDown" >
     <h1 onClick="scale()">?</h1>
-    <div class="tool-tip" onClick="scale()">
+    <!--  <div class="tool-tip" onClick="scale()">
       <h3>Si tenés dudas <br> hace click aquí</h3>
-    </div>
+    </div>-->
 </a>
 <div id="preguntasFrecuentesCont" class="full-bk">
     

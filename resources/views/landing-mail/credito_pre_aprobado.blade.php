@@ -49,7 +49,7 @@
 @section('scripts')
 <script>
     $(document).ready(function(){
-        $("#content").css('margin-top',0);
+        $("#content").css('margin-top',$("header").height());
 });
 
         
