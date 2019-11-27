@@ -48,6 +48,9 @@
                 @slot('so')
                     true
                 @endslot
+                @slot('androidOne')
+                    false
+                @endslot
                    
                 
               @endcomponent
@@ -116,6 +119,9 @@
                  @slot('so')
                     true
                 @endslot
+                @slot('androidOne')
+                    true
+                @endslot
                    
                 
               @endcomponent
@@ -176,6 +182,10 @@
                  @slot('so')
                     true
                 @endslot
+                @slot('androidOne')
+                    false
+                @endslot
+
                    
                 
               @endcomponent
@@ -232,6 +242,9 @@
 
                  @slot('so')
                     true
+                @endslot
+                @slot('androidOne')
+                    false
                 @endslot
                    
                 
@@ -294,6 +307,9 @@
                  @slot('so')
                     false
                 @endslot
+                @slot('androidOne')
+                    false
+                @endslot
                    
                 
               @endcomponent
@@ -338,6 +354,9 @@
                 @slot('features',[])
 
                  @slot('so')
+                    false
+                @endslot
+                @slot('androidOne')
                     false
                 @endslot
                    
@@ -399,6 +418,9 @@
                  @slot('so')
                     true
                 @endslot
+                @slot('androidOne')
+                    true
+                @endslot
                    
                 
               @endcomponent
@@ -449,6 +471,9 @@
                 ])
 
                  @slot('so')
+                    false
+                @endslot
+                @slot('androidOne')
                     false
                 @endslot
                    
@@ -511,6 +536,9 @@
                 ])
 
                  @slot('so')
+                    true
+                @endslot
+                @slot('androidOne')
                     true
                 @endslot
                    

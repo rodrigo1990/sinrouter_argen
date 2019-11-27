@@ -105,7 +105,11 @@
                 @if($so=='true')
                   <hr>
                   <h3>SISTEMA OPERATIVO</h3>
+                  @if($androidOne=='true')
+                    <img class="android-logo" src="<?php echo asset('storage/img/shop/android-one-logo.png') ?>" alt="" style="width:100px">
+                  @else
                   <img class="android-logo" src="<?php echo asset('storage/img/shop/android-logo.png') ?>" alt="">
+                  @endif
                 @endif
                 </div>
 
