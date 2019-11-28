@@ -1,3 +1,6 @@
+
+
+
 @component('comp.ficha')
                 @slot('id')
                     1 
@@ -47,6 +50,9 @@
 
                 @slot('so')
                     true
+                @endslot
+                @slot('androidOne')
+                    false
                 @endslot
                    
                 
@@ -116,6 +122,9 @@
                  @slot('so')
                     true
                 @endslot
+                @slot('androidOne')
+                    true
+                @endslot
                    
                 
               @endcomponent
@@ -176,6 +185,10 @@
                  @slot('so')
                     true
                 @endslot
+                @slot('androidOne')
+                    false
+                @endslot
+
                    
                 
               @endcomponent
@@ -232,6 +245,9 @@
 
                  @slot('so')
                     true
+                @endslot
+                @slot('androidOne')
+                    false
                 @endslot
                    
                 
@@ -294,6 +310,9 @@
                  @slot('so')
                     false
                 @endslot
+                @slot('androidOne')
+                    false
+                @endslot
                    
                 
               @endcomponent
@@ -338,6 +357,9 @@
                 @slot('features',[])
 
                  @slot('so')
+                    false
+                @endslot
+                @slot('androidOne')
                     false
                 @endslot
                    
@@ -399,6 +421,9 @@
                  @slot('so')
                     true
                 @endslot
+                @slot('androidOne')
+                    true
+                @endslot
                    
                 
               @endcomponent
@@ -451,9 +476,266 @@
                  @slot('so')
                     false
                 @endslot
+                @slot('androidOne')
+                    false
+                @endslot
                    
                 
               @endcomponent
 
+
+
+  <!-- MODAL 7 -->
+   @component('comp.ficha')
+                @slot('id')
+                    9 
+                @endslot
+                @slot('memoria')
+                    64GB
+                @endslot
+                @slot('camara')
+                      12MP
+                @endslot
+                @slot('bateria')
+                      
+                @endslot
+
+
+                 @slot('imagenes',[
+                   0 => 'storage/img/shop/fichas/thumbs/nokia_71_plus/1.jpg',
+                   1 => 'storage/img/shop/fichas/thumbs/nokia_71_plus/2.jpg',
+                   2 => 'storage/img/shop/fichas/thumbs/nokia_71_plus/3.jpg',
+                   4 => 'storage/img/shop/fichas/thumbs/nokia_71_plus/4.jpg',
+
+                ])
+
+
+                @slot('marca')
+                    NOKIA
+                @endslot
+                @slot('modelo')
+                    7.1
+                @endslot
+                @slot('precio')
+                    $1444
+                @endslot
+                @slot('precioLista')
+                    $25.999
+                @endslot
+
+                @slot('features',[
+                
+                 0 => 'PANTALLA 5.84',
+                  1 => '4GB DE RAM',
+                  2 => '64GB DE MEMORIA INTERNA',
+                  3 => 'CÁMARA FRONTAL 8MP',
+                  4 => 'CÁMARA TRASERA 12+5MP 8MP',
+                  5 => 'BLUETOOTH',
+                  6 => 'LECTOR DE HUELLA',
+                  7 => 'ZOOM DIGITAL 4X',
+                  7 => 'FLASH DUAL LED',
+
+
+                ])
+
+                 @slot('so')
+                    true
+                @endslot
+                @slot('androidOne')
+                    true
+                @endslot
+                   
+                
+              @endcomponent
+
+
+
+  <!-- MODAL 7 -->
+   @component('comp.ficha')
+                @slot('id')
+                    10 
+                @endslot
+                @slot('memoria')
+                    32GB
+                @endslot
+                @slot('camara')
+                      13MP
+                @endslot
+                @slot('bateria')
+                      
+                @endslot
+
+
+                 @slot('imagenes',[
+                   0 => 'storage/img/shop/fichas/thumbs/samsung_a10/1.png',
+                   1 => 'storage/img/shop/fichas/thumbs/samsung_a10/2.png'
+
+                ])
+
+
+                @slot('marca')
+                    SAMSUNG
+                @endslot
+                @slot('modelo')
+                    A10
+                @endslot
+                @slot('precio')
+                    $883,83
+                @endslot
+                @slot('precioLista')
+                    $15.999
+                @endslot
+
+                @slot('features',[
+                
+                 0 => 'PANTALLA 6.2"',
+                  1 => '2GB DE RAM',
+                  2 => '32GB DE MEMORIA INTERNA',
+                  3 => 'CÁMARA FRONTAL 5MP',
+                  4 => 'CÁMARA TRASERA 13MP',
+                  5 => 'BLUETOOTH',
+                  6 => 'DESBLOQUEO FACIAL',
+                  7 => 'ALTOPARLANTE',
+                  8 => 'FLASH LED',
+                  9 => 'HDR',
+
+
+                ])
+
+                 @slot('so')
+                    true
+                @endslot
+                @slot('androidOne')
+                    false
+                @endslot
+                   
+                
+              @endcomponent
+
+
+
+
+  <!-- MODAL 7 -->
+   @component('comp.ficha')
+                @slot('id')
+                    11 
+                @endslot
+                @slot('memoria')
+                    8GB
+                @endslot
+                @slot('camara')
+                      5MP
+                @endslot
+                @slot('bateria')
+                      
+                @endslot
+
+
+                 @slot('imagenes',[
+                   0 => 'storage/img/shop/fichas/thumbs/samsung_j2/1.png',
+                   1 => 'storage/img/shop/fichas/thumbs/samsung_j2/2.png'
+
+                ])
+
+
+                @slot('marca')
+                    SAMSUNG
+                @endslot
+                @slot('modelo')
+                    J2
+                @endslot
+                @slot('precio')
+                    $611
+                @endslot
+                @slot('precioLista')
+                    $10.999
+                @endslot
+
+                @slot('features',[
+                
+                 0 => 'PANTALLA 4.7"',
+                  1 => '1GB DE RAM',
+                  2 => '8GB DE MEMORIA INTERNA',
+                  3 => 'CÁMARA FRONTAL 2MP',
+                  4 => 'CÁMARA TRASERA 5MP',
+                  5 => 'BLUETOOTH',
+                  6 => 'DETECCIÓN DE ROSTRO Y SONRISA',
+                  7 => 'AUTOFOCUS',
+                  8 => 'FLASH LED'
+
+
+                ])
+
+                 @slot('so')
+                    true
+                @endslot
+                @slot('androidOne')
+                    false
+                @endslot
+                   
+                
+              @endcomponent
+
+
+
+
+@component('comp.ficha')
+                @slot('id')
+                    12
+                @endslot
+                @slot('memoria')
+                    32GB 
+                @endslot
+                @slot('camara')
+                    13MP 
+                @endslot
+                @slot('bateria')
+                     
+                @endslot
+
+                 @slot('imagenes',[
+                  0 => 'storage/img/shop/fichas/thumbs/samsung_a20/1.jpg',
+                  1 => 'storage/img/shop/fichas/thumbs/samsung_a20/2.jpg',
+            
+
+                ])
+
+                @slot('marca')
+                    SAMSUNG
+                @endslot
+                @slot('modelo')
+                    A20
+                @endslot
+                @slot('precio')
+                    $1.111 
+                @endslot
+                @slot('precioLista')
+                    $19.999
+                @endslot
+
+                @slot('features',[
+                  0 => 'PANTALLA 6.4',
+                  1 => '3GB DE RAM',
+                  2 => '32GB DE MEMORIA INTERNA',
+                  3 => 'CÁMARA DELANTERA 8MP',
+                  4 => 'CÁMARA TRASERA 13MP',
+                  5 => 'BLUETOOTH',
+                  6 => 'DESBLOQUEO FACIAL',
+                  7 => 'LECTOR DE HUELLAS',
+                  8 => 'ALTOPARLANTE',
+                  9 => 'FLASH LED',
+                  10 => 'HDR',
+
+                ])
+
+                @slot('so')
+                    true
+                @endslot
+                @slot('androidOne')
+                    false
+                @endslot
+                   
+                
+              @endcomponent
 
 

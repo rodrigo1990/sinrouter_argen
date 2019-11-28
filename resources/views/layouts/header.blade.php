@@ -12,8 +12,20 @@
 						<ul id="nav" class="menu">
 
 							<li><a href="/saca_tu_prestamo"  class="fix spa-btn">SACÁ TU PRÉSTAMO</a></li>
-							<li><a href="/cambio"  class="fix spa-btn" target="_blank">CAMBIO</a></li>
-							<li><a   class="fix spa-btn shop go-to-shop" >SHOP</a></li>
+							<li class="text-center">
+								
+								<span><b>¡NUEVO!</b></span>
+								<a href="/cambio"  class="fix spa-btn" target="_blank">
+									CAMBIO
+								</a>
+
+							</li>
+							<li class="text-center">
+								
+								<span><b>¡NUEVO!</b></span>
+								<a   class="fix spa-btn shop go-to-shop" >SHOP</a>
+
+							</li>
 
 							<li><a id="" class=" abrirMenu boton-menu-desplegable"><i class="fa fa-bars" ></i></a></li>
 
@@ -71,6 +83,7 @@
 				<a href="/cambio" class="xs-btn spa-btn">
 					CAMBIO
 				</a>
+				<span>NUEVO</span>
 			</li>
 			
 			<li>
@@ -78,6 +91,7 @@
 				<a href="/shop" class="xs-btn spa-btn go-to-shop">
 					SHOP
 				</a>
+				<span>NUEVO</span>
 			</li>
 
 			<li>

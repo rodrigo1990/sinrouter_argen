@@ -16,8 +16,8 @@
                     <span>MEMORIA <br> <b>{{$memoria}}</b></span>
                   </div>
                  @endif
-				
-				        @if($camara!='')
+        
+                @if($camara!='')
                   <div class="circle violet">
                     <span>CÁMARA <br> <b>{{$camara}}</b></span>
                   </div>
@@ -61,7 +61,7 @@
                 </div>
                 <div class="row">
             @if($features)
-				    <ul>
+            <ul>
               
               <?php $i = 0; ?>
               
@@ -105,7 +105,11 @@
                 @if($so=='true')
                   <hr>
                   <h3>SISTEMA OPERATIVO</h3>
+                  @if($androidOne=='true')
+                    <img class="android-logo" src="<?php echo asset('storage/img/shop/android-one-logo.png') ?>" alt="" style="width:100px">
+                  @else
                   <img class="android-logo" src="<?php echo asset('storage/img/shop/android-logo.png') ?>" alt="">
+                  @endif
                 @endif
                 </div>
 
@@ -146,4 +150,3 @@
       </div>
         </div>
   </div>
-

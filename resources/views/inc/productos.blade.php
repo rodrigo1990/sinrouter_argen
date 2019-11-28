@@ -2,6 +2,93 @@
 				<h1 class="violet text-center"><b>SHOP</b></h1>
 				
 				<div class="owl-one owl-carousel owl-theme slider" id="shop-slider">
+
+					<div>
+								
+							@component('comp.producto')
+								@slot('marca')
+							    	SAMSUNG 
+								@endslot
+								@slot('modelo')
+							    	A20 
+								@endslot
+								@slot('precio')
+							    	$1.111 
+								@endslot
+								@slot('precioLista')
+							    	$19.999
+								@endslot
+								@slot('img')
+							    	storage/img/shop/productos/p-014.png
+
+
+								@endslot
+								@slot('dataTarget')
+							    	#12
+								@endslot
+
+								
+							@endcomponent
+
+							</div>
+
+					<div>
+								
+							@component('comp.producto')
+								@slot('marca')
+							    	SAMSUNG 
+								@endslot
+								@slot('modelo')
+							    	J2 
+								@endslot
+								@slot('precio')
+							    	$611 
+								@endslot
+								@slot('precioLista')
+							    	$10.999
+								@endslot
+								@slot('img')
+							    	storage/img/shop/productos/p-013.png
+
+
+								@endslot
+								@slot('dataTarget')
+							    	#11
+								@endslot
+
+								
+							@endcomponent
+
+							</div>
+
+							<div>
+								
+							@component('comp.producto')
+								@slot('marca')
+							    	SAMSUNG 
+								@endslot
+								@slot('modelo')
+							    	A10 
+								@endslot
+								@slot('precio')
+							    	$883,83 
+								@endslot
+								@slot('precioLista')
+							    	$15.999
+								@endslot
+								@slot('img')
+							    	storage/img/shop/productos/p-012.png
+
+
+								@endslot
+								@slot('dataTarget')
+							    	#10
+								@endslot
+
+								
+							@endcomponent
+
+							</div>
 							<div>
 								
 							@component('comp.producto')
@@ -191,6 +278,30 @@
 									@endslot
 									@slot('dataTarget')
 								    	#8
+									@endslot		
+								@endcomponent
+							</div>
+
+
+								<div>
+								@component('comp.producto')
+									@slot('marca')
+								    	NOKIA  
+									@endslot
+									@slot('modelo')
+								    	7.1
+									@endslot
+									@slot('precio')
+								    	$1444
+									@endslot
+									@slot('precioLista')
+								    	$25.999
+									@endslot
+									@slot('img')
+								    	storage/img/shop/productos/p-011.png
+									@endslot
+									@slot('dataTarget')
+								    	#9
 									@endslot		
 								@endcomponent
 							</div>
