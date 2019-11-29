@@ -71,7 +71,7 @@
 							    	A10 
 								@endslot
 								@slot('precio')
-							    	$883,83 
+							    	$888,83 
 								@endslot
 								@slot('precioLista')
 							    	$15.999

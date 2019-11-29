@@ -51,9 +51,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   src="https://www.facebook.com/tr?id=1592878087484069&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Facebook Pixel Code -->
-<?php $currentPage =  $_SERVER['REQUEST_URI']; ?>
+<?php $currentPage =  $_SERVER['REQUEST_URI'];?>
 
-@if($currentPage == '/saca_tu_prestamo')
+@if($currentPage == strstr( $currentPage,'/saca_tu_prestamo'  ))
 
   @include('inc.siisaData')
 @endif
@@ -187,12 +187,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </script>
 
 <script>
-    function submenuShow(){
-        $(".overlay-xs-menu  li ul").show();
+    function submenuShow(father){
+        $(""+father+" .submenu").show();
     }
 
-    function submenuHide(){
-        $(".overlay-xs-menu  li ul").hide();
+    function submenuHide(father){
+        $(""+father+" .submenu").hide();
     }
 </script>
 

@@ -114,13 +114,13 @@
 				</a>
 			</li>
 
-			<li class="submenu-btn" onmouseover="submenuShow()" onmouseleave="submenuHide()">
+			<li class="submenu-btn" onmouseover="submenuShow('#xsMenu')" onmouseleave="submenuHide('#xsMenu')">
 				<img src="<?php echo asset('storage/img/list-img-menu.svg') ?>" alt="">
 				<a  class="xs-btn spa-btn">
 					QUIENES SOMOS <img src="<?php echo asset('storage/img/arrow-down-menu.svg') ?>">
 				</a>
 
-				<ul>
+				<ul class="submenu">
 					<li>
 						<img src="<?php echo asset('storage/img/list-img-menu.svg') ?>" alt="">
 						<a href="/resp_social" class="xs-btn spa-btn">

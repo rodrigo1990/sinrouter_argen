@@ -568,7 +568,7 @@
 
                  @slot('imagenes',[
                    0 => 'storage/img/shop/fichas/thumbs/samsung_a10/1.png',
-                   1 => 'storage/img/shop/fichas/thumbs/samsung_a10/2.png'
+                   1 => 'storage/img/shop/fichas/thumbs/samsung_a10/3.jpg',
 
                 ])
 
@@ -580,7 +580,7 @@
                     A10
                 @endslot
                 @slot('precio')
-                    $883,83
+                    $888,83
                 @endslot
                 @slot('precioLista')
                     $15.999
@@ -633,7 +633,8 @@
 
                  @slot('imagenes',[
                    0 => 'storage/img/shop/fichas/thumbs/samsung_j2/1.png',
-                   1 => 'storage/img/shop/fichas/thumbs/samsung_j2/2.png'
+                   1 => 'storage/img/shop/fichas/thumbs/samsung_j2/2.png',
+                   2 => 'storage/img/shop/fichas/thumbs/samsung_j2/3.jpg',
 
                 ])
 
@@ -694,8 +695,9 @@
                 @endslot
 
                  @slot('imagenes',[
-                  0 => 'storage/img/shop/fichas/thumbs/samsung_a20/1.jpg',
+                  0 => 'storage/img/shop/fichas/thumbs/samsung_a20/1.png',
                   1 => 'storage/img/shop/fichas/thumbs/samsung_a20/2.jpg',
+                  2 => 'storage/img/shop/fichas/thumbs/samsung_a20/3.jpg',
             
 
                 ])

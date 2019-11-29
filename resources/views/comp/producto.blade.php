@@ -1,4 +1,4 @@
-<div class="producto">
+<div class="producto" onClick="scale('{{$dataTarget}}')">
 	<img class="center-block" src="<?php echo asset($img) ?>" alt="">
 	<div class="text-center">
 

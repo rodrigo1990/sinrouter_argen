@@ -28,6 +28,14 @@
 						<ul>
 							<li class="margin-top-10"><a href="/institucional" class="spa-btn">Quienes somos</a></li>
 							<li class="margin-top-10"><a href="/resp_social" class="spa-btn">Responsabilidad social </a></li>
+							<li class="margin-top-10" onmouseover="submenuShow('footer')" onmouseleave="submenuHide('footer')">
+								<a  class="spa-btn">Terminos y condiciones </a>
+								<ul class="submenu">
+									<li><a href="<?php echo asset('storage/pdf/TÉRMINOS_Y_CONDICIONES_DEL_PRÉSTAMO_DIRIGIDO.pdf') ?>" target="_blank">Préstamo dirigidos comercios</a></li>
+									<!--  <li><a></a></li>-->
+								</ul>
+
+							</li>
 						</ul>
 					</div>
 					<div class="col-lg-4 col-md-4 col-sm-12">

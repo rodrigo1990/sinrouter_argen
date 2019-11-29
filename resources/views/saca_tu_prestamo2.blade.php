@@ -391,7 +391,14 @@ grecaptcha.ready(function() {
   
 $(document).ready(function(){
     
-    fillSiisaData('fillSiisaData');
+    
+    try {
+  fillSiisaData('fillSiisaData');
+
+	}
+	catch(error) {
+	  console.error(error);
+	}
 
 	var cod_area = {{$codArea ? $codArea : 'null'}};
 
