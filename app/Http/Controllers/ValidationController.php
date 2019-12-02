@@ -23,4 +23,5 @@ class ValidationController extends Controller
     	return $this->validationService->validarPrestamo();
     }
 
+
 }

@@ -31,7 +31,7 @@ class MailController extends Controller
 
 
 
-        $email = "mcd77.1990@gmail.com";
+        $email = $request->mail;
 
     	$provincia = Provincia::find($request->provincia);
 
@@ -57,6 +57,8 @@ class MailController extends Controller
           catch (\Exception  $e)
           {
               $response = "Error en el webservice, se no ha podido enviar la informacion";  
+
+             //return view('landingError');
           }
 
         

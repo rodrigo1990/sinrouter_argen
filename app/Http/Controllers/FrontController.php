@@ -103,6 +103,7 @@ class FrontController extends Controller
 
 
 
+
         return view('saca_tu_prestamo2',compact('provincias','nombre','apellido','dni','telefono','mail','codArea'));
 
 
@@ -178,6 +179,13 @@ class FrontController extends Controller
     public function landing2(){
       $provincias = Provincia::all(); 
       return view('landing-mail.credito_rechazado',['provincias'=>$provincias]);
+    }
+
+
+
+    public function landingError(){ 
+      $provincias = Provincia::all(); 
+      return view('landingError',['provincias' => $provincias]);
     }
 
 
