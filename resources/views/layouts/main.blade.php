@@ -52,7 +52,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   src="https://www.facebook.com/tr?id=1592878087484069&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Facebook Pixel Code -->
-<?php $currentPage =  $_SERVER['REQUEST_URI'];?>
+<?php
+  
+  if(isset($_SERVER['REQUEST_URI'])){
+   $currentPage =  $_SERVER['REQUEST_URI'];
+  }else{
+    $currentPage = null;
+  }
+
+ ?>
 
 @if($currentPage == strstr( $currentPage,'/saca_tu_prestamo'  ))
 
