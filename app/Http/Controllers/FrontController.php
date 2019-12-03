@@ -172,13 +172,15 @@ class FrontController extends Controller
 
     public function landing1(){
       $provincias = Provincia::all(); 
-      return view('landing-mail.credito_pre_aprobado',['provincias'=>$provincias]);
+      $response = null;
+      return view('landing-mail.credito_pre_aprobado',compact('provincias','response'));
     }
 
 
     public function landing2(){
       $provincias = Provincia::all(); 
-      return view('landing-mail.credito_rechazado',['provincias'=>$provincias]);
+      $response = null;
+      return view('landing-mail.credito_rechazado',compact('provincias','response'));
     }
 
 
