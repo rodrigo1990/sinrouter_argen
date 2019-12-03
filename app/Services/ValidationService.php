@@ -11,9 +11,7 @@ class ValidationService
 {
 
 	public function validarPrestamo($request=0){
-	
 	$client = new Client([
-	  //  'headers' => ['Content-Type' => 'application/json'],
           // Base URI is used with relative requests
           'base_uri' => 'http://motor.siisa.com.ar/restrequestserviceV2/',
           // You can set any number of default request options.
@@ -34,9 +32,9 @@ class ValidationService
 				'nroBanco' => (string)$request->banco,
 				'provincia' => (string)$request->provincia,
 				'empleador' =>(string)$request->empleador  ,
+				'email' => (string)$request->mail,
 				'sueldo' => (string)$request->sueldo ,
 				'nroDoc' => (string)$request->dni,
-				'email' => (string)$request->mail,
 				'celular' =>strval("".$request->codigo_area." 15-".$request->celular." "),
 				'localidad' => (string)$request->localidad,
 				'sexo' =>(string)$request->sexo  ,
@@ -51,8 +49,6 @@ class ValidationService
      ]);
 
      return $response->getBody()->getContents();
-
-
 
 
 

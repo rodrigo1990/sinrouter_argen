@@ -17,6 +17,7 @@
 
 	<div class="ahora-18">				
 		<h4 class="gray">												
+
 			<img src="<?php echo asset('storage/img/shop/ahora_18.svg') ?>" alt="">
 			<img src="<?php echo asset('storage/img/shop/ahora_18.svg') ?>" alt="">
 			HASTA 12 <br> Y 18 CUOTAS
