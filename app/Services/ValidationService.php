@@ -40,6 +40,7 @@ class ValidationService
 				'sexo' =>(string)$request->sexo  ,
 				'cuil' =>'0' ,
 				'monto' => (string)$request->valor_monto,
+				'usuario' => 'LANDING',
 				'fillSiisaData' => (string)$request->fillSiisaData
 			]
 

@@ -1,0 +1,6 @@
+[17-Jul-2018 19:33:09 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/arg/public_html/clases/BaseDatos.php on line 13
+[17-Jul-2018 19:33:53 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/arg/public_html/clases/BaseDatos.php on line 13
+[02-Jul-2019 19:48:16 UTC] PHP Warning:  require_once(../../clases/Usuario.php): failed to open stream: No such file or directory in /home/arg/public_html/public/admin/ajax/validarUsuario.php on line 3
+[02-Jul-2019 19:48:16 UTC] PHP Fatal error:  require_once(): Failed opening required '../../clases/Usuario.php' (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/arg/public_html/public/admin/ajax/validarUsuario.php on line 3
+[02-Jul-2019 19:48:22 UTC] PHP Warning:  require_once(../../clases/Usuario.php): failed to open stream: No such file or directory in /home/arg/public_html/public/admin/ajax/validarUsuario.php on line 3
+[02-Jul-2019 19:48:22 UTC] PHP Fatal error:  require_once(): Failed opening required '../../clases/Usuario.php' (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/arg/public_html/public/admin/ajax/validarUsuario.php on line 3

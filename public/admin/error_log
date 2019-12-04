@@ -1,0 +1,5 @@
+
+[04-Dec-2019 18:54:07 UTC] PHP Warning:  move_uploaded_file(../../storage/img/club_argenpesos/792663784.jpg): failed to open stream: No such file or directory in /home/arg/public_html/public/admin/clases/Novedad.php on line 239
+[04-Dec-2019 18:54:07 UTC] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpA3hW4O' to '../../storage/img/club_argenpesos/792663784.jpg' in /home/arg/public_html/public/admin/clases/Novedad.php on line 239
+[04-Dec-2019 18:54:07 UTC] PHP Warning:  move_uploaded_file(../../storage/img/club_argenpesos/899048014.jpg): failed to open stream: No such file or directory in /home/arg/public_html/public/admin/clases/Novedad.php on line 246
+[04-Dec-2019 18:54:07 UTC] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpRpmgM4' to '../../storage/img/club_argenpesos/899048014.jpg' in /home/arg/public_html/public/admin/clases/Novedad.php on line 246
