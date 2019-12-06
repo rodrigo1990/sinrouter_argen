@@ -14,7 +14,7 @@ class MailControllerTest extends TestCase
      *
      * @return void
      */
-    public function testProcesarSolicitudEnviarMailRechazado()
+    public function testProcesarSolicitudEnviarMailPreaprobado()
     {
         $this->withoutExceptionHandling();
         Session::start();
