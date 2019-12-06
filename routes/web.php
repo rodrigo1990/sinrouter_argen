@@ -57,6 +57,7 @@ Route::get('/cr', function () {
 
 
 
+
 Route::get('/saca_tu_prestamo','FrontController@sacaTuPrestamo');
 
 
