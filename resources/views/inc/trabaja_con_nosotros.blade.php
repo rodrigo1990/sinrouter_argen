@@ -7,7 +7,7 @@
         <div class="modal-body">
           <h1 class="text-center white"><b>TRABAJÁ CON </b> NOSOTROS</h1>
           
-         <form class="" action="enviarTrabajaConNosotros" method="POST" enctype="multipart/form-data">
+         <form class="" action="/enviarTrabajaConNosotros" method="POST" enctype="multipart/form-data">
                     @csrf
               <h2 class="margin-top-5">
                         <img src="<?php echo asset("storage/img/next-arrow-orange.png")?>" alt="">

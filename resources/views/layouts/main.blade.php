@@ -807,7 +807,7 @@ $("#form-home #nombre").keyup(function(){
                     headers:{
                      'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')},
                 data:{provinciaId:provinciaId},
-                url:'buscarCiudadSegunProvincia',
+                url:'/buscarCiudadSegunProvincia',
                 type:'post',
                 dataType:"json",
                 success:function(data){
@@ -1041,7 +1041,7 @@ $("#form-home #nombre").keyup(function(){
                                 },
                        
                        data: {nombre:nombre,apellido:apellido,dni:dni,comentarios:comentarios,provincia:provincia,localidad:localidad,venta:venta},
-                       url:'enviarConvertiteEnComercializador',
+                       url:'/enviarConvertiteEnComercializador',
                        type:'post',
                         dataType:"json",
                        success: function(msg){
