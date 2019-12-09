@@ -10,20 +10,21 @@ use Illuminate\Support\Facades\DB;
 class FrontController extends Controller
 {
 
+  protected $provincias; 
+
+
+  function __construct(){
+      $this->provincias=Provincia::all();
+    }
+
 	public function index(){
-
-  		$provincias = Provincia::all(); 
-
-        return view('index',['provincias'=>$provincias]);
+  
+        return view('index',['provincias'=>$this->provincias]);
 
   	}
 
 
     public function cambio(){
-
-      $provincias = Provincia::all();
-      
-      
 
       $filename=storage_path("cambio\Cotizaciones.txt");
 
@@ -48,9 +49,7 @@ class FrontController extends Controller
       fclose($myfile);
 
 
-
-
-      return view('cambio',compact('provincias','archivo'));
+      return view('cambio',['provincias' => $this->provincias,'archivo' => $archivo]);
 
     }
 
@@ -93,18 +92,17 @@ class FrontController extends Controller
 
   	public function sacaTuPrestamo(Request $request){
 
-  		$provincias = Provincia::all(); 
-      $nombre = $request->nombre;
-      $apellido = $request->apellido;
-       $dni = $request->dni;
-       $telefono = $request->telefono;
-       $mail = $request->mail;
-       $codArea = $request->cod_area;
+     
 
-
-
-
-        return view('saca_tu_prestamo2',compact('provincias','nombre','apellido','dni','telefono','mail','codArea'));
+        return view('saca_tu_prestamo2', [
+          'provincias' => $this->provincias,
+          'nombre' => $request->nombre,
+          'apellido' => $request->apellido,
+          'dni' => $request->dni,
+          'telefono' => $request->telefono,
+          'mail' => $request->mail,
+          'codArea' =>  $request->cod_area
+        ]);
 
 
 
@@ -113,79 +111,62 @@ class FrontController extends Controller
 
       public function sucursales(Request $request){
 
-      $provincias = Provincia::all(); 
-
-        return view('sucursales',['provincias'=>$provincias]);
+        return view('sucursales',['provincias'=>$this->provincias]);
 
     }
 
      public function institucional(Request $request){
 
-      $provincias = Provincia::all(); 
-
-        return view('institucional',['provincias'=>$provincias]);
+        return view('institucional',['provincias'=>$this->provincias]);
 
     }
 
     public function resp_social(Request $request){
 
-      $provincias = Provincia::all(); 
-
-        return view('resp_social',['provincias'=>$provincias]);
+        return view('resp_social',['provincias'=>$this->provincias]);
 
     }
 
 
     public function preguntas_frecuentes(Request $request){
 
-      
-      
-      $provincias = Provincia::all(); 
-
-      $help  = "false";
-
-        return view('preguntas_frecuentes',compact('provincias','help'));
+        return view('preguntas_frecuentes',[
+          'provincias' => $this->provincias,
+          'help' => "false"
+        ]);
 
     }
 
 
     public function preguntas_frecuentes_help(Request $request){
 
-      
-      
-      $provincias = Provincia::all(); 
-
-      $help = "true";
-
-        return view('preguntas_frecuentes',compact('provincias','help'));
+        return view('preguntas_frecuentes',[
+          'provincias' => $this->provincias,
+          'help' => 'true'
+        ]);
 
     }
 
 
      public function consulta_tu_cuenta(Request $request){
 
-        $provincias = Provincia::all(); 
-
-        return view('consulta_tu_cuenta',['provincias'=>$provincias]);
+        return view('consulta_tu_cuenta',['provincias'=>$this->provincias]);
 
     }
 
     public function landing1(){
-      $provincias = Provincia::all(); 
-      return view('landing-mail.credito_pre_aprobado',['provincias'=>$provincias]);
+      return view('landing-mail.credito_pre_aprobado',['provincias'=>$this->provincias]);
     }
 
 
     public function landing2(){
-      $provincias = Provincia::all(); 
-      return view('landing-mail.credito_rechazado',['provincias'=>$provincias]);
+      return view('landing-mail.credito_rechazado',['provincias'=>$this->provincias]);
     }
 
 
 
     public function landingError(){ 
-      $provincias = Provincia::all(); 
-      return view('landingError',['provincias' => $provincias]);
+      return view('landingError',['provincias' => $this->provincias]);
     }
 
 
