@@ -15,16 +15,48 @@ use App\Provincia;
 use App\Ciudad;
 use App\Http\Controllers\FrontController;
 use  App\Services\ValidationService;
+use Illuminate\Support\Facades\App;
 
 
 class MailController extends Controller
 {
 
     protected $validationService;
+    protected $emailAdmin;
+    protected $emailTrabajaConNosotros;
+    protected $emailConvertiteEnComercializador;
+    protected $emailFormularioArgencambio;
+    protected $emailSoporteShop;
 
 
     function __construct(ValidationService $validationService){
+
       $this->validationService=$validationService;
+
+      if(App::environment('production')==true){
+
+         $this->emailAdmin = 'mlo1mftx@robot.zapier.com' ;
+         $this->emailTrabajaConNosotros = "seleccion@argenpesos.com.ar" ;
+         $this->emailConvertiteEnComercializador = "info@argenpesos.com.ar" ;
+         $this->emailFormularioArgencambio = "cambio@argenpesos.com.ar";
+         $this->emailSoporteShop = "info@argenpesos.com.ar" ;        
+      
+      }else{
+
+        
+            $this->emailAdmin = 'mcd77.1990@gmail.com' ;
+             $this->emailTrabajaConNosotros = "mcd77.1990@gmail.com" ;
+             $this->emailConvertiteEnComercializador = "mcd77.1990@gmail.com" ;
+             $this->emailFormularioArgencambio = "mcd77.1990@gmail.com";
+             $this->emailSoporteShop = "mcd77.1990@gmail.com" ;
+
+          
+
+      }
+
+
+
+
     }
     
     public function procesarSolicitudEnviarMail(Request $request){
@@ -42,10 +74,7 @@ class MailController extends Controller
 
         $request->provincia = $provincia->provincia_nombre;
 
-
-        $emailAdmin = ["mcd77.1990@gmail.com","rodrigo@legioncreativa.com"];//mlo1mftx@robot.zapier.com
-
-        Mail::to($emailAdmin)->send(new MailAdmin($request));
+        Mail::to($this->emailAdmin)->send(new MailAdmin($request));
 
         $provincias  =Provincia::all();
 
@@ -116,21 +145,7 @@ class MailController extends Controller
  public function enviarTrabajaConNosotros(Request $request){
 
 
-
-         /* $email = "mcd77.1990@gmail.com";
-
-          Mail::to($email)->send(new TrabajaConNosotros($request));
-
-          $msg="true";
-
-          $provincias = Provincia::all();
-
-           return view("index",compact('msg','provincias'));*/
-
-
-          $email = "mcd77.1990@gmail.com";
-
-          Mail::to($email)->send(new TrabajaConNosotros($request));
+          Mail::to($this->emailTrabajaConNosotros)->send(new TrabajaConNosotros($request));
 
           $msg="true";
 
@@ -138,21 +153,11 @@ class MailController extends Controller
 
            return view("index",compact('msg','provincias'));
 
-
-
-
-
-
-
-
     }
 
 
     public function enviarConvertiteEnComercializador(Request $request){
 
-
-
-          $email = "mcd77.1990@gmail.com";
 
           $provincia = Provincia::find($request->provincia);
 
@@ -164,7 +169,7 @@ class MailController extends Controller
 
           $request->localidad = $ciudad->ciudad_nombre;
 
-          Mail::to($email)->send(new ConvertiteEnComercializador($request));
+          Mail::to($this->emailConvertiteEnComercializador)->send(new ConvertiteEnComercializador($request));
 
           return json_encode("Mail enviado correctamente ! ");
 
@@ -174,13 +179,7 @@ class MailController extends Controller
 
     public function formularioArgencambio(Request $request){
 
-
-
-          $email = "mcd77.1990@gmail.com";
-
-
-
-          Mail::to($email)->send(new Argencambio($request));
+          Mail::to($this->emailConvertiteEnComercializador)->send(new Argencambio($request));
 
           return json_encode("Mail enviado correctamente ! ");
 
@@ -191,9 +190,7 @@ class MailController extends Controller
 
     public function solicitarSoporteShop(Request $request){
 
-          $email = "mcd77.1990@gmail.com";
-
-          Mail::to($email)->send(new SolicitarSoporteShop($request));
+          Mail::to($this->emailSoporteShop)->send(new SolicitarSoporteShop($request));
 
           return json_encode("true");
 
