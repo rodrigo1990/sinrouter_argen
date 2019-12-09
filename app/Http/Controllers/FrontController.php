@@ -155,12 +155,19 @@ class FrontController extends Controller
     }
 
     public function landing1(){
-      return view('landing-mail.credito_pre_aprobado',['provincias'=>$this->provincias]);
+      return view('landing-mail.credito_pre_aprobado',[
+        'provincias'=>$this->provincias,
+        'response' => null
+      ]);
     }
 
 
     public function landing2(){
-      return view('landing-mail.credito_rechazado',['provincias'=>$this->provincias]);
+      return view('landing-mail.credito_rechazado',[
+        'provincias'=>$this->provincias,
+        'response' => null
+
+      ]);
     }
 
 

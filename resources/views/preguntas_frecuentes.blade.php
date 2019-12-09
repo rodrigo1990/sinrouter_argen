@@ -507,7 +507,6 @@
 
 
   
-@endcomponent
 @component('comp.footer')
   @slot('class')
   @endslot

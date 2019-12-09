@@ -6,7 +6,6 @@ use Illuminate\Http\Request;
 use App\Services\AjaxService;
 use Illuminate\Support\Facades\DB;
 use App\Provincia;
-use GuzzleHttp\Client;
 
 class AjaxController extends Controller
 {

@@ -64,21 +64,19 @@
 
 
 .interfaceForm.cambio .interfaceFormHeader{
-     background: rgba(0,171,238,1);
-    background: -moz-linear-gradient(45deg, rgba(0,171,238,1) 0%, rgba(0,131,179,1) 100%);
-    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(0,171,238,1)), color-stop(100%, rgba(0,131,179,1)));
-    background: -webkit-linear-gradient(45deg, rgba(0,171,238,1) 0%, rgba(0,131,179,1) 100%);
-    background: -o-linear-gradient(45deg, rgba(0,171,238,1) 0%, rgba(0,131,179,1) 100%);
-    background: -ms-linear-gradient(45deg, rgba(0,171,238,1) 0%, rgba(0,131,179,1) 100%);
-    background: linear-gradient(45deg, rgba(0,171,238,1) 0%, rgba(0,131,179,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00abee', endColorstr='#0083b3', GradientType=1 );
+    
+background: rgb(0,165,81);
+background: -moz-linear-gradient(194deg, rgba(0,165,81,1) 21%, rgba(66,166,114,1) 70%);
+background: -webkit-linear-gradient(194deg, rgba(0,165,81,1) 21%, rgba(66,166,114,1) 70%);
+background: linear-gradient(194deg, rgba(0,165,81,1) 21%, rgba(66,166,114,1) 70%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00a551",endColorstr="#42a672",GradientType=1);
 
 }
 
 
 
 .interfaceForm.cambio .interfaceFormBody .btn-primary{
-    background:rgba(0,131,179,1);
+    background:#00A551;
 }
 
 
@@ -286,15 +284,12 @@
     border-radius: 50%;
     width: 65px;
         height: 65px;
-    background: rgba(0,171,238,1);
-    background: -moz-linear-gradient(45deg, rgba(0,171,238,1) 0%, rgba(0,131,179,1) 100%);
-    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(0,171,238,1)), color-stop(100%, rgba(0,131,179,1)));
-    background: -webkit-linear-gradient(45deg, rgba(0,171,238,1) 0%, rgba(0,131,179,1) 100%);
-    background: -o-linear-gradient(45deg, rgba(0,171,238,1) 0%, rgba(0,131,179,1) 100%);
-    background: -ms-linear-gradient(45deg, rgba(0,171,238,1) 0%, rgba(0,131,179,1) 100%);
-    background: linear-gradient(45deg, rgba(0,171,238,1) 0%, rgba(0,131,179,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00abee', endColorstr='#0083b3', GradientType=1 );
-
+    
+background: rgb(0,165,81);
+background: -moz-linear-gradient(194deg, rgba(0,165,81,1) 21%, rgba(66,166,114,1) 70%);
+background: -webkit-linear-gradient(194deg, rgba(0,165,81,1) 21%, rgba(66,166,114,1) 70%);
+background: linear-gradient(194deg, rgba(0,165,81,1) 21%, rgba(66,166,114,1) 70%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00a551",endColorstr="#42a672",GradientType=1);
 }
 
 

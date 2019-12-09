@@ -5,6 +5,8 @@ namespace App\Services;
 
 use Illuminate\Http\Request;
 use App\DAO\AjaxDao;
+use GuzzleHttp\Client;
+
 
 class AjaxService
 {
