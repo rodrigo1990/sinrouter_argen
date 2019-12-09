@@ -1,5 +1,6 @@
 
 <?php 
+
 require_once('Clases/Novedad.php'); 
 
 $nov  = new Novedad();

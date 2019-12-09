@@ -16,4 +16,13 @@ class ExampleTest extends TestCase
     {
         $this->assertTrue(true);
     }
+
+
+    public function testIndexView(){
+
+    	$response = $this->call('GET','index');
+
+
+    	$response->assertViewIs('index');
+    }
 }

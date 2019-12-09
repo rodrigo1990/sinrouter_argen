@@ -493,6 +493,7 @@
 	
 </section>
 @component('comp.contacto')
+
   @slot('class')
   bk-blue
   @endslot
@@ -503,6 +504,10 @@
     color:white;
   @endslot
   @endcomponent
+
+
+  
+@endcomponent
 @component('comp.footer')
   @slot('class')
   @endslot
