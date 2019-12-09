@@ -7,8 +7,8 @@
 @section('content')
 @include('layouts.header-cambio')	
 
-<section id="form" class="cambio">
-	<div class="row">
+<section id="form" class="cambio flex-align-vert">
+	<div class="row flex-align-vert child">
 		<ul id="cotizador-cont" class="flex">
 			 <li class="first" style="">
 				

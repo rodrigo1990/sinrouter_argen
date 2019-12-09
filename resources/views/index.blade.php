@@ -5,8 +5,8 @@
 @include('layouts.header')	
 	
 	<div class="animated fadeIn">
-<section id="form">
-	<div class="row">
+<section id="form" class="flex-align-vert">
+	<div class="row flex-align-vert child">
 		<ul class="flex">
 			<li class="first text-center">
 				<ul class="margin-top-60">

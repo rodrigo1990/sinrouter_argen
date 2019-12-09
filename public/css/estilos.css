@@ -1396,10 +1396,10 @@ ul.flex{
 	flex-direction: row;
 	flex-wrap: wrap;
     justify-content:center;
-    
-
-
  }
+
+
+
 @media screen\0 {
  ul.flex{ 
     display:flex;

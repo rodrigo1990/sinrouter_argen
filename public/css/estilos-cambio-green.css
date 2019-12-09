@@ -1287,23 +1287,13 @@ header.cambio .xs-row i{
                 /*MODAL FORM*/
 /*----------------------------------------------*/
 
-section#form>.row{
-        height: 410px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-}
-
 section#form{
 	    width: 100%;
     height: 78vh;
     background-image: url(../storage/img/bk-form-07.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-        padding: 131px;
+        /*padding: 131px;*/
     color:white;
     position:relative;
 }
@@ -1492,6 +1482,18 @@ ul.flex{
 
 
  }
+
+.flex-align-vert{
+    display:flex;
+    flex-direction: column;
+}
+
+.flex-align-vert.child{
+    align-items: center;
+    align-content: center;
+    margin: auto;
+}
+
 @media screen\0 {
  ul.flex{ 
     display:flex;
@@ -2397,7 +2399,7 @@ input::-webkit-inner-spin-button {
     outline-offset: 0px !important; 
 }
 
-/*LANDING EMAILS*/
+/*BKGROUND LANDING*/
 
 .bk-landing{
     width: 100%;
@@ -2420,17 +2422,6 @@ input::-webkit-inner-spin-button {
 .bk-landing .subtitle h2{
     font-family: GothamBold;
     text-align: center;
-}
-
-
-.bk-landing>.row{
-    height: 266px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
 }
 
 
@@ -2479,6 +2470,13 @@ input::-webkit-inner-spin-button {
     text-align: center;
     margin: auto;
     line-height: 100px;
+}
+
+.bk-landing .logo{
+    width: 370px;
+    position: absolute;
+    left: 5px;
+    top: 15px;
 }
 
 
@@ -2830,6 +2828,7 @@ section#form ul#cotizador-cont{
     width: -moz-fit-content;
     width: fit-content;
     margin:auto;
+    margin-top: -45px;
 }
 
 
@@ -4184,9 +4183,7 @@ header ul.menu>li>a[href='/saca_tu_prestamo'] {
     width: 612px;
 }
 
-    .bk-landing>.row {
-    height: 225px;
-}
+
 
     .bk-landing>.row.rechazado h1 {
     font-size: 46px;
@@ -4245,6 +4242,13 @@ header ul.menu>li>a[href='/saca_tu_prestamo'],header ul.menu>li>a[href='/cambio'
 }
 
 @media only screen and (min-width: 10px) and (max-width: 1024px)  {
+
+    .bk-landing .logo{
+        left: 0;
+        right: 0;
+        top: 20px;
+        margin:auto;
+    }
 
     ul#xsMenu li span{
     background: #00a5e7;
@@ -4466,9 +4470,6 @@ section#contacto-form form label.text-right {
     font-size: 20px;
     }
 
-    .bk-landing>.row {
-    height: 179px;
-}
 
     #creditos-online ul .number-cont, #creditos-sucursales ul .number-cont{
         display:none;
@@ -4514,15 +4515,6 @@ section#contacto-form form label.text-right {
     width: 246px;
 }
 
-    section#form>.row{
-        height:unset;
-    position:unset;
-    left: unset;
-    right: unset;
-    top: unset;
-    bottom: unset;
-    margin: unset;
-}
 
     footer a{
     font-size: 14px;
@@ -5253,9 +5245,6 @@ h1, #contacto h1 {
 
     }
 
-    .bk-landing>.row {
-    height: 179px;
-}
 
 
 #como-funciona ul li {
@@ -5302,9 +5291,7 @@ h1, #contacto h1 {
     line-height: 90px !important;
 }
 
-.bk-landing>.row {
-    height: 244px;
-}
+
 
 .bk-landing .subtitle {
     width: 627px;
@@ -5349,9 +5336,7 @@ h1, #contacto h1 {
     line-height: 90px !important;
 }
 
-.bk-landing>.row {
-    height: 244px;
-}
+
 
 .bk-landing .subtitle {
     width: 627px;

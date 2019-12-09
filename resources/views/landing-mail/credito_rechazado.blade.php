@@ -5,8 +5,8 @@
 @section('content')
 @include('layouts.header')  
 
-<div class="bk-landing">
-        <div class="row rechazado">
+<div class="bk-landing flex-align-vert">
+        <div class="row rechazado flex-align-vert child">
             <h1>LAMENTAMOS INFORMARTE QUE POR EL MOMENTO <br> <b>NO TENEMOS UN PRÉSTAMO ONLINE <br></b>DISPONIBLE PARA VOS</h1>
         </div>
 

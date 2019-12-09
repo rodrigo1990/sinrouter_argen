@@ -5,8 +5,8 @@
 @section('content')
 @include('layouts.header')  
 
-<div class="bk-landing">
-        <div class="row">
+<div class="bk-landing flex-align-vert">
+        <div class="row flex-align-vert child">
             <h1><b>TU CRÉDITO ESTÁ</b> <br>SIENDO ANALIZADO</h1>
             <div class="subtitle">
                 <h2>EN BREVE NOS CONTACTAREMOS CON VOS</h2>

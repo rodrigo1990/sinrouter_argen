@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Provincia;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\App;
 
 
 class FrontController extends Controller
@@ -18,8 +19,9 @@ class FrontController extends Controller
     }
 
 	public function index(){
-  
+      
         return view('index',['provincias'=>$this->provincias]);
+
 
   	}
 
@@ -174,6 +176,12 @@ class FrontController extends Controller
 
     public function landingError(){ 
       return view('landingError',['provincias' => $this->provincias]);
+    }
+
+
+
+    public function test(){
+      return (string)App::runningUnitTests();
     }
 
 
