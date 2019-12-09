@@ -4,6 +4,7 @@ namespace App\Exceptions;
 
 use Exception;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+use Illuminate\Support\Facades\App;
 
 class Handler extends ExceptionHandler
 {
@@ -46,6 +47,18 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Exception $exception)
     {
+        if(App::environment('production')==true){
+            if ($exception) {
+                $this->report($exception);
+                return redirect('landingError');    
+            }   
+        }else{
+          if ($this->isHttpException($exception)) {
+        if ($exception->getStatusCode() == 404) {
+            return redirect('landingError'); 
+        }
+    } 
+        }
         return parent::render($request, $exception);
     }
 }
