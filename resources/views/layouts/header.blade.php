@@ -34,8 +34,8 @@
 							<li><a href="/sucursales" class="spa-btn after-btn ocultable">NUESTRAS SUCURSALES</a></li>
 
 							<li id="quienes-somos-btn" class="ocultable">
-								<a   class="after-btn">QUIENES SOMOS</a>
-									<ul class="sub-menu">
+								<a   class="after-btn" onmouseover="submenuShow('#quienes-somos-btn .after-btn')" onmouseleave="submenuHide('#quienes-somos-btn .after-btn')">QUIENES SOMOS</a>
+									<ul class="sub-menu submenu">
 										<li><a href="/institucional" class="spa-btn" >INSTITUCIONAL</a></li>
 										<li><a href="/resp_social" class="spa-btn" >RESPONSABILIDAD SOCIAL</a></li>
 									</ul>
