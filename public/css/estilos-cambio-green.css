@@ -1310,6 +1310,10 @@ section#form #cod_area{
 
 section#form ul.flex{
     justify-content: center !important;
+    flex-wrap: nowrap;
+}
+section#form.cambio ul.flex{
+ flex-wrap: wrap !important;   
 }
 
 
@@ -4037,9 +4041,12 @@ section#form.cambio {
 }
 section#form>.row{
         height: 87vh;}
+
 section#form.cambio>.row{
+        height: auto;}        
+/*section#form.cambio>.row{
     height: 410px;
-}
+}*/
 
 section#form .flex .form-cont {
     margin-top: 25px;
@@ -4218,6 +4225,11 @@ header ul.menu>li>a[href='/saca_tu_prestamo'],header ul.menu>li>a[href='/cambio'
     }
 
 @media only screen and (min-width: 1200px) and (max-width: 1350px)  {
+     section#form.cambio{
+        height: auto;
+        padding-bottom: 33px;
+        padding-top: 50px;
+    }
     header ul.menu>li {
         float: left;
         position: relative;
@@ -4230,6 +4242,22 @@ header ul.menu>li>a[href='/saca_tu_prestamo'],header ul.menu>li>a[href='/cambio'
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1077px)  {
+
+    ul.flex{
+    flex-direction: column !important;
+    width: auto !important;
+    }
+
+    section#form .first ul {
+    width: unset;
+    margin-right: unset;
+    float: unset;
+    margin: auto;
+}
+
+    #creditos-sucursales ul.flex li,#creditos-online ul.flex li{
+    flex-basis:173px;
+    }
      section#form #cotizador-cont.flex>li {
     margin-left: unset;
     }
@@ -5544,8 +5572,11 @@ h1, #contacto h1 {
     margin-top:4px;
 }
     section#form{
-        padding:57px;
+        padding:21px;
     }
+
+
+
 
     
     #prestamo-form .row {
