@@ -28,7 +28,7 @@ class FrontController extends Controller
 
     public function cambio(){
 
-      $filename=storage_path("cambio\Cotizaciones.txt");
+      $filename=storage_path("cambio/Cotizaciones.txt");
 
 
       $myfile = fopen($filename, "r") or die("Unable to open file!");
@@ -62,7 +62,7 @@ class FrontController extends Controller
       
       
 
-      $filename=storage_path("cambio\Cotizaciones.txt");
+      $filename=storage_path("cambio/Cotizaciones.txt");
 
 
       $myfile = fopen($filename, "r") or die("Unable to open file!");
