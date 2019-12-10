@@ -179,7 +179,7 @@ class MailController extends Controller
 
     public function formularioArgencambio(Request $request){
 
-          Mail::to($this->emailConvertiteEnComercializador)->send(new Argencambio($request));
+          Mail::to($this->emailFormularioArgencambio)->send(new Argencambio($request));
 
           return json_encode("Mail enviado correctamente ! ");
 
