@@ -1,12 +1,12 @@
 <a id="preguntasFrecuentesBtn" class="interfaceFormBtn animated fadeInDown" >
-    <h1 onClick="scale()">?</h1>
+    <h1 onClick="scale('#preguntasFrecuentesCont')">?</h1>
     <!--  <div class="tool-tip" onClick="scale()">
       <h3>Si tenés dudas <br> hace click aquí</h3>
     </div>-->
 </a>
 <div id="preguntasFrecuentesCont" class="full-bk">
     
-    <a  id="" class="close-btn" onClick="noScale();">
+    <a  id="" class="close-btn" onClick="noScale('#preguntasFrecuentesCont');">
       <i class="fas fa-times-circle float-right"></i>
     </a>
 

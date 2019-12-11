@@ -1082,7 +1082,7 @@ header ul.menu>li>a.rr-ss:hover i{
 }
 
 
-header ul.sub-menu{
+header ul.submenu{
     background:rgba(31, 151, 204, 0.95);
     margin-left: 18px;
     display:none;
@@ -1091,20 +1091,20 @@ header ul.sub-menu{
     width: 248px;
 }
 
-header ul.sub-menu li{
+header ul.submenu li{
     padding:10px;
 }
 
-header ul.sub-menu li a{
+header ul.submenu li a{
     color:white;
     font-size: 15px;
 }
 
-header ul.sub-menu li a:hover{
+header ul.submenu li a:hover{
     color: lightgrey;
 }
 
-header ul.sub-menu li:not(:first-child){
+header ul.submenu li:not(:first-child){
     border-top: 1px solid white;
 }
 

@@ -18,23 +18,22 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-T5RQHK7');</script>
 <!-- End Google Tag Manager -->
 
-	<meta charset="UTF-8">
-	<meta name="viewport" content="initial-scale=1">
-	<title>Argenpesos | ¡Saca tu prestamo! </title>
-	 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-	<link rel="stylesheet" href="<?php echo asset("bootstrap-3.3.7-dist/css/bootstrap.min.css")?>"/>
-	<link rel="stylesheet" href="<?php echo asset("css/estilos-cambio-green.css")?>">
-
-	<link rel="stylesheet" href="<?php echo asset("css/animate.css")?>">
-	<link rel="stylesheet" href="<?php echo asset("OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css")?>">
-	<link rel="stylesheet" href="<?php echo asset("OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css")?>">
-	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-	<link rel="stylesheet" href="<?php echo asset("css/rangeslider.css")?>">
-	<link rel="stylesheet" href="<?php echo asset("css/wsp-chat.css")?>">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1">
+  <title>Argenpesos | ¡Saca tu prestamo! </title>
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="<?php echo asset("bootstrap-3.3.7-dist/css/bootstrap.min.css")?>"/>
+  <link rel="stylesheet" href="<?php echo asset("css/estilos-cambio-green.css")?>">
+  <link rel="stylesheet" href="<?php echo asset("css/animate.css")?>">
+  <link rel="stylesheet" href="<?php echo asset("OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css")?>">
+  <link rel="stylesheet" href="<?php echo asset("OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css")?>">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="<?php echo asset("css/rangeslider.css")?>">
+  <link rel="stylesheet" href="<?php echo asset("css/wsp-chat.css")?>">
     <link rel="shortcut icon" href="<?php echo asset("storage/logo-xs-01-01.png")?>">
-	@yield('estilos')
-	<meta name="csrf-token" content="{{ csrf_token() }}">
-	
+  @yield('estilos')
+  <meta name="csrf-token" content="{{ csrf_token() }}">
+  
     <!-- Facebook Pixel Code -->
 <script>
   !function(f,b,e,v,n,t,s)
@@ -52,20 +51,22 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   src="https://www.facebook.com/tr?id=1592878087484069&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Facebook Pixel Code -->
-<?php
   
-  if(isset($_SERVER['REQUEST_URI'])){
-   $currentPage =  $_SERVER['REQUEST_URI'];
-  }else{
-    $currentPage = null;
-  }
+  @if(isset($_SERVER['REQUEST_URI']))
 
- ?>
+   <?php  $currentPage =  $_SERVER['REQUEST_URI'];?>
 
-@if($currentPage == strstr( $currentPage,'/saca_tu_prestamo'  ))
+  @else
 
-  @include('inc.siisaData')
-@endif
+    <?php  $currentPage = null;?>
+
+  @endif
+
+  @if($currentPage == strstr( $currentPage,'/saca_tu_prestamo'  ))
+
+    @include('inc.siisaData')
+
+  @endif
 
 </head>
 <body @yield('bodyclass')>
@@ -187,6 +188,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script type="text/javascript" src="<?php echo asset('js/enviarTrabajaConNosotros.js') ?>"></script>
 <script type="text/javascript" src="<?php echo asset('js/goToShop.js') ?>"></script>
 <script type="text/javascript" src="<?php echo asset('js/buscarCiudadSegunProvincia.js') ?>"></script>
+<script type="text/javascript" src="<?php echo asset('js/submenuHide.js') ?>"></script>
+<script type="text/javascript" src="<?php echo asset('js/submenuShow.js') ?>"></script>
 
  <script>
 	$(window).on('load', function() { // makes sure the whole site is loaded 
@@ -201,34 +204,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </script>
 
 <script>
-    function submenuShow(father){
-        $(""+father+" .submenu").show();
-        console.log(father);
-    }
-
-    function submenuHide(father){
-        $(""+father+" .submenu").hide();
-        console.log(father);
-    }
-</script>
-
-<script>
          $(document).ready(function(){
-
-           $("#quienes-somos-btn").hover(function(){
-                $(".sub-menu").show();
-
-            });
-
-
-            $("#quienes-somos-btn").mouseleave(function(){
-                setTimeout(function(){
-                    $(".sub-menu").hide();  
-                },100);
-                
-
-            });
-
 
              $("#file-result").hide();
 
