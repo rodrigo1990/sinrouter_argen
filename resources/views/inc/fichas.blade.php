@@ -16,7 +16,7 @@
                 @endslot
 
                  @slot('imagenes',[
-                  0 => 'storage/img/shop/fichas/thumbs/xiaomi_redmi/1.jpg',
+                  0 => 'storage/img/shop/promociones/navidad/fichas/1.png',
                   1 => 'storage/img/shop/fichas/thumbs/xiaomi_redmi/2.jpg',
                   2 => 'storage/img/shop/fichas/thumbs/xiaomi_redmi/3.jpg',
                   3 => 'storage/img/shop/fichas/thumbs/xiaomi_redmi/5.jpg'
@@ -54,6 +54,19 @@
                 @slot('androidOne')
                     false
                 @endslot
+
+
+                @slot('promo')
+                    true
+                @endslot
+
+                @slot('precioPromoLista')
+                    $10.799
+                @endslot
+
+                @slot('precioPromoCuota')
+                    $599.94
+                @endslot
                    
                 
               @endcomponent
@@ -78,7 +91,7 @@
     
                 
                 @slot('imagenes',[
-                   0 => 'storage/img/shop/fichas/thumbs/nokia_51_plus/1.jpg',
+                   0 => 'storage/img/shop/promociones/navidad/fichas/2.png',
                   1 => 'storage/img/shop/fichas/thumbs/nokia_51_plus/2.jpg',
                   2 => 'storage/img/shop/fichas/thumbs/nokia_51_plus/3.jpg',
                   3 => 'storage/img/shop/fichas/thumbs/nokia_51_plus/4.jpg',
@@ -125,6 +138,20 @@
                 @slot('androidOne')
                     true
                 @endslot
+
+                @slot('promo')
+                    true
+                @endslot
+
+                 @slot('precioPromoLista')
+                    $16.199
+                @endslot
+
+                @slot('precioPromoCuota')
+                    $899.94
+                @endslot
+                   
+                   
                    
                 
               @endcomponent
@@ -189,6 +216,19 @@
                     false
                 @endslot
 
+                @slot('promo')
+                    false
+                @endslot
+                  
+                @slot('precioPromoLista')
+                    false
+                @endslot
+
+                @slot('precioPromoCuota')
+                    false
+                @endslot
+                   
+
                    
                 
               @endcomponent
@@ -247,6 +287,19 @@
                     true
                 @endslot
                 @slot('androidOne')
+                    false
+                @endslot
+
+                @slot('promo')
+                    false
+                @endslot
+
+
+                @slot('precioPromoLista')
+                    false
+                @endslot
+
+                @slot('precioPromoCuota')
                     false
                 @endslot
                    
@@ -313,6 +366,19 @@
                 @slot('androidOne')
                     false
                 @endslot
+
+                @slot('promo')
+                    false
+                @endslot
+
+
+                @slot('precioPromoLista')
+                    false
+                @endslot
+
+                @slot('precioPromoCuota')
+                    false
+                @endslot
                    
                 
               @endcomponent
@@ -362,7 +428,20 @@
                 @slot('androidOne')
                     false
                 @endslot
-                   
+
+                @slot('promo')
+                    false
+                @endslot
+                  
+
+
+                  @slot('precioPromoLista')
+                    false
+                @endslot
+
+                @slot('precioPromoCuota')
+                    false
+                @endslot
                 
               @endcomponent
 
@@ -424,7 +503,21 @@
                 @slot('androidOne')
                     true
                 @endslot
+
+                @slot('promo')
+                    false
+                @endslot
+
+
+                @slot('precioPromoLista')
+                    false
+                @endslot
+
+                @slot('precioPromoCuota')
+                    false
+                @endslot
                    
+
                 
               @endcomponent
 
@@ -477,6 +570,19 @@
                     false
                 @endslot
                 @slot('androidOne')
+                    false
+                @endslot
+
+                @slot('promo')
+                    false
+                @endslot
+
+
+                @slot('precioPromoLista')
+                    false
+                @endslot
+
+                @slot('precioPromoCuota')
                     false
                 @endslot
                    
@@ -544,6 +650,19 @@
                 @slot('androidOne')
                     true
                 @endslot
+
+                @slot('promo')
+                    false
+                @endslot
+
+
+                @slot('precioPromoLista')
+                    false
+                @endslot
+
+                @slot('precioPromoCuota')
+                    false
+                @endslot
                    
                 
               @endcomponent
@@ -606,6 +725,19 @@
                     true
                 @endslot
                 @slot('androidOne')
+                    false
+                @endslot
+
+                @slot('promo')
+                    false
+                @endslot
+
+
+                @slot('precioPromoLista')
+                    false
+                @endslot
+
+                @slot('precioPromoCuota')
                     false
                 @endslot
                    
@@ -673,6 +805,19 @@
                 @slot('androidOne')
                     false
                 @endslot
+
+                @slot('promo')
+                    false
+                @endslot
+
+
+                @slot('precioPromoLista')
+                    false
+                @endslot
+
+                @slot('precioPromoCuota')
+                    false
+                @endslot
                    
                 
               @endcomponent
@@ -734,6 +879,19 @@
                     true
                 @endslot
                 @slot('androidOne')
+                    false
+                @endslot
+
+                @slot('promo')
+                    false
+                @endslot
+
+
+                @slot('precioPromoLista')
+                    false
+                @endslot
+
+                @slot('precioPromoCuota')
                     false
                 @endslot
                    

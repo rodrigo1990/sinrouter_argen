@@ -54,10 +54,32 @@
                 </div>
                 <div class="row">
                   <h4 class="cuotas"><img src="<?php echo asset('storage/img/fichas-card-07.png') ?>" alt=""> Hasta <b>18 CUOTAS SIN INTERÉS</b> de</h4>
-                  <h4 class="precio violet"><b class="violet">{{$precio}}</b></h4>
+                  @if($promo=='true')
 
+                  <div class="promo-cont">
+                       <h4 style="">
+                          PROMO <br> NAVIDAD
+                      </h4>
+
+                      <div class="precio-cont">
+                        <del><h4 class="precio violet"><b>{{$precio}}</b></h4></del>
+                        <h4 class="precio violet"><b class="violet">{{$precioPromoCuota}}</b></h4>
+                      </div>
+
+                  </div>
+
+                  @else
+                    <h4 class="precio violet"><b class="violet">{{$precio}}</b></h4>
+                  
+                  @endif
                   <hr>
-                  <p class="precio-lista">*Precio de lista {{$precioLista}}</p>
+                  @if($promo=='true')
+                    <p class="precio-lista">*Precio de lista <del>{{$precioLista}}</del> {{$precioPromoLista}}</p>
+                  
+                  @else
+                    
+                    <p class="precio-lista">*Precio de lista {{$precioLista}}</p>
+                  @endif
                 </div>
                 <div class="row">
             @if($features)
