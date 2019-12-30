@@ -4,7 +4,7 @@ locations.push(['<b>SAN FERNANDO </b><br><br>Constitución 198 <br><br> <b>TEL:<
 
 locations.push(['<b>SAN MIGUEL </b><br><br>Presidente Perón 1185 <br><br> <b>TEL:</b> 4664-4449 <br><br> <b>Whatsapp:</b> 15-3252-3061  <br><br> <b>Horario:</b><br> Lunes a Viernes de 9 a 19hs. <br> Sábados de 9 a 13hs. ',-34.545593,-58.707374]);
 
-locations.push(['<b>SAN JUSTO </b><br><br>Dr. Ignacio Arieta 3496 <br><br> <b>TEL:</b> 4651-0046 / 4482-4968 <br><br> <b>Whatsapp:</b> 15-3252-2397  <br><br> <b>Horario:</b><br> Lunes a Viernes de 9 a 19hs. <br> Sábados de 9 a 13hs. ',-34.681403,-58.556553]);
+locations.push(['<b>SAN JUSTO </b><br><br>Dr. Ignacio Arieta 3320 <br><br> <b>TEL:</b> 4651-0046 / 4482-4968 <br><br> <b>Whatsapp:</b> 15-3252-2397  <br><br> <b>Horario:</b><br> Lunes a Viernes de 9 a 19hs. <br> Sábados de 9 a 13hs. ',-34.681403,-58.556553]);
 
 locations.push(['<b>AVELLANEDA </b><br><br>Av. Mitre 531 <br><br> <b>TEL:</b> 4201-5784 / 6561 <br><br> <b>Whatsapp:</b> 15-3252-5817  <br><br> <b>Horario:</b><br> Lunes a Viernes de 9 a 19hs. <br> Sábados de 9 a 13hs. ',-34.660564,-58.367637]);
 
