@@ -12,9 +12,17 @@ class ExampleTest extends TestCase
      *
      * @return void
      */
-    public function testBasicTest()
-    {
-        $this->assertTrue(true);
+
+
+    public function testIndexView(){
+
+        $response = $this->get('index');
+
+        $response->assertViewHas('provincias');
+
+        //$response->dumpHeaders();
+
+        //$response->assertViewIs('index');
     }
 
 
