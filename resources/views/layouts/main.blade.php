@@ -216,6 +216,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
              $("#file-result").hide();
 
+
             });
 </script>
 @yield('scripts')
