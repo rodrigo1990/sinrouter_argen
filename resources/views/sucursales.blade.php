@@ -15,8 +15,7 @@
 			<div class="container">
 				<div class="col-lg-4 col-md-4 col-sm-12">
 					<ul>
-						<li class="red"><h3>CAPITAL FEDERAL</h3></li>
-						<li class="margin-top-10 margin-left-20">- <a onClick="zoomOnLocation(-34.599867,-58.372815);">Casa central</a></li>
+				
 						<li class="blue margin-top-10"><h3>ZONA NOROESTE</h3></li>
 						<li class="margin-top-10 margin-left-20">- <a onClick="zoomOnLocation(-34.435619,-58.563499);">San Fernando</a></li>
 						<li class="margin-top-10 margin-left-20">- <a onClick="zoomOnLocation(-34.545593,-58.707374);">San Miguel</a></li>
