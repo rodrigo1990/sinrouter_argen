@@ -66,7 +66,7 @@
 			
 		</div>
 		<div class="cuit" style="   ">
-			<p class="text-center" style=""> Argencred S. A. CUIT 30-70910041-2</p>
+			<p class="text-center" style=""> Argencred S. A. CUIT 30-70910041-2 - Reconquista 660 CABA </p>
 		</div>
 	
 

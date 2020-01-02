@@ -1,4 +1,4 @@
-locations.push(['<b>CAPITAL FEDERAL<br> </b><br>Reconquista 660, CABA <br><br> <b>TEL:</b> 4510-6594 <br><br> <b>Horario:</b> Lunes a viernes de  9 a 19hs <br> Sábados de 9 a 13hs.  ',-34.599867,-58.372815]);
+locations.push(['<b>CAPITAL FEDERAL<br> </b><br>Reconquista 660, CABA <br><br>  <b>Horario:</b> Lunes a viernes de  9 a 19hs <br> Sábados de 9 a 13hs.  ',-34.599867,-58.372815]);
 
 locations.push(['<b>SAN FERNANDO </b><br><br>Constitución 198 <br><br> <b>TEL:</b> 4506-3730 <br> <br> <b>Whatsapp:</b>  15-3252-4072   <br><br> <b>Horario:</b><br> Lunes a Viernes de 9 a 19hs <br> Sábados de 9 a 13hs. ',-34.435619,-58.563499]);
 

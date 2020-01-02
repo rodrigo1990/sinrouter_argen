@@ -161,7 +161,7 @@
 	</h2>
 	<div class="row margin-top-44">
 		<div class="container text-center">
-			<p>Somos una empresa que opera desde el 2005 en el Mercado de Créditos para  trabajadores, jubilados y pensionados.  Contamos con 12 sucursales y  operamos con más de 400 comercializadores de nuestros productos en todo el  país para satisfacer las necesidades de nuestros clientes. A partir del año 2019  expandimos nuestro negocio e inauguramos nuestra agencia de cambio  para moneda extranjera. Estamos convencidos que con nuestras acciones le damos  continuidad a la idea que nos dio origen: <span>dar soluciones rápidas y fáciles a las  necesidades actuales de nuestra comunidad.</span></p>
+			<p>Somos una empresa que opera desde el 2005 en el Mercado de Créditos para  trabajadores, jubilados y pensionados.  Contamos con 11 sucursales y  operamos con más de 400 comercializadores de nuestros productos en todo el  país para satisfacer las necesidades de nuestros clientes. A partir del año 2019  expandimos nuestro negocio e inauguramos nuestra agencia de cambio  para moneda extranjera. Estamos convencidos que con nuestras acciones le damos  continuidad a la idea que nos dio origen: <span>dar soluciones rápidas y fáciles a las  necesidades actuales de nuestra comunidad.</span></p>
 		</div>
 	</div>
 </section>
