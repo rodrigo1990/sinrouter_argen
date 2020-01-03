@@ -580,6 +580,12 @@ a:hover{
     color:#585757;
 }
 
+.gray.sinStock{
+    background-color:#585757;
+    color:white !important;   
+    cursor:initial !important;
+}
+
 
 .bk-red{
     background-color:#EE4E23; 
@@ -754,7 +760,7 @@ a:hover{
 
 
 
-   .border-btn.gray:hover{
+   .border-btn.gray:not(.sinStock):hover{
     background-color:#EF4623;
     border-color: #EF4623;
     color:white !important;
@@ -3548,6 +3554,31 @@ div.bk-title h1{
 }
 
 
+
+#shop #shop-slider>div .producto .precio-cont{
+   margin-top: 1px;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#shop #shop-slider>div .producto .precio-cont>.precio.violet{
+   font-size: 21px;
+}
+
+
+#shop #shop-slider>div .producto .precio-cont>del,#shop #shop-slider>div .producto .precio-cont>del>h4{
+    color: gray;
+}
+#shop #shop-slider>div .producto .precio-cont>del>h4{
+        font-size: 13px;    
+}
+
+
+
+
+
 #helpShop .error{
     color:red;
 }
@@ -3628,6 +3659,42 @@ div.bk-title h1{
     display:none;
     margin-top:0;
 }
+
+
+
+.fichas .modal-body .promo-cont>h4{
+        float: left;
+      font-size: 21px;
+      line-height: 21px;
+      margin-top: 17px;
+      color: #04802d;
+      font-family: GothamBlack;
+      display:inline-block;
+}
+
+
+.fichas .modal-body .promo-cont>div{
+        line-height: 1px;
+        margin-left: 10px;
+}
+
+.fichas .modal-body .promo-cont>.precio-cont{
+    line-height: 1px;
+    margin-left: 10px;
+    display:inline-block;
+}
+
+
+.fichas .modal-body .promo-cont>.precio-cont>del>h4>b{
+    color: #585757;
+    font-size: 21px;
+}
+
+.fichas .modal-body .promo-cont>.precio-cont>h4{
+    margin-top:0;
+}
+
+
 
 
 .fichas .modal-body .col-sm-6:not(.img-cont) a {
@@ -3716,18 +3783,16 @@ div.bk-title h1{
 
 
 .fichas .modal-footer ul.flex{
-    flex-direction: row;
-    justify-content: center;
+        flex-direction: row;
+    /* justify-content: center; */
+    flex-wrap: nowrap;
+    /* align-items: center;*/
 }
 
 .fichas .modal-footer ul.flex li{
     margin-left:0 !important;
 }
 
-
-.fichas .ahora-18{
-    float:right;
-}
 
 .fichas .ahora-18>h4{
     width: 258px;
@@ -4885,6 +4950,10 @@ section#form form .border-btn{
     .fichas .flex{
         flex-direction:row !important;
     }
+
+    .fichas .modal-footer .flex{
+        flex-direction:column !important;
+    }
     
     .fichas .flex li{
         margin-left:6px;
@@ -4948,6 +5017,17 @@ section#form form .border-btn{
 
 }
 @media only screen and (min-width: 320px) and (max-width: 768px){
+
+    #shop #shop-slider>div .producto .precio-cont>del>h4 {
+    font-size: 16px;
+}
+    
+    .fichas .modal-body .promo-cont{
+        display:table;
+        margin:auto;
+    }
+
+
 
      #clockModal .modal-dialog,#clockModal .modal-dialog table{
     width: 99vw !important;

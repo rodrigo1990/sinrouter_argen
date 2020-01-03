@@ -27,6 +27,22 @@
 							    	#12
 								@endslot
 
+							 	@slot('promo')
+				                    false
+				                @endslot
+				                  
+				                @slot('precioPromoLista')
+				                    false
+				                @endslot
+
+				                @slot('precioPromoCuota')
+				                    false
+				                @endslot
+
+			                 	@slot('stock')
+				                    true
+				                @endslot
+
 								
 							@endcomponent
 
@@ -55,6 +71,22 @@
 								@slot('dataTarget')
 							    	#11
 								@endslot
+
+								@slot('promo')
+				                    false
+				                @endslot
+				                  
+				                @slot('precioPromoLista')
+				                    false
+				                @endslot
+
+				                @slot('precioPromoCuota')
+				                    false
+				                @endslot
+
+			                 	@slot('stock')
+				                    true
+				                @endslot
 
 								
 							@endcomponent
@@ -85,6 +117,22 @@
 							    	#10
 								@endslot
 
+								@slot('promo')
+				                    false
+				                @endslot
+				                  
+				                @slot('precioPromoLista')
+				                    false
+				                @endslot
+
+				                @slot('precioPromoCuota')
+				                    false
+				                @endslot
+
+			                 	@slot('stock')
+				                    true
+				                @endslot
+
 								
 							@endcomponent
 
@@ -105,13 +153,32 @@
 							    	$11.999
 								@endslot
 								@slot('img')
-							    	storage/img/shop/productos/p-01.png
+							    	storage/img/shop/promociones/navidad/productos/p-01.png
 
 
 								@endslot
 								@slot('dataTarget')
 							    	#1
 								@endslot
+
+							  	@slot('promo')
+				                    true
+				                @endslot
+
+				                @slot('precioPromoLista')
+				                    $10.799
+				                @endslot
+
+				                @slot('precioPromoCuota')
+				                    $599.94
+				                @endslot
+
+			                 	@slot('stock')
+				                    false
+				                @endslot
+
+				               
+                   
 
 								
 							@endcomponent
@@ -132,13 +199,30 @@
 							    	$17.999
 								@endslot
 								@slot('img')
-							    	storage/img/shop/productos/p-02.png
+							    	storage/img/shop/promociones/navidad/productos/p-02.png
 
 
 								@endslot
 								@slot('dataTarget')
 							    	#2
 								@endslot
+
+
+								@slot('promo')
+				                    true
+				                @endslot
+
+				                 @slot('precioPromoLista')
+				                    $16.199
+				                @endslot
+
+				                @slot('precioPromoCuota')
+				                    $899.94
+				                @endslot
+
+			                 	@slot('stock')
+				                    true
+				                @endslot
 
 								
 							@endcomponent
@@ -162,7 +246,22 @@
 									@endslot
 									@slot('dataTarget')
 								    	#3
-									@endslot		
+									@endslot
+									@slot('promo')
+				                    	false
+					                @endslot
+					                  
+					                @slot('precioPromoLista')
+					                    false
+					                @endslot
+
+					                @slot('precioPromoCuota')
+					                    false
+					                @endslot	
+
+				                 	@slot('stock')
+					                    true
+					                @endslot	
 								@endcomponent
 							</div>
 							<div>
@@ -184,7 +283,22 @@
 									@endslot
 									@slot('dataTarget')
 								    	#4
-									@endslot		
+									@endslot
+									@slot('promo')
+				                    	false
+					                @endslot
+					                  
+					                @slot('precioPromoLista')
+					                    false
+					                @endslot
+
+					                @slot('precioPromoCuota')
+					                    false
+					                @endslot
+
+				                 	@slot('stock')
+					                    true
+					                @endslot		
 								@endcomponent
 							</div>
 
@@ -207,7 +321,22 @@
 									@endslot
 									@slot('dataTarget')
 								    	#5
-									@endslot		
+									@endslot
+									@slot('promo')
+				                    	false
+					                @endslot
+					                  
+					                @slot('precioPromoLista')
+					                    false
+					                @endslot
+
+					                @slot('precioPromoCuota')
+					                    false
+					                @endslot	
+
+				                 	@slot('stock')
+					                    true
+					                @endslot	
 								@endcomponent
 							</div>
 
@@ -231,7 +360,22 @@
 									@endslot
 									@slot('dataTarget')
 								    	#6
-									@endslot		
+									@endslot
+									@slot('promo')
+				                    	false
+					                @endslot
+					                  
+					                @slot('precioPromoLista')
+					                    false
+					                @endslot
+
+					                @slot('precioPromoCuota')
+					                    false
+					                @endslot
+
+				                 	@slot('stock')
+					                    true
+					                @endslot		
 								@endcomponent
 							</div>
 							
@@ -254,7 +398,22 @@
 									@endslot
 									@slot('dataTarget')
 								    	#7
-									@endslot		
+									@endslot
+									@slot('promo')
+				                    	false
+					                @endslot
+					                  
+					                @slot('precioPromoLista')
+					                    false
+					                @endslot
+
+					                @slot('precioPromoCuota')
+					                    false
+					                @endslot	
+
+				                 	@slot('stock')
+					                    true
+					                @endslot	
 								@endcomponent
 							</div>
 
@@ -278,7 +437,22 @@
 									@endslot
 									@slot('dataTarget')
 								    	#8
-									@endslot		
+									@endslot
+									@slot('promo')
+				                    	false
+					                @endslot
+					                  
+					                @slot('precioPromoLista')
+					                    false
+					                @endslot
+
+					                @slot('precioPromoCuota')
+					                    false
+					                @endslot
+
+				                 	@slot('stock')
+					                    true
+					                @endslot		
 								@endcomponent
 							</div>
 
@@ -302,7 +476,22 @@
 									@endslot
 									@slot('dataTarget')
 								    	#9
-									@endslot		
+									@endslot
+									@slot('promo')
+				                    	false
+					                @endslot
+					                  
+					                @slot('precioPromoLista')
+					                    false
+					                @endslot
+
+					                @slot('precioPromoCuota')
+					                    false
+					                @endslot	
+
+				                 	@slot('stock')
+					                    true
+					                @endslot	
 								@endcomponent
 							</div>
 
