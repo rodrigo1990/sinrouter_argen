@@ -1,9 +1,5 @@
 
-@if($stock=='true')
 <div class="producto" onClick="scale('{{$dataTarget}}')">
-@else
-<div class="producto">
-@endif
 	<img class="center-block" src="<?php echo asset($img) ?>" alt="">
 	<div class="text-center">
 		<h3 class="gray"><b>{{$marca}}</b> <br> {{$modelo}}</h3>
@@ -38,7 +34,7 @@
 
 	@else
 
-		<a  class="spa-btn border-btn gray sinStock  center-block margin-top-25 text-center">SIN STOCK</a>
+		<a onClick="scale('{{$dataTarget}}')"  class="spa-btn border-btn gray sinStock  center-block margin-top-25 text-center">SIN STOCK</a>
 	
 	@endif
 

@@ -3673,6 +3673,12 @@ div.bk-title h1{
 }
 
 
+.fichas .modal-body .promo-cont>h4.gray{
+      margin-top: 29px;
+    color: gray;
+}
+
+
 .fichas .modal-body .promo-cont>div{
         line-height: 1px;
         margin-left: 10px;

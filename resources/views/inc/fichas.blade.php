@@ -67,6 +67,11 @@
                 @slot('precioPromoCuota')
                     $599.94
                 @endslot
+
+
+                @slot('stock')
+                    false
+                @endslot
                    
                 
               @endcomponent
@@ -150,6 +155,10 @@
                 @slot('precioPromoCuota')
                     $899.94
                 @endslot
+
+                @slot('stock')
+                    true
+                @endslot
                    
                    
                    
@@ -227,6 +236,10 @@
                 @slot('precioPromoCuota')
                     false
                 @endslot
+
+                @slot('stock')
+                    true
+                @endslot
                    
 
                    
@@ -301,6 +314,10 @@
 
                 @slot('precioPromoCuota')
                     false
+                @endslot
+
+                @slot('stock')
+                    true
                 @endslot
                    
                 
@@ -379,6 +396,10 @@
                 @slot('precioPromoCuota')
                     false
                 @endslot
+
+                @slot('stock')
+                    true
+                @endslot
                    
                 
               @endcomponent
@@ -441,6 +462,10 @@
 
                 @slot('precioPromoCuota')
                     false
+                @endslot
+
+                @slot('stock')
+                    true
                 @endslot
                 
               @endcomponent
@@ -516,6 +541,10 @@
                 @slot('precioPromoCuota')
                     false
                 @endslot
+
+                @slot('stock')
+                    true
+                @endslot
                    
 
                 
@@ -584,6 +613,10 @@
 
                 @slot('precioPromoCuota')
                     false
+                @endslot
+
+                @slot('stock')
+                    true
                 @endslot
                    
                 
@@ -663,6 +696,10 @@
                 @slot('precioPromoCuota')
                     false
                 @endslot
+
+                @slot('stock')
+                    true
+                @endslot
                    
                 
               @endcomponent
@@ -739,6 +776,10 @@
 
                 @slot('precioPromoCuota')
                     false
+                @endslot
+
+                @slot('stock')
+                    true
                 @endslot
                    
                 
@@ -818,6 +859,10 @@
                 @slot('precioPromoCuota')
                     false
                 @endslot
+
+                @slot('stock')
+                    true
+                @endslot
                    
                 
               @endcomponent
@@ -893,6 +938,10 @@
 
                 @slot('precioPromoCuota')
                     false
+                @endslot
+
+                @slot('stock')
+                    true
                 @endslot
                    
                 
