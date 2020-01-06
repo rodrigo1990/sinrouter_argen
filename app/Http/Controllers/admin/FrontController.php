@@ -13,7 +13,7 @@ use App\ImgTestimonio;
 use App\Novedad;
 use App\ImgNovedad;
 
-use App\Services\SessionService;
+use App\Services\admin\SessionService;
 
 use Illuminate\Support\Facades\DB;
 
@@ -38,7 +38,7 @@ class FrontController extends Controller
    public function viewCreateProyecto(){
 
         if($this->sessionService->accessSessionData()=="true"){
-        	return view('admin.proyecto.createProyecto');
+        	return view('Admin.proyecto.createProyecto');
         }else{
             return view('Admin/login');
         }

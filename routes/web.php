@@ -97,8 +97,7 @@ Route::get('/admin/viewCreateNovedad', 'admin\FrontController@viewCreateNovedad'
 Route::get('/admin/viewListNovedades/{msg}', 'admin\FrontController@viewListNovedades');
 Route::get('/admin/viewUpdateNovedad/{id}', 'admin\FrontController@viewUpdateNovedad');
 
-
-
+Route::get('/admin/login/{username}/{password}', 'admin\UserController@login');
 Route::post('/admin/login', 'admin\UserController@login');
 Route::post('/admin/logout', 'admin\UserController@logout');
 Route::get('/admin/users', 'admin\UserController@users');
@@ -123,6 +122,7 @@ Route::post('/admin/createNovedad', 'admin\NovedadController@createNovedad');
 Route::get('/admin/destroyNovedad/{id}', 'admin\NovedadController@destroyNovedad');
 Route::post('/admin/updateNovedad', 'admin\NovedadController@updateNovedad');
 Route::post('/admin/destroyImgNovedad/', 'admin\NovedadController@destroyImg');
+
 
 
 Route::get('/panel/', function () {

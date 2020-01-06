@@ -30036,6 +30036,8 @@ $(document).on('change', 'input[type=file]', function () {
 window.login = function () {
   var username = $("#username").val();
   var password = $("#password").val();
+  console.log(username);
+  console.log(password);
   $.ajax({
     headers: {
       'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
@@ -30045,7 +30047,7 @@ window.login = function () {
       password: password
     },
     url: '/admin/login',
-    type: 'post',
+    type: 'POST',
     dataType: "json",
     success: function success(response) {
       console.log(response);
