@@ -174,8 +174,12 @@ class FrontController extends Controller
 
 
 
-    public function landingError(){ 
-      return view('landingError',['provincias' => $this->provincias]);
+    public function landingError404(){ 
+      return view('landing-error.landing-404',['provincias' => $this->provincias]);
+    }
+
+    public function landingErrorOthers(){ 
+      return view('landing-error.landing-others',['provincias' => $this->provincias]);
     }
 
 

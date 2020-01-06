@@ -67,8 +67,8 @@ Route::get('/sucursales_cotizaciones','FrontController@sucursalesCotizaciones');
 
 Route::get('/siisa','ValidationController@pruebaString');
 
-Route::get('/landingError','FrontController@landingError');
-
+Route::get('/landingError404','FrontController@landingError404');
+Route::get('/landingErrorOthers','FrontController@landingErrorOthers');
 /***************MAILING***************************************/
 
 

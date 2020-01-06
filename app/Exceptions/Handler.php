@@ -48,16 +48,31 @@ class Handler extends ExceptionHandler
     public function render($request, Exception $exception)
     {
         if(App::environment('production')==true){
-            if ($exception) {
-                $this->report($exception);
-                return redirect('landingError');    
-            }   
+
+
+            if ($this->isHttpException($exception)) {
+
+                if ($exception->getStatusCode() == 404) {
+                    return redirect('landingError404'); 
+                }else{
+                    return redirect('landingErrorOthers');
+                }
+            }else{
+                return redirect('landingErrorOthers');
+            }
+
+
+
         }else{
-          if ($this->isHttpException($exception)) {
-        if ($exception->getStatusCode() == 404) {
-            return redirect('landingError'); 
-        }
-    } 
+          
+            if ($this->isHttpException($exception)) {
+
+                if ($exception->getStatusCode() == 404) {
+                    return redirect('landingError404'); 
+                }else{
+                    return redirect('landingErrorOthers');
+                }
+            } 
         }
         return parent::render($request, $exception);
     }

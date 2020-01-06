@@ -3,7 +3,6 @@
 
 @section('content')
 @include('layouts.header')	
-	
 	<div class="animated fadeIn">
 <section id="form" class="flex-align-vert">
 	<div class="row flex-align-vert child">
