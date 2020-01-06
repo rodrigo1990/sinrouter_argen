@@ -32,27 +32,17 @@
 			<i class="fas fa-power-off"></i>
 		</a>
 	</div>
-<div class=" side-bar col-lg-2 col-md-2 col-sm-2"  >
-  <img class="logo margin-left-5 center-block" src="<?php echo asset("storage/img/logo.png")?>" id="icon" alt="User Icon" style="width:180px" />
+<div class=" side-bar col-lg-1 col-md-1 col-sm-1" style="padding:5px"  >
+  <img class="logo margin-left-5 center-block" src="<?php echo asset("storage/img/logo.png")?>" id="icon" alt="User Icon" style="width:100%;" />
 	<ul>
 		<li>
-			<a href="/admin/viewListProyectos/null" target="iframe">
-				Proyectos
-			</a>
-		</li>
-		<li>
-			<a href="/admin/viewListTestimonios/null" target="iframe">
-				Testimonios
-			</a>
-		</li>
-		<li>
-			<a href="/admin/viewListNovedades/null" target="iframe">
-				Novedades
+			<a href="/admin/viewListReportes" target="iframe">
+				Reportes
 			</a>
 		</li>
 	</ul>
 </div>
-<div class="pageContent float-left col-lg-10 col-md-10 col-sm-10" >
+<div class="pageContent float-left col-lg-11 col-md-11 col-sm-11" >
 	  <iframe src="" id="iframe" class="float-left" name="iframe" target="iframe" frameborder="0"></iframe>
 </div>
 </div>
