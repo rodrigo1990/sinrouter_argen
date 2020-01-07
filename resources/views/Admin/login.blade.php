@@ -32,7 +32,7 @@
 			<i class="fas fa-power-off"></i>
 		</a>
 	</div>
-<div class=" side-bar col-lg-1 col-md-1 col-sm-1" style="padding:5px"  >
+<div class=" side-bar col-lg-2 col-md-2 col-sm-2" style="padding:5px"  >
   <img class="logo margin-left-5 center-block" src="<?php echo asset("storage/img/logo.png")?>" id="icon" alt="User Icon" style="width:100%;" />
 	<ul>
 		<li>
@@ -40,9 +40,14 @@
 				Reportes
 			</a>
 		</li>
+		<li>
+			<a href="/admin/viewListNovedades/null" target="iframe">
+				Novedades
+			</a>
+		</li>
 	</ul>
 </div>
-<div class="pageContent float-left col-lg-11 col-md-11 col-sm-11" >
+<div class="pageContent float-left col-lg-10 col-md-10 col-sm-10" >
 	  <iframe src="" id="iframe" class="float-left" name="iframe" target="iframe" frameborder="0"></iframe>
 </div>
 </div>

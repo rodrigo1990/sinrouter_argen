@@ -29896,7 +29896,7 @@ window.agregarImagenes = function (operacion) {
     $("#remove-esp-btn").fadeIn();
   }
 
-  if (operacion == 'create') $("#file-input-cont").append('<li id="item_' + (count + 1) + '" class="li-file-input"> <div class="preview" id="preview-' + (count + 1) + '"> <a onclick="eliminarImagenes()" class="removeBtn text-center center-block"> <i class="fas fa-times-circle"></i> </a> <span  class="btn btn-primary btn-file border-btn blue float-right" > SLIDE ' + (count + 1) + '<input name="img[' + count + ']" type="file" id="file-input-' + (count + 1) + '" class="added"> </span> <div id="file-result-' + (count + 1) + '" class="file-result text-center"> <span id="file-img-' + (count + 1) + '"></span> </div> </div> </li>');else $("#file-input-cont").append('<li id="item_' + (count + 1) + '" class="li-file-input"> <div class="preview" id="preview-' + (count + 1) + '"> <a onclick="eliminarImagenes()" class="removeBtn text-center center-block"> <i class="fas fa-times-circle"></i> </a> <span  class="btn btn-primary btn-file border-btn blue float-right" > SLIDE ' + (count + 1) + '<input name="img[' + (count + 1) + ']" type="file" id="file-input-' + (count + 1) + '" class="added"> </span> <div id="file-result-' + (count + 1) + '" class="file-result text-center"> <span id="file-img-' + (count + 1) + '"></span> </div> </div> </li>');
+  if (operacion == 'create') $("#file-input-cont").append('<li id="item_' + (count + 1) + '" class="li-file-input"> <div class="preview" id="preview-' + (count + 1) + '"> <a onclick="eliminarImagenes()" class="removeBtn text-center center-block"> <i class="fas fa-times-circle"></i> </a> <span  class="btn btn-primary btn-file border-btn blue float-right" > IMAGEN ' + (count + 1) + '<input name="img[' + count + ']" type="file" id="file-input-' + (count + 1) + '" class="added"> </span> <div id="file-result-' + (count + 1) + '" class="file-result text-center"> <span id="file-img-' + (count + 1) + '"></span> </div> </div> </li>');else $("#file-input-cont").append('<li id="item_' + (count + 1) + '" class="li-file-input"> <div class="preview" id="preview-' + (count + 1) + '"> <a onclick="eliminarImagenes()" class="removeBtn text-center center-block"> <i class="fas fa-times-circle"></i> </a> <span  class="btn btn-primary btn-file border-btn blue float-right" > IMAGEN ' + (count + 1) + '<input name="img[' + (count + 1) + ']" type="file" id="file-input-' + (count + 1) + '" class="added"> </span> <div id="file-result-' + (count + 1) + '" class="file-result text-center"> <span id="file-img-' + (count + 1) + '"></span> </div> </div> </li>');
 };
 
 /***/ }),
@@ -29915,20 +29915,20 @@ window.deleteImg = function (id, tipo, seccion) {
 
   if (c == true) {
     switch (seccion) {
-      case 'testimonio':
+      /*case 'testimonio':
         url = '/admin/destroyImgTestimonio';
-        break;
+        break;*/
 
       case 'proyecto':
-        url = '/admin/destroyImgProyecto';
+        url = '/admin/destroyImgNovedad';
         count--;
         console.log(count);
         if (operacion == 'update') $("#orderSlides #" + id).remove();
         break;
 
-      case 'novedad':
+      /*case 'novedad':
         url = '/admin/destroyImgNovedad';
-        break;
+        break;*/
     }
 
     $.ajax({
@@ -29956,9 +29956,9 @@ window.deleteImg = function (id, tipo, seccion) {
 
           if (seccion == 'proyecto' && operacion == 'update' && count == -1) {
             count++;
-            $("#file-input-cont").append('<li id="item_' + count + '" class="li-file-input"> <div class="preview" id="preview-' + count + '">  <span  class="btn btn-primary btn-file border-btn blue float-right" > SLIDE 1<input name="img[' + count + ']" type="file" id="file-input-' + count + '" class="added"> </span> <div id="file-result-' + count + '" class="file-result text-center"> <span id="file-img-' + count + '"></span> </div> </div><p class="error text-center" id="imgSlide1-error">Ingrese una imagen</p> </li>');
+            $("#file-input-cont").append('<li id="item_' + count + '" class="li-file-input"> <div class="preview" id="preview-' + count + '">  <span  class="btn btn-primary btn-file border-btn blue float-right" > IMAGEN 1<input name="img[' + count + ']" type="file" id="file-input-' + count + '" class="added"> </span> <div id="file-result-' + count + '" class="file-result text-center"> <span id="file-img-' + count + '"></span> </div> </div><p class="error text-center" id="imgSlide1-error">Ingrese una imagen</p> </li>');
             count++;
-            $("#file-input-cont").append('<li id="item_' + count + '" class="li-file-input"> <div class="preview" id="preview-' + count + '">  <span  class="btn btn-primary btn-file border-btn blue float-right" > SLIDE 2<input name="img[' + count + ']" type="file" id="file-input-' + count + '" class="added"> </span> <div id="file-result-' + count + '" class="file-result text-center"> <span id="file-img-' + count + '"></span> </div> </div><p class="error text-center" id="imgSlide2-error">Ingrese una imagen</p></li>');
+            $("#file-input-cont").append('<li id="item_' + count + '" class="li-file-input"> <div class="preview" id="preview-' + count + '">  <span  class="btn btn-primary btn-file border-btn blue float-right" > IMAGEN 2<input name="img[' + count + ']" type="file" id="file-input-' + count + '" class="added"> </span> <div id="file-result-' + count + '" class="file-result text-center"> <span id="file-img-' + count + '"></span> </div> </div><p class="error text-center" id="imgSlide2-error">Ingrese una imagen</p></li>');
           }
         } //if
 

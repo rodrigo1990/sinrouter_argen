@@ -82,18 +82,20 @@ Route::post('/enviarArgencambio','MailController@formularioArgencambio');
 Route::post('/solicitarSoporteShop','MailController@solicitarSoporteShop');
 
 
-/*ADMIN*/
+/**************************ADMIN*******************************************/
 
 
 
 Route::get('/admin/viewListReportes/', 'admin\FrontController@viewListReportes');
+Route::get('/admin/viewCreateNovedad', 'admin\FrontController@viewCreateNovedad');
+Route::get('/admin/viewListNovedades/{msg}', 'admin\FrontController@viewListNovedades');
+Route::get('/admin/viewUpdateNovedad/{id}', 'admin\FrontController@viewUpdateNovedad');
+
 
 Route::get('/admin/login/{username}/{password}', 'admin\UserController@login');
 Route::post('/admin/login', 'admin\UserController@login');
 Route::post('/admin/logout', 'admin\UserController@logout');
 Route::get('/admin/users', 'admin\UserController@users');
-
-
 
 
 Route::post('/admin/createNovedad', 'admin\NovedadController@createNovedad');
