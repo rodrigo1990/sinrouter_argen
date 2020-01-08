@@ -16,7 +16,7 @@
                 @endslot
 
                  @slot('imagenes',[
-                  0 => 'storage/img/shop/promociones/navidad/fichas/1.png',
+                  0 => 'storage/img/shop/fichas/thumbs/xiaomi_redmi/1.jpg',
                   1 => 'storage/img/shop/fichas/thumbs/xiaomi_redmi/2.jpg',
                   2 => 'storage/img/shop/fichas/thumbs/xiaomi_redmi/3.jpg',
                   3 => 'storage/img/shop/fichas/thumbs/xiaomi_redmi/5.jpg'
@@ -57,15 +57,15 @@
 
 
                 @slot('promo')
-                    true
+                    false
                 @endslot
 
                 @slot('precioPromoLista')
-                    $10.799
+                    false
                 @endslot
 
                 @slot('precioPromoCuota')
-                    $599.94
+                    false
                 @endslot
 
 
@@ -96,7 +96,7 @@
     
                 
                 @slot('imagenes',[
-                   0 => 'storage/img/shop/promociones/navidad/fichas/2.png',
+                   0 => 'storage/img/shop/fichas/thumbs/nokia_51_plus/1.jpg',
                   1 => 'storage/img/shop/fichas/thumbs/nokia_51_plus/2.jpg',
                   2 => 'storage/img/shop/fichas/thumbs/nokia_51_plus/3.jpg',
                   3 => 'storage/img/shop/fichas/thumbs/nokia_51_plus/4.jpg',
@@ -145,15 +145,15 @@
                 @endslot
 
                 @slot('promo')
-                    true
+                    false
                 @endslot
 
                  @slot('precioPromoLista')
-                    $16.199
+                    false
                 @endslot
 
                 @slot('precioPromoCuota')
-                    $899.94
+                    false
                 @endslot
 
                 @slot('stock')

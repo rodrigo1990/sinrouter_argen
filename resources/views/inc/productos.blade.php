@@ -153,7 +153,7 @@
 							    	$11.999
 								@endslot
 								@slot('img')
-							    	storage/img/shop/promociones/navidad/productos/p-01.png
+							    	storage/img/shop/productos/p-01.png
 
 
 								@endslot
@@ -162,15 +162,15 @@
 								@endslot
 
 							  	@slot('promo')
-				                    true
+				                    false
 				                @endslot
 
 				                @slot('precioPromoLista')
-				                    $10.799
+				                    false
 				                @endslot
 
 				                @slot('precioPromoCuota')
-				                    $599.94
+				                    false
 				                @endslot
 
 			                 	@slot('stock')
@@ -199,7 +199,7 @@
 							    	$17.999
 								@endslot
 								@slot('img')
-							    	storage/img/shop/promociones/navidad/productos/p-02.png
+							    	storage/img/shop/productos/p-02.png
 
 
 								@endslot
@@ -209,15 +209,15 @@
 
 
 								@slot('promo')
-				                    true
+				                    false
 				                @endslot
 
 				                 @slot('precioPromoLista')
-				                    $16.199
+				                    false
 				                @endslot
 
 				                @slot('precioPromoCuota')
-				                    $899.94
+				                    false
 				                @endslot
 
 			                 	@slot('stock')

@@ -10,7 +10,7 @@
         
         <div class="modal-body">
             <div class="row">
-              <div class="col-sm-6 img-cont">
+              <div class="col-lg-6 col-md-6 col-sm-12 img-cont">
                 @if($memoria!='')
                   <div class="circle blue">
                     <span>MEMORIA <br> <b>{{$memoria}}</b></span>
@@ -48,7 +48,7 @@
                         </span>
                    </div>
               </div>
-              <div class="col-sm-6">
+              <div class="col-lg-6 col-md-6 col-sm-12">
                 <div class="row">
                   <h2 class="gray"><b>{{$marca}}</b> {{$modelo}}</h2>
                 </div>
@@ -77,6 +77,16 @@
                        <div class="precio-cont">
                         <del><h4 class="precio violet"><b>{{$precio}}</b></h4></del>
                         <h4 class="precio violet"><b class="violet">{{$precioPromoCuota}}</b></h4>
+                      </div>
+                  </div>
+                  @elseif($stock=='false' && $promo == 'false')
+                    <div class="promo-cont" style="margin-top:11px;margin-bottom: 15px;">
+                       <h4 class="gray" style="margin-top:9px;">
+                          <b>SIN  STOCK</b>
+                      </h4>
+
+                       <div class="precio-cont">
+                        <h4 class="precio violet"><b class="violet">{{$precio}}</b></h4>
                       </div>
                   </div>
                   @else
