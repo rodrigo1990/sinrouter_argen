@@ -137,52 +137,81 @@
 							@endcomponent
 
 							</div>
+							
+								<div>
+								@component('comp.producto')
+									@slot('marca')
+								    	NOKIA  
+									@endslot
+									@slot('modelo')
+								    	7.1
+									@endslot
+									@slot('precio')
+								    	$1444
+									@endslot
+									@slot('precioLista')
+								    	$25.999
+									@endslot
+									@slot('img')
+								    	storage/img/shop/productos/p-011.png
+									@endslot
+									@slot('dataTarget')
+								    	#9
+									@endslot
+									@slot('promo')
+				                    	false
+					                @endslot
+					                  
+					                @slot('precioPromoLista')
+					                    false
+					                @endslot
+
+					                @slot('precioPromoCuota')
+					                    false
+					                @endslot	
+
+				                 	@slot('stock')
+					                    true
+					                @endslot	
+								@endcomponent
+							</div>
+
 							<div>
-								
-							@component('comp.producto')
-								@slot('marca')
-							    	XIAOMI 
-								@endslot
-								@slot('modelo')
-							    	Redmi 5 
-								@endslot
-								@slot('precio')
-							    	$666,61 
-								@endslot
-								@slot('precioLista')
-							    	$11.999
-								@endslot
-								@slot('img')
-							    	storage/img/shop/productos/p-01.png
+								@component('comp.producto')
+									@slot('marca')
+								    	NOKIA 
+									@endslot
+									@slot('modelo')
+								    	3.1 Plus
+									@endslot
+									@slot('precio')
+								    	$889
+									@endslot
+									@slot('precioLista')
+								    	$15.999
+									@endslot
+									@slot('img')
+								    	storage/img/shop/productos/p-07.png
+									@endslot
+									@slot('dataTarget')
+								    	#7
+									@endslot
+									@slot('promo')
+				                    	false
+					                @endslot
+					                  
+					                @slot('precioPromoLista')
+					                    false
+					                @endslot
 
+					                @slot('precioPromoCuota')
+					                    false
+					                @endslot	
 
-								@endslot
-								@slot('dataTarget')
-							    	#1
-								@endslot
-
-							  	@slot('promo')
-				                    false
-				                @endslot
-
-				                @slot('precioPromoLista')
-				                    false
-				                @endslot
-
-				                @slot('precioPromoCuota')
-				                    false
-				                @endslot
-
-			                 	@slot('stock')
-				                    false
-				                @endslot
-
-				               
-                   
-
-								
-							@endcomponent
-
+				                 	@slot('stock')
+					                    true
+					                @endslot	
+								@endcomponent
 							</div>
 							<div>
 							@component('comp.producto')
@@ -264,6 +293,56 @@
 					                @endslot	
 								@endcomponent
 							</div>
+							
+
+							<div>
+								
+							@component('comp.producto')
+								@slot('marca')
+							    	XIAOMI 
+								@endslot
+								@slot('modelo')
+							    	Redmi 5 
+								@endslot
+								@slot('precio')
+							    	$666,61 
+								@endslot
+								@slot('precioLista')
+							    	$11.999
+								@endslot
+								@slot('img')
+							    	storage/img/shop/productos/p-01.png
+
+
+								@endslot
+								@slot('dataTarget')
+							    	#1
+								@endslot
+
+							  	@slot('promo')
+				                    false
+				                @endslot
+
+				                @slot('precioPromoLista')
+				                    false
+				                @endslot
+
+				                @slot('precioPromoCuota')
+				                    false
+				                @endslot
+
+			                 	@slot('stock')
+				                    false
+				                @endslot
+
+				               
+                   
+
+								
+							@endcomponent
+
+							</div>
+
 							<div>
 								@component('comp.producto')
 									@slot('marca')
@@ -379,43 +458,6 @@
 								@endcomponent
 							</div>
 							
-							<div>
-								@component('comp.producto')
-									@slot('marca')
-								    	NOKIA 
-									@endslot
-									@slot('modelo')
-								    	3.1 Plus
-									@endslot
-									@slot('precio')
-								    	$889
-									@endslot
-									@slot('precioLista')
-								    	$15.999
-									@endslot
-									@slot('img')
-								    	storage/img/shop/productos/p-07.png
-									@endslot
-									@slot('dataTarget')
-								    	#7
-									@endslot
-									@slot('promo')
-				                    	false
-					                @endslot
-					                  
-					                @slot('precioPromoLista')
-					                    false
-					                @endslot
-
-					                @slot('precioPromoCuota')
-					                    false
-					                @endslot	
-
-				                 	@slot('stock')
-					                    true
-					                @endslot	
-								@endcomponent
-							</div>
 
 
 							<div>
@@ -457,44 +499,7 @@
 							</div>
 
 
-								<div>
-								@component('comp.producto')
-									@slot('marca')
-								    	NOKIA  
-									@endslot
-									@slot('modelo')
-								    	7.1
-									@endslot
-									@slot('precio')
-								    	$1444
-									@endslot
-									@slot('precioLista')
-								    	$25.999
-									@endslot
-									@slot('img')
-								    	storage/img/shop/productos/p-011.png
-									@endslot
-									@slot('dataTarget')
-								    	#9
-									@endslot
-									@slot('promo')
-				                    	false
-					                @endslot
-					                  
-					                @slot('precioPromoLista')
-					                    false
-					                @endslot
-
-					                @slot('precioPromoCuota')
-					                    false
-					                @endslot	
-
-				                 	@slot('stock')
-					                    true
-					                @endslot	
-								@endcomponent
-							</div>
-
+							
 
 
 
