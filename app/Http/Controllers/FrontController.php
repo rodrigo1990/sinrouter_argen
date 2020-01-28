@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Provincia;
+use App\Novedad;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\App;
 
@@ -125,7 +126,16 @@ class FrontController extends Controller
 
     public function resp_social(Request $request){
 
-        return view('resp_social',['provincias'=>$this->provincias]);
+        $novedades = Novedad::with('img')->get();
+
+        return view('resp_social',[
+                                  'provincias'=>$this->provincias,
+                                  'novedades'=>$novedades
+
+
+
+
+                                  ]);
 
     }
 

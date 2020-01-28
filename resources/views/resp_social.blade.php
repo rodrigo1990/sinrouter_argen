@@ -17,13 +17,132 @@ $nov  = new Novedad();
 <div class="row ">
 	<h1 class="text-center margin-top-50"><b>RESPONSABILIDAD</b> SOCIAL</h1>
 </div>
+<?php $i=0; ?>
 
 
-  <?php 
+@foreach($novedades as $novedad)
+  <?php $i++ ?>
+  
+  @if($i%2 == 0)
+    
+  <div class="resp-soc-row row  padding-top-50 padding-bottom-50 bk-grey  ">
+            
+            <div class="container">
+              
+              <div class="col-lg-6 col-sm-6">
+                <h2 class="titulos red"><?php echo strtoupper(utf8_encode($novedad->titulo))  ?></h2>
+                <h3 class="subtitulos red"><i><?php echo utf8_encode($novedad->subtitulo)  ?></i></h3>
+                <br>
+                <p><?php echo utf8_encode($novedad->descripcion)  ?></p>
+              </div>
+              
+              <div class="col-lg-6 col-sm-6 img-section">
+                  <div class="overlay">
+                  @foreach($novedad->img as $img)
+                    <a class="content" data-fancybox="gallery{{$i}}" href="<?php echo asset('storage/img/novedades/'.$img->ruta) ?>" data-caption="<?php echo utf8_encode($novedad->descripcion)  ?>" >
+                      <div class="link-cont text-center">
+                        <a class="lightbox a-button"><i class="fa fa-search"></i></a>
+                      </div>
+                    </a>
+                  @endforeach
 
-    $nov->listarNovedadesUser();
+                  </div>
+                  @foreach($novedad->img as $img)
+                    
+                    @if($img->tipo == 'PRESENTACION')
 
-   ?>
+                    <div class="img-portada" style="background-image:url(<?php echo asset('storage/img/novedades/'.$img->ruta) ?>);"></div>
+
+                    @endif
+
+                  @endforeach
+                  
+                </div>
+
+                @foreach($novedad->img as $img)
+                    
+                    @if($img->tipo == 'SLIDE')
+
+                    <a  style='display:none' data-fancybox='gallery{{$i}}' href='<?php echo asset('storage/img/novedades/'.$img->ruta) ?>' data-caption="<?php echo utf8_encode($novedad->descripcion) ?>">
+                    </a>
+
+                    @endif
+
+                @endforeach
+
+            </div>
+
+
+
+
+
+  </div>
+
+  @else
+
+   <div class="resp-soc-row row  padding-top-50 padding-bottom-50 ">
+            
+            <div class="container">
+              
+             
+              
+              <div class="col-lg-6 col-sm-6 img-section">
+                  <div class="overlay">
+                  @foreach($novedad->img as $img)
+                    <a class="content" data-fancybox="gallery{{$i}}" href="<?php echo asset('storage/img/novedades/'.$img->ruta) ?>" data-caption="<?php echo utf8_encode($novedad->descripcion)  ?>" >
+                      <div class="link-cont text-center">
+                        <a class="lightbox a-button"><i class="fa fa-search"></i></a>
+                      </div>
+                    </a>
+                  @endforeach
+
+                  </div>
+                  @foreach($novedad->img as $img)
+                    
+                    @if($img->tipo == 'PRESENTACION')
+
+                    <div class="img-portada" style="background-image:url(<?php echo asset('storage/img/novedades/'.$img->ruta) ?>);"></div>
+
+                    @endif
+
+                  @endforeach
+                  
+                </div>
+
+                <div class="col-lg-6 col-sm-6">
+                  <h2 class="titulos red"><?php echo strtoupper(utf8_encode($novedad->titulo))  ?></h2>
+                  <h3 class="subtitulos red"><i><?php echo utf8_encode($novedad->subtitulo)  ?></i></h3>
+                  <br>
+                  <p><?php echo utf8_encode($novedad->descripcion)  ?></p>
+                </div>
+
+                @foreach($novedad->img as $img)
+                    
+                    @if($img->tipo == 'SLIDE')
+
+                    <a  style='display:none' data-fancybox='gallery{{$i}}' href='<?php echo asset('storage/img/novedades/'.$img->ruta) ?>' data-caption="<?php echo utf8_encode($novedad->descripcion) ?>">
+                    </a>
+
+                    @endif
+
+                @endforeach
+
+            </div>
+
+
+
+
+
+  </div>
+  
+
+
+  @endif
+
+
+
+  
+@endforeach
 
 
 
