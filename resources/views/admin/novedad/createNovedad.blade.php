@@ -1,7 +1,7 @@
 @extends('Admin.layouts.iframe')
 	@section('main')
 	<section id="proyectos">
-		<h1>PROYECTOS</h1>
+		<h1>NOVEDADES</h1>
 		
 		<br><br>
 		<form action="/admin/createNovedad" method="POST" enctype="multipart/form-data">
