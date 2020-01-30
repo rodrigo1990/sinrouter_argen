@@ -33,7 +33,7 @@
 		</a>
 	</div>
 <div class=" side-bar col-lg-2 col-md-2 col-sm-2" style="padding:5px"  >
-  <img class="logo margin-left-5 center-block" src="<?php echo asset("storage/img/logo.png")?>" id="icon" alt="User Icon" style="width:100%;" />
+  <img class="logo margin-left-5 center-block" src="<?php echo asset("storage/img/logo.png")?>" id="icon" alt="User Icon" style="width:69%;margin-top:10px;" />
 	<ul>
 		<li>
 			<a href="/admin/viewListReportes" target="iframe">

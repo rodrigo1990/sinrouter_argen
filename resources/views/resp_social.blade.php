@@ -30,10 +30,10 @@ $nov  = new Novedad();
             <div class="container">
               
               <div class="col-lg-6 col-sm-6">
-                <h2 class="titulos red"><?php echo strtoupper(utf8_encode($novedad->titulo))  ?></h2>
-                <h3 class="subtitulos red"><i><?php echo utf8_encode($novedad->subtitulo)  ?></i></h3>
+                <h2 class="titulos red"><?php echo strtoupper($novedad->titulo)  ?></h2>
+                <h3 class="subtitulos red"><i><?php echo strtoupper(utf8_encode($novedad->subtitulo))  ?></i></h3>
                 <br>
-                <p><?php echo utf8_encode($novedad->descripcion)  ?></p>
+                <p><?php echo ucfirst(utf8_encode($novedad->descripcion))  ?></p>
               </div>
               
               <div class="col-lg-6 col-sm-6 img-section">
@@ -69,6 +69,9 @@ $nov  = new Novedad();
                     @endif
 
                 @endforeach
+
+
+       
 
             </div>
 
@@ -110,10 +113,10 @@ $nov  = new Novedad();
                 </div>
 
                 <div class="col-lg-6 col-sm-6">
-                  <h2 class="titulos red"><?php echo strtoupper(utf8_encode($novedad->titulo))  ?></h2>
-                  <h3 class="subtitulos red"><i><?php echo utf8_encode($novedad->subtitulo)  ?></i></h3>
+                  <h2 class="titulos red"><?php echo strtoupper($novedad->titulo)  ?></h2>
+                  <h3 class="subtitulos red"><i><?php echo strtoupper(utf8_encode($novedad->subtitulo))  ?></i></h3>
                   <br>
-                  <p><?php echo utf8_encode($novedad->descripcion)  ?></p>
+                  <p><?php echo ucfirst(utf8_encode($novedad->descripcion))  ?></p>
                 </div>
 
                 @foreach($novedad->img as $img)

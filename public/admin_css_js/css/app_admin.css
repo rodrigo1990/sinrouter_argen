@@ -1,3 +1,25 @@
+
+@font-face {
+    font-family: GothamMedium;
+    src: url(../fonts/GothamMedium.otf);
+}
+
+@font-face {
+    font-family: GothamBook;
+    src: url(../fonts/GothamBook.otf);
+}
+
+@font-face {
+    font-family: GothamBold;
+    src: url(../fonts/GothamBold.otf);
+}
+
+
+body{
+  font-family: GothamBook !important;
+}
+
+
 .bk-green {
   background: #05ab05 !important;
   border: none !important;
@@ -26,7 +48,7 @@ iframe {
 h1,
 h2,
 h4 {
-  font-family: RobotoBold;
+  font-family: GothamBold !important;
 }
 
 a {
@@ -673,10 +695,20 @@ input[type=password]:placeholder {
   text-align: center;
   border-bottom: 2px solid #d6d6d6;
   position: relative;
+  -webkit-transition: all 0.50s ease-in-out;
+  -moz-transition: all 0.50s ease-in-out;
+  -ms-transition: all 0.50s ease-in-out;
+  -o-transition: all 0.50s ease-in-out;
+  transition: all 0.50s ease-in-out;
 }
 
 .side-bar ul li:hover {
-  background: black;
+  background: #00A5E7;
+}
+
+
+.side-bar ul li:hover a {
+  color: white;
 }
 
 .side-bar ul li a {

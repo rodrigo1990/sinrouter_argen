@@ -19,12 +19,12 @@
 							@foreach($novedades as $novedad)
 							<tr>
 								<td class="text-center">{{$novedad->titulo}}</td>
-								<td class="text-center">{{$novedad->subtitulo}}</td>
-								<td class="text-center">{{strip_tags($novedad->descripcion)}}</td>
+								<td class="text-center"><?php echo utf8_encode($novedad->subtitulo)  ?></td>
+								<td class="text-center"><?php echo utf8_encode($novedad->descripcion)  ?></td>
 								<td class="text-center">
 									<a href="/admin/viewUpdateNovedad/{{$novedad->id}}">Actualizar</a>
 									<br>
-									<a href="/admin/destroyNovedad/{{$novedad->id}}">Eliminar</a>
+									<a onclick="deleteItem('/admin/destroyNovedad/{{$novedad->id}}')">Eliminar</a>
 								</td>
 							</tr>
 

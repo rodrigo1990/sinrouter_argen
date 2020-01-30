@@ -114,7 +114,7 @@ class NovedadController extends Controller
 	 		//PROYECTO
 	 		$novedad = Novedad::find($request->id);
 
-		 	$novedad->descripcion = $request->descripcion;
+		 	$novedad->descripcion = utf8_encode($request->descripcion);
 
 		 	$novedad->titulo = $request->titulo;
 
