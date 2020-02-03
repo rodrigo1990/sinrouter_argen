@@ -289,7 +289,7 @@
 					                @endslot	
 
 				                 	@slot('stock')
-					                    true
+					                    false
 					                @endslot	
 								@endcomponent
 							</div>

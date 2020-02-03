@@ -3703,7 +3703,7 @@ div.bk-title h1{
 
 
 
-.fichas .modal-body .col-sm-6:not(.img-cont) a {
+.fichas .modal-body .showMoreFichas{
     font-family: GothamBlack;
     color:#EF4623;
 }

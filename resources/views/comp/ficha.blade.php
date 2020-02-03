@@ -129,7 +129,7 @@
                 
                         </ul>
                         <div class="clear"></div>
-                        <a onClick="showMoreFichas('{{$id}}')" id="more-btn-{{$id}}">Ver más</a>
+                        <a onClick="showMoreFichas('{{$id}}')" class="showMoreFichas" id="more-btn-{{$id}}">Ver más</a>
                     @break;
 
                   @else

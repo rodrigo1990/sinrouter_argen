@@ -238,7 +238,7 @@
                 @endslot
 
                 @slot('stock')
-                    true
+                    false
                 @endslot
                    
 

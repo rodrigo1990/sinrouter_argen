@@ -184,7 +184,7 @@
 					 	<li class="margin-top-10 margin-left-20">- <a onClick="zoomOnLocation(-34.681403,-58.556553);">San Justo</a></li>
 						<li class="margin-top-10 blue"><h3>ZONA SUR</h3></li>
 						<li class="margin-top-10 margin-left-20">- <a onClick="zoomOnLocation(-34.722831,-58.259495);">Quilmes</a></li>
-						<!-- <li class="margin-top-10 margin-left-20">- <a onClick="zoomOnLocation(-34.660564,-58.367637);">Avellaneda</a></li>-->
+						 <li class="margin-top-10 margin-left-20">- <a onClick="zoomOnLocation(-34.660564,-58.367637);">Avellaneda</a></li>
 						<li class="margin-top-10 margin-left-20">- <a onClick="zoomOnLocation(-34.760503,-58.206957);">Berazategui</a></li>
 						<li class="margin-top-10 margin-left-20">- <a onClick="zoomOnLocation(-34.708119,-58.389905);">Lanús</a></li>
 						<li class="margin-top-10 margin-left-20">- <a onClick="zoomOnLocation(-34.762114,-58.398490);">Lomas De Zamora</a></li>
